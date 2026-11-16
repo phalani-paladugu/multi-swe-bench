@@ -16,6 +16,8 @@ arm/Dockerfile and x86/Dockerfile are matched CARP adaptations. The unmodified M
 
 Review the [full x86 → ARM diff](evidence/x86-to-arm.diff) and [hashes and validation provenance](evidence/architecture.json).
 
+See the [source lockfile audit](evidence/cargo-lock-source.json) for the pinned repository, commit, content hash, and reuse decision.
+
 See [environment settings](environment.json), [dataset and harness provenance](provenance.json), and `evidence/upstream-to-*` for the shared adaptations.
 
 New ARM build: see [build/test results](evidence/build-results.json). Native x86 execution has not been revalidated in this work.

@@ -5,6 +5,8 @@ from pathlib import Path
 
 import yaml
 
+from .cargo_lock import pin_x86_dockerfile, repository_lock
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 TASKS_DIR = REPO_ROOT / "tasks"
 
@@ -45,6 +47,10 @@ def load_task(task_dir: Path) -> dict:
 
 def write_generated(task_dir: Path, dockerfile: str, eval_script: str) -> None:
     """Overwrite the two derived files in place."""
+    if (task_dir / "evidence/cargo-lock-source.json").exists():
+        digest = repository_lock(task_dir, load_task(task_dir))
+        if digest is not None:
+            dockerfile = pin_x86_dockerfile(dockerfile, digest)
     # The upstream generator emits x86 recipes; never overwrite the ARM alias.
     target = task_dir / "x86" / "Dockerfile"
     _write(target if target.exists() else task_dir / "Dockerfile", dockerfile)

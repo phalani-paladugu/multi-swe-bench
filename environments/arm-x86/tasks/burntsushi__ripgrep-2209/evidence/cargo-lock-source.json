@@ -1,0 +1,15 @@
+{
+  "base_commit": "4dc6c73c5a9203c5a8a89ce2161feca542329812",
+  "blob_sha": "2ba43491869a7e353a30d7a9eb1eb735da53b2a9",
+  "byte_count": 13931,
+  "collection": "tasks",
+  "decision": "reuse_committed_lock",
+  "exists": true,
+  "instance_id": "burntsushi__ripgrep-2209",
+  "matches_saved": true,
+  "repository": "burntsushi/ripgrep",
+  "reuse_committed_lock": true,
+  "saved_sha256": "d077ac4ac0a5564379c62a16b7d40a41c939da93a0d6f61810f9673f570cfe18",
+  "sha256": "d077ac4ac0a5564379c62a16b7d40a41c939da93a0d6f61810f9673f570cfe18",
+  "url": "https://github.com/burntsushi/ripgrep/blob/4dc6c73c5a9203c5a8a89ce2161feca542329812/Cargo.lock"
+}

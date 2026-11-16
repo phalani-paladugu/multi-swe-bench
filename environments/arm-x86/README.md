@@ -12,6 +12,7 @@ The 28 historical tasks retain their SWE-bench Multilingual metadata and evaluat
 
 - [All 37 task environments and compatibility reports](ARCHITECTURE_INDEX.md)
 - [Build instructions for ARM and x86](BUILD_ARCHITECTURES.md)
+- [Rust lockfile reuse audit and selective simplification](CARGO_LOCK_REUSE.md)
 - [Native ARM build and test results](BUILD_RESULTS.md)
 - [Source and publication provenance](provenance/publication.json)
 

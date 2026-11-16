@@ -1,0 +1,21 @@
+{
+  "arm": {
+    "current_lines": 48,
+    "current_sha256": "d6f2c60290ca48a51d8a98793fcdaa2da339fe6fef0923911eb828a6c5820647",
+    "previous_lines": 1472,
+    "previous_sha256": "aa7cc49091a79c0fb9bb76286077fc65a07ef4022c5eb4ad4a20413f9b05bbec"
+  },
+  "cargo_lock_sha256": "1859318b85c3cd6825c7ff377de80bb3e8e28a93e2b3c6765dc7e52fb8f48e2f",
+  "dependency_bytes_unchanged": true,
+  "original_x86": "upstream/x86/Dockerfile",
+  "previous_publication_commit": "fc047b05888c6a5ae1675b5d4249d0fed54e917e",
+  "repository_lock_evidence": "evidence/cargo-lock-source.json",
+  "source_commit_unchanged": true,
+  "validation": "Exact source-lock equivalence and recipe checks; historical image validation retained separately. No fresh native ARM/x86 image build is claimed.",
+  "x86": {
+    "current_lines": 42,
+    "current_sha256": "7d9a4b4c353496f544573cb00c444ef8522cea7552c678689f0482c2f0a200d0",
+    "previous_lines": 40,
+    "previous_sha256": "ee2896e7cd0565201d32f44ac51621b64a8514ffa59ac84e308271f8f12e5d43"
+  }
+}

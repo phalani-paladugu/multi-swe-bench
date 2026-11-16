@@ -1,0 +1,15 @@
+{
+  "base_commit": "a9a82de5c48b23958ead9d011765396d29217630",
+  "blob_sha": "04093a7cfe3da576cb584a0dc691ebc9b56211a3",
+  "byte_count": 147754,
+  "collection": "multi-swe-tasks",
+  "decision": "already_uses_committed_lock",
+  "exists": true,
+  "instance_id": "nushell__nushell-10381",
+  "matches_saved": null,
+  "repository": "nushell/nushell",
+  "reuse_committed_lock": false,
+  "saved_sha256": null,
+  "sha256": "d85b0d47fd75ccd404f8dacfb7ee0f57f762b964ccebdefbf92c9b9c7b6f9b56",
+  "url": "https://github.com/nushell/nushell/blob/a9a82de5c48b23958ead9d011765396d29217630/Cargo.lock"
+}

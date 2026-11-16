@@ -28,7 +28,7 @@ BASE = "ubuntu:22.04"
 INPUT_FILES = ["task.yaml", "tests.json", "test.patch", "gold.patch", "eval.sh", "problem_statement.md"]
 GENERATOR_FILES = [
     "__init__.py", "c.py", "constants.py", "tasks.py", "utils.py",
-    "arm64.py", "arm64_pipeline.py", "arm64_cpp.py", "arm64_cpp_validate.py",
+    "arm64.py", "arm64_pipeline.py", "arm64_cpp.py", "arm64_cpp_validate.py", "cargo_lock.py",
 ]
 
 

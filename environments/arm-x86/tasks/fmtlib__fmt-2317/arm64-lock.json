@@ -8,19 +8,47 @@
   "ctest": "ctest version 3.22.1",
   "g++": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
   "gcc": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "generator_input_updates": [
+    {
+      "arm_recipe_changed": false,
+      "historical_validation_preserved": true,
+      "previous_inputs": {
+        "eval.sh": "d65b373286c9f28d242819d6db149c495ec224adee97ca5e268dc4fb03cdd08d",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_cpp.py": "5f7f1766c34e90ee3a4162969a3ab35011528a4cb1890aa91e40ae7687ef88ad",
+          "arm64_cpp_validate.py": "50baeb126600711818d3b0fd5bf45246058ff098dd058a27d1598791d262aa1b",
+          "arm64_pipeline.py": "b679a9cff4e512661f6959b0dbd50cd17039f66fb79e950d1221d5cb1bbb6cba",
+          "c.py": "4f485dc85f04da61a27709cc0d1bfeb5ba750c98080e6db45c0aa53d0a2fc1fc",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "tasks.py": "5f5a6c56e49ed05d65ffa52328510e620ca9ab6cf01b4ec26ca9c178e6457cf3",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "c1e2f8290f8b898f4e3e6d281864f84b46f9b976860c4437c05f70434eb52504",
+        "problem_statement.md": "329f1ebe286a05437e9d703b84a18cd4f71dd374bfe8674172419aaac2b72df6",
+        "task.yaml": "ead516f4a6f2bfda430afc0045df5896698156f289eba2573bd49f0f79f8fb56",
+        "test.patch": "6befe2d99212212218d9ab2e60fada96f8a2df2f0e0d7e007ac8f15eba73a8de",
+        "tests.json": "e79483f8322fb4d0c285558f4b4a3f7cd226883a1a3e294737c2c467c74485eb"
+      },
+      "previous_publication_commit": "fc047b05888c6a5ae1675b5d4249d0fed54e917e",
+      "reason": "Shared generator imports changed for Rust Cargo.lock reuse; the C++ recipe regenerates byte-for-byte identically."
+    }
+  ],
   "git_remotes": [],
   "image": "sweb.eval.arm64.fmtlib__fmt-2317:latest",
   "inputs": {
     "eval.sh": "d65b373286c9f28d242819d6db149c495ec224adee97ca5e268dc4fb03cdd08d",
     "generator": {
       "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
-      "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
-      "arm64_cpp.py": "5f7f1766c34e90ee3a4162969a3ab35011528a4cb1890aa91e40ae7687ef88ad",
+      "arm64.py": "62bbfed4d4159a0c0f2c9c23b2a05e8cae3a556ee9ec22b5fed680f1d8ba17b9",
+      "arm64_cpp.py": "6e5235388b07e2b778e5b73c358976c9a7cc7242566a75051ceedba42d8d3921",
       "arm64_cpp_validate.py": "50baeb126600711818d3b0fd5bf45246058ff098dd058a27d1598791d262aa1b",
       "arm64_pipeline.py": "b679a9cff4e512661f6959b0dbd50cd17039f66fb79e950d1221d5cb1bbb6cba",
       "c.py": "4f485dc85f04da61a27709cc0d1bfeb5ba750c98080e6db45c0aa53d0a2fc1fc",
+      "cargo_lock.py": "eebba45617fa5058571fb7b5f88ad45415d74fa43e95f8bca14ddbe5919ccc03",
       "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
-      "tasks.py": "5f5a6c56e49ed05d65ffa52328510e620ca9ab6cf01b4ec26ca9c178e6457cf3",
+      "tasks.py": "0cf86a34299383bf6a39cca2a60a273dd60a435f2c66afc7c55ce291ab0c7c98",
       "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
     },
     "gold.patch": "c1e2f8290f8b898f4e3e6d281864f84b46f9b976860c4437c05f70434eb52504",

@@ -21,6 +21,7 @@
     "common/prepare.sh": "1929758ec7aaa498a746849453c2efee0cf6ee428751899bbffd4383aaf5d067",
     "common/run.sh": "a7a5d1b35636847a44d374b98f963d65a634f1606c107a8218d3f71155542aaa",
     "environment.json": "e600a97367039d6b5dff1e8187b43f2a74d2a6f5317dc67d5c9d1d0ca7dd1513",
+    "evidence/upstream-to-x86.diff": "6a99595bb50956aca3481ab7c3a88abaa4c9c88817c921a48f785fde75306b18",
     "evidence/x86-to-arm.diff": "81187de7dc2ca028832ba91d3980d976fa3ad7b570e3fb78e2b97310f51011ff",
     "provenance.json": "7c2c817b13c997660598b53b99467ddd034e0c28d54c1cb9ae042cd67b5b0b1b",
     "source.json": "0565fdbb17356955cb913fa85f2f18934c8dfdb76b8d5cd4d6656d4d6cc60074",

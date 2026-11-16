@@ -1,6 +1,6 @@
 # Publication checks
 
-The publication copy was checked on November 16, 2026:
+The initial publication at commit `fc047b05888c6a5ae1675b5d4249d0fed54e917e` was checked on November 16, 2026. These results describe that initial snapshot; see [CARGO_LOCK_REUSE.md](CARGO_LOCK_REUSE.md) for the subsequent selective recipe update:
 
 - All 37 architecture manifests match their recorded file hashes.
 - All 74 ARM/x86 Dockerfiles are byte-for-byte identical to the prepared source collection.
@@ -21,3 +21,7 @@ python3 scripts/summarize_multiswe.py
 ```
 
 These publication checks do not constitute new image builds or native x86 runtime validation. See [BUILD_RESULTS.md](BUILD_RESULTS.md) for the previously observed ARM outcomes and limitations.
+
+## Subsequent Cargo.lock simplification
+
+The selective update is documented in [CARGO_LOCK_REUSE.md](CARGO_LOCK_REUSE.md). All 37 current regression tests and 12 Linux checksum-guard cases pass. Exactly four ARM/x86 recipe pairs changed; the remaining 66 canonical Dockerfiles and all benchmark source/test inputs are unchanged. No new native image build is claimed.

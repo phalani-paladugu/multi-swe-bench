@@ -2,7 +2,7 @@
   "changes_and_reasons": [
     "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
     "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
-    "Dependency reproducibility: embed the recorded Cargo.lock, build/test with --locked and verify its SHA-256. The source commit and test selectors remain unchanged.",
+    "Dependency reproducibility: the pinned upstream commit has no Cargo.lock, so retain the recorded snapshot. ARM compilation uses --locked and verifies its SHA-256; x86 retains the original upstream snapshot recipe. The source commit and test selectors remain unchanged.",
     "Resource compatibility: CARGO_BUILD_JOBS=2 bounds compilation memory and persists for runtime Cargo commands as well as the build.",
     "Shell compatibility: omit the upstream conda activation line; these Rust images do not provide that conda environment."
   ],
@@ -13,6 +13,7 @@
   "sha256": {
     "arm/Dockerfile": "cacc8ddf3043a27699f459cab062e72b97b26e1bd152ce7a88d06460d8096b50",
     "eval.sh": "5bd4c8f943270e1d34d473f384b7be89d1277f50e6d0570e36bfde2ab008e251",
+    "evidence/cargo-lock-source.json": "882bfbf8544778a320e48cb6c56589bd83a9252746a30594b075a4f98e1491d0",
     "evidence/x86-to-arm.diff": "b42d9e5b66b61af19d004127898dff6b4f43f9e91d586cd20c0e378dd0c04ee8",
     "gold.patch": "ce04ade92f5ffc142c725a21e615e6b3d543456e51226911fc77d6f07b6f6ef3",
     "task.yaml": "04ae198fafbf1f664dc034bbfde685ea4031a253a43cfbd8a8a751f82edd0b10",

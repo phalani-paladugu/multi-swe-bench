@@ -39,6 +39,8 @@ def main():
             if existing:
                 lock = json.loads((task / "arm64-lock.json").read_text())
                 language = lock["language"]
+                reuse_file = task / "evidence/cargo-lock-reuse.json"
+                reuse = json.loads(reuse_file.read_text()) if reuse_file.exists() else None
                 changes = [
                     "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
                     "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
@@ -60,8 +62,13 @@ def main():
                         "Shell compatibility: omit the upstream conda activation line; these Maven images do not provide that conda environment.",
                     ]
                 else:
+                    dependency_note = (
+                        "Shared dependency locking: both architectures use the byte-identical Cargo.lock already committed at the pinned source revision, verify its SHA-256 before compilation, compile with --locked, and verify it afterward. No lockfile is embedded or overwritten. The saved Cargo.lock.arm64 remains an audit artifact."
+                        if reuse else
+                        "Dependency reproducibility: the pinned upstream commit has no Cargo.lock, so retain the recorded snapshot. ARM compilation uses --locked and verifies its SHA-256; x86 retains the original upstream snapshot recipe. The source commit and test selectors remain unchanged."
+                    )
                     changes += [
-                        "Dependency reproducibility: embed the recorded Cargo.lock, build/test with --locked and verify its SHA-256. The source commit and test selectors remain unchanged.",
+                        dependency_note,
                         "Resource compatibility: CARGO_BUILD_JOBS=2 bounds compilation memory and persists for runtime Cargo commands as well as the build.",
                         "Shell compatibility: omit the upstream conda activation line; these Rust images do not provide that conda environment.",
                     ]
@@ -77,6 +84,16 @@ def main():
                 }
                 source_commit = lock.get("base_commit")
                 baseline = "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe."
+                if reuse:
+                    baseline = "Both current recipes reuse the same audited repository Cargo.lock. The original x86 recipe is preserved under upstream/x86/Dockerfile and through Dockerfile.amd. The historical ARM validation predates this equivalent lockfile simplification; no new native image build is claimed."
+                    validation["recipe_update"] = reuse
+                    (evidence / "upstream-to-x86.diff").write_text("".join(
+                        difflib.unified_diff(
+                            (task / "upstream/x86/Dockerfile").read_text().splitlines(True),
+                            x86.read_text().splitlines(True),
+                            fromfile="upstream/x86/Dockerfile", tofile="x86/Dockerfile",
+                        )
+                    ))
             else:
                 env = json.loads((task / "environment.json").read_text())
                 language = env["language"]
@@ -142,6 +159,10 @@ def main():
             )
             for name in preserved:
                 files[name] = digest(task / name)
+            for name in ("evidence/cargo-lock-source.json", "evidence/cargo-lock-reuse.json",
+                         "upstream/x86/Dockerfile", "evidence/upstream-to-x86.diff"):
+                if (task / name).exists():
+                    files[name] = digest(task / name)
             manifest = {
                 "instance_id": task.name,
                 "language": language,
@@ -160,6 +181,10 @@ def main():
             readme = f"# {task.name}: architecture evidence\n\n{baseline}\n\n"
             readme += "\n".join("- " + x for x in changes) + "\n\n"
             readme += "Review the [full x86 → ARM diff](evidence/x86-to-arm.diff) and [hashes and validation provenance](evidence/architecture.json).\n\n"
+            if (task / "evidence/cargo-lock-source.json").exists():
+                readme += "See the [source lockfile audit](evidence/cargo-lock-source.json) for the pinned repository, commit, content hash, and reuse decision.\n\n"
+            if existing and reuse:
+                readme += "See the [lockfile simplification evidence](evidence/cargo-lock-reuse.json) and [original-to-current x86 diff](evidence/upstream-to-x86.diff). Both current builds enforce --locked; benchmark source and test selectors are unchanged.\n\n"
             if language == "cpp":
                 readme += "The [minimal recipe diff](evidence/x86-to-arm-recipe.diff) separates the architecture change from package freezing.\n\n"
             if not existing:
@@ -178,7 +203,7 @@ def main():
                 f"| [{task.name}]({collection}/{task.name}/COMPATIBILITY.md) | {language} | {'Historical ARM' if existing else 'New ARM'} |"
             )
     (ROOT / "ARCHITECTURE_INDEX.md").write_text(
-        "# Architecture evidence for 37 tasks\n\nEach task has `arm/Dockerfile`, `x86/Dockerfile`, a full unified diff, SHA-256 hashes, and reasons for changes. Historical runtime evidence is preserved with its original date; a folder move is not a new image validation.\n\n| Task | Language | Evidence |\n|---|---|---|\n"
+        "# Architecture evidence for 37 tasks\n\nEach task has `arm/Dockerfile`, `x86/Dockerfile`, a full unified diff, SHA-256 hashes, and reasons for changes. Historical runtime evidence retains its original date; later recipe simplifications are documented separately and do not represent new image validation.\n\n| Task | Language | Evidence |\n|---|---|---|\n"
         + "\n".join(rows)
         + "\n"
     )

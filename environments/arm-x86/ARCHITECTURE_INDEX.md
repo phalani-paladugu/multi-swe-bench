@@ -1,6 +1,6 @@
 # Architecture evidence for 37 tasks
 
-Each task has `arm/Dockerfile`, `x86/Dockerfile`, a full unified diff, SHA-256 hashes, and reasons for changes. Historical runtime evidence is preserved with its original date; a folder move is not a new image validation.
+Each task has `arm/Dockerfile`, `x86/Dockerfile`, a full unified diff, SHA-256 hashes, and reasons for changes. Historical runtime evidence retains its original date; later recipe simplifications are documented separately and do not represent new image validation.
 
 | Task | Language | Evidence |
 |---|---|---|

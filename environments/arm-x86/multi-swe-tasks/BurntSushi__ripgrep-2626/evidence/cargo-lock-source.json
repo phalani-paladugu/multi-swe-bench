@@ -1,0 +1,15 @@
+{
+  "base_commit": "7099e174acbcbd940f57e4ab4913fee4040c826e",
+  "blob_sha": "324bdaacfeca5c0d301a9e0fddc72bf1161547d9",
+  "byte_count": 13379,
+  "collection": "multi-swe-tasks",
+  "decision": "already_uses_committed_lock",
+  "exists": true,
+  "instance_id": "BurntSushi__ripgrep-2626",
+  "matches_saved": null,
+  "repository": "BurntSushi/ripgrep",
+  "reuse_committed_lock": false,
+  "saved_sha256": null,
+  "sha256": "adde53e16745e62780e7074f26f38e61f8cb7632dd95555600091bfd6ec9a66b",
+  "url": "https://github.com/BurntSushi/ripgrep/blob/7099e174acbcbd940f57e4ab4913fee4040c826e/Cargo.lock"
+}

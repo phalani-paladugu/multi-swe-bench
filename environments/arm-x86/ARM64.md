@@ -13,7 +13,7 @@ images offline, and save task files only after the requested checks pass.
 
 ## What is preserved
 
-- The original Dockerfile is archived byte-for-byte as `Dockerfile.amd`.
+- The original x86 Dockerfile is accessible byte-for-byte through `Dockerfile.amd`. For the four simplified Rust tasks this alias targets `upstream/x86/Dockerfile`, while `x86/Dockerfile` adds matching lock enforcement.
 - Repository base commits, problem statements, gold/test patches, `tests.json`,
   `eval.sh`, and `task.yaml` are unchanged.
 - Java uses the upstream JDK and Maven image versions. Maven Daemon stays at
@@ -22,8 +22,7 @@ images offline, and save task files only after the requested checks pass.
   the x86 native client, links `mvnd` to `mvnd.sh`, and sets `MVND_CLIENT=jvm`.
   The archive download is SHA-256 verified.
 - Rust uses the upstream toolchain versions and Cargo lockfile fixtures.
-  The resolved lock is saved as `Cargo.lock.arm64` and embedded into the final
-  Dockerfile. Verification builds use `cargo ... --locked`.
+  The resolved lock is saved as `Cargo.lock.arm64`. For the four audited ripgrep/bat tasks, the Dockerfile reuses the byte-identical repository lock and checks its hash before and after compilation. Tokio snapshots remain embedded because the pinned source commits have no lockfile. Verification builds use `cargo ... --locked`. See [the lockfile audit](CARGO_LOCK_REUSE.md).
 - The upstream generator remains available as `dockerfile-gen`; the ARM workflow
   is a separate `dockerfile-gen-arm64` command.
 

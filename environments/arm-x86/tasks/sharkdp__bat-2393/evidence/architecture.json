@@ -2,23 +2,27 @@
   "changes_and_reasons": [
     "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
     "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
-    "Dependency reproducibility: embed the recorded Cargo.lock, build/test with --locked and verify its SHA-256. The source commit and test selectors remain unchanged.",
+    "Shared dependency locking: both architectures use the byte-identical Cargo.lock already committed at the pinned source revision, verify its SHA-256 before compilation, compile with --locked, and verify it afterward. No lockfile is embedded or overwritten. The saved Cargo.lock.arm64 remains an audit artifact.",
     "Resource compatibility: CARGO_BUILD_JOBS=2 bounds compilation memory and persists for runtime Cargo commands as well as the build.",
     "Shell compatibility: omit the upstream conda activation line; these Rust images do not provide that conda environment."
   ],
-  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "comparison": "Both current recipes reuse the same audited repository Cargo.lock. The original x86 recipe is preserved under upstream/x86/Dockerfile and through Dockerfile.amd. The historical ARM validation predates this equivalent lockfile simplification; no new native image build is claimed.",
   "instance_id": "sharkdp__bat-2393",
   "known_limitations": [],
   "language": "rust",
   "sha256": {
-    "arm/Dockerfile": "aa7cc49091a79c0fb9bb76286077fc65a07ef4022c5eb4ad4a20413f9b05bbec",
+    "arm/Dockerfile": "d6f2c60290ca48a51d8a98793fcdaa2da339fe6fef0923911eb828a6c5820647",
     "eval.sh": "e9d825aad10097aca6654d843d69167a199eda5c3f798db991558d6d9c348823",
-    "evidence/x86-to-arm.diff": "d275229c44f6e80617032be51db6740d86f76191307e866c78acdadf028311cf",
+    "evidence/cargo-lock-reuse.json": "10683aa4991ace67bef238ad13de60361e73ca134ac17e99007df33cd4b3cab6",
+    "evidence/cargo-lock-source.json": "e697f15dbb5e4552edf57bac219cf1e6426ebb9731eb61c533ae0e27f3241995",
+    "evidence/upstream-to-x86.diff": "2374651139cd92f9c0ba1e49041b14d3622ee6d6eca14be716ccfcde23375703",
+    "evidence/x86-to-arm.diff": "7321eb94cebae73e24a76e413754c511211d2cf5ece7dc74fc2b118656a3a6c4",
     "gold.patch": "fb526311da65160ec5afbd0266f3c092d5964ee28dd4d6ee779f51af08eb37cb",
     "task.yaml": "57a7859521d881ca06a5ae2782abfe003df148fd056d8ff14b3314eb5e8d69ce",
     "test.patch": "93c9bd791a369b575efa7660b747812f358bcb522fa178c1fc4bfc9990829061",
     "tests.json": "a4eb93714823c314c771967d6b1df542f9d91e82aef31c73bf942f01275ec62f",
-    "x86/Dockerfile": "ee2896e7cd0565201d32f44ac51621b64a8514ffa59ac84e308271f8f12e5d43"
+    "upstream/x86/Dockerfile": "ee2896e7cd0565201d32f44ac51621b64a8514ffa59ac84e308271f8f12e5d43",
+    "x86/Dockerfile": "7d9a4b4c353496f544573cb00c444ef8522cea7552c678689f0482c2f0a200d0"
   },
   "source_commit": "7c847d84b0c3c97df6badfbb39d153ad93aec74e",
   "validation": {
@@ -47,6 +51,27 @@
       "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
       "x86_bytes_unchanged": true,
       "x86_sha256": "ee2896e7cd0565201d32f44ac51621b64a8514ffa59ac84e308271f8f12e5d43"
+    },
+    "recipe_update": {
+      "arm": {
+        "current_lines": 48,
+        "current_sha256": "d6f2c60290ca48a51d8a98793fcdaa2da339fe6fef0923911eb828a6c5820647",
+        "previous_lines": 1472,
+        "previous_sha256": "aa7cc49091a79c0fb9bb76286077fc65a07ef4022c5eb4ad4a20413f9b05bbec"
+      },
+      "cargo_lock_sha256": "1859318b85c3cd6825c7ff377de80bb3e8e28a93e2b3c6765dc7e52fb8f48e2f",
+      "dependency_bytes_unchanged": true,
+      "original_x86": "upstream/x86/Dockerfile",
+      "previous_publication_commit": "fc047b05888c6a5ae1675b5d4249d0fed54e917e",
+      "repository_lock_evidence": "evidence/cargo-lock-source.json",
+      "source_commit_unchanged": true,
+      "validation": "Exact source-lock equivalence and recipe checks; historical image validation retained separately. No fresh native ARM/x86 image build is claimed.",
+      "x86": {
+        "current_lines": 42,
+        "current_sha256": "7d9a4b4c353496f544573cb00c444ef8522cea7552c678689f0482c2f0a200d0",
+        "previous_lines": 40,
+        "previous_sha256": "ee2896e7cd0565201d32f44ac51621b64a8514ffa59ac84e308271f8f12e5d43"
+      }
     },
     "validation": {
       "baseline": {

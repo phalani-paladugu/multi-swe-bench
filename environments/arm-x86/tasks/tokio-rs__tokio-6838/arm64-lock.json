@@ -5,18 +5,47 @@
   "base_image": "rust:1.85@sha256:538cf66970a7b785126d682758b4a86c3411fe7ab308e70f8ac62f46af153224",
   "cargo": "cargo 1.85.1 (d73d2caf9 2024-12-31)",
   "cargo_lock_sha256": "719b75d2da8b78c1c02e4ec6d6f63494f3b4c84567eb75e0131bfabdf88264ec",
+  "generator_input_updates": [
+    {
+      "arm_recipe_changed": false,
+      "historical_validation_preserved": true,
+      "previous_inputs": {
+        "cargo_fixture": "719b75d2da8b78c1c02e4ec6d6f63494f3b4c84567eb75e0131bfabdf88264ec",
+        "eval.sh": "5bd4c8f943270e1d34d473f384b7be89d1277f50e6d0570e36bfde2ab008e251",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_pipeline.py": "b679a9cff4e512661f6959b0dbd50cd17039f66fb79e950d1221d5cb1bbb6cba",
+          "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
+          "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "ce04ade92f5ffc142c725a21e615e6b3d543456e51226911fc77d6f07b6f6ef3",
+        "task.yaml": "04ae198fafbf1f664dc034bbfde685ea4031a253a43cfbd8a8a751f82edd0b10",
+        "test.patch": "e6955b0e21bb23fc3956f1679e2c7a0439525071d2828ddd06564183c263e94a",
+        "tests.json": "12e038f041cd455a013b268433b1f6f6558d6c56b02c7f84314e1e293a4244f9"
+      },
+      "previous_publication_commit": "fc047b05888c6a5ae1675b5d4249d0fed54e917e",
+      "reason": "Audited repository Cargo.lock reuse; source checkout, tests and dependency bytes unchanged."
+    }
+  ],
   "git_remotes": [],
   "inputs": {
     "cargo_fixture": "719b75d2da8b78c1c02e4ec6d6f63494f3b4c84567eb75e0131bfabdf88264ec",
+    "cargo_lock_source": "882bfbf8544778a320e48cb6c56589bd83a9252746a30594b075a4f98e1491d0",
     "eval.sh": "5bd4c8f943270e1d34d473f384b7be89d1277f50e6d0570e36bfde2ab008e251",
     "generator": {
       "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
-      "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+      "arm64.py": "62bbfed4d4159a0c0f2c9c23b2a05e8cae3a556ee9ec22b5fed680f1d8ba17b9",
       "arm64_pipeline.py": "b679a9cff4e512661f6959b0dbd50cd17039f66fb79e950d1221d5cb1bbb6cba",
       "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+      "cargo_lock.py": "eebba45617fa5058571fb7b5f88ad45415d74fa43e95f8bca14ddbe5919ccc03",
       "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
       "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
       "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+      "tasks.py": "0cf86a34299383bf6a39cca2a60a273dd60a435f2c66afc7c55ce291ab0c7c98",
       "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
     },
     "gold.patch": "ce04ade92f5ffc142c725a21e615e6b3d543456e51226911fc77d6f07b6f6ef3",

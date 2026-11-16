@@ -1,0 +1,12 @@
+{
+  "base_commit": "0cbf1a5adae81e8ff86ca6d040aeee67cf888262",
+  "collection": "tasks",
+  "decision": "retain_snapshot_missing_upstream_lock",
+  "exists": false,
+  "instance_id": "tokio-rs__tokio-6724",
+  "matches_saved": false,
+  "repository": "tokio-rs/tokio",
+  "reuse_committed_lock": false,
+  "saved_sha256": "3f1c19edec69a9278317785853aad32b52f7c074c84fe1935a9b477aec41d16b",
+  "url": "https://github.com/tokio-rs/tokio/blob/0cbf1a5adae81e8ff86ca6d040aeee67cf888262/Cargo.lock"
+}

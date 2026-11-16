@@ -21,8 +21,8 @@ All 11 requested fmt tasks and `nlohmann__json-4237` exist on the SWE-bench Mult
 
 ```text
 tasks/<existing-task>/
-  arm/Dockerfile             # previously verified ARM recipe, unchanged bytes
-  x86/Dockerfile             # original upstream x86 recipe, unchanged bytes
+  arm/Dockerfile             # ARM recipe; selective lockfile reuse documented below
+  x86/Dockerfile             # x86 recipe; four Rust tasks also enforce locking
   arm/recipe/Dockerfile      # C++ only: minimal FROM-only ARM translation
   COMPATIBILITY.md
   evidence/x86-to-arm.diff
@@ -41,9 +41,9 @@ multi-swe-tasks/<carp-task>/
   evidence/
 ```
 
-Existing root-level `Dockerfile`, `Dockerfile.amd`, and C++ `Dockerfile.arm64` are symlinks to the canonical files. This preserves existing harness commands. The generator follows these aliases safely; the upstream x86 generator writes `x86/Dockerfile` when that layout exists.
+Existing root-level `Dockerfile`, `Dockerfile.amd`, and C++ `Dockerfile.arm64` remain compatibility symlinks. For the four Rust tasks with audited repository-lock reuse, `Dockerfile.amd` points to the original `upstream/x86/Dockerfile`; the current locked x86 build is `x86/Dockerfile`. This preserves existing harness commands. The generator follows these aliases safely; the upstream x86 generator writes `x86/Dockerfile` when that layout exists.
 
-[Architecture index: all 37 environments](ARCHITECTURE_INDEX.md) links to full diffs, hashes, and explanations. The old lock files preserve their original `verified_at` and runtime evidence. `layout_migration` records unchanged file hashes and the old generator inputs; the folder move does not represent a new runtime validation.
+[Architecture index: all 37 environments](ARCHITECTURE_INDEX.md) links to full diffs, hashes, and explanations. The old lock files preserve their original `verified_at` and runtime evidence. `layout_migration` records unchanged file hashes and the old generator inputs; the folder move does not represent a new runtime validation. Subsequent Rust lockfile simplifications are recorded in [CARGO_LOCK_REUSE.md](CARGO_LOCK_REUSE.md), with source hashes and the original x86 recipe preserved. The dated runtime validation remains historical.
 
 ## Build the nine new ARM images
 

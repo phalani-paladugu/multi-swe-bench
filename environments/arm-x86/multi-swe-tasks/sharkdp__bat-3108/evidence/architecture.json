@@ -22,6 +22,8 @@
     "common/prepare.sh": "196ebb4f3df8cd1c7a550aeb7c375fcd4688e31927a33f02b5628f122884156d",
     "common/run.sh": "98d7ac2fb3abb2697ae4c46b6aac135d5c9a179e1127f792b92bd24eabed1b74",
     "environment.json": "417b9a9391b3a13b1b90f74bc437ea41f40e1a344801ba6d22cc999435b44400",
+    "evidence/cargo-lock-source.json": "489d13ce76087b823da1b3846fae508b3f26151e58a49e91f72da718037e6736",
+    "evidence/upstream-to-x86.diff": "a4470286ba59beaee716ec33eb7835b37a95d5110b4e56581ba7e0c24ab8b4bd",
     "evidence/x86-to-arm.diff": "519d04c71cada12336ff3e8698c4edd1cc0aadc15425c56356b1fb5eb481b589",
     "provenance.json": "22cd28e5761da6ea10853d6d9e1c837ecd659cb25310056917a24120343daf2e",
     "source.json": "fead988be497f81199bf0f8861b1db8f7b3cef9922d46776090dd66dce17fa31",

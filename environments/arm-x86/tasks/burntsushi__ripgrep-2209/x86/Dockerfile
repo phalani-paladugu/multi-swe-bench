@@ -33,7 +33,9 @@ COMMIT_COUNT=$(git log --oneline --all --since="$AFTER_TIMESTAMP" | wc -l)
 chmod -R 777 /testbed
 cd - || true
 cd /testbed
-RUSTFLAGS=-Awarnings cargo test --package ripgrep --test integration --no-run
+echo 'd077ac4ac0a5564379c62a16b7d40a41c939da93a0d6f61810f9673f570cfe18  /testbed/Cargo.lock' | sha256sum -c -
+RUSTFLAGS=-Awarnings cargo test --locked --package ripgrep --test integration --no-run
+echo 'd077ac4ac0a5564379c62a16b7d40a41c939da93a0d6f61810f9673f570cfe18  /testbed/Cargo.lock' | sha256sum -c -
 EOF_3abbe38fd655
 
 

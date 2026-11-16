@@ -1,0 +1,22 @@
+{
+  "previous_publication_commit": "fc047b05888c6a5ae1675b5d4249d0fed54e917e",
+  "changed_dockerfiles": [
+    "environments/arm-x86/tasks/sharkdp__bat-2650/arm/Dockerfile",
+    "environments/arm-x86/tasks/sharkdp__bat-2650/x86/Dockerfile",
+    "environments/arm-x86/tasks/burntsushi__ripgrep-2209/arm/Dockerfile",
+    "environments/arm-x86/tasks/burntsushi__ripgrep-2209/x86/Dockerfile",
+    "environments/arm-x86/tasks/burntsushi__ripgrep-2576/arm/Dockerfile",
+    "environments/arm-x86/tasks/burntsushi__ripgrep-2576/x86/Dockerfile",
+    "environments/arm-x86/tasks/sharkdp__bat-2393/arm/Dockerfile",
+    "environments/arm-x86/tasks/sharkdp__bat-2393/x86/Dockerfile"
+  ],
+  "unchanged_canonical_dockerfiles": 66,
+  "all_task_sources_and_tests_unchanged": true,
+  "arm_transformation": "Replace byte-identical embedded Cargo.lock with a checksum of the file already present; only the generated outer heredoc delimiter also changes.",
+  "arm_lines_removed": 4198,
+  "manifest_hash_checks_passed": 37,
+  "new_native_image_builds": 0,
+  "regression_tests_passed": 37,
+  "linux_checksum_guard_cases_passed": 12,
+  "historical_generator_fingerprints_verified": 28
+}

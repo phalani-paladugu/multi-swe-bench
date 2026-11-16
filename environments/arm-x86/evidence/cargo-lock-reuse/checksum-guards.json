@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-11-16T20:53:05.553974+00:00",
+  "machine": "aarch64",
+  "kind": "Linux checksum guard checks; no image rebuild or compilation",
+  "results": [
+    {
+      "instance_id": "sharkdp__bat-2650",
+      "sha256": "04eade504f163a9e647947885533f4b2804ad16188547eb1b2b1eddd0eba1ef8",
+      "checks": {
+        "matching": {
+          "exit_code": 0,
+          "continued_past_guard": true
+        },
+        "changed": {
+          "exit_code": 1,
+          "continued_past_guard": false
+        },
+        "missing": {
+          "exit_code": 1,
+          "continued_past_guard": false
+        }
+      }
+    },
+    {
+      "instance_id": "burntsushi__ripgrep-2209",
+      "sha256": "d077ac4ac0a5564379c62a16b7d40a41c939da93a0d6f61810f9673f570cfe18",
+      "checks": {
+        "matching": {
+          "exit_code": 0,
+          "continued_past_guard": true
+        },
+        "changed": {
+          "exit_code": 1,
+          "continued_past_guard": false
+        },
+        "missing": {
+          "exit_code": 1,
+          "continued_past_guard": false
+        }
+      }
+    },
+    {
+      "instance_id": "burntsushi__ripgrep-2576",
+      "sha256": "f58f01754581a38f29abf7519ae16ae5e88f6dc226b5808bdb9bf199f1762ed2",
+      "checks": {
+        "matching": {
+          "exit_code": 0,
+          "continued_past_guard": true
+        },
+        "changed": {
+          "exit_code": 1,
+          "continued_past_guard": false
+        },
+        "missing": {
+          "exit_code": 1,
+          "continued_past_guard": false
+        }
+      }
+    },
+    {
+      "instance_id": "sharkdp__bat-2393",
+      "sha256": "1859318b85c3cd6825c7ff377de80bb3e8e28a93e2b3c6765dc7e52fb8f48e2f",
+      "checks": {
+        "matching": {
+          "exit_code": 0,
+          "continued_past_guard": true
+        },
+        "changed": {
+          "exit_code": 1,
+          "continued_past_guard": false
+        },
+        "missing": {
+          "exit_code": 1,
+          "continued_past_guard": false
+        }
+      }
+    }
+  ]
+}

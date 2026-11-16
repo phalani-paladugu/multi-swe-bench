@@ -1,0 +1,15 @@
+{
+  "base_commit": "7c847d84b0c3c97df6badfbb39d153ad93aec74e",
+  "blob_sha": "07670d03adf8624125b4eabcec713cf45b21ead5",
+  "byte_count": 36302,
+  "collection": "tasks",
+  "decision": "reuse_committed_lock",
+  "exists": true,
+  "instance_id": "sharkdp__bat-2393",
+  "matches_saved": true,
+  "repository": "sharkdp/bat",
+  "reuse_committed_lock": true,
+  "saved_sha256": "1859318b85c3cd6825c7ff377de80bb3e8e28a93e2b3c6765dc7e52fb8f48e2f",
+  "sha256": "1859318b85c3cd6825c7ff377de80bb3e8e28a93e2b3c6765dc7e52fb8f48e2f",
+  "url": "https://github.com/sharkdp/bat/blob/7c847d84b0c3c97df6badfbb39d153ad93aec74e/Cargo.lock"
+}

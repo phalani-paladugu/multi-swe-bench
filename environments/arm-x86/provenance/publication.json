@@ -16,8 +16,9 @@
       "validation": "native ARM builds and recorded test outcomes"
     }
   },
-  "historical_dockerfiles_byte_preserved": true,
   "private_carp_templates_included": false,
   "runtime_images_published_by_this_commit": false,
-  "log_archive": "evidence/log-archive.json"
+  "log_archive": "evidence/log-archive.json",
+  "initial_publication_historical_dockerfiles_byte_preserved": true,
+  "subsequent_recipe_update": "CARGO_LOCK_REUSE.md"
 }

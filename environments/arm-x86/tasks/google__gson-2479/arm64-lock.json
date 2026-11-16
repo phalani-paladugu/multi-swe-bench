@@ -3,17 +3,44 @@
   "architecture": "aarch64",
   "base_commit": "4dfae77af3d543bea2782f85a154cc070290f086",
   "base_image": "maven:3.9.12-eclipse-temurin-11-noble@sha256:689ec712425208b07cdc33fea37ca771a2fc93a4cbcaef86731eab466d589cd5",
+  "generator_input_updates": [
+    {
+      "arm_recipe_changed": false,
+      "historical_validation_preserved": true,
+      "previous_inputs": {
+        "eval.sh": "cade819a84b6ac06d7e07990bbc1d4a471ede5791a2df0f35bbd5658c4565a62",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_pipeline.py": "b679a9cff4e512661f6959b0dbd50cd17039f66fb79e950d1221d5cb1bbb6cba",
+          "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
+          "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "bf7dc4256261a24b9db44684275d051e28f67c31f076130fa44d94bbf5681eb3",
+        "task.yaml": "bf7347a1adc988e531a81a3c94c76200c0b969a30bf3e769460ec0e3d78f9e0b",
+        "test.patch": "1b290fe74673bcc0501428235b9518a37d168a14a7d4317e2d68315f2d865e44",
+        "tests.json": "7ff54e19c2a7020c803a9f323b3a7ba60ed3d25f98767ae1486bad2ed5581820"
+      },
+      "previous_publication_commit": "fc047b05888c6a5ae1675b5d4249d0fed54e917e",
+      "reason": "Audited repository Cargo.lock reuse; source checkout, tests and dependency bytes unchanged."
+    }
+  ],
   "git_remotes": [],
   "inputs": {
     "eval.sh": "cade819a84b6ac06d7e07990bbc1d4a471ede5791a2df0f35bbd5658c4565a62",
     "generator": {
       "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
-      "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+      "arm64.py": "62bbfed4d4159a0c0f2c9c23b2a05e8cae3a556ee9ec22b5fed680f1d8ba17b9",
       "arm64_pipeline.py": "b679a9cff4e512661f6959b0dbd50cd17039f66fb79e950d1221d5cb1bbb6cba",
       "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+      "cargo_lock.py": "eebba45617fa5058571fb7b5f88ad45415d74fa43e95f8bca14ddbe5919ccc03",
       "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
       "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
       "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+      "tasks.py": "0cf86a34299383bf6a39cca2a60a273dd60a435f2c66afc7c55ce291ab0c7c98",
       "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
     },
     "gold.patch": "bf7dc4256261a24b9db44684275d051e28f67c31f076130fa44d94bbf5681eb3",
