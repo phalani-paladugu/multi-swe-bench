@@ -1,0 +1,10 @@
+--- upstream/task/run.sh
++++ common/run.sh
+@@ -1,5 +1,4 @@
+ #!/bin/bash
+-set -e
+-
++set -euo pipefail
+ cd /home/jackson-dataformat-xml
+-mvn clean test -Dmaven.test.skip=false -DfailIfNoTests=false
++./mvnw -B -Dsurefire.useFile=false -DfailIfNoTests=false test

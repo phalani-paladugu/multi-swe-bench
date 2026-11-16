@@ -1,0 +1,147 @@
+[
+  {
+    "instance_id": "BurntSushi__ripgrep-2626",
+    "image": "msweb.eval.arm64.burntsushi__ripgrep-2626:carp-v1",
+    "image_id": "sha256:2c8c70f1085bf4e221d5e34c50baef2365d2af4ad8cb35a059c226b2c05e9bc9",
+    "architecture": "arm64",
+    "host_architecture": "aarch64",
+    "source_commit": "7099e174acbcbd940f57e4ab4913fee4040c826e",
+    "input_sha256": {
+      "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+      "common/prepare.sh": "53990d723865572ca0e9faf44d0408209d07e100c725b43288262fdc61bde517",
+      "common/run.sh": "0e90d719c57e63d174b109dca31fd94793db45ac23f8b97732bade6aff037dfc"
+    },
+    "matches_current_preparation": true,
+    "matches_source_commit": true,
+    "verified_at": "2026-11-16T20:12:00.037419+00:00"
+  },
+  {
+    "instance_id": "alibaba__fastjson2-2775",
+    "image": "msweb.eval.arm64.alibaba__fastjson2-2775:carp-v1",
+    "image_id": "sha256:b45912c9f77283f77931178f40d502e38ab18e3454c9bd2d8eac1c9288907986",
+    "architecture": "arm64",
+    "host_architecture": "aarch64",
+    "source_commit": "12b40c7ba3e7c30e35977195770c80beb34715c5",
+    "input_sha256": {
+      "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+      "common/prepare.sh": "07d8832698d479b85398b907ceb227bf1cee088da575662a973afc7354f1253a",
+      "common/run.sh": "342af72b15b6e138352643adaa3c556fd252584aea070e0fab855f59a4b08941"
+    },
+    "matches_current_preparation": true,
+    "matches_source_commit": true,
+    "verified_at": "2026-11-16T20:11:59.679422+00:00"
+  },
+  {
+    "instance_id": "apache__dubbo-11781",
+    "image": "msweb.eval.arm64.apache__dubbo-11781:carp-v1",
+    "image_id": "sha256:ec8015924abcf4167b125cf31f66deafda418a9337614332e7ec583ebccc4cd8",
+    "architecture": "arm64",
+    "host_architecture": "aarch64",
+    "source_commit": "d0a1bd014331483c19208b831c4f6b488654a508",
+    "input_sha256": {
+      "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+      "common/prepare.sh": "17f78d6a83f9d3bfd8a67a8162cdfbcd853a470792d22f024ce63b84ea41c8d8",
+      "common/run.sh": "00fd0f5e71cee7db9093ad8292aedc077a64fbb2084c6ddfa219ebce47812f1c"
+    },
+    "matches_current_preparation": true,
+    "matches_source_commit": true,
+    "verified_at": "2026-11-16T20:12:00.339270+00:00"
+  },
+  {
+    "instance_id": "cli__cli-2316",
+    "image": "msweb.eval.arm64.cli__cli-2316:carp-v1",
+    "image_id": "sha256:cddc6241338ec9d2b877af052c4fd0b2d145c67342f080ae4fb0ce50c5e9bfbc",
+    "architecture": "arm64",
+    "host_architecture": "aarch64",
+    "source_commit": "5e89036d49993087b9b45060cc1292a18e1d853a",
+    "input_sha256": {
+      "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+      "common/prepare.sh": "1929758ec7aaa498a746849453c2efee0cf6ee428751899bbffd4383aaf5d067",
+      "common/run.sh": "a7a5d1b35636847a44d374b98f963d65a634f1606c107a8218d3f71155542aaa"
+    },
+    "matches_current_preparation": true,
+    "matches_source_commit": true,
+    "verified_at": "2026-11-16T20:12:03.355425+00:00"
+  },
+  {
+    "instance_id": "fasterxml__jackson-dataformat-xml-644",
+    "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:carp-v1",
+    "image_id": "sha256:df3a558bbe6a9c7f87694c4ce4b33c88c9ce1d32695cbbb841ce84c716dc46c3",
+    "architecture": "arm64",
+    "host_architecture": "aarch64",
+    "source_commit": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+    "input_sha256": {
+      "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+      "common/jackson-dependencies.txt": "3bda8de771a0648c75cf6c31346c731f11e245088cc562c0a7ec7577e0a074c2",
+      "common/prepare.sh": "a7322c4f71f67736e49ab7d44517f863dcf9d65dc99bcb822c357a45e27b8263",
+      "common/run.sh": "89073d8eed545af65fa6ad4ac3f2df42b15b634c900f15bab4fe8e88b664956e"
+    },
+    "matches_current_preparation": true,
+    "matches_source_commit": true,
+    "verified_at": "2026-11-16T20:12:04.012790+00:00"
+  },
+  {
+    "instance_id": "grpc__grpc-go-3119",
+    "image": "msweb.eval.arm64.grpc__grpc-go-3119:carp-v1",
+    "image_id": "sha256:7d9799e1a8235ed49b19ce57623589c800ffed0234ab5911bac668092f1e9c09",
+    "architecture": "arm64",
+    "host_architecture": "aarch64",
+    "source_commit": "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb",
+    "input_sha256": {
+      "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+      "common/prepare.sh": "b8a8ad478f73945de5630f4563521b1e91e5da2145973918114cd6b8b8d15dcc",
+      "common/run.sh": "21b43305323a5b8cd56fde3c6889227c09fd23908f1c93fb7561611029cc963f"
+    },
+    "matches_current_preparation": true,
+    "matches_source_commit": true,
+    "verified_at": "2026-11-16T20:12:03.709798+00:00"
+  },
+  {
+    "instance_id": "nushell__nushell-10381",
+    "image": "msweb.eval.arm64.nushell__nushell-10381:carp-v1",
+    "image_id": "sha256:ddde4ef7d12b05b383a706ec55cd4f5f3c59b8aa5b08b97b5564d3b0997dac77",
+    "architecture": "arm64",
+    "host_architecture": "aarch64",
+    "source_commit": "a9a82de5c48b23958ead9d011765396d29217630",
+    "input_sha256": {
+      "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+      "common/prepare.sh": "11e6eb4a5f1d9768d246aa61a84cc0722881cf4c5e20b62e65d8997839b757d0",
+      "common/run.sh": "f72232642a9127e8378d0fa591814e70fda15805be9fa7497810f43760a689fd"
+    },
+    "matches_current_preparation": true,
+    "matches_source_commit": true,
+    "verified_at": "2026-11-16T20:12:06.326813+00:00"
+  },
+  {
+    "instance_id": "sharkdp__bat-3108",
+    "image": "msweb.eval.arm64.sharkdp__bat-3108:carp-v1",
+    "image_id": "sha256:111b3843c1bd6b20a9e4e4203d2516124032655f023d4b742c4fbb38a4977201",
+    "architecture": "arm64",
+    "host_architecture": "aarch64",
+    "source_commit": "2be3a14a7e2c74360765a5fa213750f727f2c5bb",
+    "input_sha256": {
+      "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+      "common/prepare.sh": "196ebb4f3df8cd1c7a550aeb7c375fcd4688e31927a33f02b5628f122884156d",
+      "common/run.sh": "98d7ac2fb3abb2697ae4c46b6aac135d5c9a179e1127f792b92bd24eabed1b74"
+    },
+    "matches_current_preparation": true,
+    "matches_source_commit": true,
+    "verified_at": "2026-11-16T20:12:06.977847+00:00"
+  },
+  {
+    "instance_id": "zeromicro__go-zero-964",
+    "image": "msweb.eval.arm64.zeromicro__go-zero-964:carp-v1",
+    "image_id": "sha256:e726d283cbf80701cb26dc2aa2e337f39457d1a8e09755ebbc7afe5faa41ce86",
+    "architecture": "arm64",
+    "host_architecture": "aarch64",
+    "source_commit": "68acfb1891837ec2e401588173cdd16ca1b9a9c4",
+    "input_sha256": {
+      "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+      "common/prepare.sh": "a32e8fd4fe483a7faf3bc3528aa610f093b58b49ebaa2229175fda56083be9c5",
+      "common/run.sh": "a91486c66428b57fdb91ce13284237098c15d8d12d410b2d5f72194e7560f4dc"
+    },
+    "matches_current_preparation": true,
+    "matches_source_commit": true,
+    "verified_at": "2026-11-16T20:12:06.679647+00:00"
+  }
+]

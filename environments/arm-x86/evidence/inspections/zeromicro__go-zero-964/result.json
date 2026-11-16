@@ -1,0 +1,16 @@
+{
+  "instance_id": "zeromicro__go-zero-964",
+  "image": "msweb.eval.arm64.zeromicro__go-zero-964:carp-v1",
+  "image_id": "sha256:e726d283cbf80701cb26dc2aa2e337f39457d1a8e09755ebbc7afe5faa41ce86",
+  "architecture": "arm64",
+  "host_architecture": "aarch64",
+  "source_commit": "68acfb1891837ec2e401588173cdd16ca1b9a9c4",
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "a32e8fd4fe483a7faf3bc3528aa610f093b58b49ebaa2229175fda56083be9c5",
+    "common/run.sh": "a91486c66428b57fdb91ce13284237098c15d8d12d410b2d5f72194e7560f4dc"
+  },
+  "matches_current_preparation": true,
+  "matches_source_commit": true,
+  "verified_at": "2026-11-16T20:12:06.679647+00:00"
+}

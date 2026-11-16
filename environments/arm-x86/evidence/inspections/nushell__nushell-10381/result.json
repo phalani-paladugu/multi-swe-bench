@@ -1,0 +1,16 @@
+{
+  "instance_id": "nushell__nushell-10381",
+  "image": "msweb.eval.arm64.nushell__nushell-10381:carp-v1",
+  "image_id": "sha256:ddde4ef7d12b05b383a706ec55cd4f5f3c59b8aa5b08b97b5564d3b0997dac77",
+  "architecture": "arm64",
+  "host_architecture": "aarch64",
+  "source_commit": "a9a82de5c48b23958ead9d011765396d29217630",
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "11e6eb4a5f1d9768d246aa61a84cc0722881cf4c5e20b62e65d8997839b757d0",
+    "common/run.sh": "f72232642a9127e8378d0fa591814e70fda15805be9fa7497810f43760a689fd"
+  },
+  "matches_current_preparation": true,
+  "matches_source_commit": true,
+  "verified_at": "2026-11-16T20:12:06.326813+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:carp-v1",
+  "image_id": "sha256:df3a558bbe6a9c7f87694c4ce4b33c88c9ce1d32695cbbb841ce84c716dc46c3",
+  "architecture": "arm64",
+  "host_architecture": "aarch64",
+  "source_commit": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/jackson-dependencies.txt": "3bda8de771a0648c75cf6c31346c731f11e245088cc562c0a7ec7577e0a074c2",
+    "common/prepare.sh": "a7322c4f71f67736e49ab7d44517f863dcf9d65dc99bcb822c357a45e27b8263",
+    "common/run.sh": "89073d8eed545af65fa6ad4ac3f2df42b15b634c900f15bab4fe8e88b664956e"
+  },
+  "matches_current_preparation": true,
+  "matches_source_commit": true,
+  "verified_at": "2026-11-16T20:12:04.012790+00:00"
+}

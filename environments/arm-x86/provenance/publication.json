@@ -1,0 +1,23 @@
+{
+  "source_repository": "https://github.com/phalani-paladugu/swe-bench-multilingual-tasks",
+  "source_base_revision": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+  "source_working_branch": "arm-x86-task-environments",
+  "source_working_tree_included": true,
+  "upstream_harness_revision": "24f493f8a103e72312ded4f6b9c89f081d69cb09",
+  "collections": {
+    "tasks": {
+      "count": 28,
+      "benchmark": "SWE-bench Multilingual",
+      "validation": "historical ARM evidence"
+    },
+    "multi-swe-tasks": {
+      "count": 9,
+      "benchmark": "Multi-SWE-bench",
+      "validation": "native ARM builds and recorded test outcomes"
+    }
+  },
+  "historical_dockerfiles_byte_preserved": true,
+  "private_carp_templates_included": false,
+  "runtime_images_published_by_this_commit": false,
+  "log_archive": "evidence/log-archive.json"
+}

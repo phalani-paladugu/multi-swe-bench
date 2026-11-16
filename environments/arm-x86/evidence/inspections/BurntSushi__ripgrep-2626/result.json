@@ -1,0 +1,16 @@
+{
+  "instance_id": "BurntSushi__ripgrep-2626",
+  "image": "msweb.eval.arm64.burntsushi__ripgrep-2626:carp-v1",
+  "image_id": "sha256:2c8c70f1085bf4e221d5e34c50baef2365d2af4ad8cb35a059c226b2c05e9bc9",
+  "architecture": "arm64",
+  "host_architecture": "aarch64",
+  "source_commit": "7099e174acbcbd940f57e4ab4913fee4040c826e",
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "53990d723865572ca0e9faf44d0408209d07e100c725b43288262fdc61bde517",
+    "common/run.sh": "0e90d719c57e63d174b109dca31fd94793db45ac23f8b97732bade6aff037dfc"
+  },
+  "matches_current_preparation": true,
+  "matches_source_commit": true,
+  "verified_at": "2026-11-16T20:12:00.037419+00:00"
+}

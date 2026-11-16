@@ -1,0 +1,11 @@
+*
+!common/
+!common/**
+!arm/
+!arm/Dockerfile
+!x86/
+!x86/Dockerfile
+!upstream/
+!upstream/task/
+!upstream/task/test.patch
+!upstream/task/fix.patch

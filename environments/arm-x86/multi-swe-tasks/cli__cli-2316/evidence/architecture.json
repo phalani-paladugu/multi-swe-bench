@@ -1,0 +1,37 @@
+{
+  "changes_and_reasons": [
+    "Architecture: FROM explicitly selects linux/arm64 or linux/amd64. Package managers and multiarch base images supply the native binaries.",
+    "Shared compatibility/preparation: Both variants pin the same multiarchitecture base-image index; apt package versions are recorded after building but are not frozen by this recipe.",
+    "Shared compatibility/preparation: Both variants check out the exact CARP/dataset base commit and preserve source and evaluation patches.",
+    "Shared compatibility/preparation: Both variants keep gold/test patches outside the image; validation mounts them into disposable containers.",
+    "Shared compatibility/preparation: Both variants provide /testbed as a symlink to the upstream /home repository path.",
+    "Shared compatibility/preparation: Go 1.18 vet rejects historical Errorf(%w) and Fprintln newline usage in unrelated CLI packages. Disable vet only for this task to run the test suite; the original failure remains in attempt-1. Source files are not edited.",
+    "Shared compatibility/preparation: Ubuntu 22.04 golang-go follows CARP Go 1.18 instead of the moving upstream golang:latest image, on both architectures.",
+    "Shared compatibility/preparation: Module downloads and go build must succeed; evaluation runs independently and records failures.",
+    "Shared compatibility/preparation: Runtime compatibility: map an otherwise unresolved container hostname to loopback in /etc/hosts. Docker network=none omitted this entry on the build host, preventing Dubbo Surefire from starting its test JVM.",
+    "Shared compatibility/preparation: Offline evaluation: prefetch dependencies from the patched manifest in a single BuildKit bind-mount step, then reset source to the base commit. The patch files and patched source do not persist in the image layer."
+  ],
+  "comparison": "arm/Dockerfile and x86/Dockerfile are matched CARP adaptations. The unmodified Multi-SWE-bench recipes and scripts are retained under upstream/; shared changes are not labeled as ARM requirements.",
+  "instance_id": "cli__cli-2316",
+  "known_limitations": [],
+  "language": "go",
+  "sha256": {
+    "arm/Dockerfile": "4ec600aa8f5fa97b653d5dc170574c4ade04b3434aa8f4fe52fbf88979a00a9c",
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "1929758ec7aaa498a746849453c2efee0cf6ee428751899bbffd4383aaf5d067",
+    "common/run.sh": "a7a5d1b35636847a44d374b98f963d65a634f1606c107a8218d3f71155542aaa",
+    "environment.json": "e600a97367039d6b5dff1e8187b43f2a74d2a6f5317dc67d5c9d1d0ca7dd1513",
+    "evidence/x86-to-arm.diff": "81187de7dc2ca028832ba91d3980d976fa3ad7b570e3fb78e2b97310f51011ff",
+    "provenance.json": "7c2c817b13c997660598b53b99467ddd034e0c28d54c1cb9ae042cd67b5b0b1b",
+    "source.json": "0565fdbb17356955cb913fa85f2f18934c8dfdb76b8d5cd4d6656d4d6cc60074",
+    "upstream/task/fix.patch": "dc82dbb6c40d9963813fb2badf0db084283e5714b6e29ac17c30af296392cac1",
+    "upstream/task/test.patch": "e629129d31458c8990bb6cb8705c86ab5ceaec95f19e22913989c6511217164c",
+    "x86/Dockerfile": "234928f229c218c34bfc08b07c0bbbdd9dc5f7feff2c515f347b247e9842ba9a"
+  },
+  "source_commit": "5e89036d49993087b9b45060cc1292a18e1d853a",
+  "validation": {
+    "kind": "new",
+    "test_scope": "upstream test command, with pinned CARP compiler",
+    "x86_runtime": "not revalidated"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "benchmark": "Multi-SWE-bench",
+  "instance_id": "apache__dubbo-11781",
+  "language": "java",
+  "dataset_revision": "56ff018c04a38e27ada1e9d0a6d5839a51f88f0d",
+  "dataset_url": "https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench/resolve/56ff018c04a38e27ada1e9d0a6d5839a51f88f0d/java/apache__dubbo_dataset.jsonl",
+  "source_record_sha256": "a5d3010f660840829c3c993778e8fa68674d6783dd87cd148e143d3172a6ae28",
+  "harness_revision": "24f493f8a103e72312ded4f6b9c89f081d69cb09",
+  "harness_url": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "harness_recipe": "java/apache/dubbo.py",
+  "harness_recipe_sha256": "f067f72721e5e7f000ec4a056c979edcbf7c4fd08f35749f0f42b2418004354b"
+}

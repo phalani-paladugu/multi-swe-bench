@@ -1,0 +1,91 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Dependency reproducibility: embed the recorded Cargo.lock, build/test with --locked and verify its SHA-256. The source commit and test selectors remain unchanged.",
+    "Resource compatibility: CARGO_BUILD_JOBS=2 bounds compilation memory and persists for runtime Cargo commands as well as the build.",
+    "Shell compatibility: omit the upstream conda activation line; these Rust images do not provide that conda environment."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "sharkdp__bat-2650",
+  "known_limitations": [],
+  "language": "rust",
+  "sha256": {
+    "arm/Dockerfile": "bc61dbc44cac4d54b60e34cedd49008230e997b3cdb49c8776434fafe7e4ea42",
+    "eval.sh": "6bcc26febf9c76da2054e16f542e16f54c5ee9bb94dff72c52d26c543fd013d6",
+    "evidence/x86-to-arm.diff": "e863e446b9e0d7d7a9a27e0321e08c3bfeeb31ab04e63732edf40485476bd8d6",
+    "gold.patch": "8df8686e5105f87512e49a380144150e007dd4af91016f7814990c1ce946a1d0",
+    "task.yaml": "9de78dd4b89cfd99b3c1f0a1d235d8ee02974b224b63c637a4e70b28132213c7",
+    "test.patch": "b69ca1614d7ac097100b8af2358a18a383b6ca9acc13f47940e0642c9c613ff0",
+    "tests.json": "22705cab8705437ab97fc38eed6c7555a058e9ada5d9e69e564757aa91651f0e",
+    "x86/Dockerfile": "f4bcbe653c12525d6a95c55373403e5ba59ba6783e68437607703a037d1c5c61"
+  },
+  "source_commit": "e2bf85e749d87459e3fced697af5cd9cc96eeb8c",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "bc61dbc44cac4d54b60e34cedd49008230e997b3cdb49c8776434fafe7e4ea42",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "6bcc26febf9c76da2054e16f542e16f54c5ee9bb94dff72c52d26c543fd013d6",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
+          "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "8df8686e5105f87512e49a380144150e007dd4af91016f7814990c1ce946a1d0",
+        "task.yaml": "9de78dd4b89cfd99b3c1f0a1d235d8ee02974b224b63c637a4e70b28132213c7",
+        "test.patch": "b69ca1614d7ac097100b8af2358a18a383b6ca9acc13f47940e0642c9c613ff0",
+        "tests.json": "22705cab8705437ab97fc38eed6c7555a058e9ada5d9e69e564757aa91651f0e"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "f4bcbe653c12525d6a95c55373403e5ba59ba6783e68437607703a037d1c5c61"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "highlighting_independant_from_map_syntax_case": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "map_syntax_and_ignored_suffix_work_together": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "RUSTFLAGS=-Awarnings cargo test --package bat --test integration_tests map_syntax",
+            "log": "baseline-00.log",
+            "returncode": 101
+          }
+        ],
+        "observed_test_count": 2
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "highlighting_independant_from_map_syntax_case": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "map_syntax_and_ignored_suffix_work_together": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "RUSTFLAGS=-Awarnings cargo test --package bat --test integration_tests map_syntax",
+            "log": "gold-00.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 2
+      },
+      "method": "upstream commands executed individually; JUnit XML or Cargo test results",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T03:29:35.085601+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

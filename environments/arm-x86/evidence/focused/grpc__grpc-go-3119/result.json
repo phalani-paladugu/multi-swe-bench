@@ -1,0 +1,9 @@
+{
+  "image": "msweb.eval.arm64.grpc__grpc-go-3119:carp-v1",
+  "command": "go test -vet=off -v -count=1 ./balancer/grpclb",
+  "scope": "Package modified by the task patch. This is additional focused validation, not full upstream-suite validation.",
+  "network": "none",
+  "started_at": "2026-11-16T20:07:22.645319+00:00",
+  "baseline_exit": 1,
+  "gold_exit": 0
+}

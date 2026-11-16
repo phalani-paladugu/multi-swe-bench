@@ -1,0 +1,11 @@
+--- upstream/task/run.sh
++++ common/run.sh
+@@ -1,6 +1,4 @@
+ #!/bin/bash
+-set -e
+-
++set -euo pipefail
+ cd /home/cli
+-go test -v -count=1 ./...
+-
++go test -vet=off -v -count=1 ./...

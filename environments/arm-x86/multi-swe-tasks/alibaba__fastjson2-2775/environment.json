@@ -1,0 +1,24 @@
+{
+  "instance_id": "alibaba__fastjson2-2775",
+  "language": "java",
+  "base_image": "ubuntu:22.04@sha256:9abcaffc92a5279fff3a6a41635c0800ea33e528425fb389658806476e7defde",
+  "base_commit": "12b40c7ba3e7c30e35977195770c80beb34715c5",
+  "repository": "https://github.com/alibaba/fastjson2.git",
+  "test_command": "./mvnw -B -pl core -Dsurefire.useFile=false -DfailIfNoTests=false test",
+  "shared_changes": [
+    "Both variants pin the same multiarchitecture base-image index; apt package versions are recorded after building but are not frozen by this recipe.",
+    "Both variants check out the exact CARP/dataset base commit and preserve source and evaluation patches.",
+    "Both variants keep gold/test patches outside the image; validation mounts them into disposable containers.",
+    "Both variants provide /testbed as a symlink to the upstream /home repository path.",
+    "JDK 17 follows CARP on both architectures. Upstream fastjson2 and Jackson used JDK 8; Dubbo already used 17.",
+    "The repository Maven wrapper is used on both architectures to preserve its declared Maven version.",
+    "Preparation requires test compilation; a separate baseline warm-up records its exit status without treating expected test failures as build failures.",
+    "Validation is scoped to the core module used by the CARP trajectory; upstream runs the full reactor with documentation profiles.",
+    "Runtime compatibility: map an otherwise unresolved container hostname to loopback in /etc/hosts. Docker network=none omitted this entry on the build host, preventing Dubbo Surefire from starting its test JVM."
+  ],
+  "known_limitations": [],
+  "architecture_changes": [
+    "FROM explicitly selects linux/arm64 or linux/amd64. Package managers and multiarch base images supply the native binaries."
+  ],
+  "validation_scope": "CARP Java module"
+}

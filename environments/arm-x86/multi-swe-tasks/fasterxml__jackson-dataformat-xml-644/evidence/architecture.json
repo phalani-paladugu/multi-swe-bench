@@ -1,0 +1,37 @@
+{
+  "changes_and_reasons": [
+    "Architecture: FROM explicitly selects linux/arm64 or linux/amd64. Package managers and multiarch base images supply the native binaries.",
+    "Shared compatibility/preparation: Both variants pin the same multiarchitecture base-image index; apt package versions are recorded after building but are not frozen by this recipe.",
+    "Shared compatibility/preparation: Both variants check out the exact CARP/dataset base commit and preserve source and evaluation patches.",
+    "Shared compatibility/preparation: Both variants keep gold/test patches outside the image; validation mounts them into disposable containers.",
+    "Shared compatibility/preparation: Both variants provide /testbed as a symlink to the upstream /home repository path.",
+    "Shared compatibility/preparation: JDK 17 follows CARP on both architectures. Upstream fastjson2 and Jackson used JDK 8; Dubbo already used 17.",
+    "Shared compatibility/preparation: The repository Maven wrapper is used on both architectures to preserve its declared Maven version.",
+    "Shared compatibility/preparation: Preparation requires test compilation; a separate baseline warm-up records its exit status without treating expected test failures as build failures.",
+    "Shared compatibility/preparation: Six dependency repositories are pinned to the CARP revisions and installed locally. This retains the original 2.17.0-SNAPSHOT pom instead of upstream rewriting it to 2.17.4-SNAPSHOT.",
+    "Shared compatibility/preparation: Runtime compatibility: map an otherwise unresolved container hostname to loopback in /etc/hosts. Docker network=none omitted this entry on the build host, preventing Dubbo Surefire from starting its test JVM."
+  ],
+  "comparison": "arm/Dockerfile and x86/Dockerfile are matched CARP adaptations. The unmodified Multi-SWE-bench recipes and scripts are retained under upstream/; shared changes are not labeled as ARM requirements.",
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "known_limitations": [],
+  "language": "java",
+  "sha256": {
+    "arm/Dockerfile": "ec66752711852f8b651147947a1e781956322a3ede8c5dbd6709bc8dd58fa716",
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "a7322c4f71f67736e49ab7d44517f863dcf9d65dc99bcb822c357a45e27b8263",
+    "common/run.sh": "89073d8eed545af65fa6ad4ac3f2df42b15b634c900f15bab4fe8e88b664956e",
+    "environment.json": "916a287ed950bc6f36be3109c7d6ccf7015720a50221647b495c807fe61c862a",
+    "evidence/x86-to-arm.diff": "5156f213b8611222cf9a76780d1886f7566ccb253ff1720db6c749ef00509ed9",
+    "provenance.json": "300cad28c039510ee7826f89150a50bfe67053bd99a446f28fe14ac9f63874be",
+    "source.json": "6bddb8d9ead5700f35b97b88e39ff8c2f5257f4014889fb2c46db4941c0ed74e",
+    "upstream/task/fix.patch": "4df918b4fc2e932748cd1b00bd92066326cc87fd04817cd8f31063a506107caa",
+    "upstream/task/test.patch": "7adc9640c2a0c44c1170d3a504621d6142065784a0e90a06584424d6f1a34bf7",
+    "x86/Dockerfile": "c4f43dbcf5042220681d47e28546239f0ba9006dcf8466b369a3ec20024d0c6e"
+  },
+  "source_commit": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+  "validation": {
+    "kind": "new",
+    "test_scope": "upstream test command, with pinned CARP compiler",
+    "x86_runtime": "not revalidated"
+  }
+}

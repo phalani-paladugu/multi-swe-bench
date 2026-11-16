@@ -1,0 +1,153 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Reproducibility: expand the apt install to the recorded system package versions, including native :arm64 packages and aarch64 binutils; allow downgrades to restore the snapshot.",
+    "Verification: verify the complete dpkg package inventory with SHA-256. This freezes more than the minimum architecture translation.",
+    "The minimal arm/recipe/Dockerfile changes only FROM. The build/test recipe, original parallelism, source checkout and shell initialization are otherwise preserved."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "fmtlib__fmt-3272",
+  "known_limitations": [],
+  "language": "cpp",
+  "sha256": {
+    "arm/Dockerfile": "ccf1b97ee48e7276dfb1eb7ac97d47ae1d3459acc5fe3bfdf63cffabcbd0967c",
+    "eval.sh": "8c7ee637807a624d7c2c5f7b676cc3a19292de2fcd18435bea8e02f47f979cf9",
+    "evidence/x86-to-arm.diff": "7b9d523a2674c5571f62e9e356d6c8fa519e0372a21346e493fa5a52084ae5f7",
+    "gold.patch": "65e6ac09c599697024d261283dfbd9f16f3ce67252e72772206cf8c077a45835",
+    "task.yaml": "1e58dfc7a4f2838ed68378c3dbd46c899f552217d6a9f9b16bece88618c3c12a",
+    "test.patch": "a68f5753c59c94ab58aa4bf5000ce8d71db2c8376fc5270331384ade27971197",
+    "tests.json": "bc21224226201e9719a8bd8e14dca3ce622f0a948301eec489516d774ab5e5a1",
+    "x86/Dockerfile": "de2c20754c0a9dcf5a87826ea32317463637e252ba109cb92cca238dcae59912"
+  },
+  "source_commit": "0f42c17d85f26bbbd6a30d71ce8306d371426bfc",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "ccf1b97ee48e7276dfb1eb7ac97d47ae1d3459acc5fe3bfdf63cffabcbd0967c",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "8c7ee637807a624d7c2c5f7b676cc3a19292de2fcd18435bea8e02f47f979cf9",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_cpp.py": "5f7f1766c34e90ee3a4162969a3ab35011528a4cb1890aa91e40ae7687ef88ad",
+          "arm64_cpp_validate.py": "50baeb126600711818d3b0fd5bf45246058ff098dd058a27d1598791d262aa1b",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "c.py": "4f485dc85f04da61a27709cc0d1bfeb5ba750c98080e6db45c0aa53d0a2fc1fc",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "tasks.py": "60283418b249bc50398423ce3371b015bec28b9aaffec1f692355d4832945bc9",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "65e6ac09c599697024d261283dfbd9f16f3ce67252e72772206cf8c077a45835",
+        "problem_statement.md": "a5c2602763f26b8a2142c4ffdecebc1c9745b8134323e6576cc0ca746e1d06a0",
+        "task.yaml": "1e58dfc7a4f2838ed68378c3dbd46c899f552217d6a9f9b16bece88618c3c12a",
+        "test.patch": "a68f5753c59c94ab58aa4bf5000ce8d71db2c8376fc5270331384ade27971197",
+        "tests.json": "bc21224226201e9719a8bd8e14dca3ce622f0a948301eec489516d774ab5e5a1"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "de2c20754c0a9dcf5a87826ea32317463637e252ba109cb92cca238dcae59912"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "locale_test.localized_double": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "chrono_test_wchar.time_point": "PASSED",
+          "format_test.wide_format_to_n": "PASSED",
+          "is_string_test/0.is_string": "PASSED",
+          "is_string_test/1.is_string": "PASSED",
+          "is_string_test/2.is_string": "PASSED",
+          "is_string_test/3.is_string": "PASSED",
+          "locale_test.chrono_weekday": "PASSED",
+          "locale_test.complex": "PASSED",
+          "locale_test.format": "PASSED",
+          "locale_test.format_detault_align": "PASSED",
+          "locale_test.format_plus": "PASSED",
+          "locale_test.int_formatter": "PASSED",
+          "locale_test.sign": "PASSED",
+          "locale_test.wformat": "PASSED",
+          "xchar_test.chrono": "PASSED",
+          "xchar_test.color": "PASSED",
+          "xchar_test.compile_time_string": "PASSED",
+          "xchar_test.enum": "PASSED",
+          "xchar_test.escape_string": "PASSED",
+          "xchar_test.format": "PASSED",
+          "xchar_test.format_custom_char": "PASSED",
+          "xchar_test.format_explicitly_convertible_to_wstring_view": "PASSED",
+          "xchar_test.format_map": "PASSED",
+          "xchar_test.format_to": "PASSED",
+          "xchar_test.format_utf8_precision": "PASSED",
+          "xchar_test.is_formattable": "PASSED",
+          "xchar_test.join": "PASSED",
+          "xchar_test.named_arg_udl": "PASSED",
+          "xchar_test.ostream": "PASSED",
+          "xchar_test.print": "PASSED",
+          "xchar_test.sign_not_truncated": "PASSED",
+          "xchar_test.streamed": "PASSED",
+          "xchar_test.to_wstring": "PASSED",
+          "xchar_test.vformat_to": "PASSED"
+        },
+        "commands": [
+          "ctest --test-dir build -V -R xchar-test"
+        ],
+        "observed_test_count": 35,
+        "returncode": 8
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "locale_test.localized_double": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "chrono_test_wchar.time_point": "PASSED",
+          "format_test.wide_format_to_n": "PASSED",
+          "is_string_test/0.is_string": "PASSED",
+          "is_string_test/1.is_string": "PASSED",
+          "is_string_test/2.is_string": "PASSED",
+          "is_string_test/3.is_string": "PASSED",
+          "locale_test.chrono_weekday": "PASSED",
+          "locale_test.complex": "PASSED",
+          "locale_test.format": "PASSED",
+          "locale_test.format_detault_align": "PASSED",
+          "locale_test.format_plus": "PASSED",
+          "locale_test.int_formatter": "PASSED",
+          "locale_test.sign": "PASSED",
+          "locale_test.wformat": "PASSED",
+          "xchar_test.chrono": "PASSED",
+          "xchar_test.color": "PASSED",
+          "xchar_test.compile_time_string": "PASSED",
+          "xchar_test.enum": "PASSED",
+          "xchar_test.escape_string": "PASSED",
+          "xchar_test.format": "PASSED",
+          "xchar_test.format_custom_char": "PASSED",
+          "xchar_test.format_explicitly_convertible_to_wstring_view": "PASSED",
+          "xchar_test.format_map": "PASSED",
+          "xchar_test.format_to": "PASSED",
+          "xchar_test.format_utf8_precision": "PASSED",
+          "xchar_test.is_formattable": "PASSED",
+          "xchar_test.join": "PASSED",
+          "xchar_test.named_arg_udl": "PASSED",
+          "xchar_test.ostream": "PASSED",
+          "xchar_test.print": "PASSED",
+          "xchar_test.sign_not_truncated": "PASSED",
+          "xchar_test.streamed": "PASSED",
+          "xchar_test.to_wstring": "PASSED",
+          "xchar_test.vformat_to": "PASSED"
+        },
+        "commands": [
+          "ctest --test-dir build -V -R xchar-test"
+        ],
+        "observed_test_count": 35,
+        "returncode": 0
+      },
+      "method": "Original GoogleTest/doctest selectors; upstream build/test commands with two compiler workers",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T22:28:45.496408+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

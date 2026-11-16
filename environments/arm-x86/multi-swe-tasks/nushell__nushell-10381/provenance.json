@@ -1,0 +1,12 @@
+{
+  "benchmark": "Multi-SWE-bench",
+  "instance_id": "nushell__nushell-10381",
+  "language": "rust",
+  "dataset_revision": "56ff018c04a38e27ada1e9d0a6d5839a51f88f0d",
+  "dataset_url": "https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench/resolve/56ff018c04a38e27ada1e9d0a6d5839a51f88f0d/rust/nushell__nushell_dataset.jsonl",
+  "source_record_sha256": "bba167f2fd8e518d1f317acfafd04667900fd03ebc36eb81642013e7a9e10531",
+  "harness_revision": "24f493f8a103e72312ded4f6b9c89f081d69cb09",
+  "harness_url": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "harness_recipe": "rust/nushell/nushell.py",
+  "harness_recipe_sha256": "648183c795b6507e209e41252a34d5b3fb0e47dbab91e60a64f96df2d03bcd6a"
+}

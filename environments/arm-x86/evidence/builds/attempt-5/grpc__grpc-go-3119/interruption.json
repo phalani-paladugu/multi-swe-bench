@@ -1,0 +1,5 @@
+{
+  "reason": "Duplicate full-suite TLS stalls were stopped after the first baseline had already reached the Go 10-minute test timeout. Focused balancer/grpclb validation is recorded separately.",
+  "exit_code_when_container_stopped": 137,
+  "first_timeout_evidence": "evidence/builds/attempt-1/grpc__grpc-go-3119/baseline.log"
+}

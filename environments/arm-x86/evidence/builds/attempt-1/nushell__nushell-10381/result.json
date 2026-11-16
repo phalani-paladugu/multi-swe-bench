@@ -1,0 +1,19 @@
+{
+  "instance_id": "nushell__nushell-10381",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.nushell__nushell-10381:carp-v1",
+  "started_at": "2026-11-16T19:50:53.096162+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "a9a82de5c48b23958ead9d011765396d29217630",
+  "dockerfile_sha256": "8d68f697639cbd4ff3dede61c1c5497a940fe57f5e3126c02906f4249f7a8911",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler",
+  "build_exit": 0,
+  "image_id": "sha256:04094c1d94da8053eb2e639f98002c33ebf1037e8a042586b040ab1177e93519",
+  "image_architecture": "arm64",
+  "image_size": 2303997914,
+  "smoke_exit": 0,
+  "baseline_exit": 101,
+  "gold_exit": 0,
+  "finished_at": "2026-11-16T20:03:40.158986+00:00"
+}

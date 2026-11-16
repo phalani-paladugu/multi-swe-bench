@@ -1,0 +1,12 @@
+{
+  "benchmark": "Multi-SWE-bench",
+  "instance_id": "BurntSushi__ripgrep-2626",
+  "language": "rust",
+  "dataset_revision": "56ff018c04a38e27ada1e9d0a6d5839a51f88f0d",
+  "dataset_url": "https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench/resolve/56ff018c04a38e27ada1e9d0a6d5839a51f88f0d/rust/BurntSushi__ripgrep_dataset.jsonl",
+  "source_record_sha256": "e1efae1299921889760df29477150efaf92bb419a500c4ca92601a8da8ed2598",
+  "harness_revision": "24f493f8a103e72312ded4f6b9c89f081d69cb09",
+  "harness_url": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "harness_recipe": "rust/BurntSushi/ripgrep.py",
+  "harness_recipe_sha256": "aca2ad7ec634a275994c9fe9bf0c91a9cc875b62f90b1c754146b63835c7f8a7"
+}

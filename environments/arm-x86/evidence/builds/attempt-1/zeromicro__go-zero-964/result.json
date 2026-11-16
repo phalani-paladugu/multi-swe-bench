@@ -1,0 +1,19 @@
+{
+  "instance_id": "zeromicro__go-zero-964",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.zeromicro__go-zero-964:carp-v1",
+  "started_at": "2026-11-16T19:58:14.276006+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "68acfb1891837ec2e401588173cdd16ca1b9a9c4",
+  "dockerfile_sha256": "a87bf9c9ff0d8cdbfad29084ae0f7253c551574d405b711a3cf3bb84c9ad66c3",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler",
+  "build_exit": 0,
+  "image_id": "sha256:e726d283cbf80701cb26dc2aa2e337f39457d1a8e09755ebbc7afe5faa41ce86",
+  "image_architecture": "arm64",
+  "image_size": 617970827,
+  "smoke_exit": 0,
+  "baseline_exit": 2,
+  "gold_exit": 2,
+  "finished_at": "2026-11-16T20:01:36.262712+00:00"
+}

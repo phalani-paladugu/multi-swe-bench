@@ -1,0 +1,16 @@
+{
+  "instance_id": "cli__cli-2316",
+  "image": "msweb.eval.arm64.cli__cli-2316:carp-v1",
+  "image_id": "sha256:cddc6241338ec9d2b877af052c4fd0b2d145c67342f080ae4fb0ce50c5e9bfbc",
+  "architecture": "arm64",
+  "host_architecture": "aarch64",
+  "source_commit": "5e89036d49993087b9b45060cc1292a18e1d853a",
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "1929758ec7aaa498a746849453c2efee0cf6ee428751899bbffd4383aaf5d067",
+    "common/run.sh": "a7a5d1b35636847a44d374b98f963d65a634f1606c107a8218d3f71155542aaa"
+  },
+  "matches_current_preparation": true,
+  "matches_source_commit": true,
+  "verified_at": "2026-11-16T20:12:03.355425+00:00"
+}

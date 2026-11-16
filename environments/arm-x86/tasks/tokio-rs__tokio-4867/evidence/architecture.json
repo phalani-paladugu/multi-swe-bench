@@ -1,0 +1,134 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Dependency reproducibility: embed the recorded Cargo.lock, build/test with --locked and verify its SHA-256. The source commit and test selectors remain unchanged.",
+    "Resource compatibility: CARGO_BUILD_JOBS=2 bounds compilation memory and persists for runtime Cargo commands as well as the build.",
+    "Shell compatibility: omit the upstream conda activation line; these Rust images do not provide that conda environment."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "tokio-rs__tokio-4867",
+  "known_limitations": [],
+  "language": "rust",
+  "sha256": {
+    "arm/Dockerfile": "2542a8d3769838a565400c703e7a2872653851389967454ecb75ccf4aa6daaa8",
+    "eval.sh": "fb3f380000f6621d20a6f569f36437eb12e6213c5f757bf59a84f23c21cdb84e",
+    "evidence/x86-to-arm.diff": "0da1944c93838cf9294d07ab66b0d09931987d56bcfdd3c6a0a8017efc3437df",
+    "gold.patch": "9effee889b4ae02f80100a97929287829c771af2663af085e5803a7f58dcd14d",
+    "task.yaml": "501ac8fa265140f806848a18fcc9de8b3d14c7c63c305ea83b30bbcf524cf451",
+    "test.patch": "9a936dfaeebce6c029da8a0d6f4224bff1fd7df6c836d5821d865a59b6073dab",
+    "tests.json": "1fd5649c59688e4c818a824bb9607ff1088eeee786b5ec8a42c978eadd75160d",
+    "x86/Dockerfile": "f46334d69ee43df793f1515d0329c3be4fef7fe54352add23c51dd2c9df9baac"
+  },
+  "source_commit": "53cf021b813c61cdeace26e863c89f65f6e92abd",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "2542a8d3769838a565400c703e7a2872653851389967454ecb75ccf4aa6daaa8",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "cargo_fixture": "413316f25cfebe828d714430b564ce758c7239a32fc10b13ef10d63b6d0ec352",
+        "eval.sh": "fb3f380000f6621d20a6f569f36437eb12e6213c5f757bf59a84f23c21cdb84e",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
+          "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "9effee889b4ae02f80100a97929287829c771af2663af085e5803a7f58dcd14d",
+        "task.yaml": "501ac8fa265140f806848a18fcc9de8b3d14c7c63c305ea83b30bbcf524cf451",
+        "test.patch": "9a936dfaeebce6c029da8a0d6f4224bff1fd7df6c836d5821d865a59b6073dab",
+        "tests.json": "1fd5649c59688e4c818a824bb9607ff1088eeee786b5ec8a42c978eadd75160d"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "f46334d69ee43df793f1515d0329c3be4fef7fe54352add23c51dd2c9df9baac"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "resubscribe_to_closed_channel": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "change_tasks": "PASSED",
+          "drop_rx_while_values_remain": "PASSED",
+          "dropping_sender_does_not_overwrite": "PASSED",
+          "dropping_tx_notifies_rx": "PASSED",
+          "lagging_receiver_recovers_after_wrap_closed_1": "PASSED",
+          "lagging_receiver_recovers_after_wrap_closed_2": "PASSED",
+          "lagging_receiver_recovers_after_wrap_open": "PASSED",
+          "lagging_rx": "PASSED",
+          "panic_in_clone": "PASSED",
+          "receiver_len_with_lagged": "PASSED",
+          "resubscribe_lagged": "PASSED",
+          "resubscribe_points_to_tail": "PASSED",
+          "send_no_rx": "PASSED",
+          "send_recv_bounded": "PASSED",
+          "send_slow_rx": "PASSED",
+          "send_try_recv_bounded": "PASSED",
+          "send_two_recv": "PASSED",
+          "send_two_recv_bounded": "PASSED",
+          "single_capacity_recvs": "PASSED",
+          "single_capacity_recvs_after_drop_1": "PASSED",
+          "single_capacity_recvs_after_drop_2": "PASSED",
+          "unconsumed_messages_are_dropped": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "cargo test --test sync_broadcast --no-fail-fast",
+            "log": "baseline-00.log",
+            "returncode": 101
+          }
+        ],
+        "observed_test_count": 25
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "resubscribe_to_closed_channel": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "change_tasks": "PASSED",
+          "drop_rx_while_values_remain": "PASSED",
+          "dropping_sender_does_not_overwrite": "PASSED",
+          "dropping_tx_notifies_rx": "PASSED",
+          "lagging_receiver_recovers_after_wrap_closed_1": "PASSED",
+          "lagging_receiver_recovers_after_wrap_closed_2": "PASSED",
+          "lagging_receiver_recovers_after_wrap_open": "PASSED",
+          "lagging_rx": "PASSED",
+          "panic_in_clone": "PASSED",
+          "receiver_len_with_lagged": "PASSED",
+          "resubscribe_lagged": "PASSED",
+          "resubscribe_points_to_tail": "PASSED",
+          "send_no_rx": "PASSED",
+          "send_recv_bounded": "PASSED",
+          "send_slow_rx": "PASSED",
+          "send_try_recv_bounded": "PASSED",
+          "send_two_recv": "PASSED",
+          "send_two_recv_bounded": "PASSED",
+          "single_capacity_recvs": "PASSED",
+          "single_capacity_recvs_after_drop_1": "PASSED",
+          "single_capacity_recvs_after_drop_2": "PASSED",
+          "unconsumed_messages_are_dropped": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "cargo test --test sync_broadcast --no-fail-fast",
+            "log": "gold-00.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 25
+      },
+      "method": "upstream commands executed individually; JUnit XML or Cargo test results",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T03:35:10.748692+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

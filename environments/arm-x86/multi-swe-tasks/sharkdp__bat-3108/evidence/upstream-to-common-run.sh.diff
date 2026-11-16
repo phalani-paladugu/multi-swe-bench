@@ -1,0 +1,11 @@
+--- upstream/task/run.sh
++++ common/run.sh
+@@ -1,6 +1,4 @@
+ #!/bin/bash
+-set -e
+-
++set -euo pipefail
+ cd /home/bat
+-cargo test
+-
++cargo test --locked

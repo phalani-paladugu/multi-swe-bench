@@ -1,0 +1,94 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Dependency reproducibility: embed the recorded Cargo.lock, build/test with --locked and verify its SHA-256. The source commit and test selectors remain unchanged.",
+    "Resource compatibility: CARGO_BUILD_JOBS=2 bounds compilation memory and persists for runtime Cargo commands as well as the build.",
+    "Shell compatibility: omit the upstream conda activation line; these Rust images do not provide that conda environment."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "tokio-rs__tokio-6724",
+  "known_limitations": [],
+  "language": "rust",
+  "sha256": {
+    "arm/Dockerfile": "60d1a1783a902fc29503882431682c0bece16863fa8841d2368d6f0880d93e5e",
+    "eval.sh": "8c97b49bd849994a8ed0bd59596f38a77c27dc9a0e28da1464284af52f98939c",
+    "evidence/x86-to-arm.diff": "d210d751a9af82d0bc93b747564fc138600dec6f1088edc776d422af151c357e",
+    "gold.patch": "6e153c271e2bd2a4304920e93d8e944c5fb66cecfb4bad5b1aacf7bf4a3d4d24",
+    "task.yaml": "e39eb592ef9d5f8b3d5ded3035a667fbbe2ab7ec6fad5ef2fc2b56c3ef138157",
+    "test.patch": "4f8be72b209ef04de8ec17251adc4e20fcf6cd079aa42b728959247cbc6c2ea5",
+    "tests.json": "357b4cb7bdf0227edf306a7f2a08423015de69fc143a00630814134299ec162a",
+    "x86/Dockerfile": "d6f79fdaf88fa643090cca4525149c99edf6812371c7b327fb0995c060f3fb00"
+  },
+  "source_commit": "0cbf1a5adae81e8ff86ca6d040aeee67cf888262",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "60d1a1783a902fc29503882431682c0bece16863fa8841d2368d6f0880d93e5e",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "cargo_fixture": "3f1c19edec69a9278317785853aad32b52f7c074c84fe1935a9b477aec41d16b",
+        "eval.sh": "8c97b49bd849994a8ed0bd59596f38a77c27dc9a0e28da1464284af52f98939c",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
+          "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "6e153c271e2bd2a4304920e93d8e944c5fb66cecfb4bad5b1aacf7bf4a3d4d24",
+        "task.yaml": "e39eb592ef9d5f8b3d5ded3035a667fbbe2ab7ec6fad5ef2fc2b56c3ef138157",
+        "test.patch": "4f8be72b209ef04de8ec17251adc4e20fcf6cd079aa42b728959247cbc6c2ea5",
+        "tests.json": "357b4cb7bdf0227edf306a7f2a08423015de69fc143a00630814134299ec162a"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "d6f79fdaf88fa643090cca4525149c99edf6812371c7b327fb0995c060f3fb00"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "write_all_buf_vectored": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "write_all_buf": "PASSED",
+          "write_buf_err": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "cargo test --test io_write_all_buf --no-fail-fast",
+            "log": "baseline-00.log",
+            "returncode": 101
+          }
+        ],
+        "observed_test_count": 3
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "write_all_buf_vectored": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "write_all_buf": "PASSED",
+          "write_buf_err": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "cargo test --test io_write_all_buf --no-fail-fast",
+            "log": "gold-00.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 3
+      },
+      "method": "upstream commands executed individually; JUnit XML or Cargo test results",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T03:31:51.155960+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

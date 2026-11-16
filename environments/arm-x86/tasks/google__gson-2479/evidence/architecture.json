@@ -1,0 +1,114 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Architecture compatibility: replace the x86 native mvnd executable with the bundled JVM client (MVND_CLIENT=jvm and mvnd.sh). Keep mvnd 1.0.2 and its Maven release.",
+    "Download reliability/reproducibility: use the fixed mvnd GitHub release URL, retry downloads and verify the archive SHA-256.",
+    "Offline preparation: run mvnd --version and an existing test to fetch the Surefire provider, then verify Maven dependency artifact checksums.",
+    "Shell compatibility: omit the upstream conda activation line; these Maven images do not provide that conda environment."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "google__gson-2479",
+  "known_limitations": [],
+  "language": "java",
+  "sha256": {
+    "arm/Dockerfile": "8fc5a30714645541bf16da6aa7c824d5997f1529d18bf6e0bd4b14312f91bbbf",
+    "eval.sh": "cade819a84b6ac06d7e07990bbc1d4a471ede5791a2df0f35bbd5658c4565a62",
+    "evidence/x86-to-arm.diff": "61396f888e5898d7b7c8e3a43b9c0603ef1fdcc8636249d57b1b9f63e6a0134b",
+    "gold.patch": "bf7dc4256261a24b9db44684275d051e28f67c31f076130fa44d94bbf5681eb3",
+    "task.yaml": "bf7347a1adc988e531a81a3c94c76200c0b969a30bf3e769460ec0e3d78f9e0b",
+    "test.patch": "1b290fe74673bcc0501428235b9518a37d168a14a7d4317e2d68315f2d865e44",
+    "tests.json": "7ff54e19c2a7020c803a9f323b3a7ba60ed3d25f98767ae1486bad2ed5581820",
+    "x86/Dockerfile": "7e0b6687e504ada923da21b13f6fa1a24b1544d7ea22233ad291bf89bdc21950"
+  },
+  "source_commit": "4dfae77af3d543bea2782f85a154cc070290f086",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "8fc5a30714645541bf16da6aa7c824d5997f1529d18bf6e0bd4b14312f91bbbf",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "cade819a84b6ac06d7e07990bbc1d4a471ede5791a2df0f35bbd5658c4565a62",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
+          "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "bf7dc4256261a24b9db44684275d051e28f67c31f076130fa44d94bbf5681eb3",
+        "task.yaml": "bf7347a1adc988e531a81a3c94c76200c0b969a30bf3e769460ec0e3d78f9e0b",
+        "test.patch": "1b290fe74673bcc0501428235b9518a37d168a14a7d4317e2d68315f2d865e44",
+        "tests.json": "7ff54e19c2a7020c803a9f323b3a7ba60ed3d25f98767ae1486bad2ed5581820"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "7e0b6687e504ada923da21b13f6fa1a24b1544d7ea22233ad291bf89bdc21950"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "com.google.gson.GsonBuilderTest#testRegisterTypeAdapterForObjectAndJsonElements": "FAILED",
+          "com.google.gson.GsonBuilderTest#testRegisterTypeHierarchyAdapterJsonElements": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "com.google.gson.GsonBuilderTest#testModificationAfterCreate": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.GsonBuilderTest#testRegisterTypeAdapterForObjectAndJsonElements",
+            "log": "baseline-00.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.GsonBuilderTest#testRegisterTypeHierarchyAdapterJsonElements",
+            "log": "baseline-01.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.GsonBuilderTest#testModificationAfterCreate",
+            "log": "baseline-02.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 3
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "com.google.gson.GsonBuilderTest#testRegisterTypeAdapterForObjectAndJsonElements": "PASSED",
+          "com.google.gson.GsonBuilderTest#testRegisterTypeHierarchyAdapterJsonElements": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "com.google.gson.GsonBuilderTest#testModificationAfterCreate": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.GsonBuilderTest#testRegisterTypeAdapterForObjectAndJsonElements",
+            "log": "gold-00.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.GsonBuilderTest#testRegisterTypeHierarchyAdapterJsonElements",
+            "log": "gold-01.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.GsonBuilderTest#testModificationAfterCreate",
+            "log": "gold-02.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 3
+      },
+      "method": "upstream commands executed individually; JUnit XML or Cargo test results",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T03:30:09.492197+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

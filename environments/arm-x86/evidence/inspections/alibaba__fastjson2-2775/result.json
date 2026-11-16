@@ -1,0 +1,16 @@
+{
+  "instance_id": "alibaba__fastjson2-2775",
+  "image": "msweb.eval.arm64.alibaba__fastjson2-2775:carp-v1",
+  "image_id": "sha256:b45912c9f77283f77931178f40d502e38ab18e3454c9bd2d8eac1c9288907986",
+  "architecture": "arm64",
+  "host_architecture": "aarch64",
+  "source_commit": "12b40c7ba3e7c30e35977195770c80beb34715c5",
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "07d8832698d479b85398b907ceb227bf1cee088da575662a973afc7354f1253a",
+    "common/run.sh": "342af72b15b6e138352643adaa3c556fd252584aea070e0fab855f59a4b08941"
+  },
+  "matches_current_preparation": true,
+  "matches_source_commit": true,
+  "verified_at": "2026-11-16T20:11:59.679422+00:00"
+}

@@ -1,0 +1,198 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Architecture compatibility: replace the x86 native mvnd executable with the bundled JVM client (MVND_CLIENT=jvm and mvnd.sh). Keep mvnd 1.0.2 and its Maven release.",
+    "Download reliability/reproducibility: use the fixed mvnd GitHub release URL, retry downloads and verify the archive SHA-256.",
+    "Offline preparation: run mvnd --version and an existing test to fetch the Surefire provider, then verify Maven dependency artifact checksums.",
+    "Shell compatibility: omit the upstream conda activation line; these Maven images do not provide that conda environment."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "google__gson-2158",
+  "known_limitations": [],
+  "language": "java",
+  "sha256": {
+    "arm/Dockerfile": "207692b548bda2dd9ab5173c191971805d93e3cefd9a91ab5234836eb8c1a407",
+    "eval.sh": "46fdec0867a444845013d87a482c329d65ad359168c95bb8d960a5527bcf16d5",
+    "evidence/x86-to-arm.diff": "390a91ab1a54c5dfe1f6cdad1c76d9efc5476dcbeb0c803178c3615695659174",
+    "gold.patch": "e43253c0724f2b9139dcaa5029f06ef482cfdaa1bb3906e9a2708dd6abe8a7e4",
+    "task.yaml": "d6f371d117f82b1b558eab8751f268cb8d3931d13ae64cac6c5642963240fab4",
+    "test.patch": "22f879aad99dbd0496ce4a065922f69a8f374a6908cb513e4299ac5904b7e78c",
+    "tests.json": "96ecdf64020013316dc73ce95426ccb2bf6e886b0335ced3285ec83836857bdc",
+    "x86/Dockerfile": "3ac37fee68584adff96d3a319dcb0c3474866fa6fbb0c0bdb14df042cce8f4d0"
+  },
+  "source_commit": "796193d0326a2f44bc314bf24262732ea3e64014",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "207692b548bda2dd9ab5173c191971805d93e3cefd9a91ab5234836eb8c1a407",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "46fdec0867a444845013d87a482c329d65ad359168c95bb8d960a5527bcf16d5",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
+          "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "e43253c0724f2b9139dcaa5029f06ef482cfdaa1bb3906e9a2708dd6abe8a7e4",
+        "task.yaml": "d6f371d117f82b1b558eab8751f268cb8d3931d13ae64cac6c5642963240fab4",
+        "test.patch": "22f879aad99dbd0496ce4a065922f69a8f374a6908cb513e4299ac5904b7e78c",
+        "tests.json": "96ecdf64020013316dc73ce95426ccb2bf6e886b0335ced3285ec83836857bdc"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "3ac37fee68584adff96d3a319dcb0c3474866fa6fbb0c0bdb14df042cce8f4d0"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "com.google.gson.functional.PrimitiveTest#testByteSerialization": "FAILED",
+          "com.google.gson.functional.PrimitiveTest#testDoubleSerialization": "FAILED",
+          "com.google.gson.functional.PrimitiveTest#testFloatSerialization": "FAILED",
+          "com.google.gson.functional.PrimitiveTest#testIntSerialization": "FAILED",
+          "com.google.gson.functional.PrimitiveTest#testLongSerialization": "FAILED",
+          "com.google.gson.functional.PrimitiveTest#testShortSerialization": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "com.google.gson.functional.PrimitiveTest#testPrimitiveIntegerAutoboxedInASingleElementArraySerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testPrimitiveIntegerAutoboxedSerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testPrimitiveLongAutoboxedSerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testReallyLongValuesSerialization": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testByteSerialization",
+            "log": "baseline-00.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testShortSerialization",
+            "log": "baseline-01.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testIntSerialization",
+            "log": "baseline-02.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testLongSerialization",
+            "log": "baseline-03.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testFloatSerialization",
+            "log": "baseline-04.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testDoubleSerialization",
+            "log": "baseline-05.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testPrimitiveIntegerAutoboxedSerialization",
+            "log": "baseline-06.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testPrimitiveIntegerAutoboxedInASingleElementArraySerialization",
+            "log": "baseline-07.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testReallyLongValuesSerialization",
+            "log": "baseline-08.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testPrimitiveLongAutoboxedSerialization",
+            "log": "baseline-09.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 10
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "com.google.gson.functional.PrimitiveTest#testByteSerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testDoubleSerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testFloatSerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testIntSerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testLongSerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testShortSerialization": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "com.google.gson.functional.PrimitiveTest#testPrimitiveIntegerAutoboxedInASingleElementArraySerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testPrimitiveIntegerAutoboxedSerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testPrimitiveLongAutoboxedSerialization": "PASSED",
+          "com.google.gson.functional.PrimitiveTest#testReallyLongValuesSerialization": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testByteSerialization",
+            "log": "gold-00.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testShortSerialization",
+            "log": "gold-01.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testIntSerialization",
+            "log": "gold-02.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testLongSerialization",
+            "log": "gold-03.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testFloatSerialization",
+            "log": "gold-04.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testDoubleSerialization",
+            "log": "gold-05.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testPrimitiveIntegerAutoboxedSerialization",
+            "log": "gold-06.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testPrimitiveIntegerAutoboxedInASingleElementArraySerialization",
+            "log": "gold-07.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testReallyLongValuesSerialization",
+            "log": "gold-08.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.functional.PrimitiveTest#testPrimitiveLongAutoboxedSerialization",
+            "log": "gold-09.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 10
+      },
+      "method": "upstream commands executed individually; JUnit XML or Cargo test results",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T03:43:53.693453+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

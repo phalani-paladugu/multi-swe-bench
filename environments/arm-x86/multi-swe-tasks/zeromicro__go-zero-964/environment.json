@@ -1,0 +1,26 @@
+{
+  "instance_id": "zeromicro__go-zero-964",
+  "language": "go",
+  "base_image": "ubuntu:22.04@sha256:9abcaffc92a5279fff3a6a41635c0800ea33e528425fb389658806476e7defde",
+  "base_commit": "68acfb1891837ec2e401588173cdd16ca1b9a9c4",
+  "repository": "https://github.com/zeromicro/go-zero.git",
+  "test_command": "go test -v -count=1 ./...",
+  "shared_changes": [
+    "Both variants pin the same multiarchitecture base-image index; apt package versions are recorded after building but are not frozen by this recipe.",
+    "Both variants check out the exact CARP/dataset base commit and preserve source and evaluation patches.",
+    "Both variants keep gold/test patches outside the image; validation mounts them into disposable containers.",
+    "Both variants provide /testbed as a symlink to the upstream /home repository path.",
+    "Ubuntu 22.04 golang-go follows CARP Go 1.18 instead of the moving upstream golang:latest image, on both architectures.",
+    "Module downloads and go build must succeed; evaluation runs independently and records failures.",
+    "Runtime compatibility: map an otherwise unresolved container hostname to loopback in /etc/hosts. Docker network=none omitted this entry on the build host, preventing Dubbo Surefire from starting its test JVM.",
+    "Offline evaluation: prefetch dependencies from the patched manifest in a single BuildKit bind-mount step, then reset source to the base commit. The patch files and patched source do not persist in the image layer."
+  ],
+  "known_limitations": [
+    "Image/application build succeeds, but the gold manifest adds gomonkey v2.0.2, which has no ARM64 buildJmpDirective. Gold tests fail to compile in that dependency. An ARM backend backport or a documented, pinned dependency migration is required. Both options remain unimplemented.",
+    "The supplied gold/test combination also calls UnaryCrashInterceptor() with a signature incompatible with the pinned source. This requires correcting the benchmark fixture upstream, not an architecture-only Dockerfile edit."
+  ],
+  "architecture_changes": [
+    "FROM explicitly selects linux/arm64 or linux/amd64. Package managers and multiarch base images supply the native binaries."
+  ],
+  "validation_scope": "upstream test command, with pinned CARP compiler"
+}

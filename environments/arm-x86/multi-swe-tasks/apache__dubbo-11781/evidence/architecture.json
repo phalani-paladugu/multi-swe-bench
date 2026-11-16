@@ -1,0 +1,40 @@
+{
+  "changes_and_reasons": [
+    "Architecture: FROM explicitly selects linux/arm64 or linux/amd64. Package managers and multiarch base images supply the native binaries.",
+    "Shared compatibility/preparation: Both variants pin the same multiarchitecture base-image index; apt package versions are recorded after building but are not frozen by this recipe.",
+    "Shared compatibility/preparation: Both variants check out the exact CARP/dataset base commit and preserve source and evaluation patches.",
+    "Shared compatibility/preparation: Both variants keep gold/test patches outside the image; validation mounts them into disposable containers.",
+    "Shared compatibility/preparation: Both variants provide /testbed as a symlink to the upstream /home repository path.",
+    "Shared compatibility/preparation: JDK 17 follows CARP on both architectures. Upstream fastjson2 and Jackson used JDK 8; Dubbo already used 17.",
+    "Shared compatibility/preparation: The repository Maven wrapper is used on both architectures to preserve its declared Maven version.",
+    "Shared compatibility/preparation: Preparation requires test compilation; a separate baseline warm-up records its exit status without treating expected test failures as build failures.",
+    "Shared compatibility/preparation: Install dubbo-build-tools before compiling dubbo-common; the historical reactor depends on that local build extension.",
+    "Shared compatibility/preparation: Validation is scoped to dubbo-common, which contains the CARP change; this is not full upstream-reactor validation.",
+    "Shared compatibility/preparation: Runtime compatibility: map an otherwise unresolved container hostname to loopback in /etc/hosts. Docker network=none omitted this entry on the build host, preventing Dubbo Surefire from starting its test JVM."
+  ],
+  "comparison": "arm/Dockerfile and x86/Dockerfile are matched CARP adaptations. The unmodified Multi-SWE-bench recipes and scripts are retained under upstream/; shared changes are not labeled as ARM requirements.",
+  "instance_id": "apache__dubbo-11781",
+  "known_limitations": [
+    "The broader dubbo-common NetUtils tests require a non-loopback interface. Use the runner's --internal-network flag: an isolated bridge supplies an interface while blocking external access."
+  ],
+  "language": "java",
+  "sha256": {
+    "arm/Dockerfile": "3d168b4a53bb6228fc523c69bd7dcb6774e21c6cc1c5c27497299ac9b787087c",
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "17f78d6a83f9d3bfd8a67a8162cdfbcd853a470792d22f024ce63b84ea41c8d8",
+    "common/run.sh": "00fd0f5e71cee7db9093ad8292aedc077a64fbb2084c6ddfa219ebce47812f1c",
+    "environment.json": "0e6331a16b2e17f17e49d7604720918cf8a2dd6587b54efeb2c4acc5ad4d6776",
+    "evidence/x86-to-arm.diff": "5156f213b8611222cf9a76780d1886f7566ccb253ff1720db6c749ef00509ed9",
+    "provenance.json": "01c29ce641f536d3574fcca63eea1adbbb10713ad4f7480a5875ae7094e40926",
+    "source.json": "2d05a72e70815f431de2ac320e9439ebf4967fd41acc62298f93398e0485c411",
+    "upstream/task/fix.patch": "985d83828778bb36aaee668bacd294d1fc120a88367fa177ecc8845f7961ae00",
+    "upstream/task/test.patch": "a37e903c2a50ca31eb51d100c84d93d2d77d05c51478b5b4eb09312e92e2c9a4",
+    "x86/Dockerfile": "d99a6818b8bdeb43269e7e88da04a53cf8bcdec753607209a3d516a7a10e3d8e"
+  },
+  "source_commit": "d0a1bd014331483c19208b831c4f6b488654a508",
+  "validation": {
+    "kind": "new",
+    "test_scope": "CARP Java module",
+    "x86_runtime": "not revalidated"
+  }
+}

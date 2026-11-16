@@ -1,0 +1,25 @@
+{
+  "instance_id": "BurntSushi__ripgrep-2626",
+  "language": "rust",
+  "base_image": "rust:1.77.2-bookworm@sha256:83101f6985c93e1e6501b3375de188ee3d2cbb89968bcc91611591f9f447bd42",
+  "base_commit": "7099e174acbcbd940f57e4ab4913fee4040c826e",
+  "repository": "https://github.com/BurntSushi/ripgrep.git",
+  "test_command": "cargo test --locked",
+  "shared_changes": [
+    "Both variants pin the same multiarchitecture base-image index; apt package versions are recorded after building but are not frozen by this recipe.",
+    "Both variants check out the exact CARP/dataset base commit and preserve source and evaluation patches.",
+    "Both variants keep gold/test patches outside the image; validation mounts them into disposable containers.",
+    "Both variants provide /testbed as a symlink to the upstream /home repository path.",
+    "Pin the CARP compiler (bat/ripgrep 1.77.2; nushell 1.70.0) instead of upstream rust:latest, on both architectures.",
+    "Use the committed Cargo.lock with --locked; do not re-resolve the historical dependency graph.",
+    "Four Cargo workers bound memory use during both preparation and runtime on both architectures.",
+    "Official Rust bookworm images provide native toolchains; CARP uses Ubuntu with rustup, so OS parity with CARP is not claimed.",
+    "Runtime compatibility: map an otherwise unresolved container hostname to loopback in /etc/hosts. Docker network=none omitted this entry on the build host, preventing Dubbo Surefire from starting its test JVM.",
+    "Offline evaluation: prefetch dependencies from the patched manifest in a single BuildKit bind-mount step, then reset source to the base commit. The patch files and patched source do not persist in the image layer."
+  ],
+  "known_limitations": [],
+  "architecture_changes": [
+    "FROM explicitly selects linux/arm64 or linux/amd64. Package managers and multiarch base images supply the native binaries."
+  ],
+  "validation_scope": "upstream test command, with pinned CARP compiler"
+}

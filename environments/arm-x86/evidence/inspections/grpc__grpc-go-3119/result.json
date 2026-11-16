@@ -1,0 +1,16 @@
+{
+  "instance_id": "grpc__grpc-go-3119",
+  "image": "msweb.eval.arm64.grpc__grpc-go-3119:carp-v1",
+  "image_id": "sha256:7d9799e1a8235ed49b19ce57623589c800ffed0234ab5911bac668092f1e9c09",
+  "architecture": "arm64",
+  "host_architecture": "aarch64",
+  "source_commit": "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb",
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "b8a8ad478f73945de5630f4563521b1e91e5da2145973918114cd6b8b8d15dcc",
+    "common/run.sh": "21b43305323a5b8cd56fde3c6889227c09fd23908f1c93fb7561611029cc963f"
+  },
+  "matches_current_preparation": true,
+  "matches_source_commit": true,
+  "verified_at": "2026-11-16T20:12:03.709798+00:00"
+}

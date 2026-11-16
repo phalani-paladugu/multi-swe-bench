@@ -1,0 +1,29 @@
+--- upstream/task/prepare.sh
++++ common/prepare.sh
+@@ -1,18 +1,10 @@
+ #!/bin/bash
++set -euxo pipefail
++cd /home/fastjson2
++./mvnw -B -pl core -Dsurefire.useFile=false -DfailIfNoTests=false -DskipTests test-compile
++set +e
++./mvnw -B -pl core -Dsurefire.useFile=false -DfailIfNoTests=false test > /opt/task/preparation-tests.log 2>&1
++status=$?
+ set -e
+-
+-cd /home/fastjson2
+-git config core.autocrlf input
+-git config core.filemode false
+-echo ".gitattributes" >> .git/info/exclude
+-echo "*.zip binary" >> .gitattributes
+-echo "*.png binary" >> .gitattributes
+-echo "*.jpg binary" >> .gitattributes
+-git add .
+-git reset --hard
+-bash /home/check_git_changes.sh
+-git checkout 12b40c7ba3e7c30e35977195770c80beb34715c5
+-bash /home/check_git_changes.sh
+-
+-./mvnw -V --no-transfer-progress -Pgen-javadoc -Pgen-dokka clean package -Dsurefire.useFile=false -Dmaven.test.skip=false -DfailIfNoTests=false || true
+-
++printf "%s\n" "$status" > /opt/task/preparation-tests.exit
++git diff --exit-code

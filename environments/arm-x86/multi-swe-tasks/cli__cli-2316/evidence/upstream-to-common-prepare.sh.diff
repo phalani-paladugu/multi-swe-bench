@@ -1,0 +1,19 @@
+--- upstream/task/prepare.sh
++++ common/prepare.sh
+@@ -1,11 +1,7 @@
+ #!/bin/bash
+-set -e
+-
++set -euxo pipefail
+ cd /home/cli
+-git reset --hard
+-bash /home/check_git_changes.sh
+-git checkout 5e89036d49993087b9b45060cc1292a18e1d853a
+-bash /home/check_git_changes.sh
+-
+-go test -v -count=1 ./... || true
+-
++go mod download
++go build ./...
++git config --local user.useConfigOnly true
++git diff --exit-code

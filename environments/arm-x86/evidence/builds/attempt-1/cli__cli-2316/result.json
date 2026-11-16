@@ -1,0 +1,19 @@
+{
+  "instance_id": "cli__cli-2316",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.cli__cli-2316:carp-v1",
+  "started_at": "2026-11-16T19:45:35.299935+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "5e89036d49993087b9b45060cc1292a18e1d853a",
+  "dockerfile_sha256": "2b5d79ef4c9a707f9b8cfb7928e08c8df9fd00135b197620db3550fd3ff378f3",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler",
+  "build_exit": 0,
+  "image_id": "sha256:c74db72760cc26dfb9100e7818f7088ff09c744cdbc1a89c8129026c72a712bc",
+  "image_architecture": "arm64",
+  "image_size": 504227367,
+  "smoke_exit": 0,
+  "baseline_exit": 2,
+  "gold_exit": 2,
+  "finished_at": "2026-11-16T19:47:31.547391+00:00"
+}

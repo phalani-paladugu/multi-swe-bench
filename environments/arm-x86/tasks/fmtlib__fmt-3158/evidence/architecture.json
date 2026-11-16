@@ -1,0 +1,133 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Reproducibility: expand the apt install to the recorded system package versions, including native :arm64 packages and aarch64 binutils; allow downgrades to restore the snapshot.",
+    "Verification: verify the complete dpkg package inventory with SHA-256. This freezes more than the minimum architecture translation.",
+    "The minimal arm/recipe/Dockerfile changes only FROM. The build/test recipe, original parallelism, source checkout and shell initialization are otherwise preserved."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "fmtlib__fmt-3158",
+  "known_limitations": [],
+  "language": "cpp",
+  "sha256": {
+    "arm/Dockerfile": "761638935346bd8f6092213ef6340c26264ad4b41ade5a8bb20903c48ae3ae3b",
+    "eval.sh": "f308a3baabbf7b7b11c63fe126253a05b562f2807d9352777b1f3ce97c587dda",
+    "evidence/x86-to-arm.diff": "cfc31fd03b0c65e0155947fe9d4b2c38bb1549ec095e54ead1f0e326763c33c5",
+    "gold.patch": "3801e073c48baa16573903620c40840967cd55cc9efb7e90258aa5b0a542bb00",
+    "task.yaml": "e6d83e6d7d1ed5b8c4b9818fb3aca18cc15ef29b3e0fe15a34eef7728ac5a209",
+    "test.patch": "dd768202c53ca779ff9ab209974be3af6ec9927882469f738caaec4b50e5195c",
+    "tests.json": "ad38bbf9544241be33817894369cd7a92f8c4d9c20a028af9b48daf09e9b94d0",
+    "x86/Dockerfile": "dea80a65a5ff2568d3dc571cf2ef92e42fe7d9bfcd1a6b785fcaa3a6833e09e9"
+  },
+  "source_commit": "80f8d34427d40ec5e7ce3b10ededc46bd4bd5759",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "761638935346bd8f6092213ef6340c26264ad4b41ade5a8bb20903c48ae3ae3b",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "f308a3baabbf7b7b11c63fe126253a05b562f2807d9352777b1f3ce97c587dda",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_cpp.py": "5f7f1766c34e90ee3a4162969a3ab35011528a4cb1890aa91e40ae7687ef88ad",
+          "arm64_cpp_validate.py": "50baeb126600711818d3b0fd5bf45246058ff098dd058a27d1598791d262aa1b",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "c.py": "4f485dc85f04da61a27709cc0d1bfeb5ba750c98080e6db45c0aa53d0a2fc1fc",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "tasks.py": "60283418b249bc50398423ce3371b015bec28b9aaffec1f692355d4832945bc9",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "3801e073c48baa16573903620c40840967cd55cc9efb7e90258aa5b0a542bb00",
+        "problem_statement.md": "cd4c4081a3bd6237d1755fce60ae3513831b64e29b15e588311e99c0ae11acc9",
+        "task.yaml": "e6d83e6d7d1ed5b8c4b9818fb3aca18cc15ef29b3e0fe15a34eef7728ac5a209",
+        "test.patch": "dd768202c53ca779ff9ab209974be3af6ec9927882469f738caaec4b50e5195c",
+        "tests.json": "ad38bbf9544241be33817894369cd7a92f8c4d9c20a028af9b48daf09e9b94d0"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "dea80a65a5ff2568d3dc571cf2ef92e42fe7d9bfcd1a6b785fcaa3a6833e09e9"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "ranges_test.format_vector": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "ranges_odr_test.format_vector": "PASSED",
+          "ranges_test.enum_range": "PASSED",
+          "ranges_test.escape_string": "PASSED",
+          "ranges_test.format_2d_array": "PASSED",
+          "ranges_test.format_adl_begin_end": "PASSED",
+          "ranges_test.format_array": "PASSED",
+          "ranges_test.format_array_of_literals": "PASSED",
+          "ranges_test.format_map": "PASSED",
+          "ranges_test.format_pair": "PASSED",
+          "ranges_test.format_set": "PASSED",
+          "ranges_test.format_struct": "PASSED",
+          "ranges_test.format_to": "PASSED",
+          "ranges_test.format_tuple": "PASSED",
+          "ranges_test.format_vector2": "PASSED",
+          "ranges_test.is_printable": "PASSED",
+          "ranges_test.join_initializer_list": "PASSED",
+          "ranges_test.join_range": "PASSED",
+          "ranges_test.join_sentinel": "PASSED",
+          "ranges_test.join_tuple": "PASSED",
+          "ranges_test.path_like": "PASSED",
+          "ranges_test.range": "PASSED",
+          "ranges_test.range_of_range_of_mixed_const": "PASSED",
+          "ranges_test.unformattable_range": "PASSED",
+          "ranges_test.vector_char": "PASSED"
+        },
+        "commands": [
+          "ctest --test-dir build -V -R ranges-test"
+        ],
+        "observed_test_count": 25,
+        "returncode": 8
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "ranges_test.format_vector": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "ranges_odr_test.format_vector": "PASSED",
+          "ranges_test.enum_range": "PASSED",
+          "ranges_test.escape_string": "PASSED",
+          "ranges_test.format_2d_array": "PASSED",
+          "ranges_test.format_adl_begin_end": "PASSED",
+          "ranges_test.format_array": "PASSED",
+          "ranges_test.format_array_of_literals": "PASSED",
+          "ranges_test.format_map": "PASSED",
+          "ranges_test.format_pair": "PASSED",
+          "ranges_test.format_set": "PASSED",
+          "ranges_test.format_struct": "PASSED",
+          "ranges_test.format_to": "PASSED",
+          "ranges_test.format_tuple": "PASSED",
+          "ranges_test.format_vector2": "PASSED",
+          "ranges_test.is_printable": "PASSED",
+          "ranges_test.join_initializer_list": "PASSED",
+          "ranges_test.join_range": "PASSED",
+          "ranges_test.join_sentinel": "PASSED",
+          "ranges_test.join_tuple": "PASSED",
+          "ranges_test.path_like": "PASSED",
+          "ranges_test.range": "PASSED",
+          "ranges_test.range_of_range_of_mixed_const": "PASSED",
+          "ranges_test.unformattable_range": "PASSED",
+          "ranges_test.vector_char": "PASSED"
+        },
+        "commands": [
+          "ctest --test-dir build -V -R ranges-test"
+        ],
+        "observed_test_count": 25,
+        "returncode": 0
+      },
+      "method": "Original GoogleTest/doctest selectors; upstream build/test commands with two compiler workers",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T22:25:59.770505+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

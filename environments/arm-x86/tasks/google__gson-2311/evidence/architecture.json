@@ -1,0 +1,114 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Architecture compatibility: replace the x86 native mvnd executable with the bundled JVM client (MVND_CLIENT=jvm and mvnd.sh). Keep mvnd 1.0.2 and its Maven release.",
+    "Download reliability/reproducibility: use the fixed mvnd GitHub release URL, retry downloads and verify the archive SHA-256.",
+    "Offline preparation: run mvnd --version and an existing test to fetch the Surefire provider, then verify Maven dependency artifact checksums.",
+    "Shell compatibility: omit the upstream conda activation line; these Maven images do not provide that conda environment."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "google__gson-2311",
+  "known_limitations": [],
+  "language": "java",
+  "sha256": {
+    "arm/Dockerfile": "df0339e28c8b9b40058c697c720c0133b1e3d9efe61470e919404a2a8bb4b1a8",
+    "eval.sh": "4c1b07b4d61788d45aee9f77263165a553d1475cc34209333caf198dd5909cf3",
+    "evidence/x86-to-arm.diff": "83e0bef37b66cccffc9cec7ae18fab7e1ed019273fbc1461754a0e14bf1cb9f0",
+    "gold.patch": "1085aa8644f4923398d820cac29819b244a2a24b834b209223282733e60e6e17",
+    "task.yaml": "2c6b2245550bc702b0b4d1e45861e2261fd4e02b82e675148df87c921a05fc32",
+    "test.patch": "12d08ac334ebe1088fb64f9baa208adfeaa744640a9e8d2497aad0784850fe77",
+    "tests.json": "0b20fc7c40ed487262de26cab63020e88338b273e4ca8bfa34f2970b6d8ba31c",
+    "x86/Dockerfile": "99c990772ce84382396af03527af9332f2cef7c8258a58c272ecb04770dfdae4"
+  },
+  "source_commit": "9f26679e7a96f0bb9952c326b2d9f79ef03ea9f5",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "df0339e28c8b9b40058c697c720c0133b1e3d9efe61470e919404a2a8bb4b1a8",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "4c1b07b4d61788d45aee9f77263165a553d1475cc34209333caf198dd5909cf3",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
+          "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "1085aa8644f4923398d820cac29819b244a2a24b834b209223282733e60e6e17",
+        "task.yaml": "2c6b2245550bc702b0b4d1e45861e2261fd4e02b82e675148df87c921a05fc32",
+        "test.patch": "12d08ac334ebe1088fb64f9baa208adfeaa744640a9e8d2497aad0784850fe77",
+        "tests.json": "0b20fc7c40ed487262de26cab63020e88338b273e4ca8bfa34f2970b6d8ba31c"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "99c990772ce84382396af03527af9332f2cef7c8258a58c272ecb04770dfdae4"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "com.google.gson.JsonPrimitiveTest#testEqualsIntegerAndBigInteger": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "com.google.gson.JsonPrimitiveTest#testEqualsAcrossTypes": "PASSED",
+          "com.google.gson.JsonPrimitiveTest#testLongEqualsBigInteger": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.JsonPrimitiveTest#testEqualsIntegerAndBigInteger",
+            "log": "baseline-00.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.JsonPrimitiveTest#testLongEqualsBigInteger",
+            "log": "baseline-01.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.JsonPrimitiveTest#testEqualsAcrossTypes",
+            "log": "baseline-02.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 3
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "com.google.gson.JsonPrimitiveTest#testEqualsIntegerAndBigInteger": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "com.google.gson.JsonPrimitiveTest#testEqualsAcrossTypes": "PASSED",
+          "com.google.gson.JsonPrimitiveTest#testLongEqualsBigInteger": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.JsonPrimitiveTest#testEqualsIntegerAndBigInteger",
+            "log": "gold-00.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.JsonPrimitiveTest#testLongEqualsBigInteger",
+            "log": "gold-01.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.JsonPrimitiveTest#testEqualsAcrossTypes",
+            "log": "gold-02.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 3
+      },
+      "method": "upstream commands executed individually; JUnit XML or Cargo test results",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T03:47:36.161057+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

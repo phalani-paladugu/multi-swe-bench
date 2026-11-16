@@ -1,0 +1,12 @@
+{
+  "benchmark": "Multi-SWE-bench",
+  "instance_id": "zeromicro__go-zero-964",
+  "language": "go",
+  "dataset_revision": "56ff018c04a38e27ada1e9d0a6d5839a51f88f0d",
+  "dataset_url": "https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench/resolve/56ff018c04a38e27ada1e9d0a6d5839a51f88f0d/go/zeromicro__go-zero_dataset.jsonl",
+  "source_record_sha256": "21d4588cab74cf0d5edcbaad5484f3dc34d4f947ed852b8a0417807041f9923b",
+  "harness_revision": "24f493f8a103e72312ded4f6b9c89f081d69cb09",
+  "harness_url": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "harness_recipe": "golang/zeromicro/go_zero.py",
+  "harness_recipe_sha256": "ca72e6d89f078d2b7349d11524f93a7e979f12a485e4620cb6d1262b431e84cf"
+}

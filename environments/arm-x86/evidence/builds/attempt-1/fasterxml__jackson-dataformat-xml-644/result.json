@@ -1,0 +1,19 @@
+{
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:carp-v1",
+  "started_at": "2026-11-16T19:47:31.548377+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+  "dockerfile_sha256": "f6f588eade2509da8b38599b8f8e0233a643f6440da52b03e0184579e814ef8e",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler",
+  "build_exit": 0,
+  "image_id": "sha256:f0695e404a3dfafdb18ea9a8ebb3ac7bc61e5e52b9ae0c224c13e9807c5aee9d",
+  "image_architecture": "arm64",
+  "image_size": 629371101,
+  "smoke_exit": 0,
+  "baseline_exit": 1,
+  "gold_exit": 0,
+  "finished_at": "2026-11-16T19:54:26.308729+00:00"
+}

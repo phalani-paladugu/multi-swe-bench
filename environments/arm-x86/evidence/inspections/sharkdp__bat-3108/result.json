@@ -1,0 +1,16 @@
+{
+  "instance_id": "sharkdp__bat-3108",
+  "image": "msweb.eval.arm64.sharkdp__bat-3108:carp-v1",
+  "image_id": "sha256:111b3843c1bd6b20a9e4e4203d2516124032655f023d4b742c4fbb38a4977201",
+  "architecture": "arm64",
+  "host_architecture": "aarch64",
+  "source_commit": "2be3a14a7e2c74360765a5fa213750f727f2c5bb",
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "196ebb4f3df8cd1c7a550aeb7c375fcd4688e31927a33f02b5628f122884156d",
+    "common/run.sh": "98d7ac2fb3abb2697ae4c46b6aac135d5c9a179e1127f792b92bd24eabed1b74"
+  },
+  "matches_current_preparation": true,
+  "matches_source_commit": true,
+  "verified_at": "2026-11-16T20:12:06.977847+00:00"
+}

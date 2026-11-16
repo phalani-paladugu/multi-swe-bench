@@ -1,0 +1,23 @@
+{
+  "ubuntu:22.04": {
+    "index_digest": "sha256:9abcaffc92a5279fff3a6a41635c0800ea33e528425fb389658806476e7defde",
+    "platform_manifests": {
+      "amd64": "sha256:45e9ddc6895604674618a409ca9f73d301da8fdb75fe330e8e9a27b3b219e4ad",
+      "arm64": "sha256:0904b10431fdf0800b659e0039e484e3af097f7d81539dc55dd65d23729d7735"
+    }
+  },
+  "rust:1.77.2-bookworm": {
+    "index_digest": "sha256:83101f6985c93e1e6501b3375de188ee3d2cbb89968bcc91611591f9f447bd42",
+    "platform_manifests": {
+      "amd64": "sha256:de6e081a4e9c10e70731071cec6f629892da1bbaa24b478a96bdc59060674117",
+      "arm64": "sha256:7f525318c2cfa4bd3607b9873fbe30fc05b066e0afd47014d4191bed6d794bff"
+    }
+  },
+  "rust:1.70.0-bookworm": {
+    "index_digest": "sha256:69cfa6c3ee75f81e63164fe645d0484c9456b99fafb36d878d4e1d863cdca2ba",
+    "platform_manifests": {
+      "amd64": "sha256:e164acf58034357a8d09c7429d5457c8cad649453c668a4a94dc4de4c5fa7445",
+      "arm64": "sha256:9197c4e21942cc2138047d044ccb7722f41fda38cc82dfd93fe38ef49103c331"
+    }
+  }
+}

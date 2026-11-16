@@ -1,0 +1,36 @@
+--- upstream/task/prepare.sh
++++ common/prepare.sh
+@@ -1,15 +1,20 @@
+ #!/bin/bash
++set -euxo pipefail
++cd /home/jackson-dataformat-xml
++while IFS=/ read -r dep revision; do
++ git clone "https://github.com/FasterXML/$dep.git" "/opt/jackson-deps/$dep"
++ git -C "/opt/jackson-deps/$dep" checkout --detach "$revision"
++done < /opt/task/jackson-dependencies.txt
++mvn -B -f /opt/jackson-deps/jackson-parent/pom.xml -N -DskipTests install
++mvn -B -f /opt/jackson-deps/jackson-bom/pom.xml -DskipTests install
++for dep in jackson-annotations jackson-core jackson-databind; do
++ mvn -B -f "/opt/jackson-deps/$dep/pom.xml" -DskipTests -Djavac.src.version=8 -Djavac.target.version=8 -Dmaven.compiler.source=8 -Dmaven.compiler.target=8 install
++done
++mvn -B -f /opt/jackson-deps/jackson-modules-base/pom.xml -pl jakarta-xmlbind -am -DskipTests -Djavac.src.version=8 -Djavac.target.version=8 -Dmaven.compiler.source=8 -Dmaven.compiler.target=8 install
++./mvnw -B -Dsurefire.useFile=false -DfailIfNoTests=false -DskipTests test-compile
++set +e
++./mvnw -B -Dsurefire.useFile=false -DfailIfNoTests=false test > /opt/task/preparation-tests.log 2>&1
++status=$?
+ set -e
+-
+-cd /home/jackson-dataformat-xml
+-git reset --hard
+-bash /home/check_git_changes.sh
+-git checkout b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0
+-bash /home/check_git_changes.sh
+-
+-file="/home/jackson-dataformat-xml/pom.xml"
+-old_version="2.17.0-SNAPSHOT"
+-new_version="2.17.4-SNAPSHOT"
+-sed -i "s/$old_version/$new_version/g" "$file"
+-
+-mvn clean test -Dmaven.test.skip=false -DfailIfNoTests=false || true
++printf "%s\n" "$status" > /opt/task/preparation-tests.exit
++git diff --exit-code

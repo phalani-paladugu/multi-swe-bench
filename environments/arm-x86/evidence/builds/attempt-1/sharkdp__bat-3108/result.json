@@ -1,0 +1,19 @@
+{
+  "instance_id": "sharkdp__bat-3108",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.sharkdp__bat-3108:carp-v1",
+  "started_at": "2026-11-16T19:54:26.311088+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "2be3a14a7e2c74360765a5fa213750f727f2c5bb",
+  "dockerfile_sha256": "24bef6327aa0e209ab1d241f4d020f4aad0fa5cc8d714991e321c73becb7ac12",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler",
+  "build_exit": 0,
+  "image_id": "sha256:111b3843c1bd6b20a9e4e4203d2516124032655f023d4b742c4fbb38a4977201",
+  "image_architecture": "arm64",
+  "image_size": 1322528670,
+  "smoke_exit": 0,
+  "baseline_exit": 101,
+  "gold_exit": 0,
+  "finished_at": "2026-11-16T19:58:14.274359+00:00"
+}

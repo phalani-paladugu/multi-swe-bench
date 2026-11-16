@@ -1,0 +1,52 @@
+{
+  "all_expected_gold_tests_passed": true,
+  "all_f2p_reproduced": true,
+  "architecture": "arm64",
+  "baseline_exit": 101,
+  "baseline_observed_counts": {
+    "FAIL": 1,
+    "PASS": 291,
+    "SKIP": 0
+  },
+  "build_exit": 0,
+  "dockerfile_sha256": "8d6b44eccba8588831b7d7b97d83b9511b48c9d1f92dbf532dc2b79f779c080e",
+  "expected_gold_tests": 404,
+  "f2p": {
+    "regression::r428_unrecognized_style": {
+      "baseline": "FAIL",
+      "gold": "PASS"
+    }
+  },
+  "finished_at": "2026-11-16T19:54:18.231208+00:00",
+  "gold_execution_succeeded": true,
+  "gold_exit": 0,
+  "gold_observed_counts": {
+    "FAIL": 0,
+    "PASS": 404,
+    "SKIP": 0
+  },
+  "host": "ip-10-253-159-217",
+  "image": "msweb.eval.arm64.burntsushi__ripgrep-2626:carp-v1",
+  "image_architecture": "arm64",
+  "image_id": "sha256:2c8c70f1085bf4e221d5e34c50baef2365d2af4ad8cb35a059c226b2c05e9bc9",
+  "image_inspection": "evidence/inspections/BurntSushi__ripgrep-2626/result.json",
+  "image_size": 790066961,
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "53990d723865572ca0e9faf44d0408209d07e100c725b43288262fdc61bde517",
+    "common/run.sh": "0e90d719c57e63d174b109dca31fd94793db45ac23f8b97732bade6aff037dfc"
+  },
+  "instance_id": "BurntSushi__ripgrep-2626",
+  "known_limitations": [],
+  "logs": "evidence/builds/attempt-3/BurntSushi__ripgrep-2626",
+  "matches_current_dockerfile": true,
+  "matches_current_preparation": true,
+  "missing_gold_tests": [],
+  "nonpassing_gold_tests": {},
+  "note": "Java modules follow CARP scope. NONE-to-PASS entries may reflect compile failures, not a failing individual test. No native x86 execution is claimed.",
+  "smoke_exit": 0,
+  "source_commit": "7099e174acbcbd940f57e4ab4913fee4040c826e",
+  "started_at": "2026-11-16T19:52:14.229167+00:00",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler"
+}

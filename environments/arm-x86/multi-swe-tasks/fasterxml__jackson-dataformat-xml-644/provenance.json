@@ -1,0 +1,12 @@
+{
+  "benchmark": "Multi-SWE-bench",
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "language": "java",
+  "dataset_revision": "56ff018c04a38e27ada1e9d0a6d5839a51f88f0d",
+  "dataset_url": "https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench/resolve/56ff018c04a38e27ada1e9d0a6d5839a51f88f0d/java/fasterxml__jackson-dataformat-xml_dataset.jsonl",
+  "source_record_sha256": "51e687d5524b70534e6a2af42cf6b2bbae1494f0f9203e63363d815bc7a75ce8",
+  "harness_revision": "24f493f8a103e72312ded4f6b9c89f081d69cb09",
+  "harness_url": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "harness_recipe": "java/fasterxml/jackson_dataformat_xml.py",
+  "harness_recipe_sha256": "f43e309e6e998e9334ac7d7581e26df7f59da10b5441a6bb197f3061a2bbc65b"
+}

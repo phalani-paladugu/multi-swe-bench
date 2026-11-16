@@ -1,0 +1,6 @@
+jackson-parent/e50b83d5a52b73d70dd8b178b6f88d85fd854937
+jackson-bom/80aef2e97ee1514bfef4dce456070756b9e05db3
+jackson-annotations/b7c3500719f7ca5a437a22b182663259b991b3b4
+jackson-core/d29507fe5f3aa696e483a4de416e8195bb4af47c
+jackson-databind/8956915c6409d1d5854a040d85f8bad17f23898c
+jackson-modules-base/e1b1666c7e70973cd55fefec24aad1c74f6f6c00

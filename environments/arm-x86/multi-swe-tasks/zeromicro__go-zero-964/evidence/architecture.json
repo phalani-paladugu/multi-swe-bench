@@ -1,0 +1,39 @@
+{
+  "changes_and_reasons": [
+    "Architecture: FROM explicitly selects linux/arm64 or linux/amd64. Package managers and multiarch base images supply the native binaries.",
+    "Shared compatibility/preparation: Both variants pin the same multiarchitecture base-image index; apt package versions are recorded after building but are not frozen by this recipe.",
+    "Shared compatibility/preparation: Both variants check out the exact CARP/dataset base commit and preserve source and evaluation patches.",
+    "Shared compatibility/preparation: Both variants keep gold/test patches outside the image; validation mounts them into disposable containers.",
+    "Shared compatibility/preparation: Both variants provide /testbed as a symlink to the upstream /home repository path.",
+    "Shared compatibility/preparation: Ubuntu 22.04 golang-go follows CARP Go 1.18 instead of the moving upstream golang:latest image, on both architectures.",
+    "Shared compatibility/preparation: Module downloads and go build must succeed; evaluation runs independently and records failures.",
+    "Shared compatibility/preparation: Runtime compatibility: map an otherwise unresolved container hostname to loopback in /etc/hosts. Docker network=none omitted this entry on the build host, preventing Dubbo Surefire from starting its test JVM.",
+    "Shared compatibility/preparation: Offline evaluation: prefetch dependencies from the patched manifest in a single BuildKit bind-mount step, then reset source to the base commit. The patch files and patched source do not persist in the image layer."
+  ],
+  "comparison": "arm/Dockerfile and x86/Dockerfile are matched CARP adaptations. The unmodified Multi-SWE-bench recipes and scripts are retained under upstream/; shared changes are not labeled as ARM requirements.",
+  "instance_id": "zeromicro__go-zero-964",
+  "known_limitations": [
+    "Image/application build succeeds, but the gold manifest adds gomonkey v2.0.2, which has no ARM64 buildJmpDirective. Gold tests fail to compile in that dependency. An ARM backend backport or a documented, pinned dependency migration is required. Both options remain unimplemented.",
+    "The supplied gold/test combination also calls UnaryCrashInterceptor() with a signature incompatible with the pinned source. This requires correcting the benchmark fixture upstream, not an architecture-only Dockerfile edit."
+  ],
+  "language": "go",
+  "sha256": {
+    "arm/Dockerfile": "a87bf9c9ff0d8cdbfad29084ae0f7253c551574d405b711a3cf3bb84c9ad66c3",
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "a32e8fd4fe483a7faf3bc3528aa610f093b58b49ebaa2229175fda56083be9c5",
+    "common/run.sh": "a91486c66428b57fdb91ce13284237098c15d8d12d410b2d5f72194e7560f4dc",
+    "environment.json": "f590e1628ef80178afdfccabd14fc5a0816342e70f24ef8cf4b45695bc831352",
+    "evidence/x86-to-arm.diff": "81187de7dc2ca028832ba91d3980d976fa3ad7b570e3fb78e2b97310f51011ff",
+    "provenance.json": "1d6a432212d257b4e40418fe671d5176c9ff26fe1c5c86e56a60b05782126206",
+    "source.json": "fa1b4c76b525cc20bb065232e5b3abce264876d20d79650fcb583a48a28f1d19",
+    "upstream/task/fix.patch": "0445d581eb4a9f6bb863ec5489cd910961ffb5124776ca27838fd75ac08aa383",
+    "upstream/task/test.patch": "dce1f0e0a007aef02fb5ea0a4223591f45dc61cb6931615bb99816f66d2ef505",
+    "x86/Dockerfile": "cf2fed6270dc50eaf7f3b99f75237b78f6b34effea622a405c410d8d7a443c8a"
+  },
+  "source_commit": "68acfb1891837ec2e401588173cdd16ca1b9a9c4",
+  "validation": {
+    "kind": "new",
+    "test_scope": "upstream test command, with pinned CARP compiler",
+    "x86_runtime": "not revalidated"
+  }
+}

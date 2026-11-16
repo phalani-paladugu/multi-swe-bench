@@ -1,0 +1,109 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Reproducibility: expand the apt install to the recorded system package versions, including native :arm64 packages and aarch64 binutils; allow downgrades to restore the snapshot.",
+    "Verification: verify the complete dpkg package inventory with SHA-256. This freezes more than the minimum architecture translation.",
+    "The minimal arm/recipe/Dockerfile changes only FROM. The build/test recipe, original parallelism, source checkout and shell initialization are otherwise preserved."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "fmtlib__fmt-3729",
+  "known_limitations": [],
+  "language": "cpp",
+  "sha256": {
+    "arm/Dockerfile": "121fed774a6bc277494698845b255d69754ce17f3355387d17b4e746f92f0d5e",
+    "eval.sh": "c4511e5f9de7d09f34f8b3e118bdaab2d4e87b581f495ffad9d790c9f9e95494",
+    "evidence/x86-to-arm.diff": "0cdb03ce998ea82af4043166f9394312e0443426e422be2b28d8207d942669d7",
+    "gold.patch": "586dfb85f6cf1dfcffc74d5dafe00d9c189e521060bdb6a1bbaec3612233d473",
+    "task.yaml": "dea17e427ad2846d05d15a22fb9c7f84f0f94ce4ceb7ada2d468684ab5f2544b",
+    "test.patch": "89531699c5f1d8264a1450b8545f0152756cf00a94604b2c08a49e8c45290254",
+    "tests.json": "ceb3bf92a69f6e876d9fd304109315ed40c3ee30c6b279f9879ff78495c58551",
+    "x86/Dockerfile": "43d10aa96f78b74fc678c508cdc3f8f516ef29ef018bcf1ac11267a5cfedb06d"
+  },
+  "source_commit": "5cfd28d476c6859617878f951931b8ce7d36b9df",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "121fed774a6bc277494698845b255d69754ce17f3355387d17b4e746f92f0d5e",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "c4511e5f9de7d09f34f8b3e118bdaab2d4e87b581f495ffad9d790c9f9e95494",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_cpp.py": "5f7f1766c34e90ee3a4162969a3ab35011528a4cb1890aa91e40ae7687ef88ad",
+          "arm64_cpp_validate.py": "50baeb126600711818d3b0fd5bf45246058ff098dd058a27d1598791d262aa1b",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "c.py": "4f485dc85f04da61a27709cc0d1bfeb5ba750c98080e6db45c0aa53d0a2fc1fc",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "tasks.py": "60283418b249bc50398423ce3371b015bec28b9aaffec1f692355d4832945bc9",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "586dfb85f6cf1dfcffc74d5dafe00d9c189e521060bdb6a1bbaec3612233d473",
+        "problem_statement.md": "cc0fcc05237d96baa2bea849591116724b5d75e23b124cf67c49826acb4a0855",
+        "task.yaml": "dea17e427ad2846d05d15a22fb9c7f84f0f94ce4ceb7ada2d468684ab5f2544b",
+        "test.patch": "89531699c5f1d8264a1450b8545f0152756cf00a94604b2c08a49e8c45290254",
+        "tests.json": "ceb3bf92a69f6e876d9fd304109315ed40c3ee30c6b279f9879ff78495c58551"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "43d10aa96f78b74fc678c508cdc3f8f516ef29ef018bcf1ac11267a5cfedb06d"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "std_test.path": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "ranges_std_test.format_quote_path": "PASSED",
+          "ranges_std_test.format_vector_path": "PASSED",
+          "std_test.error_code": "PASSED",
+          "std_test.exception": "PASSED",
+          "std_test.format_atomic": "PASSED",
+          "std_test.format_bit_reference": "PASSED",
+          "std_test.format_bitset": "PASSED",
+          "std_test.format_const_bit_reference": "PASSED",
+          "std_test.optional": "PASSED",
+          "std_test.optional_format_as": "PASSED",
+          "std_test.thread_id": "PASSED",
+          "std_test.variant": "PASSED"
+        },
+        "commands": [
+          "ctest --test-dir build -V -R std-test"
+        ],
+        "observed_test_count": 13,
+        "returncode": 8
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "std_test.path": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "ranges_std_test.format_quote_path": "PASSED",
+          "ranges_std_test.format_vector_path": "PASSED",
+          "std_test.error_code": "PASSED",
+          "std_test.exception": "PASSED",
+          "std_test.format_atomic": "PASSED",
+          "std_test.format_bit_reference": "PASSED",
+          "std_test.format_bitset": "PASSED",
+          "std_test.format_const_bit_reference": "PASSED",
+          "std_test.optional": "PASSED",
+          "std_test.optional_format_as": "PASSED",
+          "std_test.thread_id": "PASSED",
+          "std_test.variant": "PASSED"
+        },
+        "commands": [
+          "ctest --test-dir build -V -R std-test"
+        ],
+        "observed_test_count": 13,
+        "returncode": 0
+      },
+      "method": "Original GoogleTest/doctest selectors; upstream build/test commands with two compiler workers",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T22:29:40.165081+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

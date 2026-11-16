@@ -1,0 +1,12 @@
+{
+  "benchmark": "Multi-SWE-bench",
+  "instance_id": "alibaba__fastjson2-2775",
+  "language": "java",
+  "dataset_revision": "56ff018c04a38e27ada1e9d0a6d5839a51f88f0d",
+  "dataset_url": "https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench/resolve/56ff018c04a38e27ada1e9d0a6d5839a51f88f0d/java/alibaba__fastjson2_dataset.jsonl",
+  "source_record_sha256": "cbe9355a899798858571652194d787a647413cdabbf9e887077ba1e1c83874a2",
+  "harness_revision": "24f493f8a103e72312ded4f6b9c89f081d69cb09",
+  "harness_url": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "harness_recipe": "java/alibaba/fastjson2.py",
+  "harness_recipe_sha256": "87c3bba2bbb6ee10273034030bac4033544676c5e100ee6c60c90920fe80dafa"
+}

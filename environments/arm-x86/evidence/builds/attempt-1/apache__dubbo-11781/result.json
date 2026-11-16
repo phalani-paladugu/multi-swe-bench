@@ -1,0 +1,19 @@
+{
+  "instance_id": "apache__dubbo-11781",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.apache__dubbo-11781:carp-v1",
+  "started_at": "2026-11-16T19:43:44.115455+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "d0a1bd014331483c19208b831c4f6b488654a508",
+  "dockerfile_sha256": "10b6e2264f75086a221312fc4ccce472d5324cf67dffcdef8de9f0091ee6e677",
+  "status": "built_tests_recorded",
+  "test_scope": "CARP Java module",
+  "build_exit": 0,
+  "image_id": "sha256:b2a6449ef8b0d958900a0d39540e1efaa1d7553a0ce9959ec38fa9224d567e0c",
+  "image_architecture": "arm64",
+  "image_size": 508731451,
+  "smoke_exit": 0,
+  "baseline_exit": 1,
+  "gold_exit": 1,
+  "finished_at": "2026-11-16T19:48:33.532726+00:00"
+}

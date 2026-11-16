@@ -1,0 +1,169 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Reproducibility: expand the apt install to the recorded system package versions, including native :arm64 packages and aarch64 binutils; allow downgrades to restore the snapshot.",
+    "Verification: verify the complete dpkg package inventory with SHA-256. This freezes more than the minimum architecture translation.",
+    "The minimal arm/recipe/Dockerfile changes only FROM. The build/test recipe, original parallelism, source checkout and shell initialization are otherwise preserved."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "fmtlib__fmt-1683",
+  "known_limitations": [],
+  "language": "cpp",
+  "sha256": {
+    "arm/Dockerfile": "646e29e7dfb893a0975627b37483575394b972888ce41da2fe709c9d9c84d378",
+    "eval.sh": "44b5ab5819d350fbd176a04e0dfa3ed83e6f302add1ff480f64148d04babaf00",
+    "evidence/x86-to-arm.diff": "9c72bc6ee85ba4d07d198b870da7e36aab30537775fa0f8a2e3e87615a1d12f4",
+    "gold.patch": "a89609408f7f1b5243e1b91d2cdd89a5cdb429598800fa4ada1178bcadd550a1",
+    "task.yaml": "7aa174ed18a0a613e5465886010de00a951d09e02642a1eb0a842eb7c5f64715",
+    "test.patch": "240fe771e12aebbf64d492888d6678f72fc7e15d431a359352fdcd17812b80b0",
+    "tests.json": "f7ea2456770c850f66090945d5e1db591e458676c4948de1e1befd03d721126c",
+    "x86/Dockerfile": "1c0f31cdcf167a9e3a281c65761637e1cf99b38a627f3afa09815c0276e86fcb"
+  },
+  "source_commit": "981b517ccf2d91bf3bf52c518ac43710b57b5e17",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "646e29e7dfb893a0975627b37483575394b972888ce41da2fe709c9d9c84d378",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "44b5ab5819d350fbd176a04e0dfa3ed83e6f302add1ff480f64148d04babaf00",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_cpp.py": "5f7f1766c34e90ee3a4162969a3ab35011528a4cb1890aa91e40ae7687ef88ad",
+          "arm64_cpp_validate.py": "50baeb126600711818d3b0fd5bf45246058ff098dd058a27d1598791d262aa1b",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "c.py": "4f485dc85f04da61a27709cc0d1bfeb5ba750c98080e6db45c0aa53d0a2fc1fc",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "tasks.py": "60283418b249bc50398423ce3371b015bec28b9aaffec1f692355d4832945bc9",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "a89609408f7f1b5243e1b91d2cdd89a5cdb429598800fa4ada1178bcadd550a1",
+        "problem_statement.md": "4d4edd1bddc634cf7fedde375978ed6b355ff6b614e52d7b7e4cda863c026937",
+        "task.yaml": "7aa174ed18a0a613e5465886010de00a951d09e02642a1eb0a842eb7c5f64715",
+        "test.patch": "240fe771e12aebbf64d492888d6678f72fc7e15d431a359352fdcd17812b80b0",
+        "tests.json": "f7ea2456770c850f66090945d5e1db591e458676c4948de1e1befd03d721126c"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "1c0f31cdcf167a9e3a281c65761637e1cf99b38a627f3afa09815c0276e86fcb"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "PrintfTest.MinusFlag": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "PrintfTest.AutomaticArgIndexing": "PASSED",
+          "PrintfTest.Bool": "PASSED",
+          "PrintfTest.Char": "PASSED",
+          "PrintfTest.CheckFormatStringRegression": "PASSED",
+          "PrintfTest.CustomFormat": "PASSED",
+          "PrintfTest.DefaultAlignRight": "PASSED",
+          "PrintfTest.DynamicPrecision": "PASSED",
+          "PrintfTest.DynamicWidth": "PASSED",
+          "PrintfTest.Enum": "PASSED",
+          "PrintfTest.Escape": "PASSED",
+          "PrintfTest.Examples": "PASSED",
+          "PrintfTest.FixedLargeExponent": "PASSED",
+          "PrintfTest.Float": "PASSED",
+          "PrintfTest.FloatPrecision": "PASSED",
+          "PrintfTest.HashFlag": "PASSED",
+          "PrintfTest.IgnorePrecisionForNonNumericArg": "PASSED",
+          "PrintfTest.Inf": "PASSED",
+          "PrintfTest.Int": "PASSED",
+          "PrintfTest.IntPrecision": "PASSED",
+          "PrintfTest.InvalidArgIndex": "PASSED",
+          "PrintfTest.Length": "PASSED",
+          "PrintfTest.Location": "PASSED",
+          "PrintfTest.NoArgs": "PASSED",
+          "PrintfTest.NumberIsTooBigInArgIndex": "PASSED",
+          "PrintfTest.OStream": "PASSED",
+          "PrintfTest.PlusFlag": "PASSED",
+          "PrintfTest.Pointer": "PASSED",
+          "PrintfTest.PositionalArgs": "PASSED",
+          "PrintfTest.PrintfCustom": "PASSED",
+          "PrintfTest.PrintfError": "PASSED",
+          "PrintfTest.SpaceFlag": "PASSED",
+          "PrintfTest.String": "PASSED",
+          "PrintfTest.StringPrecision": "PASSED",
+          "PrintfTest.SwitchArgIndexing": "PASSED",
+          "PrintfTest.UCharString": "PASSED",
+          "PrintfTest.VPrintf": "PASSED",
+          "PrintfTest.VSPrintfMakeArgsExample": "PASSED",
+          "PrintfTest.VSPrintfMakeWArgsExample": "PASSED",
+          "PrintfTest.WideString": "PASSED",
+          "PrintfTest.Width": "PASSED",
+          "PrintfTest.ZeroFlag": "PASSED",
+          "PrintfTest.long_long": "PASSED"
+        },
+        "commands": [
+          "ctest --test-dir build -V -R printf-test"
+        ],
+        "observed_test_count": 43,
+        "returncode": 8
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "PrintfTest.MinusFlag": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "PrintfTest.AutomaticArgIndexing": "PASSED",
+          "PrintfTest.Bool": "PASSED",
+          "PrintfTest.Char": "PASSED",
+          "PrintfTest.CheckFormatStringRegression": "PASSED",
+          "PrintfTest.CustomFormat": "PASSED",
+          "PrintfTest.DefaultAlignRight": "PASSED",
+          "PrintfTest.DynamicPrecision": "PASSED",
+          "PrintfTest.DynamicWidth": "PASSED",
+          "PrintfTest.Enum": "PASSED",
+          "PrintfTest.Escape": "PASSED",
+          "PrintfTest.Examples": "PASSED",
+          "PrintfTest.FixedLargeExponent": "PASSED",
+          "PrintfTest.Float": "PASSED",
+          "PrintfTest.FloatPrecision": "PASSED",
+          "PrintfTest.HashFlag": "PASSED",
+          "PrintfTest.IgnorePrecisionForNonNumericArg": "PASSED",
+          "PrintfTest.Inf": "PASSED",
+          "PrintfTest.Int": "PASSED",
+          "PrintfTest.IntPrecision": "PASSED",
+          "PrintfTest.InvalidArgIndex": "PASSED",
+          "PrintfTest.Length": "PASSED",
+          "PrintfTest.Location": "PASSED",
+          "PrintfTest.NoArgs": "PASSED",
+          "PrintfTest.NumberIsTooBigInArgIndex": "PASSED",
+          "PrintfTest.OStream": "PASSED",
+          "PrintfTest.PlusFlag": "PASSED",
+          "PrintfTest.Pointer": "PASSED",
+          "PrintfTest.PositionalArgs": "PASSED",
+          "PrintfTest.PrintfCustom": "PASSED",
+          "PrintfTest.PrintfError": "PASSED",
+          "PrintfTest.SpaceFlag": "PASSED",
+          "PrintfTest.String": "PASSED",
+          "PrintfTest.StringPrecision": "PASSED",
+          "PrintfTest.SwitchArgIndexing": "PASSED",
+          "PrintfTest.UCharString": "PASSED",
+          "PrintfTest.VPrintf": "PASSED",
+          "PrintfTest.VSPrintfMakeArgsExample": "PASSED",
+          "PrintfTest.VSPrintfMakeWArgsExample": "PASSED",
+          "PrintfTest.WideString": "PASSED",
+          "PrintfTest.Width": "PASSED",
+          "PrintfTest.ZeroFlag": "PASSED",
+          "PrintfTest.long_long": "PASSED"
+        },
+        "commands": [
+          "ctest --test-dir build -V -R printf-test"
+        ],
+        "observed_test_count": 43,
+        "returncode": 0
+      },
+      "method": "Original GoogleTest/doctest selectors; upstream build/test commands with two compiler workers",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T22:20:57.839913+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Architecture compatibility: replace the x86 native mvnd executable with the bundled JVM client (MVND_CLIENT=jvm and mvnd.sh). Keep mvnd 1.0.2 and its Maven release.",
+    "Download reliability/reproducibility: use the fixed mvnd GitHub release URL, retry downloads and verify the archive SHA-256.",
+    "Offline preparation: run mvnd --version and an existing test to fetch the Surefire provider, then verify Maven dependency artifact checksums.",
+    "Shell compatibility: omit the upstream conda activation line; these Maven images do not provide that conda environment."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "google__gson-2061",
+  "known_limitations": [],
+  "language": "java",
+  "sha256": {
+    "arm/Dockerfile": "7939b7308afd185a2f4e3ae58610153ab60cca8f8748d0322cf004b1e0cf715c",
+    "eval.sh": "8cb9737f86945344a48cb118248d24d28076d6adc43a000669f6dae8ef31221d",
+    "evidence/x86-to-arm.diff": "db9dca64a6acc0b429be09d97d43cab338b3e1e388bf9b3158802c8f4a1308f4",
+    "gold.patch": "cb673eaa59f4070cfff91b2b9dc4703a6de00b5eb28f743be0d04f59d32622b5",
+    "task.yaml": "a9fa16bbea3ea2d346f6513391ed2ac70633028cb70bdd5e57f43f0cf9e5ab8c",
+    "test.patch": "f80be8eefa1c167ae864cb7313c55c84692cacc809e671c478e29e72d1453a6a",
+    "tests.json": "4559bee76699227c6eeb22074f46986f4ab138ae239ff1f32d9d6f403e88c664",
+    "x86/Dockerfile": "2d8e6611fdbbdc1284dcfa830607f41a3e104a6d81109020b11e609143a95be1"
+  },
+  "source_commit": "be0a1f4ff74bcd01580887cc9f3ec592d773f24c",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "7939b7308afd185a2f4e3ae58610153ab60cca8f8748d0322cf004b1e0cf715c",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "8cb9737f86945344a48cb118248d24d28076d6adc43a000669f6dae8ef31221d",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "arm64_validate.py": "b4df549230b24cd2ac19837adf1143bd1652d43b0ee3d030827772c6edc5673a",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "java.py": "cb90db668626a8e69d71aa1884f12d0a131acb5656b5f8bbf21e1f0027198e8d",
+          "rust.py": "3b2a91ee86304e4a5fd6c41a0d1955d5e01c6d919371ccf6c54c6a6d02f12de6",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "cb673eaa59f4070cfff91b2b9dc4703a6de00b5eb28f743be0d04f59d32622b5",
+        "task.yaml": "a9fa16bbea3ea2d346f6513391ed2ac70633028cb70bdd5e57f43f0cf9e5ab8c",
+        "test.patch": "f80be8eefa1c167ae864cb7313c55c84692cacc809e671c478e29e72d1453a6a",
+        "tests.json": "4559bee76699227c6eeb22074f46986f4ab138ae239ff1f32d9d6f403e88c664"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "2d8e6611fdbbdc1284dcfa830607f41a3e104a6d81109020b11e609143a95be1"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "com.google.gson.internal.bind.JsonTreeReaderTest#testHasNext_endOfDocument": "FAILED",
+          "com.google.gson.stream.JsonReaderTest#testHasNextEndOfDocument": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "com.google.gson.internal.bind.JsonTreeReaderTest#testSkipValue_emptyJsonObject": "PASSED",
+          "com.google.gson.internal.bind.JsonTreeReaderTest#testSkipValue_filledJsonObject": "PASSED",
+          "com.google.gson.stream.JsonReaderTest#testReadEmptyArray": "PASSED",
+          "com.google.gson.stream.JsonReaderTest#testReadEmptyObject": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.stream.JsonReaderTest#testHasNextEndOfDocument",
+            "log": "baseline-00.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.internal.bind.JsonTreeReaderTest#testHasNext_endOfDocument",
+            "log": "baseline-01.log",
+            "returncode": 1
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.stream.JsonReaderTest#testReadEmptyObject",
+            "log": "baseline-02.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.stream.JsonReaderTest#testReadEmptyArray",
+            "log": "baseline-03.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.internal.bind.JsonTreeReaderTest#testSkipValue_emptyJsonObject",
+            "log": "baseline-04.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.internal.bind.JsonTreeReaderTest#testSkipValue_filledJsonObject",
+            "log": "baseline-05.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 6
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "com.google.gson.internal.bind.JsonTreeReaderTest#testHasNext_endOfDocument": "PASSED",
+          "com.google.gson.stream.JsonReaderTest#testHasNextEndOfDocument": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "com.google.gson.internal.bind.JsonTreeReaderTest#testSkipValue_emptyJsonObject": "PASSED",
+          "com.google.gson.internal.bind.JsonTreeReaderTest#testSkipValue_filledJsonObject": "PASSED",
+          "com.google.gson.stream.JsonReaderTest#testReadEmptyArray": "PASSED",
+          "com.google.gson.stream.JsonReaderTest#testReadEmptyObject": "PASSED"
+        },
+        "commands": [
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.stream.JsonReaderTest#testHasNextEndOfDocument",
+            "log": "gold-00.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.internal.bind.JsonTreeReaderTest#testHasNext_endOfDocument",
+            "log": "gold-01.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.stream.JsonReaderTest#testReadEmptyObject",
+            "log": "gold-02.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.stream.JsonReaderTest#testReadEmptyArray",
+            "log": "gold-03.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.internal.bind.JsonTreeReaderTest#testSkipValue_emptyJsonObject",
+            "log": "gold-04.log",
+            "returncode": 0
+          },
+          {
+            "command": "mvnd test -B -T 1C -pl gson -Dtest=com.google.gson.internal.bind.JsonTreeReaderTest#testSkipValue_filledJsonObject",
+            "log": "gold-05.log",
+            "returncode": 0
+          }
+        ],
+        "observed_test_count": 6
+      },
+      "method": "upstream commands executed individually; JUnit XML or Cargo test results",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T03:35:22.059402+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

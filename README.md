@@ -1,3 +1,11 @@
+## ARM and x86 environments in this fork
+
+The [environment collection](environments/arm-x86/README.md) provides **37 task environments**: 12 C++, 11 Java, 11 Rust, and 3 Go. Each has separate ARM/x86 Dockerfiles and compatibility evidence. It combines nine selected Multi-SWE-bench tasks with 28 clearly labeled historical SWE-bench Multilingual environments.
+
+See the [full inventory](environments/arm-x86/ARCHITECTURE_INDEX.md), [build instructions](environments/arm-x86/BUILD_ARCHITECTURES.md), and [recorded build/test results](environments/arm-x86/BUILD_RESULTS.md), including known validation limits.
+
+---
+
 <div align="center">
  👋 Hi, everyone! 
     <br>

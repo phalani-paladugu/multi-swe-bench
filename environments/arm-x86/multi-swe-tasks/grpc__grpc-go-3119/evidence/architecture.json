@@ -1,0 +1,39 @@
+{
+  "changes_and_reasons": [
+    "Architecture: FROM explicitly selects linux/arm64 or linux/amd64. Package managers and multiarch base images supply the native binaries.",
+    "Shared compatibility/preparation: Both variants pin the same multiarchitecture base-image index; apt package versions are recorded after building but are not frozen by this recipe.",
+    "Shared compatibility/preparation: Both variants check out the exact CARP/dataset base commit and preserve source and evaluation patches.",
+    "Shared compatibility/preparation: Both variants keep gold/test patches outside the image; validation mounts them into disposable containers.",
+    "Shared compatibility/preparation: Both variants provide /testbed as a symlink to the upstream /home repository path.",
+    "Shared compatibility/preparation: Ubuntu 22.04 golang-go follows CARP Go 1.18 instead of the moving upstream golang:latest image, on both architectures.",
+    "Shared compatibility/preparation: Module downloads and go build must succeed; evaluation runs independently and records failures.",
+    "Shared compatibility/preparation: Runtime compatibility: map an otherwise unresolved container hostname to loopback in /etc/hosts. Docker network=none omitted this entry on the build host, preventing Dubbo Surefire from starting its test JVM.",
+    "Shared compatibility/preparation: Offline evaluation: prefetch dependencies from the patched manifest in a single BuildKit bind-mount step, then reset source to the base commit. The patch files and patched source do not persist in the image layer."
+  ],
+  "comparison": "arm/Dockerfile and x86/Dockerfile are matched CARP adaptations. The unmodified Multi-SWE-bench recipes and scripts are retained under upstream/; shared changes are not labeled as ARM requirements.",
+  "instance_id": "grpc__grpc-go-3119",
+  "known_limitations": [
+    "The full suite reports a Go 1.18 vet error for int-to-string conversion in internal/transport/http_util_test.go:195. A diagnostic run uses -vet=off without editing source.",
+    "The full suite stalls at Test/CZSocketGetSecurityValueTLS and reaches the 10-minute Go test timeout. The architecture dependence of that stall is unverified; a focused balancer/grpclb check is recorded separately."
+  ],
+  "language": "go",
+  "sha256": {
+    "arm/Dockerfile": "2a97aa6c6d1661f953c2e9142858972102b53ebf8e7c5f53e728460981f08ead",
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "b8a8ad478f73945de5630f4563521b1e91e5da2145973918114cd6b8b8d15dcc",
+    "common/run.sh": "21b43305323a5b8cd56fde3c6889227c09fd23908f1c93fb7561611029cc963f",
+    "environment.json": "3c28337bdf7dfadc62b63bdd0c8e2c5be782b439d9e5c800485edd18bef3ade9",
+    "evidence/x86-to-arm.diff": "81187de7dc2ca028832ba91d3980d976fa3ad7b570e3fb78e2b97310f51011ff",
+    "provenance.json": "509397925d514c9f4dfc0527d307acbc740c27bd90f0f2d6ff3bf1222cf8b8db",
+    "source.json": "8df9d3df58dbfc98a2609025f70fdda0ca264ebfef154dea3dddae8138b32cda",
+    "upstream/task/fix.patch": "b0779cb9a9364a6ce7f0634dbd180a88c3fb0c1b49f2f267c50c059f8473ec17",
+    "upstream/task/test.patch": "c37e6f06c95495bbcb29f27ba870ff6f1cfbff7d959d7059d3326d0f5a1ad4d7",
+    "x86/Dockerfile": "4f746b7a026bc0cf171ffd0e8ada6263d2ea552992503297a572294aacfcae61"
+  },
+  "source_commit": "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb",
+  "validation": {
+    "kind": "new",
+    "test_scope": "upstream test command, with pinned CARP compiler",
+    "x86_runtime": "not revalidated"
+  }
+}

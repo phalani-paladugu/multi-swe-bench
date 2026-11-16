@@ -1,0 +1,19 @@
+{
+  "instance_id": "alibaba__fastjson2-2775",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.alibaba__fastjson2-2775:carp-v1",
+  "started_at": "2026-11-16T19:52:14.229453+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "12b40c7ba3e7c30e35977195770c80beb34715c5",
+  "dockerfile_sha256": "2a291600c7df09a026543e3e3290d8223f1cdee57cde2cf8f4ebdc8ee84f16d9",
+  "status": "built_tests_recorded",
+  "test_scope": "CARP Java module",
+  "build_exit": 0,
+  "image_id": "sha256:b45912c9f77283f77931178f40d502e38ab18e3454c9bd2d8eac1c9288907986",
+  "image_architecture": "arm64",
+  "image_size": 772297046,
+  "smoke_exit": 0,
+  "baseline_exit": 1,
+  "gold_exit": 0,
+  "finished_at": "2026-11-16T20:00:39.516368+00:00"
+}

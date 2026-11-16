@@ -1,0 +1,19 @@
+{
+  "instance_id": "grpc__grpc-go-3119",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.grpc__grpc-go-3119:carp-v1",
+  "started_at": "2026-11-16T19:48:33.551343+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb",
+  "dockerfile_sha256": "8bd8e87ccac89985f0f3d5c9af83df573ea4d1085132ac79b50064c0476e225a",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler",
+  "build_exit": 0,
+  "image_id": "sha256:df4387ab16a76e09ce3f9a290ce2060e2886d0eec77d4c23bbbbacbfebf3584e",
+  "image_architecture": "arm64",
+  "image_size": 372749818,
+  "smoke_exit": 0,
+  "baseline_exit": 2,
+  "gold_exit": 137,
+  "finished_at": "2026-11-16T20:07:17.855896+00:00"
+}

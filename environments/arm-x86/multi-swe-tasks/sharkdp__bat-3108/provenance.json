@@ -1,0 +1,12 @@
+{
+  "benchmark": "Multi-SWE-bench",
+  "instance_id": "sharkdp__bat-3108",
+  "language": "rust",
+  "dataset_revision": "56ff018c04a38e27ada1e9d0a6d5839a51f88f0d",
+  "dataset_url": "https://huggingface.co/datasets/ByteDance-Seed/Multi-SWE-bench/resolve/56ff018c04a38e27ada1e9d0a6d5839a51f88f0d/rust/sharkdp__bat_dataset.jsonl",
+  "source_record_sha256": "fcd0e8f34d66f0ad63eb3715d4434645ea2cb1b24e9f58b971dc08be41176045",
+  "harness_revision": "24f493f8a103e72312ded4f6b9c89f081d69cb09",
+  "harness_url": "https://github.com/multi-swe-bench/multi-swe-bench",
+  "harness_recipe": "rust/sharkdp/bat.py",
+  "harness_recipe_sha256": "a54681cde3603537a47f339b91ad747270619c14347be08eef22bbd33509afa1"
+}

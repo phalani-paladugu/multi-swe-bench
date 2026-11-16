@@ -1,0 +1,127 @@
+{
+  "changes_and_reasons": [
+    "Architecture: select linux/arm64 and an architecture-specific base-image digest. x86 retains the original upstream image tag.",
+    "Reproducibility: generated syntax/header and ARM64_REBUILD_TOKEN support explicit rebuilds; they do not change repository source or tests.",
+    "Reproducibility: expand the apt install to the recorded system package versions, including native :arm64 packages and aarch64 binutils; allow downgrades to restore the snapshot.",
+    "Verification: verify the complete dpkg package inventory with SHA-256. This freezes more than the minimum architecture translation.",
+    "The minimal arm/recipe/Dockerfile changes only FROM. The build/test recipe, original parallelism, source checkout and shell initialization are otherwise preserved."
+  ],
+  "comparison": "x86/Dockerfile is the byte-preserved original upstream recipe. arm/Dockerfile is the byte-preserved previously verified ARM image recipe.",
+  "instance_id": "nlohmann__json-4237",
+  "known_limitations": [],
+  "language": "cpp",
+  "sha256": {
+    "arm/Dockerfile": "94fd579f0941555944d6c6dbb05d3b41a6493b95ddddf82793447b684b6ea652",
+    "eval.sh": "e5c7f254f363031e979cd38a2f43ab740f29296c5eac9e375d4e8b27b70245de",
+    "evidence/x86-to-arm.diff": "5268c054a233f0795894c4ac51b5bc26ca0918e7ce221f1d55acae491e7a8b75",
+    "gold.patch": "304d307c2dd1e2812defa85e274ace325c6cff3d9e1e00bf752f0f3a6db289e4",
+    "task.yaml": "711f703490ca787e2581e2b6f0b74b86122d1ebf7f694db49c615e4396bda776",
+    "test.patch": "374b5e08e8f51533dd12ed6feb8d2c52e21fc9ff65481b4b9679bb0957cab170",
+    "tests.json": "b308a47f058ebb112a086a219872761c4b77ce525e9ca495708363435649836e",
+    "x86/Dockerfile": "7f561a272bbbe3d59d3ed35faef8433c95ae20d5b9c0285321cf115c8af59a8c"
+  },
+  "source_commit": "3780b41dd070436f3f55327b0a88f27a52e2dfa8",
+  "validation": {
+    "kind": "historical",
+    "layout_only": {
+      "arm_bytes_unchanged": true,
+      "arm_sha256": "94fd579f0941555944d6c6dbb05d3b41a6493b95ddddf82793447b684b6ea652",
+      "note": "Only paths and generator file hashes changed. verified_at and runtime evidence refer to the original build.",
+      "original_inputs": {
+        "eval.sh": "e5c7f254f363031e979cd38a2f43ab740f29296c5eac9e375d4e8b27b70245de",
+        "generator": {
+          "__init__.py": "4b11f37e48859da5a30745539bc820dda4f267d0517f5fd2209c02690a68aa67",
+          "arm64.py": "5e02fe9f549f6baf1d647df3c459a3e8bf15dd0337d834b5a132085a5ccf09a0",
+          "arm64_cpp.py": "5f7f1766c34e90ee3a4162969a3ab35011528a4cb1890aa91e40ae7687ef88ad",
+          "arm64_cpp_validate.py": "50baeb126600711818d3b0fd5bf45246058ff098dd058a27d1598791d262aa1b",
+          "arm64_pipeline.py": "bfe21ef1a916c12df00dfc9e3e800d3d4ba25c327470e2ab654127a894866c80",
+          "c.py": "4f485dc85f04da61a27709cc0d1bfeb5ba750c98080e6db45c0aa53d0a2fc1fc",
+          "constants.py": "5df50010f38e1581271e6caf3e44f25e692cd6d40545e7acf2a7d486876ca027",
+          "tasks.py": "60283418b249bc50398423ce3371b015bec28b9aaffec1f692355d4832945bc9",
+          "utils.py": "aa33fc36adc3a6bdecde55f55cb91c9187bfd9da0b6878a9a328fabfbb4c2afc"
+        },
+        "gold.patch": "304d307c2dd1e2812defa85e274ace325c6cff3d9e1e00bf752f0f3a6db289e4",
+        "problem_statement.md": "546778dcd608d8e186dd9eb95ef8a835c265b3ae9a9c1d506dfed9ba172eb8c6",
+        "task.yaml": "711f703490ca787e2581e2b6f0b74b86122d1ebf7f694db49c615e4396bda776",
+        "test.patch": "374b5e08e8f51533dd12ed6feb8d2c52e21fc9ff65481b4b9679bb0957cab170",
+        "tests.json": "b308a47f058ebb112a086a219872761c4b77ce525e9ca495708363435649836e"
+      },
+      "source_commit": "f87780b00a19abec5733cdc7b2fb8e2deff5f024",
+      "x86_bytes_unchanged": true,
+      "x86_sha256": "7f561a272bbbe3d59d3ed35faef8433c95ae20d5b9c0285321cf115c8af59a8c"
+    },
+    "validation": {
+      "baseline": {
+        "FAIL_TO_PASS": {
+          "basic usage > conversion to json via free-functions": "FAILED"
+        },
+        "PASS_TO_PASS": {
+          "Non-copyable types > from_json": "PASSED",
+          "Non-copyable types > to_json": "PASSED",
+          "adl_serializer specialization > from_json": "PASSED",
+          "adl_serializer specialization > partial specialization": "PASSED",
+          "adl_serializer specialization > to_json": "PASSED",
+          "adl_serializer specialization > total specialization": "PASSED",
+          "basic usage > conversion from json via free-functions": "PASSED",
+          "basic usage > implicit conversions": "PASSED",
+          "basic usage > via explicit calls to get": "PASSED",
+          "basic usage > via explicit calls to get_to": "PASSED",
+          "different basic_json types conversions > array": "PASSED",
+          "different basic_json types conversions > binary": "PASSED",
+          "different basic_json types conversions > boolean": "PASSED",
+          "different basic_json types conversions > discarded": "PASSED",
+          "different basic_json types conversions > float": "PASSED",
+          "different basic_json types conversions > get<custom_json>": "PASSED",
+          "different basic_json types conversions > integer": "PASSED",
+          "different basic_json types conversions > null": "PASSED",
+          "different basic_json types conversions > object": "PASSED",
+          "different basic_json types conversions > string": "PASSED",
+          "different basic_json types conversions > unsigned": "PASSED"
+        },
+        "commands": [
+          "./build/tests/test-udt_cpp11 -s -r=xml"
+        ],
+        "observed_test_count": 22,
+        "returncode": 1
+      },
+      "gold": {
+        "FAIL_TO_PASS": {
+          "basic usage > conversion to json via free-functions": "PASSED"
+        },
+        "PASS_TO_PASS": {
+          "Non-copyable types > from_json": "PASSED",
+          "Non-copyable types > to_json": "PASSED",
+          "adl_serializer specialization > from_json": "PASSED",
+          "adl_serializer specialization > partial specialization": "PASSED",
+          "adl_serializer specialization > to_json": "PASSED",
+          "adl_serializer specialization > total specialization": "PASSED",
+          "basic usage > conversion from json via free-functions": "PASSED",
+          "basic usage > implicit conversions": "PASSED",
+          "basic usage > via explicit calls to get": "PASSED",
+          "basic usage > via explicit calls to get_to": "PASSED",
+          "different basic_json types conversions > array": "PASSED",
+          "different basic_json types conversions > binary": "PASSED",
+          "different basic_json types conversions > boolean": "PASSED",
+          "different basic_json types conversions > discarded": "PASSED",
+          "different basic_json types conversions > float": "PASSED",
+          "different basic_json types conversions > get<custom_json>": "PASSED",
+          "different basic_json types conversions > integer": "PASSED",
+          "different basic_json types conversions > null": "PASSED",
+          "different basic_json types conversions > object": "PASSED",
+          "different basic_json types conversions > string": "PASSED",
+          "different basic_json types conversions > unsigned": "PASSED"
+        },
+        "commands": [
+          "./build/tests/test-udt_cpp11 -s -r=xml"
+        ],
+        "observed_test_count": 22,
+        "returncode": 0
+      },
+      "method": "Original GoogleTest/doctest selectors; upstream build/test commands with two compiler workers",
+      "network": "none",
+      "passed": true
+    },
+    "verified_at": "2026-11-05T22:36:38.110801+00:00",
+    "x86_runtime": "not revalidated"
+  }
+}

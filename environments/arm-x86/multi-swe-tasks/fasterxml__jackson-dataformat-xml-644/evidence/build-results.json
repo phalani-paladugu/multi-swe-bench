@@ -1,0 +1,54 @@
+{
+  "all_expected_gold_tests_passed": true,
+  "all_f2p_reproduced": false,
+  "architecture": "arm64",
+  "baseline_exit": 1,
+  "baseline_observed_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "SKIP": 0
+  },
+  "build_exit": 0,
+  "dockerfile_sha256": "ec66752711852f8b651147947a1e781956322a3ede8c5dbd6709bc8dd58fa716",
+  "evaluation_network": "carp-eval-53928",
+  "evaluation_patch_sha256": {
+    "fix.patch": "4df918b4fc2e932748cd1b00bd92066326cc87fd04817cd8f31063a506107caa",
+    "test.patch": "7adc9640c2a0c44c1170d3a504621d6142065784a0e90a06584424d6f1a34bf7"
+  },
+  "expected_gold_tests": 127,
+  "external_network_access": false,
+  "f2p": {},
+  "finished_at": "2026-11-16T20:05:19.764615+00:00",
+  "gold_execution_succeeded": true,
+  "gold_exit": 0,
+  "gold_observed_counts": {
+    "FAIL": 0,
+    "PASS": 127,
+    "SKIP": 0
+  },
+  "host": "ip-10-253-159-217",
+  "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:carp-v1",
+  "image_architecture": "arm64",
+  "image_id": "sha256:df3a558bbe6a9c7f87694c4ce4b33c88c9ce1d32695cbbb841ce84c716dc46c3",
+  "image_inspection": "evidence/inspections/fasterxml__jackson-dataformat-xml-644/result.json",
+  "image_size": 629177417,
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/jackson-dependencies.txt": "3bda8de771a0648c75cf6c31346c731f11e245088cc562c0a7ec7577e0a074c2",
+    "common/prepare.sh": "a7322c4f71f67736e49ab7d44517f863dcf9d65dc99bcb822c357a45e27b8263",
+    "common/run.sh": "89073d8eed545af65fa6ad4ac3f2df42b15b634c900f15bab4fe8e88b664956e"
+  },
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "known_limitations": [],
+  "logs": "evidence/builds/attempt-5/fasterxml__jackson-dataformat-xml-644",
+  "matches_current_dockerfile": true,
+  "matches_current_preparation": true,
+  "missing_gold_tests": [],
+  "nonpassing_gold_tests": {},
+  "note": "Java modules follow CARP scope. NONE-to-PASS entries may reflect compile failures, not a failing individual test. No native x86 execution is claimed.",
+  "smoke_exit": 0,
+  "source_commit": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+  "started_at": "2026-11-16T20:01:33.416265+00:00",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler"
+}

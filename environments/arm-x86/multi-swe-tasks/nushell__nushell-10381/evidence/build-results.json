@@ -1,0 +1,58 @@
+{
+  "all_expected_gold_tests_passed": true,
+  "all_f2p_reproduced": true,
+  "architecture": "arm64",
+  "baseline_exit": 101,
+  "baseline_observed_counts": {
+    "FAIL": 1,
+    "PASS": 524,
+    "SKIP": 4
+  },
+  "build_exit": 0,
+  "dockerfile_sha256": "c3ae19659fbdc0a84ea275f9b3ff7c208835ac71e61b11de6a07325dc7dbe8f9",
+  "evaluation_network": "carp-eval-53928",
+  "evaluation_patch_sha256": {
+    "fix.patch": "1e675293a90aece3414aec444f04f5b19cdf1e1c8c5d0546af11372eceb1ef23",
+    "test.patch": "a662c89f5c85e25f19fb65432ec1c67f99507f35ccc53ce78ac2cfc8806d5b82"
+  },
+  "expected_gold_tests": 990,
+  "external_network_access": false,
+  "f2p": {
+    "tests::test_parser::too_few_arguments": {
+      "baseline": "FAIL",
+      "gold": "PASS"
+    }
+  },
+  "finished_at": "2026-11-16T20:10:53.377890+00:00",
+  "gold_execution_succeeded": true,
+  "gold_exit": 0,
+  "gold_observed_counts": {
+    "FAIL": 0,
+    "PASS": 991,
+    "SKIP": 24
+  },
+  "host": "ip-10-253-159-217",
+  "image": "msweb.eval.arm64.nushell__nushell-10381:carp-v1",
+  "image_architecture": "arm64",
+  "image_id": "sha256:ddde4ef7d12b05b383a706ec55cd4f5f3c59b8aa5b08b97b5564d3b0997dac77",
+  "image_inspection": "evidence/inspections/nushell__nushell-10381/result.json",
+  "image_size": 2303997032,
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "11e6eb4a5f1d9768d246aa61a84cc0722881cf4c5e20b62e65d8997839b757d0",
+    "common/run.sh": "f72232642a9127e8378d0fa591814e70fda15805be9fa7497810f43760a689fd"
+  },
+  "instance_id": "nushell__nushell-10381",
+  "known_limitations": [],
+  "logs": "evidence/builds/attempt-5/nushell__nushell-10381",
+  "matches_current_dockerfile": true,
+  "matches_current_preparation": true,
+  "missing_gold_tests": [],
+  "nonpassing_gold_tests": {},
+  "note": "Java modules follow CARP scope. NONE-to-PASS entries may reflect compile failures, not a failing individual test. No native x86 execution is claimed.",
+  "smoke_exit": 0,
+  "source_commit": "a9a82de5c48b23958ead9d011765396d29217630",
+  "started_at": "2026-11-16T20:01:33.416366+00:00",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler"
+}

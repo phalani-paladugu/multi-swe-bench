@@ -1,0 +1,30 @@
+{
+  "instance_id": "grpc__grpc-go-3119",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.grpc__grpc-go-3119:carp-v1",
+  "started_at": "2026-11-16T20:01:33.416408+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb",
+  "dockerfile_sha256": "2a97aa6c6d1661f953c2e9142858972102b53ebf8e7c5f53e728460981f08ead",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler",
+  "evaluation_network": "carp-eval-53928",
+  "external_network_access": false,
+  "input_sha256": {
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "b8a8ad478f73945de5630f4563521b1e91e5da2145973918114cd6b8b8d15dcc",
+    "common/run.sh": "21b43305323a5b8cd56fde3c6889227c09fd23908f1c93fb7561611029cc963f"
+  },
+  "evaluation_patch_sha256": {
+    "test.patch": "c37e6f06c95495bbcb29f27ba870ff6f1cfbff7d959d7059d3326d0f5a1ad4d7",
+    "fix.patch": "b0779cb9a9364a6ce7f0634dbd180a88c3fb0c1b49f2f267c50c059f8473ec17"
+  },
+  "build_exit": 0,
+  "image_id": "sha256:7d9799e1a8235ed49b19ce57623589c800ffed0234ab5911bac668092f1e9c09",
+  "image_architecture": "arm64",
+  "image_size": 372750397,
+  "smoke_exit": 0,
+  "baseline_exit": 137,
+  "gold_exit": 137,
+  "finished_at": "2026-11-16T20:09:28.604019+00:00"
+}

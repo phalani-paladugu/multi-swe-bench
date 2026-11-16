@@ -1,0 +1,19 @@
+{
+  "instance_id": "BurntSushi__ripgrep-2626",
+  "architecture": "arm64",
+  "image": "msweb.eval.arm64.burntsushi__ripgrep-2626:carp-v1",
+  "started_at": "2026-11-16T19:52:14.229167+00:00",
+  "host": "ip-10-253-159-217",
+  "source_commit": "7099e174acbcbd940f57e4ab4913fee4040c826e",
+  "dockerfile_sha256": "8d6b44eccba8588831b7d7b97d83b9511b48c9d1f92dbf532dc2b79f779c080e",
+  "status": "built_tests_recorded",
+  "test_scope": "upstream test command, with pinned CARP compiler",
+  "build_exit": 0,
+  "image_id": "sha256:2c8c70f1085bf4e221d5e34c50baef2365d2af4ad8cb35a059c226b2c05e9bc9",
+  "image_architecture": "arm64",
+  "image_size": 790066961,
+  "smoke_exit": 0,
+  "baseline_exit": 101,
+  "gold_exit": 0,
+  "finished_at": "2026-11-16T19:54:18.231208+00:00"
+}

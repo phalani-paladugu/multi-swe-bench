@@ -1,0 +1,38 @@
+{
+  "changes_and_reasons": [
+    "Architecture: FROM explicitly selects linux/arm64 or linux/amd64. Package managers and multiarch base images supply the native binaries.",
+    "Shared compatibility/preparation: Both variants pin the same multiarchitecture base-image index; apt package versions are recorded after building but are not frozen by this recipe.",
+    "Shared compatibility/preparation: Both variants check out the exact CARP/dataset base commit and preserve source and evaluation patches.",
+    "Shared compatibility/preparation: Both variants keep gold/test patches outside the image; validation mounts them into disposable containers.",
+    "Shared compatibility/preparation: Both variants provide /testbed as a symlink to the upstream /home repository path.",
+    "Shared compatibility/preparation: Pin the CARP compiler (bat/ripgrep 1.77.2; nushell 1.70.0) instead of upstream rust:latest, on both architectures.",
+    "Shared compatibility/preparation: Use the committed Cargo.lock with --locked; do not re-resolve the historical dependency graph.",
+    "Shared compatibility/preparation: Four Cargo workers bound memory use during both preparation and runtime on both architectures.",
+    "Shared compatibility/preparation: Official Rust bookworm images provide native toolchains; CARP uses Ubuntu with rustup, so OS parity with CARP is not claimed.",
+    "Shared compatibility/preparation: Runtime compatibility: map an otherwise unresolved container hostname to loopback in /etc/hosts. Docker network=none omitted this entry on the build host, preventing Dubbo Surefire from starting its test JVM.",
+    "Shared compatibility/preparation: Offline evaluation: prefetch dependencies from the patched manifest in a single BuildKit bind-mount step, then reset source to the base commit. The patch files and patched source do not persist in the image layer."
+  ],
+  "comparison": "arm/Dockerfile and x86/Dockerfile are matched CARP adaptations. The unmodified Multi-SWE-bench recipes and scripts are retained under upstream/; shared changes are not labeled as ARM requirements.",
+  "instance_id": "nushell__nushell-10381",
+  "known_limitations": [],
+  "language": "rust",
+  "sha256": {
+    "arm/Dockerfile": "c3ae19659fbdc0a84ea275f9b3ff7c208835ac71e61b11de6a07325dc7dbe8f9",
+    "common/entrypoint.sh": "3aa0169ab7a0f6f40de29a5de68964424a105c54d2bb25194c3cc78e1e5d0ded",
+    "common/prepare.sh": "11e6eb4a5f1d9768d246aa61a84cc0722881cf4c5e20b62e65d8997839b757d0",
+    "common/run.sh": "f72232642a9127e8378d0fa591814e70fda15805be9fa7497810f43760a689fd",
+    "environment.json": "2ad0d0ac56f4db416ae4db469a35037e9edc404c0cf9267181b86dd6a72f39d5",
+    "evidence/x86-to-arm.diff": "db2c895a4f149abc3b1ea65e23c4a15464e69a22e6d3e5bca040fbb2a431f0ff",
+    "provenance.json": "45b9c5ac83425ed2cbdf84350de20e48a16846945d9a6118150fb72cece3daba",
+    "source.json": "86665f3bc5338eceb5cc9837491c269e99af0aa98186287fe02f5d7becfdacb0",
+    "upstream/task/fix.patch": "1e675293a90aece3414aec444f04f5b19cdf1e1c8c5d0546af11372eceb1ef23",
+    "upstream/task/test.patch": "a662c89f5c85e25f19fb65432ec1c67f99507f35ccc53ce78ac2cfc8806d5b82",
+    "x86/Dockerfile": "6a9bc4c15cef3beefc2312c0efb4e681be49e8db50245c6de0c7dac878151c3f"
+  },
+  "source_commit": "a9a82de5c48b23958ead9d011765396d29217630",
+  "validation": {
+    "kind": "new",
+    "test_scope": "upstream test command, with pinned CARP compiler",
+    "x86_runtime": "not revalidated"
+  }
+}
