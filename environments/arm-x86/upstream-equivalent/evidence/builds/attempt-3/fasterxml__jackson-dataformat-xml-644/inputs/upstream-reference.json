@@ -1,0 +1,26 @@
+{
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "language": "java",
+  "repository_name": "jackson-dataformat-xml",
+  "source_commit": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+  "upstream_image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c",
+  "upstream_tag": "mswebench/fasterxml_m_jackson-dataformat-xml:pr-644",
+  "base_image": "ubuntu:jammy-20250126@sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2",
+  "base_amd64_matches_upstream_layers": true,
+  "base_layer_count": 1,
+  "arm_base_manifest": "sha256:23fdb0648173966ac0b863e5b3d63032e99f44533c5b396e62f29770ca2c5210",
+  "extra_environment": [
+    "DEBIAN_FRONTEND=noninteractive",
+    "LANG=C.UTF-8",
+    "LC_ALL=C.UTF-8"
+  ],
+  "java_install": true,
+  "ubuntu_snapshot": "20250412T132500Z",
+  "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:upstream-v1",
+  "architecture_exclusions": {
+    "libdrm-intel1": "Intel graphics userspace driver; absent from the ARM64 package archive. The task does not use an Intel GPU."
+  },
+  "command": [
+    "/bin/bash"
+  ]
+}

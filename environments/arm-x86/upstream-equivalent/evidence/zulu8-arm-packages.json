@@ -1,0 +1,130 @@
+[
+  {
+    "Package": "zulu8",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8/zulu8_8.0.442-1_arm64.deb",
+    "SHA256": "7c4f1e3f0757e6dec98e11a2f4194ac380c71212b9d0a0d6e7b4e14c9c685417",
+    "Depends": "zulu8-jdk (= 8.0.442-1), zulu8-ca (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-ca",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8-ca/zulu8-ca_8.0.442-1_arm64.deb",
+    "SHA256": "8569139d8f24e42ed42d73e6077c0fa70c62d55e586155139a73769de655aeb1",
+    "Depends": "zulu8-ca-jdk (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-ca-demo",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8-ca/zulu8-ca-demo_8.0.442-1_arm64.deb",
+    "SHA256": "48db50610c915bc0587c409a568fc444fd5544ca9821ceeaec5e73d0b921f339",
+    "Depends": "libc6 (>= 2.17), libgcc1 (>= 1:4.7), libstdc++6 (>= 4.1.1), zulu8-ca-jdk (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-ca-doc",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8-ca/zulu8-ca-doc_8.0.442-1_arm64.deb",
+    "SHA256": "efa70f2dc632980f289928ad0e8984e7b1e9cf49c3ef5f6729afe2c105b96118",
+    "Depends": null
+  },
+  {
+    "Package": "zulu8-ca-jdk",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8-ca/zulu8-ca-jdk_8.0.442-1_arm64.deb",
+    "SHA256": "f730c529a639eccd3519dbdc3b4ccd9491fa7e9bb386160f2229b62ec0808a57",
+    "Depends": "libc6 (>= 2.17), libx11-6, zulu8-ca-jre (= 8.0.442-1), zulu8-ca-jdk-headless (= 8.0.442-1), zulu8-ca-doc (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-ca-jdk-headless",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8-ca/zulu8-ca-jdk-headless_8.0.442-1_arm64.deb",
+    "SHA256": "0809e318f18cec7b5fc4799a8da1e38eef6b54f02c432d6b6ae29f5625ea1746",
+    "Depends": "libc6 (>= 2.17), zulu8-ca-jre-headless (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-ca-jre",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8-ca/zulu8-ca-jre_8.0.442-1_arm64.deb",
+    "SHA256": "c84905022e4462d6c05ef0d6193723da358a3ac4d325474eb6d9cfdab12d7111",
+    "Depends": "libasound2 (>= 1.0.16), libc6 (>= 2.17), libx11-6, libxext6, libxi6, libxrender1, libxtst6, zulu8-ca-jre-headless (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-ca-jre-headless",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8-ca/zulu8-ca-jre-headless_8.0.442-1_arm64.deb",
+    "SHA256": "79760fe8e24a0812eca8d18037daa77b78a7b90ec5f99ae7303b9e13641a2ec1",
+    "Depends": "libc6 (>= 2.17), libgcc1 (>= 1:4.7), libstdc++6 (>= 4.1.1), java-common, libfontconfig1"
+  },
+  {
+    "Package": "zulu8-ca-src",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8-ca/zulu8-ca-src_8.0.442-1_arm64.deb",
+    "SHA256": "a9d655120aed20928eea0417001fe4dbf162fee0984d86a8cbada182f56d012f",
+    "Depends": null
+  },
+  {
+    "Package": "zulu8-demo",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8/zulu8-demo_8.0.442-1_arm64.deb",
+    "SHA256": "d50fa3e1c81d037edc345bbb84ef89cda0e235e1d52ba7a0d5b5d5187813250c",
+    "Depends": "zulu8-jdk (= 8.0.442-1), zulu8-ca-demo (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-doc",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8/zulu8-doc_8.0.442-1_arm64.deb",
+    "SHA256": "2676eb088d23dd90f3007aa375e3eb74723cf2402b280b726ec1b7cc63814cd7",
+    "Depends": "zulu8-ca-doc (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-jdk",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8/zulu8-jdk_8.0.442-1_arm64.deb",
+    "SHA256": "24ad459156af23f2ef2974210957a4c439c4fe772d19635810cc62da00f7090a",
+    "Depends": "zulu8-jre (= 8.0.442-1), zulu8-jdk-headless (= 8.0.442-1), zulu8-doc (= 8.0.442-1), zulu8-ca-jdk (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-jdk-headless",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8/zulu8-jdk-headless_8.0.442-1_arm64.deb",
+    "SHA256": "138604a0b215d863e60ff9b78d20ef9db22b5c5f8a4e8c5a7b880ea8b57ed00a",
+    "Depends": "zulu8-jre-headless (= 8.0.442-1), zulu8-ca-jdk-headless (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-jre",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8/zulu8-jre_8.0.442-1_arm64.deb",
+    "SHA256": "5c9769a50f7f96507b1a31a9419a6352f4adb6db1d8b7680d0054c7e2de130d4",
+    "Depends": "zulu8-jre-headless (= 8.0.442-1), zulu8-ca-jre (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-jre-headless",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8/zulu8-jre-headless_8.0.442-1_arm64.deb",
+    "SHA256": "1197ae5e19e75cd4548b390ad5c8cb02af26e64d56119a55aa4365af5f133467",
+    "Depends": "zulu8-ca-jre-headless (= 8.0.442-1)"
+  },
+  {
+    "Package": "zulu8-src",
+    "Version": "8.0.442-1",
+    "Architecture": "arm64",
+    "Filename": "pool/main/z/zulu8/zulu8-src_8.0.442-1_arm64.deb",
+    "SHA256": "332d47c68dd29a1f76604c4871723cbf98a50cdaf58ca8b2d26a54ca017a9c7a",
+    "Depends": "zulu8-ca-src (= 8.0.442-1)"
+  }
+]

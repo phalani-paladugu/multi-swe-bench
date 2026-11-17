@@ -1,0 +1,443 @@
+{
+  "repository": "mswebench/alibaba_m_fastjson2",
+  "reference": "pr-2775",
+  "resolved_digest": "sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15",
+  "checked_at": "2026-11-16T23:07:12.424244+00:00",
+  "manifest": {
+    "schemaVersion": 2,
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "config": {
+      "mediaType": "application/vnd.docker.container.image.v1+json",
+      "size": 8210,
+      "digest": "sha256:e7039acb6d440c24a609c1dab750ac3d2b3f7800bd8c18fb454105d1e83e06e4"
+    },
+    "layers": [
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 27511060,
+        "digest": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 80079544,
+        "digest": "sha256:9c041fca7f3f105e200f432ab1d390217df78cf2aeb2d0ae89e919c8f1b2e28d"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 1585,
+        "digest": "sha256:ac1dc08e7d34903b26b274bda50737f2f6a5276387f430b0c69c0dc405d7a3a7"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 58755568,
+        "digest": "sha256:e4fd720ed51d88988c4873fa5e59f82d6ea3a3a18fd1e0f00f0ae10b8b5d96d6"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 164133369,
+        "digest": "sha256:9b23f23f208648b2fd4dc423f7016b7be13d0304f8bd8937d2a6847207cd213f"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 785,
+        "digest": "sha256:065e95fa7015233df4a478e7386b27537ccec28e320f1f0bd89e06ddafb445bd"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 580,
+        "digest": "sha256:7857f0bd2781b9dffa4f1f0bf047ee46d598c4c1ac7ff6bd6f9237e01fbb2094"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 307,
+        "digest": "sha256:69974da16aaaf14ff9ed6c68e503ec9f72ac2cdbdf5bc3f4979766a4267dccc1"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 444,
+        "digest": "sha256:6959c7a0444491868ce7895ba24d9fcceb2a9aa82dd83fc28eff1e56ec0ade70"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 271,
+        "digest": "sha256:d3297cdffcbbf6b8d7eac1a89c549a619d560a743c480d3d203168e7fd09547e"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 291,
+        "digest": "sha256:14676e2af8159795d0693dc9ac88025dd9032cf8d81f3cae60a734dd49ad8367"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 297,
+        "digest": "sha256:37d95b8c8a6176b78ff9cf274d5881b9eff7ba935dcf314a722f6294a03f740a"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 178093322,
+        "digest": "sha256:9b9c24834e816b7db53dbe6e0efa6040542d9b546008bfe4f09c93f82c59e46e"
+      }
+    ]
+  },
+  "platforms": {
+    "amd64": {
+      "manifest_digest": "sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15",
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 8210,
+          "digest": "sha256:e7039acb6d440c24a609c1dab750ac3d2b3f7800bd8c18fb454105d1e83e06e4"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 27511060,
+            "digest": "sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 80079544,
+            "digest": "sha256:9c041fca7f3f105e200f432ab1d390217df78cf2aeb2d0ae89e919c8f1b2e28d"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 1585,
+            "digest": "sha256:ac1dc08e7d34903b26b274bda50737f2f6a5276387f430b0c69c0dc405d7a3a7"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 58755568,
+            "digest": "sha256:e4fd720ed51d88988c4873fa5e59f82d6ea3a3a18fd1e0f00f0ae10b8b5d96d6"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 164133369,
+            "digest": "sha256:9b23f23f208648b2fd4dc423f7016b7be13d0304f8bd8937d2a6847207cd213f"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 785,
+            "digest": "sha256:065e95fa7015233df4a478e7386b27537ccec28e320f1f0bd89e06ddafb445bd"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 580,
+            "digest": "sha256:7857f0bd2781b9dffa4f1f0bf047ee46d598c4c1ac7ff6bd6f9237e01fbb2094"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 307,
+            "digest": "sha256:69974da16aaaf14ff9ed6c68e503ec9f72ac2cdbdf5bc3f4979766a4267dccc1"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 444,
+            "digest": "sha256:6959c7a0444491868ce7895ba24d9fcceb2a9aa82dd83fc28eff1e56ec0ade70"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 271,
+            "digest": "sha256:d3297cdffcbbf6b8d7eac1a89c549a619d560a743c480d3d203168e7fd09547e"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 291,
+            "digest": "sha256:14676e2af8159795d0693dc9ac88025dd9032cf8d81f3cae60a734dd49ad8367"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 297,
+            "digest": "sha256:37d95b8c8a6176b78ff9cf274d5881b9eff7ba935dcf314a722f6294a03f740a"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 178093322,
+            "digest": "sha256:9b9c24834e816b7db53dbe6e0efa6040542d9b546008bfe4f09c93f82c59e46e"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "amd64",
+        "config": {
+          "Hostname": "",
+          "Domainname": "",
+          "User": "",
+          "AttachStdin": false,
+          "AttachStdout": false,
+          "AttachStderr": false,
+          "Tty": false,
+          "OpenStdin": false,
+          "StdinOnce": false,
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "HTTP_PROXY=",
+            "http_proxy=",
+            "HTTPS_PROXY=",
+            "https_proxy=",
+            "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+            "DEBIAN_FRONTEND=noninteractive",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8"
+          ],
+          "Cmd": [
+            "/bin/bash"
+          ],
+          "Image": "sha256:faad399b138489fe27bcf87168cc851392176056af257a4458bf665236278342",
+          "Volumes": null,
+          "WorkingDir": "/home",
+          "Entrypoint": null,
+          "OnBuild": null,
+          "Labels": {
+            "org.opencontainers.image.ref.name": "ubuntu",
+            "org.opencontainers.image.version": "20.04"
+          }
+        },
+        "container": "93495a32f4396a2ac5d6a1c66b3420cd46fd3c7d1d864f77c8ebbeeed1d24646",
+        "container_config": {
+          "Hostname": "93495a32f439",
+          "Domainname": "",
+          "User": "",
+          "AttachStdin": false,
+          "AttachStdout": false,
+          "AttachStderr": false,
+          "Tty": false,
+          "OpenStdin": false,
+          "StdinOnce": false,
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "HTTP_PROXY=",
+            "http_proxy=",
+            "HTTPS_PROXY=",
+            "https_proxy=",
+            "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+            "DEBIAN_FRONTEND=noninteractive",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8"
+          ],
+          "Cmd": [
+            "/bin/sh",
+            "-c",
+            "#(nop) ",
+            "ENV https_proxy="
+          ],
+          "Image": "sha256:faad399b138489fe27bcf87168cc851392176056af257a4458bf665236278342",
+          "Volumes": null,
+          "WorkingDir": "/home",
+          "Entrypoint": null,
+          "OnBuild": null,
+          "Labels": {
+            "org.opencontainers.image.ref.name": "ubuntu",
+            "org.opencontainers.image.version": "20.04"
+          }
+        },
+        "created": "2025-03-31T08:52:49.959788817Z",
+        "docker_version": "26.1.4",
+        "history": [
+          {
+            "created": "2024-10-11T03:38:25.029122588Z",
+            "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-10-11T03:38:25.070117424Z",
+            "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-10-11T03:38:25.104529137Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-10-11T03:38:25.137438451Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=20.04",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-10-11T03:38:27.075066942Z",
+            "created_by": "/bin/sh -c #(nop) ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / "
+          },
+          {
+            "created": "2024-10-11T03:38:27.357079367Z",
+            "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-14T16:00:09.964888645Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTP_PROXY=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-14T16:00:10.01661156Z",
+            "created_by": "/bin/sh -c #(nop)  ENV http_proxy=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-14T16:00:10.065195472Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTPS_PROXY=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-14T16:00:10.111648126Z",
+            "created_by": "/bin/sh -c #(nop)  ENV https_proxy=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:37:41.135908757Z",
+            "created_by": "/bin/sh -c #(nop)  ENV JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:37:41.274362886Z",
+            "created_by": "/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:37:41.332642353Z",
+            "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:37:41.386945955Z",
+            "created_by": "/bin/sh -c #(nop)  ENV LC_ALL=C.UTF-8",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:37:41.447959262Z",
+            "created_by": "/bin/sh -c #(nop) WORKDIR /home",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:38:55.047929526Z",
+            "created_by": "/bin/sh -c apt update && apt install -y gnupg ca-certificates git curl"
+          },
+          {
+            "created": "2025-03-31T07:38:58.619410097Z",
+            "created_by": "/bin/sh -c curl -s https://repos.azul.com/azul-repo.key | gpg --dearmor -o /usr/share/keyrings/azul.gpg     && echo \"deb [signed-by=/usr/share/keyrings/azul.gpg] https://repos.azul.com/zulu/deb stable main\" | tee /etc/apt/sources.list.d/zulu.list"
+          },
+          {
+            "created": "2025-03-31T07:39:32.034087553Z",
+            "created_by": "/bin/sh -c apt update && apt install -y zulu8-jdk"
+          },
+          {
+            "created": "2025-03-31T07:39:58.709423138Z",
+            "created_by": "/bin/sh -c git clone https://github.com/alibaba/fastjson2.git /home/fastjson2"
+          },
+          {
+            "created": "2025-03-31T07:39:59.538629602Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTP_PROXY=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:39:59.58220051Z",
+            "created_by": "/bin/sh -c #(nop)  ENV http_proxy=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:39:59.627813626Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTPS_PROXY=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:39:59.673428874Z",
+            "created_by": "/bin/sh -c #(nop)  ENV https_proxy=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:40:00.064733267Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTP_PROXY=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:40:00.324226463Z",
+            "created_by": "/bin/sh -c #(nop)  ENV http_proxy=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:40:00.565073121Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTPS_PROXY=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:40:00.993195416Z",
+            "created_by": "/bin/sh -c #(nop)  ENV https_proxy=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T07:55:38.587908523Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:01dea5273c348f465f5e56d1fb24bb6070b3858d497efe1fd206f49c0615d0bc in /home/ "
+          },
+          {
+            "created": "2025-03-31T07:55:38.745629692Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:e35b0e75942db92d96a1bbfbccc472d857cfaab03169d7051eaafcc48b8e6471 in /home/ "
+          },
+          {
+            "created": "2025-03-31T07:55:38.867611704Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:de9ba148f70674c55445f453156866b9574b9aa883d185b7cce57916665d9a8c in /home/ "
+          },
+          {
+            "created": "2025-03-31T07:55:39.010652619Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:de2a74d0f8417a6355798bdb5fee11e8560494a7557712fda4119a5eb220890e in /home/ "
+          },
+          {
+            "created": "2025-03-31T07:55:39.133739042Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:b67777703ba6a94f84f133e3d0aebb22820e1ff4bae0512fe8186a772c2bab3a in /home/ "
+          },
+          {
+            "created": "2025-03-31T07:55:39.268357818Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:d5753ddb34905c1cbfcd609e19eb7ed310f7c2210535bb3d940bc9d1d17d5941 in /home/ "
+          },
+          {
+            "created": "2025-03-31T07:55:39.38204003Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:60791e228be8fafa518891f83d085a3fa1393c1681cedab021389988c39e30d7 in /home/ "
+          },
+          {
+            "created": "2025-03-31T08:52:49.586041588Z",
+            "created_by": "/bin/sh -c bash /home/prepare.sh"
+          },
+          {
+            "created": "2025-03-31T08:52:49.822100498Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTP_PROXY=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T08:52:49.867494786Z",
+            "created_by": "/bin/sh -c #(nop)  ENV http_proxy=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T08:52:49.912377377Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTPS_PROXY=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-31T08:52:49.959788817Z",
+            "created_by": "/bin/sh -c #(nop)  ENV https_proxy=",
+            "empty_layer": true
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92",
+            "sha256:3940be221c817613f8a4a0ecf05cb8326850ee128ba640088453695be43bc4fd",
+            "sha256:5de80c4f008dc5c00e4cd67f9ddd3b04f5dfa5b321f694141cb0db5b1c8215e0",
+            "sha256:1535919d13cac4cfe79c5b3a6b2b871044b6de9e7573d013c7518a80d2b76ebb",
+            "sha256:e77b8e6bd343bb305bb8ffe0275fbf7dcfdbe73ab920710f1ae7e7a0992fd96f",
+            "sha256:1922ddd4897b92cb9e1793c6a54ca14bc2a42f7c5e27e242b8e363d43371cde2",
+            "sha256:bc6ecded32dc0f9e1d753289e3b2b4387c3c6194a7e56a1362acec0264d5369c",
+            "sha256:767733efccd82475320df8b6e22fea09f2e19f8a001702f75a37625101654c92",
+            "sha256:88e437855217a84522d2b8a20ab349fd8d43bccff43d84ea2397905c8cf62bde",
+            "sha256:a7e999405865960ee6d393579ce31d657d71891c179f55d8b452d7ba073bd5dc",
+            "sha256:715d82be844deb920f7672b7df08eea2dcd2830e6bd433161ba9df1104e3dd45",
+            "sha256:6c3b9d65ec339cd5d7918b1b9e55a11f310db40d07e44fa618c635cd61f83768",
+            "sha256:2b6be37e6411a8c82f50cda47a42e930bae3d6743a1c609fc940061520334e3c"
+          ]
+        }
+      }
+    }
+  }
+}

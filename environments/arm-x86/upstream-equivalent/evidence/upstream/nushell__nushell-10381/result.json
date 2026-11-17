@@ -1,0 +1,9 @@
+{
+  "task": "nushell__nushell-10381",
+  "image": "mswebench/nushell_m_nushell@sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42",
+  "image_id": "sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42",
+  "source_commit": "a9a82de5c48b23958ead9d011765396d29217630",
+  "java_packages": {},
+  "package_count": 413,
+  "collected_at": "2026-11-16T23:11:30.215595+00:00"
+}

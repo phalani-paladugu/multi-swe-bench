@@ -1,0 +1,16 @@
+{
+  "instance_id": "nushell__nushell-10381",
+  "language": "rust",
+  "repository_name": "nushell",
+  "source_commit": "a9a82de5c48b23958ead9d011765396d29217630",
+  "upstream_image": "mswebench/nushell_m_nushell@sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42",
+  "upstream_tag": "mswebench/nushell_m_nushell:pr-10381",
+  "base_image": "rust:1.85.0-bookworm@sha256:0ff31c9ffa641a62e48d543fb00b4960955ea375f40776f40f585b89e654cc5e",
+  "base_amd64_matches_upstream_layers": true,
+  "base_layer_count": 5,
+  "arm_base_manifest": "sha256:f04df1b615e9ffac55f3a304ef3aaccb9bc716c88a9d6ee6b00de45f288a4e3a",
+  "image": "msweb.eval.arm64.nushell__nushell-10381:upstream-v1",
+  "command": [
+    "bash"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "Id": "sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c",
+  "RepoDigests": [
+    "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c"
+  ],
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Created": "2025-04-12T13:33:31.386590897Z",
+  "Config": {
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy=",
+      "DEBIAN_FRONTEND=noninteractive",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8"
+    ],
+    "Cmd": [
+      "/bin/bash"
+    ],
+    "WorkingDir": "/home",
+    "Labels": {
+      "org.opencontainers.image.ref.name": "ubuntu",
+      "org.opencontainers.image.version": "22.04"
+    }
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:270a1170e7e398434ff1b31e17e233f7d7b71aa99a40473615860068e86720af",
+      "sha256:6a4fd80e5401e7c0b2e4d98018800b534a5d9caf6e5ed7a7e92be7613902e4c5",
+      "sha256:3750e8772358a8041cc88c5fc3923fbe4fd73eca45c64679d7b64d352882acd3",
+      "sha256:eb10179cc2a56d606ff7ff217225fd280ac49fcd5c74cd65f6230c59cbe872c0",
+      "sha256:3a43299e82ccefeb1211928c72353e02241a64e19ba5ffce213cd6d782fa837b",
+      "sha256:81e0dab963881de81e81c3b62bc5a7e40e4c72fccffe25f99c70dbbf003ff410",
+      "sha256:4528570533610151e889f782f204ec0fc5d9f496352f1217619c6125f2179092",
+      "sha256:fe504da5ec19982f38708e5a94c3bc5641fb13dd9011cab14a4b670e905e1057",
+      "sha256:ba5ff20548fd7ab3386c2ab3e7cb4c5a0dcd57a97a6c45934e8c7f781c9afb33",
+      "sha256:395d7d820756fe17b3a5c41603b6aa910ef6e03d52e3ff8852bf499ae3d5da12",
+      "sha256:5c6fd185749f12b3e54b155ad19c83d18e7feb7f7481a78c10e4bdbab72d7a66",
+      "sha256:2493909fc8daa332abc8a4549db77cf2315558ff40efe80634f064642d40bdaf",
+      "sha256:2bc583d590def2a0d1eaf00208a7741207f4bd780249756bd4246111d1979357",
+      "sha256:0786858ed12943c68121f87663e482eafc3a3afe3c186430b4bb24064fc71747"
+    ]
+  }
+}

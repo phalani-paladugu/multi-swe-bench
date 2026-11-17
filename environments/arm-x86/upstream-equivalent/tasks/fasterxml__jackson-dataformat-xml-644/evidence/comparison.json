@@ -1,0 +1,180 @@
+{
+  "base_amd64_is_exact_upstream_layer_prefix": true,
+  "base_image_provenance": {
+    "amd64_base_diff_ids": [
+      "sha256:270a1170e7e398434ff1b31e17e233f7d7b71aa99a40473615860068e86720af"
+    ],
+    "amd64_matches_actual_upstream_prefix": true,
+    "arm64_base_diff_ids": [
+      "sha256:59b223680ef978509f20faf6bf069866dfc02c422159347face0a7565d698526"
+    ],
+    "arm64_manifest_digest": "sha256:23fdb0648173966ac0b863e5b3d63032e99f44533c5b396e62f29770ca2c5210",
+    "arm64_manifest_matches_recipe": true,
+    "arm64_matches_built_image_prefix": true,
+    "base_index_digest": "sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2",
+    "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+  },
+  "build": {
+    "architecture": "arm64",
+    "build_exit": 0,
+    "dockerfile_sha256": "c190e762487094739300cfd6003323edb9ab1bd75def43c3b24dca016d621969",
+    "finished_at": "2026-11-17T14:41:11.510190+00:00",
+    "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:upstream-v1",
+    "image_architecture": "arm64",
+    "image_id": "sha256:989f66ccb3bd78e2498c4c72866356ba1a800f7b397dac44430f39f6f6c30584",
+    "input_sha256": {
+      "arm/Dockerfile": "c190e762487094739300cfd6003323edb9ab1bd75def43c3b24dca016d621969",
+      "install-java.sh": "57af7acade5113e29a62a224c8ee0146da53b1f220d7af2335b7c8d34aa1010d",
+      "packages.txt": "4345a0e612119a8111794098377849281f496c8cf08b9f3885e6e5946ab2fc8e",
+      "upstream-reference.json": "a68c9a18c20e2a7901d667e4c9b616489fddecedd01a094676550bcd99f9fc55"
+    },
+    "instance_id": "fasterxml__jackson-dataformat-xml-644",
+    "logs": "evidence/builds/attempt-3/fasterxml__jackson-dataformat-xml-644",
+    "matches_current_dockerfile": true,
+    "native_host_architecture": "aarch64",
+    "packages_exit": 0,
+    "smoke_exit": 0,
+    "started_at": "2026-11-17T14:41:06.716942+00:00",
+    "status": "built_smoke_checked",
+    "upstream_image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c"
+  },
+  "documented_architecture_exclusions": {
+    "libdrm-intel1": "Intel graphics userspace driver; absent from the ARM64 package archive. The task does not use an Intel GPU."
+  },
+  "file_hashes": {
+    "/home/check_git_changes.sh": {
+      "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+      "matches": true,
+      "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+    },
+    "/home/fix-run.sh": {
+      "arm_sha256": "5a63d0f8d076a50e8654b834bbdb64a8d4e9629b0abaf0e0af41bcb8af5aaf05",
+      "matches": true,
+      "upstream_sha256": "5a63d0f8d076a50e8654b834bbdb64a8d4e9629b0abaf0e0af41bcb8af5aaf05"
+    },
+    "/home/fix.patch": {
+      "arm_sha256": "4df918b4fc2e932748cd1b00bd92066326cc87fd04817cd8f31063a506107caa",
+      "matches": true,
+      "upstream_sha256": "4df918b4fc2e932748cd1b00bd92066326cc87fd04817cd8f31063a506107caa"
+    },
+    "/home/jackson-dataformat-xml/pom.xml": {
+      "arm_sha256": "464c91ed6ff70ee982d1c3eaa5d6636a6c7031d45b33a97bf3a07d5c4784fc73",
+      "matches": true,
+      "upstream_sha256": "464c91ed6ff70ee982d1c3eaa5d6636a6c7031d45b33a97bf3a07d5c4784fc73"
+    },
+    "/home/prepare.sh": {
+      "arm_sha256": "d7619a50157ee047509b5d7abc2fea04101deef87346dc75ae32107bb933332d",
+      "matches": true,
+      "upstream_sha256": "d7619a50157ee047509b5d7abc2fea04101deef87346dc75ae32107bb933332d"
+    },
+    "/home/run.sh": {
+      "arm_sha256": "63eb46a9d4373dd6a1973a9ebf09877997d706a4ab2df5a1c2f24bad6f1bd29f",
+      "matches": true,
+      "upstream_sha256": "63eb46a9d4373dd6a1973a9ebf09877997d706a4ab2df5a1c2f24bad6f1bd29f"
+    },
+    "/home/test-run.sh": {
+      "arm_sha256": "37aca2b9fa71f4095f2c8fe047dc903aa2f5e60dae39177914fe67f84f28576d",
+      "matches": true,
+      "upstream_sha256": "37aca2b9fa71f4095f2c8fe047dc903aa2f5e60dae39177914fe67f84f28576d"
+    },
+    "/home/test.patch": {
+      "arm_sha256": "7adc9640c2a0c44c1170d3a504621d6142065784a0e90a06584424d6f1a34bf7",
+      "matches": true,
+      "upstream_sha256": "7adc9640c2a0c44c1170d3a504621d6142065784a0e90a06584424d6f1a34bf7"
+    }
+  },
+  "image_ids": {
+    "arm": "sha256:989f66ccb3bd78e2498c4c72866356ba1a800f7b397dac44430f39f6f6c30584",
+    "upstream_x86": "sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c"
+  },
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "packages": {
+    "arm_count": 357,
+    "only_arm": {},
+    "only_upstream": {
+      "libdrm-intel1": {
+        "Architecture": "amd64",
+        "Version": "2.4.113-2~ubuntu0.22.04.1"
+      }
+    },
+    "upstream_count": 358,
+    "version_differences": {}
+  },
+  "runtime_configuration": {
+    "Cmd": {
+      "arm": [
+        "/bin/bash"
+      ],
+      "matches": true,
+      "upstream": [
+        "/bin/bash"
+      ]
+    },
+    "Entrypoint": {
+      "arm": null,
+      "matches": true,
+      "upstream": null
+    },
+    "Env": {
+      "arm": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy=",
+        "DEBIAN_FRONTEND=noninteractive",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8"
+      ],
+      "matches": true,
+      "upstream": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy=",
+        "DEBIAN_FRONTEND=noninteractive",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8"
+      ]
+    },
+    "WorkingDir": {
+      "arm": "/home/",
+      "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+      "matches": true,
+      "raw_matches": false,
+      "upstream": "/home"
+    }
+  },
+  "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+  "source_commit": {
+    "expected": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+    "matches": true,
+    "observed": [
+      "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0"
+    ]
+  },
+  "test_evidence": {
+    "changed_config_fields": [
+      "Cmd"
+    ],
+    "final_image_id": "sha256:989f66ccb3bd78e2498c4c72866356ba1a800f7b397dac44430f39f6f6c30584",
+    "image_id": "sha256:70152090abd1d391001900a131ec154973328fa21df9358ac294b53411adc159",
+    "logs": "evidence/builds/attempt-2/fasterxml__jackson-dataformat-xml-644",
+    "reason": "Final image differs only in default command metadata. Recorded tests used explicit bash /home/test-run.sh and bash /home/fix-run.sh commands, which override that default. Tests were not rerun on the final image ID.",
+    "reused_after_metadata_change": true,
+    "rootfs_layers_identical": true
+  },
+  "tests": {
+    "all_expected_gold_tests_passed": true,
+    "all_f2p_reproduced": null,
+    "baseline_exit": 1,
+    "expected_gold_tests": 127,
+    "f2p": {},
+    "gold_exit": 0,
+    "missing_gold_tests": [],
+    "nonpassing_gold_tests": {},
+    "observed_gold_tests": 127
+  },
+  "upstream_image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c"
+}

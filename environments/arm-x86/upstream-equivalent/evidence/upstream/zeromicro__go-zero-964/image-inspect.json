@@ -1,0 +1,46 @@
+{
+  "Id": "sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6",
+  "RepoDigests": [
+    "mswebench/zeromicro_m_go-zero@sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6"
+  ],
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Created": "2025-03-18T09:18:55.084602919Z",
+  "Config": {
+    "Env": [
+      "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOLANG_VERSION=1.24.1",
+      "GOTOOLCHAIN=local",
+      "GOPATH=/go",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy="
+    ],
+    "Cmd": [
+      "bash"
+    ],
+    "WorkingDir": "/home"
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+      "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+      "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+      "sha256:3ff6fa92a9a637cab1329e915dfb0531f52baa26cda282a3d30c6c2100c17e05",
+      "sha256:e0f4cf0bdc482691782fcd0642612f0aa8ffc90ef2506f0619ab2507d726bafc",
+      "sha256:2a3d44cb92fde1543830ddde12c7267179ccbfc2dfb8c528323183f963956094",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:9b6c9246dc5f3fb84e414b3ca56a14a1f426a0e0f3da1a81a94dc0e9539f3e13",
+      "sha256:3b3728c695e672f096fe2d4370e549967afaebbf1e30ee5ad33fc9e496f51df9",
+      "sha256:2ff6d1ae8d8af2ef36d31ee1c17a4afc13c2df04bfee61ffb070d94255542f33",
+      "sha256:e2fecaaf225298f679b2a1b592ef1df1bab12075723187a2280ad13f946dfafb",
+      "sha256:ba97497c121155c30f0029678d4fa1688f6cd4ec83333a94323e2ae005d6b5b2",
+      "sha256:6d768a7439810ea2e2d404c662ecd21d46d3fd7bc9624f5ed0a11c4f1d0a134b",
+      "sha256:59f6d233bb3ed1dd046046a9089ef36872d293adf0c3568dc3045142306a7d4b",
+      "sha256:f53bb914190e75d1713adb47ffac23625237cce5cbbe9119e333f23f3b5edce7",
+      "sha256:74bb49890bc090d625aadaa1e238e7f532c93da764b5630ff3690c9090a25691"
+    ]
+  }
+}

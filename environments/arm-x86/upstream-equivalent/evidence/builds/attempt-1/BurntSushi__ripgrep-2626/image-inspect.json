@@ -1,0 +1,50 @@
+{
+  "Id": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+  "RepoDigests": [
+    "msweb.eval.arm64.burntsushi__ripgrep-2626@sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319"
+  ],
+  "Architecture": "arm64",
+  "Os": "linux",
+  "Created": "2026-11-16T23:14:30.092642072Z",
+  "Config": {
+    "Env": [
+      "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "RUSTUP_HOME=/usr/local/rustup",
+      "CARGO_HOME=/usr/local/cargo",
+      "RUST_VERSION=1.85.0",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy="
+    ],
+    "Cmd": [
+      "bash"
+    ],
+    "WorkingDir": "/home/",
+    "Labels": {
+      "org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust"
+    },
+    "ArgsEscaped": true
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+      "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+      "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+      "sha256:77122155c2dc59977416cf2f760eb52aed66fd82acb25b7b006e0ad7f989ff55",
+      "sha256:e61bd151779656dee304566db7b4a662b784f522b4588f164305dc89e081541f",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:b63f4b4217bfaf22d496fb204301e86a5922c793bf59620aede44c49ac3d021c",
+      "sha256:52a8ba4525d0bb82fb746c7a7632179859ce1e2e18675e276a9c19ed9a996c65",
+      "sha256:96fc8536417ce805c7746650dd6298dbc52cf1e4ad7f1a338546b97f41bdbd75",
+      "sha256:a999be528c4d337d58d2ed26c2c3f3b0ef1581632f15979188a482ad92896e61",
+      "sha256:2dc24cb58e8cd55b9f952085936cd3d04024d9641b677aab51c025439cada56e",
+      "sha256:06711ec90722cbeba696bd8907a308a0c5eb74fbec0d6c30961b2d17df2c6172",
+      "sha256:8126eaf4a2901ae59f719e4312d58e080e531e5ee2a0229814a1ae33903ff269",
+      "sha256:1bee97271f4cf0c59fe8d8d8995f48fe4701df8cda6e7a748d00b0b92d4d9dc6",
+      "sha256:bb21c247ccf823fd8284cb20b9da6935597d95dda578eba38b4e98e9509370bc",
+      "sha256:17de9c92804e2962be5e7b672d3ce1a99f97e0ac8334f0b18c7639bbf212c890"
+    ]
+  }
+}

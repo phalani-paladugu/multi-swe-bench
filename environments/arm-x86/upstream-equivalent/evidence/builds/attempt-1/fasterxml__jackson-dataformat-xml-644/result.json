@@ -1,0 +1,11 @@
+{
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:upstream-v1",
+  "upstream_image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c",
+  "started_at": "2026-11-16T23:14:51.576414+00:00",
+  "status": "build_failed",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "091e616488a419443eefb2e113fd6cef2723e984599fc4afdde4799a322a6b13",
+  "build_exit": 1
+}

@@ -1,0 +1,16 @@
+{
+  "instance_id": "grpc__grpc-go-3119",
+  "language": "go",
+  "repository_name": "grpc-go",
+  "source_commit": "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb",
+  "upstream_image": "mswebench/grpc_m_grpc-go@sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804",
+  "upstream_tag": "mswebench/grpc_m_grpc-go:pr-3119",
+  "base_image": "golang:1.24.1-bookworm@sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d",
+  "base_amd64_matches_upstream_layers": true,
+  "base_layer_count": 7,
+  "arm_base_manifest": "sha256:f32028b6b5937c12b2491f2855060ce352ee3aea835bee0d6c0c4b2c67b72f38",
+  "image": "msweb.eval.arm64.grpc__grpc-go-3119:upstream-v1",
+  "command": [
+    "bash"
+  ]
+}

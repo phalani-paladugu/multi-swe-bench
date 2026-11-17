@@ -1,0 +1,24 @@
+{
+  "instance_id": "alibaba__fastjson2-2775",
+  "language": "java",
+  "repository_name": "fastjson2",
+  "source_commit": "12b40c7ba3e7c30e35977195770c80beb34715c5",
+  "upstream_image": "mswebench/alibaba_m_fastjson2@sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15",
+  "upstream_tag": "mswebench/alibaba_m_fastjson2:pr-2775",
+  "base_image": "ubuntu:focal-20241011@sha256:8e5c4f0285ecbb4ead070431d29b576a530d3166df73ec44affc1cd27555141b",
+  "base_amd64_matches_upstream_layers": true,
+  "base_layer_count": 1,
+  "arm_base_manifest": "sha256:4489868cec4ea83f1e2c8e9f493ac957ec1451a63428dbec12af2894e6da4429",
+  "extra_environment": [
+    "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+    "DEBIAN_FRONTEND=noninteractive",
+    "LANG=C.UTF-8",
+    "LC_ALL=C.UTF-8"
+  ],
+  "java_install": true,
+  "ubuntu_snapshot": "20250331T074000Z",
+  "image": "msweb.eval.arm64.alibaba__fastjson2-2775:upstream-v1",
+  "command": [
+    "/bin/bash"
+  ]
+}

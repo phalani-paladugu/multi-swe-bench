@@ -1,0 +1,48 @@
+{
+  "Id": "sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca",
+  "RepoDigests": [
+    "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca"
+  ],
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Created": "2025-04-12T14:01:56.088485985Z",
+  "Config": {
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy=",
+      "DEBIAN_FRONTEND=noninteractive",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8"
+    ],
+    "Cmd": [
+      "/bin/bash"
+    ],
+    "WorkingDir": "/home",
+    "Labels": {
+      "org.opencontainers.image.ref.name": "ubuntu",
+      "org.opencontainers.image.version": "22.04"
+    }
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:270a1170e7e398434ff1b31e17e233f7d7b71aa99a40473615860068e86720af",
+      "sha256:9352358df425c9c61b25a0a9172a7cb0aaa87e352939fc8651f5408028cebd4a",
+      "sha256:6a3ff4cb47b1510edfbbe4822f26b83aa06f39d7e078576caf298ecc30101049",
+      "sha256:591be599f7e3c76595942af52f5626ef7ab26ffe18d722dcb6e215344156deb9",
+      "sha256:efb8f812e2057cf4dee86b1e7dac16f6daf55039dd2cfe08d1098db0ac0feac8",
+      "sha256:ecb20b3d9e5baf5e7739b74e71c8ac1c66e808619d4667368bc9ba5fda59af4d",
+      "sha256:9c8a710610e4b89368f19904f64941fae769149f955513a405c4121d96e8bac1",
+      "sha256:3f9358a64b8ba5699e92b995e23fb1821c7641a1291a18f94bb8b778168105ad",
+      "sha256:af76249e3d40b5c8cc1393cf1230f6fc68e37c31efbe2ddc7badf708f7aa3503",
+      "sha256:cf0438462b4d144e42fdf9040c8d5200893887d81f16a6a7b80f78c9cddcdf56",
+      "sha256:073e19d750abed472de12c605cc0a49913ebc516b9520e85b2e21ff7611278c6",
+      "sha256:6d619889e61c9d938bd440303f2f7529266b9b16b5951e4bd31872923c3ed42e",
+      "sha256:47527be69c619e37315e430926f9b972c64d93880302805a640f72beb23d962f",
+      "sha256:baf433a4be5532a9dba7acb6200f215de183b4dad364ed6803e1310ec3932c8f"
+    ]
+  }
+}

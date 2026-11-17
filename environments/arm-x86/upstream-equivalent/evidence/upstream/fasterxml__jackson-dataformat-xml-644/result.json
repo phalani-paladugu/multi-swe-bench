@@ -1,0 +1,30 @@
+{
+  "task": "fasterxml__jackson-dataformat-xml-644",
+  "image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c",
+  "image_id": "sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c",
+  "source_commit": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+  "java_packages": {
+    "maven": {
+      "Version": "3.6.3-5",
+      "Architecture": "all"
+    },
+    "openjdk-8-jdk": {
+      "Version": "8u442-b06~us1-0ubuntu1~22.04",
+      "Architecture": "amd64"
+    },
+    "openjdk-8-jdk-headless": {
+      "Version": "8u442-b06~us1-0ubuntu1~22.04",
+      "Architecture": "amd64"
+    },
+    "openjdk-8-jre": {
+      "Version": "8u442-b06~us1-0ubuntu1~22.04",
+      "Architecture": "amd64"
+    },
+    "openjdk-8-jre-headless": {
+      "Version": "8u442-b06~us1-0ubuntu1~22.04",
+      "Architecture": "amd64"
+    }
+  },
+  "package_count": 358,
+  "collected_at": "2026-11-16T23:11:27.982632+00:00"
+}

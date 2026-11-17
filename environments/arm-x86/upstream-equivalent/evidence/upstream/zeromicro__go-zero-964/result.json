@@ -1,0 +1,9 @@
+{
+  "task": "zeromicro__go-zero-964",
+  "image": "mswebench/zeromicro_m_go-zero@sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6",
+  "image_id": "sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6",
+  "source_commit": "68acfb1891837ec2e401588173cdd16ca1b9a9c4",
+  "java_packages": {},
+  "package_count": 205,
+  "collected_at": "2026-11-16T23:12:06.328978+00:00"
+}

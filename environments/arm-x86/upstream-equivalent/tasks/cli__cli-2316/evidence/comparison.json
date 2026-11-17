@@ -1,0 +1,200 @@
+{
+  "base_amd64_is_exact_upstream_layer_prefix": true,
+  "base_image_provenance": {
+    "amd64_base_diff_ids": [
+      "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+      "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+      "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+      "sha256:3ff6fa92a9a637cab1329e915dfb0531f52baa26cda282a3d30c6c2100c17e05",
+      "sha256:e0f4cf0bdc482691782fcd0642612f0aa8ffc90ef2506f0619ab2507d726bafc",
+      "sha256:2a3d44cb92fde1543830ddde12c7267179ccbfc2dfb8c528323183f963956094",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "amd64_matches_actual_upstream_prefix": true,
+    "arm64_base_diff_ids": [
+      "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+      "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+      "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+      "sha256:eb665c8a149e58b22bd3064f905b14a6f80b460730a9373fe3aed9126f59e721",
+      "sha256:2ec0d4bb5a63729fb3d04a2fcc9890a11589b14f611f1995c8f3c61869702ea0",
+      "sha256:26d7c7a5975a3255c90d26491a01fdab583693f3a7ba68c46c5ba7bc6f13c717",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "arm64_manifest_digest": "sha256:f32028b6b5937c12b2491f2855060ce352ee3aea835bee0d6c0c4b2c67b72f38",
+    "arm64_manifest_matches_recipe": true,
+    "arm64_matches_built_image_prefix": true,
+    "base_index_digest": "sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d",
+    "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+  },
+  "build": {
+    "architecture": "arm64",
+    "baseline_exit": 1,
+    "build_exit": 0,
+    "dockerfile_sha256": "c2f1e20a17bb17364a67b8f28aee937e15c3a4746e0ec2f106ce95122960e485",
+    "finished_at": "2026-11-16T23:14:54.229597+00:00",
+    "gold_exit": 1,
+    "image": "msweb.eval.arm64.cli__cli-2316:upstream-v1",
+    "image_architecture": "arm64",
+    "image_id": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+    "instance_id": "cli__cli-2316",
+    "logs": "evidence/builds/attempt-1/cli__cli-2316",
+    "matches_current_dockerfile": true,
+    "native_host_architecture": "aarch64",
+    "packages_exit": 0,
+    "smoke_exit": 0,
+    "started_at": "2026-11-16T23:13:34.355895+00:00",
+    "status": "built_tests_recorded",
+    "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+    "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+    "upstream_image": "mswebench/cli_m_cli@sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be"
+  },
+  "documented_architecture_exclusions": {},
+  "file_hashes": {
+    "/home/check_git_changes.sh": {
+      "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+      "matches": true,
+      "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+    },
+    "/home/cli/go.mod": {
+      "arm_sha256": "068297b44477d274d25c87b278821971a83e0b2d39fbffba97d75d6027d84b6b",
+      "matches": true,
+      "upstream_sha256": "068297b44477d274d25c87b278821971a83e0b2d39fbffba97d75d6027d84b6b"
+    },
+    "/home/cli/go.sum": {
+      "arm_sha256": "278b30478d6a927f8313e44882805f3f61aa6e028def4be8fcf402f63b047e4a",
+      "matches": true,
+      "upstream_sha256": "278b30478d6a927f8313e44882805f3f61aa6e028def4be8fcf402f63b047e4a"
+    },
+    "/home/fix-run.sh": {
+      "arm_sha256": "6429230c930ac426a38e1c636056de020ade1e717f529f48b095e83e875e3124",
+      "matches": true,
+      "upstream_sha256": "6429230c930ac426a38e1c636056de020ade1e717f529f48b095e83e875e3124"
+    },
+    "/home/fix.patch": {
+      "arm_sha256": "dc82dbb6c40d9963813fb2badf0db084283e5714b6e29ac17c30af296392cac1",
+      "matches": true,
+      "upstream_sha256": "dc82dbb6c40d9963813fb2badf0db084283e5714b6e29ac17c30af296392cac1"
+    },
+    "/home/prepare.sh": {
+      "arm_sha256": "1c9b52273a2a0c5cbb2166f9da0d25297add849da053606a36a303252c2554f1",
+      "matches": true,
+      "upstream_sha256": "1c9b52273a2a0c5cbb2166f9da0d25297add849da053606a36a303252c2554f1"
+    },
+    "/home/run.sh": {
+      "arm_sha256": "b6258956e865045de40dc3116d4b17863a33b2ad8d1bc85adce68d4a32ba3817",
+      "matches": true,
+      "upstream_sha256": "b6258956e865045de40dc3116d4b17863a33b2ad8d1bc85adce68d4a32ba3817"
+    },
+    "/home/test-run.sh": {
+      "arm_sha256": "17cef028475fb3ff64b1e8f95787a73adf71ff2dcc7a2315f47f70a5b3fee2a8",
+      "matches": true,
+      "upstream_sha256": "17cef028475fb3ff64b1e8f95787a73adf71ff2dcc7a2315f47f70a5b3fee2a8"
+    },
+    "/home/test.patch": {
+      "arm_sha256": "e629129d31458c8990bb6cb8705c86ab5ceaec95f19e22913989c6511217164c",
+      "matches": true,
+      "upstream_sha256": "e629129d31458c8990bb6cb8705c86ab5ceaec95f19e22913989c6511217164c"
+    }
+  },
+  "image_ids": {
+    "arm": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+    "upstream_x86": "sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be"
+  },
+  "instance_id": "cli__cli-2316",
+  "packages": {
+    "arm_count": 205,
+    "only_arm": {
+      "binutils-aarch64-linux-gnu": {
+        "Architecture": "arm64",
+        "Version": "2.40-2"
+      },
+      "libhwasan0": {
+        "Architecture": "arm64",
+        "Version": "12.2.0-14"
+      }
+    },
+    "only_upstream": {
+      "binutils-x86-64-linux-gnu": {
+        "Architecture": "amd64",
+        "Version": "2.40-2"
+      },
+      "libquadmath0": {
+        "Architecture": "amd64",
+        "Version": "12.2.0-14"
+      }
+    },
+    "upstream_count": 205,
+    "version_differences": {}
+  },
+  "runtime_configuration": {
+    "Cmd": {
+      "arm": [
+        "bash"
+      ],
+      "matches": true,
+      "upstream": [
+        "bash"
+      ]
+    },
+    "Entrypoint": {
+      "arm": null,
+      "matches": true,
+      "upstream": null
+    },
+    "Env": {
+      "arm": [
+        "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "GOLANG_VERSION=1.24.1",
+        "GOTOOLCHAIN=local",
+        "GOPATH=/go",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy="
+      ],
+      "matches": true,
+      "upstream": [
+        "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "GOLANG_VERSION=1.24.1",
+        "GOTOOLCHAIN=local",
+        "GOPATH=/go",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy="
+      ]
+    },
+    "WorkingDir": {
+      "arm": "/home/",
+      "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+      "matches": true,
+      "raw_matches": false,
+      "upstream": "/home"
+    }
+  },
+  "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+  "source_commit": {
+    "expected": "5e89036d49993087b9b45060cc1292a18e1d853a",
+    "matches": true,
+    "observed": [
+      "5e89036d49993087b9b45060cc1292a18e1d853a"
+    ]
+  },
+  "test_evidence": {
+    "image_id": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+    "logs": "evidence/builds/attempt-1/cli__cli-2316",
+    "reused_after_metadata_change": false
+  },
+  "tests": {
+    "all_expected_gold_tests_passed": true,
+    "all_f2p_reproduced": null,
+    "baseline_exit": 1,
+    "expected_gold_tests": 801,
+    "f2p": {},
+    "gold_exit": 1,
+    "missing_gold_tests": [],
+    "nonpassing_gold_tests": {},
+    "observed_gold_tests": 801
+  },
+  "upstream_image": "mswebench/cli_m_cli@sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be"
+}

@@ -1,0 +1,22 @@
+{
+  "instance_id": "apache__dubbo-11781",
+  "image": "msweb.eval.arm64.apache__dubbo-11781:upstream-v1",
+  "upstream_image": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca",
+  "started_at": "2026-11-17T14:41:06.716689+00:00",
+  "status": "built_smoke_checked",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "69b7c3bcaa468e79c663f6e57e3a37a80ea4c09a230f032c3c6aa3031c0bf1e9",
+  "input_sha256": {
+    "arm/Dockerfile": "69b7c3bcaa468e79c663f6e57e3a37a80ea4c09a230f032c3c6aa3031c0bf1e9",
+    "packages.txt": "5106d166fa76966eeb96ce2a3753ec34367eb0bb64ab7ef371aeca3e5e01a508",
+    "install-java.sh": "8c246fa3de464856a84e6af29a8dc2b24933e08e413be2ca02e8bbfcbbc8c59f",
+    "upstream-reference.json": "fd5d652f9da8bde92c9a7f3fd341134a8465c5519fc2a7fb3c6174a32b37520a"
+  },
+  "build_exit": 0,
+  "image_id": "sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27",
+  "image_architecture": "arm64",
+  "smoke_exit": 0,
+  "packages_exit": 0,
+  "finished_at": "2026-11-17T14:41:11.163928+00:00"
+}

@@ -1,0 +1,86 @@
+{
+  "/etc/apt/sources.list": {
+    "present": false
+  },
+  "/etc/os-release": {
+    "bytes": 267,
+    "present": true,
+    "sha256": "59a77b5f2666d9c85c489bd1911a6eebbd91ef22fe48b90a3b75f1b21f3844d4"
+  },
+  "/home/check_git_changes.sh": {
+    "bytes": 315,
+    "present": true,
+    "sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+  },
+  "/home/fix-run.sh": {
+    "bytes": 107,
+    "present": true,
+    "sha256": "14e0752d38f5f49a00af58fa68ca83a99acc65f57fd3bab3e443f4996eb03e47"
+  },
+  "/home/fix.patch": {
+    "bytes": 8655,
+    "present": true,
+    "sha256": "0445d581eb4a9f6bb863ec5489cd910961ffb5124776ca27838fd75ac08aa383"
+  },
+  "/home/go-zero/.git/HEAD": {
+    "bytes": 41,
+    "evidence_path": "files/home/go-zero/git-metadata/HEAD",
+    "present": true,
+    "sha256": "72e7aac624ec6f8237f76f27a9bf294b275d749be3bfd4424c6d48361ee8408e"
+  },
+  "/home/go-zero/.mvn/wrapper/maven-wrapper.properties": {
+    "present": false
+  },
+  "/home/go-zero/Cargo.lock": {
+    "present": false
+  },
+  "/home/go-zero/Cargo.toml": {
+    "present": false
+  },
+  "/home/go-zero/go.mod": {
+    "bytes": 2200,
+    "present": true,
+    "sha256": "41772ff8dd6ed8937b73a650f0609787c314b0c124aa4dedbae133f6fac961ca"
+  },
+  "/home/go-zero/go.sum": {
+    "bytes": 69657,
+    "present": true,
+    "sha256": "c699500093c9acc18f29f3a2cb80abf2f91c342afe97f14b05c32fe4e61188c1"
+  },
+  "/home/go-zero/pom.xml": {
+    "present": false
+  },
+  "/home/prepare.sh": {
+    "bytes": 208,
+    "present": true,
+    "sha256": "c2200d8715c409b30a8834a7140680ae0b26df167bd8b41f42bf5ba77ac1a9f6"
+  },
+  "/home/run.sh": {
+    "bytes": 64,
+    "present": true,
+    "sha256": "17d70e0b68a31d22840bb776df1acff5f0bc533945f09ba324af6339e2e67110"
+  },
+  "/home/test-run.sh": {
+    "bytes": 91,
+    "present": true,
+    "sha256": "d43aeb2cd40c2b0ba8eee8164097b4b02ed647dc39559586888161e1eff33413"
+  },
+  "/home/test.patch": {
+    "bytes": 7664,
+    "present": true,
+    "sha256": "dce1f0e0a007aef02fb5ea0a4223591f45dc61cb6931615bb99816f66d2ef505"
+  },
+  "/usr/local/go/VERSION": {
+    "bytes": 35,
+    "present": true,
+    "sha256": "4407ffecd5b7e06b4f47ac38e68dcca9fc13dd173cc71a5cb228605f328af988"
+  },
+  "/usr/local/rustup/settings.toml": {
+    "present": false
+  },
+  "/var/lib/dpkg/status": {
+    "bytes": 191202,
+    "present": true,
+    "sha256": "fa6075b2714dc058efdcd6710be6e2993d2baf904452353844967287364fcea9"
+  }
+}

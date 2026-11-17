@@ -1,0 +1,175 @@
+{
+  "base_amd64_is_exact_upstream_layer_prefix": true,
+  "base_image_provenance": {
+    "amd64_base_diff_ids": [
+      "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+    ],
+    "amd64_matches_actual_upstream_prefix": true,
+    "arm64_base_diff_ids": [
+      "sha256:171652ecd561458ec6fcca88016f1d5552155ecaff2445a38a97f49d6b672904"
+    ],
+    "arm64_manifest_digest": "sha256:4489868cec4ea83f1e2c8e9f493ac957ec1451a63428dbec12af2894e6da4429",
+    "arm64_manifest_matches_recipe": true,
+    "arm64_matches_built_image_prefix": true,
+    "base_index_digest": "sha256:8e5c4f0285ecbb4ead070431d29b576a530d3166df73ec44affc1cd27555141b",
+    "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+  },
+  "build": {
+    "architecture": "arm64",
+    "build_exit": 0,
+    "dockerfile_sha256": "872dc27b5cc30a1624eba0a4c5bed6e0ca61c26efb79fc8bcb7b0e5b51a5274d",
+    "finished_at": "2026-11-17T14:41:11.514482+00:00",
+    "image": "msweb.eval.arm64.alibaba__fastjson2-2775:upstream-v1",
+    "image_architecture": "arm64",
+    "image_id": "sha256:5cb0c77ea6bed7a600ef39389b75e7f0e415e8b1c16476a24a15402c2ea4e6db",
+    "input_sha256": {
+      "arm/Dockerfile": "872dc27b5cc30a1624eba0a4c5bed6e0ca61c26efb79fc8bcb7b0e5b51a5274d",
+      "install-java.sh": "6b0648d1e32d9906916815d251e5e82cef8d938f01db776b2ad430a1a27b0920",
+      "packages.txt": "60d12b723062028befc675bb3096b8b65abb9a39b11b28620c0d7c8c0c5bb2cb",
+      "upstream-reference.json": "796bbdb142b616b842ea90094d4ca35ecf5c516fdaba64972cc6c90c8266b8be"
+    },
+    "instance_id": "alibaba__fastjson2-2775",
+    "logs": "evidence/builds/attempt-3/alibaba__fastjson2-2775",
+    "matches_current_dockerfile": true,
+    "native_host_architecture": "aarch64",
+    "packages_exit": 0,
+    "smoke_exit": 0,
+    "started_at": "2026-11-17T14:41:06.716458+00:00",
+    "status": "built_smoke_checked",
+    "upstream_image": "mswebench/alibaba_m_fastjson2@sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15"
+  },
+  "documented_architecture_exclusions": {},
+  "file_hashes": {
+    "/home/check_git_changes.sh": {
+      "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+      "matches": true,
+      "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+    },
+    "/home/fastjson2/pom.xml": {
+      "arm_sha256": "48cd8ba5616e40db35a1fd7f83aeeafced799d005737573b2c8fe0001277dd3e",
+      "matches": true,
+      "upstream_sha256": "48cd8ba5616e40db35a1fd7f83aeeafced799d005737573b2c8fe0001277dd3e"
+    },
+    "/home/fix-run.sh": {
+      "arm_sha256": "05d4453015b6e762e997b90551ff7b3ece0c8128f8c73d37a8e4975497187407",
+      "matches": true,
+      "upstream_sha256": "05d4453015b6e762e997b90551ff7b3ece0c8128f8c73d37a8e4975497187407"
+    },
+    "/home/fix.patch": {
+      "arm_sha256": "b81a64f0b87cb92ed84c18ba34210dba62bfd3592b08874257aab851cdec626b",
+      "matches": true,
+      "upstream_sha256": "b81a64f0b87cb92ed84c18ba34210dba62bfd3592b08874257aab851cdec626b"
+    },
+    "/home/prepare.sh": {
+      "arm_sha256": "351da62b2db6496eac4ba207bd25ac910e94fa23e64a1b4c71d6db46a17124c4",
+      "matches": true,
+      "upstream_sha256": "351da62b2db6496eac4ba207bd25ac910e94fa23e64a1b4c71d6db46a17124c4"
+    },
+    "/home/run.sh": {
+      "arm_sha256": "dc022e4f4b2d5591155a8686e911f3c508c4cdc09c96ccef0298b0bfe862f000",
+      "matches": true,
+      "upstream_sha256": "dc022e4f4b2d5591155a8686e911f3c508c4cdc09c96ccef0298b0bfe862f000"
+    },
+    "/home/test-run.sh": {
+      "arm_sha256": "949fb3f1f6297163449441624d60e19b12da9c2bee200afc26e512b90fa70ba8",
+      "matches": true,
+      "upstream_sha256": "949fb3f1f6297163449441624d60e19b12da9c2bee200afc26e512b90fa70ba8"
+    },
+    "/home/test.patch": {
+      "arm_sha256": "1ae3de5e8026117e0fc90467996d07eb14d355ba520860d6bc9315eebb275bcc",
+      "matches": true,
+      "upstream_sha256": "1ae3de5e8026117e0fc90467996d07eb14d355ba520860d6bc9315eebb275bcc"
+    }
+  },
+  "image_ids": {
+    "arm": "sha256:5cb0c77ea6bed7a600ef39389b75e7f0e415e8b1c16476a24a15402c2ea4e6db",
+    "upstream_x86": "sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15"
+  },
+  "instance_id": "alibaba__fastjson2-2775",
+  "packages": {
+    "arm_count": 191,
+    "only_arm": {},
+    "only_upstream": {},
+    "upstream_count": 191,
+    "version_differences": {}
+  },
+  "runtime_configuration": {
+    "Cmd": {
+      "arm": [
+        "/bin/bash"
+      ],
+      "matches": true,
+      "upstream": [
+        "/bin/bash"
+      ]
+    },
+    "Entrypoint": {
+      "arm": null,
+      "matches": true,
+      "upstream": null
+    },
+    "Env": {
+      "arm": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy=",
+        "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+        "DEBIAN_FRONTEND=noninteractive",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8"
+      ],
+      "matches": true,
+      "upstream": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy=",
+        "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+        "DEBIAN_FRONTEND=noninteractive",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8"
+      ]
+    },
+    "WorkingDir": {
+      "arm": "/home/",
+      "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+      "matches": true,
+      "raw_matches": false,
+      "upstream": "/home"
+    }
+  },
+  "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+  "source_commit": {
+    "expected": "12b40c7ba3e7c30e35977195770c80beb34715c5",
+    "matches": true,
+    "observed": [
+      "12b40c7ba3e7c30e35977195770c80beb34715c5"
+    ]
+  },
+  "test_evidence": {
+    "changed_config_fields": [
+      "Cmd"
+    ],
+    "final_image_id": "sha256:5cb0c77ea6bed7a600ef39389b75e7f0e415e8b1c16476a24a15402c2ea4e6db",
+    "image_id": "sha256:100bfdc5074ba4cd74b212c515b52d91614389f5ffd7159281a28dbf3afb681b",
+    "logs": "evidence/builds/attempt-1/alibaba__fastjson2-2775",
+    "reason": "Final image differs only in default command metadata. Recorded tests used explicit bash /home/test-run.sh and bash /home/fix-run.sh commands, which override that default. Tests were not rerun on the final image ID.",
+    "reused_after_metadata_change": true,
+    "rootfs_layers_identical": true
+  },
+  "tests": {
+    "all_expected_gold_tests_passed": true,
+    "all_f2p_reproduced": null,
+    "baseline_exit": 1,
+    "expected_gold_tests": 2724,
+    "f2p": {},
+    "gold_exit": 0,
+    "missing_gold_tests": [],
+    "nonpassing_gold_tests": {},
+    "observed_gold_tests": 2725
+  },
+  "upstream_image": "mswebench/alibaba_m_fastjson2@sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15"
+}

@@ -1,0 +1,26 @@
+{
+  "instance_id": "apache__dubbo-11781",
+  "language": "java",
+  "repository_name": "dubbo",
+  "source_commit": "d0a1bd014331483c19208b831c4f6b488654a508",
+  "upstream_image": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca",
+  "upstream_tag": "mswebench/apache_m_dubbo:pr-11781",
+  "base_image": "ubuntu:jammy-20250126@sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2",
+  "base_amd64_matches_upstream_layers": true,
+  "base_layer_count": 1,
+  "arm_base_manifest": "sha256:23fdb0648173966ac0b863e5b3d63032e99f44533c5b396e62f29770ca2c5210",
+  "extra_environment": [
+    "DEBIAN_FRONTEND=noninteractive",
+    "LANG=C.UTF-8",
+    "LC_ALL=C.UTF-8"
+  ],
+  "java_install": true,
+  "ubuntu_snapshot": "20250311T135000Z",
+  "image": "msweb.eval.arm64.apache__dubbo-11781:upstream-v1",
+  "architecture_exclusions": {
+    "libdrm-intel1": "Intel graphics userspace driver; absent from the ARM64 package archive. The task does not use an Intel GPU."
+  },
+  "command": [
+    "/bin/bash"
+  ]
+}

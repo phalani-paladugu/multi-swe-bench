@@ -1,0 +1,46 @@
+{
+  "Id": "sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804",
+  "RepoDigests": [
+    "mswebench/grpc_m_grpc-go@sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804"
+  ],
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Created": "2025-03-18T10:10:55.833286637Z",
+  "Config": {
+    "Env": [
+      "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOLANG_VERSION=1.24.1",
+      "GOTOOLCHAIN=local",
+      "GOPATH=/go",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy="
+    ],
+    "Cmd": [
+      "bash"
+    ],
+    "WorkingDir": "/home"
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+      "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+      "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+      "sha256:3ff6fa92a9a637cab1329e915dfb0531f52baa26cda282a3d30c6c2100c17e05",
+      "sha256:e0f4cf0bdc482691782fcd0642612f0aa8ffc90ef2506f0619ab2507d726bafc",
+      "sha256:2a3d44cb92fde1543830ddde12c7267179ccbfc2dfb8c528323183f963956094",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:7afe05569225a263d906c2a1fe24077218bcfc3ed4344f3946f580e34a30802b",
+      "sha256:1f6e517d91df7eed914efa8b39d040c08393e6150cc9aa359ebb9c1b325625ce",
+      "sha256:1c44524e8eb93eb6d9d317a61c5507ec391ff55efe71187300ae4b9a36e04c3b",
+      "sha256:58f7b8d64c2c83d8564866922f8506e430072b8987d2975dfafed7b0848944ea",
+      "sha256:85dcf4b87caf3f664cd50c06bf27d22fe03ae5869e84431cd2f39e6f66ed3ac4",
+      "sha256:9f6269bff9d1b16ad60b412f6db3f0c58a31ab8442dbe173ea3db80e9b152e2e",
+      "sha256:b6e413d71e078a74ed45fd7932e24cd45ead5dd67b89a58c13fe87f53c1d16f2",
+      "sha256:9f400b72014435d6a28ac7db21d1788dbb03fd105204fb0b44c647fda1fa3d81",
+      "sha256:229935f84a2b698885487d2ad83e88754da5b7b8acf11eeaabfe4818e2813a9d"
+    ]
+  }
+}

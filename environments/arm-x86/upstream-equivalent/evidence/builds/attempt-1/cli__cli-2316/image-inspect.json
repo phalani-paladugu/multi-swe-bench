@@ -1,0 +1,49 @@
+{
+  "Id": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+  "RepoDigests": [
+    "msweb.eval.arm64.cli__cli-2316@sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c"
+  ],
+  "Architecture": "arm64",
+  "Os": "linux",
+  "Created": "2026-11-16T23:14:29.961587761Z",
+  "Config": {
+    "Env": [
+      "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOLANG_VERSION=1.24.1",
+      "GOTOOLCHAIN=local",
+      "GOPATH=/go",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy="
+    ],
+    "Cmd": [
+      "bash"
+    ],
+    "WorkingDir": "/home/",
+    "ArgsEscaped": true
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+      "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+      "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+      "sha256:eb665c8a149e58b22bd3064f905b14a6f80b460730a9373fe3aed9126f59e721",
+      "sha256:2ec0d4bb5a63729fb3d04a2fcc9890a11589b14f611f1995c8f3c61869702ea0",
+      "sha256:26d7c7a5975a3255c90d26491a01fdab583693f3a7ba68c46c5ba7bc6f13c717",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:87e8226008008e6815689d7f2d43fcf979e3e6c6787ddc258c63f2fad3c6ebfc",
+      "sha256:2210f06cb60115f43c6e6c09077d1dbc612ffee24faaa226d9f8acaaed050cc6",
+      "sha256:8554825257f4760a447e32014e814eb7f8b4e57f338dd698ce4921b849de3bd2",
+      "sha256:621ccaca812a20fbe42419d4fb7912dcc86d0a539ab5b27a0e9cc680ce8f82f5",
+      "sha256:b9b6b2cc9d4e04ab4ca8aead94d218c4c884efec8180560a0cde61452b5612e8",
+      "sha256:cb85539c6b8df1eaa79ba048097aaccac094921b38fa38eee8111b6f97f4538d",
+      "sha256:6293fcbe1780c6c5318f15fd389c6761d3ec6caa25440cc0b610f8d1bfd36512",
+      "sha256:b25a1c7f1c73da06e89b30b8693439557c6be587ff68ec7568d11c42bbaec7ae",
+      "sha256:dd60a9c10c5292e0deebd5fd716670f26079fb04f30d7bea68a143494520529c",
+      "sha256:421e395d98835e8cdbb14ce85dd09d958a18ed487786ef45f2855ee6dfd73d23"
+    ]
+  }
+}

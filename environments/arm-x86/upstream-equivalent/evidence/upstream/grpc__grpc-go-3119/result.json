@@ -1,0 +1,9 @@
+{
+  "task": "grpc__grpc-go-3119",
+  "image": "mswebench/grpc_m_grpc-go@sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804",
+  "image_id": "sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804",
+  "source_commit": "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb",
+  "java_packages": {},
+  "package_count": 205,
+  "collected_at": "2026-11-16T23:11:27.916959+00:00"
+}

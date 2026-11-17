@@ -1,0 +1,20 @@
+{
+  "instance_id": "nushell__nushell-10381",
+  "image": "msweb.eval.arm64.nushell__nushell-10381:upstream-v1",
+  "upstream_image": "mswebench/nushell_m_nushell@sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42",
+  "started_at": "2026-11-16T23:14:54.230603+00:00",
+  "status": "built_tests_recorded",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "88521c9626aba4c36c74638c0e6812b3da42f096bd0132060a147c729ba42030",
+  "build_exit": 0,
+  "image_id": "sha256:e3edbd05d9d58646af3efa2d8b05543234f0c5c74b201b6545568fd2c6c11ad0",
+  "image_architecture": "arm64",
+  "smoke_exit": 0,
+  "packages_exit": 0,
+  "baseline_exit": 101,
+  "gold_exit": 0,
+  "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+  "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+  "finished_at": "2026-11-16T23:24:38.144095+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "task": "apache__dubbo-11781",
+  "image": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca",
+  "image_id": "sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca",
+  "source_commit": "d0a1bd014331483c19208b831c4f6b488654a508",
+  "java_packages": {
+    "maven": {
+      "Version": "3.6.3-5",
+      "Architecture": "all"
+    },
+    "openjdk-17-jdk": {
+      "Version": "17.0.14+7-1~22.04.1",
+      "Architecture": "amd64"
+    },
+    "openjdk-17-jdk-headless": {
+      "Version": "17.0.14+7-1~22.04.1",
+      "Architecture": "amd64"
+    },
+    "openjdk-17-jre": {
+      "Version": "17.0.14+7-1~22.04.1",
+      "Architecture": "amd64"
+    },
+    "openjdk-17-jre-headless": {
+      "Version": "17.0.14+7-1~22.04.1",
+      "Architecture": "amd64"
+    }
+  },
+  "package_count": 349,
+  "collected_at": "2026-11-16T23:10:55.847995+00:00"
+}

@@ -1,0 +1,7 @@
+*
+!arm/
+!arm/Dockerfile
+!x86/
+!x86/Dockerfile
+!packages.txt
+!install-java.sh

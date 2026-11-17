@@ -1,0 +1,766 @@
+{
+  "adduser": {
+    "Version": "3.118ubuntu2",
+    "Architecture": "all"
+  },
+  "alsa-topology-conf": {
+    "Version": "1.2.2-1",
+    "Architecture": "all"
+  },
+  "alsa-ucm-conf": {
+    "Version": "1.2.2-1ubuntu0.13",
+    "Architecture": "all"
+  },
+  "apt": {
+    "Version": "2.0.10",
+    "Architecture": "amd64"
+  },
+  "base-files": {
+    "Version": "11ubuntu5.8",
+    "Architecture": "amd64"
+  },
+  "base-passwd": {
+    "Version": "3.5.47",
+    "Architecture": "amd64"
+  },
+  "bash": {
+    "Version": "5.0-6ubuntu1.2",
+    "Architecture": "amd64"
+  },
+  "bsdutils": {
+    "Version": "1:2.34-0.1ubuntu9.6",
+    "Architecture": "amd64"
+  },
+  "bzip2": {
+    "Version": "1.0.8-2",
+    "Architecture": "amd64"
+  },
+  "ca-certificates": {
+    "Version": "20240203~20.04.1",
+    "Architecture": "all"
+  },
+  "coreutils": {
+    "Version": "8.30-3ubuntu2",
+    "Architecture": "amd64"
+  },
+  "curl": {
+    "Version": "7.68.0-1ubuntu2.25",
+    "Architecture": "amd64"
+  },
+  "dash": {
+    "Version": "0.5.10.2-6",
+    "Architecture": "amd64"
+  },
+  "debconf": {
+    "Version": "1.5.73",
+    "Architecture": "all"
+  },
+  "debianutils": {
+    "Version": "4.9.1",
+    "Architecture": "amd64"
+  },
+  "diffutils": {
+    "Version": "1:3.7-3",
+    "Architecture": "amd64"
+  },
+  "dirmngr": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "amd64"
+  },
+  "dpkg": {
+    "Version": "1.19.7ubuntu3.2",
+    "Architecture": "amd64"
+  },
+  "e2fsprogs": {
+    "Version": "1.45.5-2ubuntu1.2",
+    "Architecture": "amd64"
+  },
+  "fdisk": {
+    "Version": "2.34-0.1ubuntu9.6",
+    "Architecture": "amd64"
+  },
+  "findutils": {
+    "Version": "4.7.0-1ubuntu1",
+    "Architecture": "amd64"
+  },
+  "fontconfig-config": {
+    "Version": "2.13.1-2ubuntu3",
+    "Architecture": "all"
+  },
+  "fonts-dejavu-core": {
+    "Version": "2.37-1",
+    "Architecture": "all"
+  },
+  "gcc-10-base": {
+    "Version": "10.5.0-1ubuntu1~20.04",
+    "Architecture": "amd64"
+  },
+  "git": {
+    "Version": "1:2.25.1-1ubuntu3.14",
+    "Architecture": "amd64"
+  },
+  "git-man": {
+    "Version": "1:2.25.1-1ubuntu3.14",
+    "Architecture": "all"
+  },
+  "gnupg": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "all"
+  },
+  "gnupg-l10n": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "all"
+  },
+  "gnupg-utils": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "amd64"
+  },
+  "gpg": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "amd64"
+  },
+  "gpg-agent": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "amd64"
+  },
+  "gpg-wks-client": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "amd64"
+  },
+  "gpg-wks-server": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "amd64"
+  },
+  "gpgconf": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "amd64"
+  },
+  "gpgsm": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "amd64"
+  },
+  "gpgv": {
+    "Version": "2.2.19-3ubuntu2.2",
+    "Architecture": "amd64"
+  },
+  "grep": {
+    "Version": "3.4-1",
+    "Architecture": "amd64"
+  },
+  "gzip": {
+    "Version": "1.10-0ubuntu4.1",
+    "Architecture": "amd64"
+  },
+  "hostname": {
+    "Version": "3.23",
+    "Architecture": "amd64"
+  },
+  "init-system-helpers": {
+    "Version": "1.57",
+    "Architecture": "all"
+  },
+  "java-common": {
+    "Version": "0.72",
+    "Architecture": "all"
+  },
+  "krb5-locales": {
+    "Version": "1.17-6ubuntu4.9",
+    "Architecture": "all"
+  },
+  "less": {
+    "Version": "551-1ubuntu0.3",
+    "Architecture": "amd64"
+  },
+  "libacl1": {
+    "Version": "2.2.53-6",
+    "Architecture": "amd64"
+  },
+  "libapt-pkg6.0": {
+    "Version": "2.0.10",
+    "Architecture": "amd64"
+  },
+  "libasn1-8-heimdal": {
+    "Version": "7.7.0+dfsg-1ubuntu1.4",
+    "Architecture": "amd64"
+  },
+  "libasound2": {
+    "Version": "1.2.2-2.1ubuntu2.5",
+    "Architecture": "amd64"
+  },
+  "libasound2-data": {
+    "Version": "1.2.2-2.1ubuntu2.5",
+    "Architecture": "all"
+  },
+  "libassuan0": {
+    "Version": "2.5.3-7ubuntu2",
+    "Architecture": "amd64"
+  },
+  "libattr1": {
+    "Version": "1:2.4.48-5",
+    "Architecture": "amd64"
+  },
+  "libaudit-common": {
+    "Version": "1:2.8.5-2ubuntu6",
+    "Architecture": "all"
+  },
+  "libaudit1": {
+    "Version": "1:2.8.5-2ubuntu6",
+    "Architecture": "amd64"
+  },
+  "libblkid1": {
+    "Version": "2.34-0.1ubuntu9.6",
+    "Architecture": "amd64"
+  },
+  "libbrotli1": {
+    "Version": "1.0.7-6ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "libbsd0": {
+    "Version": "0.10.0-1",
+    "Architecture": "amd64"
+  },
+  "libbz2-1.0": {
+    "Version": "1.0.8-2",
+    "Architecture": "amd64"
+  },
+  "libc-bin": {
+    "Version": "2.31-0ubuntu9.16",
+    "Architecture": "amd64"
+  },
+  "libc6": {
+    "Version": "2.31-0ubuntu9.16",
+    "Architecture": "amd64"
+  },
+  "libcap-ng0": {
+    "Version": "0.7.9-2.1build1",
+    "Architecture": "amd64"
+  },
+  "libcbor0.6": {
+    "Version": "0.6.0-0ubuntu1",
+    "Architecture": "amd64"
+  },
+  "libcom-err2": {
+    "Version": "1.45.5-2ubuntu1.2",
+    "Architecture": "amd64"
+  },
+  "libcrypt1": {
+    "Version": "1:4.4.10-10ubuntu4",
+    "Architecture": "amd64"
+  },
+  "libcurl3-gnutls": {
+    "Version": "7.68.0-1ubuntu2.25",
+    "Architecture": "amd64"
+  },
+  "libcurl4": {
+    "Version": "7.68.0-1ubuntu2.25",
+    "Architecture": "amd64"
+  },
+  "libdb5.3": {
+    "Version": "5.3.28+dfsg1-0.6ubuntu2",
+    "Architecture": "amd64"
+  },
+  "libdebconfclient0": {
+    "Version": "0.251ubuntu1",
+    "Architecture": "amd64"
+  },
+  "libedit2": {
+    "Version": "3.1-20191231-1",
+    "Architecture": "amd64"
+  },
+  "liberror-perl": {
+    "Version": "0.17029-1",
+    "Architecture": "all"
+  },
+  "libexpat1": {
+    "Version": "2.2.9-1ubuntu0.8",
+    "Architecture": "amd64"
+  },
+  "libext2fs2": {
+    "Version": "1.45.5-2ubuntu1.2",
+    "Architecture": "amd64"
+  },
+  "libfdisk1": {
+    "Version": "2.34-0.1ubuntu9.6",
+    "Architecture": "amd64"
+  },
+  "libffi7": {
+    "Version": "3.3-4",
+    "Architecture": "amd64"
+  },
+  "libfido2-1": {
+    "Version": "1.3.1-1ubuntu2",
+    "Architecture": "amd64"
+  },
+  "libfontconfig1": {
+    "Version": "2.13.1-2ubuntu3",
+    "Architecture": "amd64"
+  },
+  "libfreetype6": {
+    "Version": "2.10.1-2ubuntu0.4",
+    "Architecture": "amd64"
+  },
+  "libgcc-s1": {
+    "Version": "10.5.0-1ubuntu1~20.04",
+    "Architecture": "amd64"
+  },
+  "libgcrypt20": {
+    "Version": "1.8.5-5ubuntu1.1",
+    "Architecture": "amd64"
+  },
+  "libgdbm-compat4": {
+    "Version": "1.18.1-5",
+    "Architecture": "amd64"
+  },
+  "libgdbm6": {
+    "Version": "1.18.1-5",
+    "Architecture": "amd64"
+  },
+  "libgmp10": {
+    "Version": "2:6.2.0+dfsg-4ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "libgnutls30": {
+    "Version": "3.6.13-2ubuntu1.11",
+    "Architecture": "amd64"
+  },
+  "libgpg-error0": {
+    "Version": "1.37-1",
+    "Architecture": "amd64"
+  },
+  "libgssapi-krb5-2": {
+    "Version": "1.17-6ubuntu4.9",
+    "Architecture": "amd64"
+  },
+  "libgssapi3-heimdal": {
+    "Version": "7.7.0+dfsg-1ubuntu1.4",
+    "Architecture": "amd64"
+  },
+  "libhcrypto4-heimdal": {
+    "Version": "7.7.0+dfsg-1ubuntu1.4",
+    "Architecture": "amd64"
+  },
+  "libheimbase1-heimdal": {
+    "Version": "7.7.0+dfsg-1ubuntu1.4",
+    "Architecture": "amd64"
+  },
+  "libheimntlm0-heimdal": {
+    "Version": "7.7.0+dfsg-1ubuntu1.4",
+    "Architecture": "amd64"
+  },
+  "libhogweed5": {
+    "Version": "3.5.1+really3.5.1-2ubuntu0.2",
+    "Architecture": "amd64"
+  },
+  "libhx509-5-heimdal": {
+    "Version": "7.7.0+dfsg-1ubuntu1.4",
+    "Architecture": "amd64"
+  },
+  "libidn2-0": {
+    "Version": "2.2.0-2",
+    "Architecture": "amd64"
+  },
+  "libk5crypto3": {
+    "Version": "1.17-6ubuntu4.9",
+    "Architecture": "amd64"
+  },
+  "libkeyutils1": {
+    "Version": "1.6-6ubuntu1.1",
+    "Architecture": "amd64"
+  },
+  "libkrb5-26-heimdal": {
+    "Version": "7.7.0+dfsg-1ubuntu1.4",
+    "Architecture": "amd64"
+  },
+  "libkrb5-3": {
+    "Version": "1.17-6ubuntu4.9",
+    "Architecture": "amd64"
+  },
+  "libkrb5support0": {
+    "Version": "1.17-6ubuntu4.9",
+    "Architecture": "amd64"
+  },
+  "libksba8": {
+    "Version": "1.3.5-2ubuntu0.20.04.2",
+    "Architecture": "amd64"
+  },
+  "libldap-2.4-2": {
+    "Version": "2.4.49+dfsg-2ubuntu1.10",
+    "Architecture": "amd64"
+  },
+  "libldap-common": {
+    "Version": "2.4.49+dfsg-2ubuntu1.10",
+    "Architecture": "all"
+  },
+  "liblz4-1": {
+    "Version": "1.9.2-2ubuntu0.20.04.1",
+    "Architecture": "amd64"
+  },
+  "liblzma5": {
+    "Version": "5.2.4-1ubuntu1.1",
+    "Architecture": "amd64"
+  },
+  "libmount1": {
+    "Version": "2.34-0.1ubuntu9.6",
+    "Architecture": "amd64"
+  },
+  "libncurses6": {
+    "Version": "6.2-0ubuntu2.1",
+    "Architecture": "amd64"
+  },
+  "libncursesw6": {
+    "Version": "6.2-0ubuntu2.1",
+    "Architecture": "amd64"
+  },
+  "libnettle7": {
+    "Version": "3.5.1+really3.5.1-2ubuntu0.2",
+    "Architecture": "amd64"
+  },
+  "libnghttp2-14": {
+    "Version": "1.40.0-1ubuntu0.3",
+    "Architecture": "amd64"
+  },
+  "libnpth0": {
+    "Version": "1.6-1",
+    "Architecture": "amd64"
+  },
+  "libp11-kit0": {
+    "Version": "0.23.20-1ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "libpam-modules": {
+    "Version": "1.3.1-5ubuntu4.7",
+    "Architecture": "amd64"
+  },
+  "libpam-modules-bin": {
+    "Version": "1.3.1-5ubuntu4.7",
+    "Architecture": "amd64"
+  },
+  "libpam-runtime": {
+    "Version": "1.3.1-5ubuntu4.7",
+    "Architecture": "all"
+  },
+  "libpam0g": {
+    "Version": "1.3.1-5ubuntu4.7",
+    "Architecture": "amd64"
+  },
+  "libpcre2-8-0": {
+    "Version": "10.34-7ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "libpcre3": {
+    "Version": "2:8.39-12ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "libperl5.30": {
+    "Version": "5.30.0-9ubuntu0.5",
+    "Architecture": "amd64"
+  },
+  "libpng16-16": {
+    "Version": "1.6.37-2",
+    "Architecture": "amd64"
+  },
+  "libprocps8": {
+    "Version": "2:3.3.16-1ubuntu2.4",
+    "Architecture": "amd64"
+  },
+  "libpsl5": {
+    "Version": "0.21.0-1ubuntu1",
+    "Architecture": "amd64"
+  },
+  "libreadline8": {
+    "Version": "8.0-4",
+    "Architecture": "amd64"
+  },
+  "libroken18-heimdal": {
+    "Version": "7.7.0+dfsg-1ubuntu1.4",
+    "Architecture": "amd64"
+  },
+  "librtmp1": {
+    "Version": "2.4+20151223.gitfa8646d.1-2build1",
+    "Architecture": "amd64"
+  },
+  "libsasl2-2": {
+    "Version": "2.1.27+dfsg-2ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "libsasl2-modules": {
+    "Version": "2.1.27+dfsg-2ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "libsasl2-modules-db": {
+    "Version": "2.1.27+dfsg-2ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "libseccomp2": {
+    "Version": "2.5.1-1ubuntu1~20.04.2",
+    "Architecture": "amd64"
+  },
+  "libselinux1": {
+    "Version": "3.0-1build2",
+    "Architecture": "amd64"
+  },
+  "libsemanage-common": {
+    "Version": "3.0-1build2",
+    "Architecture": "all"
+  },
+  "libsemanage1": {
+    "Version": "3.0-1build2",
+    "Architecture": "amd64"
+  },
+  "libsepol1": {
+    "Version": "3.0-1ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "libsmartcols1": {
+    "Version": "2.34-0.1ubuntu9.6",
+    "Architecture": "amd64"
+  },
+  "libsqlite3-0": {
+    "Version": "3.31.1-4ubuntu0.6",
+    "Architecture": "amd64"
+  },
+  "libss2": {
+    "Version": "1.45.5-2ubuntu1.2",
+    "Architecture": "amd64"
+  },
+  "libssh-4": {
+    "Version": "0.9.3-2ubuntu2.5",
+    "Architecture": "amd64"
+  },
+  "libssl1.1": {
+    "Version": "1.1.1f-1ubuntu2.24",
+    "Architecture": "amd64"
+  },
+  "libstdc++6": {
+    "Version": "10.5.0-1ubuntu1~20.04",
+    "Architecture": "amd64"
+  },
+  "libsystemd0": {
+    "Version": "245.4-4ubuntu3.24",
+    "Architecture": "amd64"
+  },
+  "libtasn1-6": {
+    "Version": "4.16.0-2",
+    "Architecture": "amd64"
+  },
+  "libtinfo6": {
+    "Version": "6.2-0ubuntu2.1",
+    "Architecture": "amd64"
+  },
+  "libudev1": {
+    "Version": "245.4-4ubuntu3.24",
+    "Architecture": "amd64"
+  },
+  "libunistring2": {
+    "Version": "0.9.10-2",
+    "Architecture": "amd64"
+  },
+  "libuuid1": {
+    "Version": "2.34-0.1ubuntu9.6",
+    "Architecture": "amd64"
+  },
+  "libwind0-heimdal": {
+    "Version": "7.7.0+dfsg-1ubuntu1.4",
+    "Architecture": "amd64"
+  },
+  "libx11-6": {
+    "Version": "2:1.6.9-2ubuntu1.6",
+    "Architecture": "amd64"
+  },
+  "libx11-data": {
+    "Version": "2:1.6.9-2ubuntu1.6",
+    "Architecture": "all"
+  },
+  "libxau6": {
+    "Version": "1:1.0.9-0ubuntu1",
+    "Architecture": "amd64"
+  },
+  "libxcb1": {
+    "Version": "1.14-2",
+    "Architecture": "amd64"
+  },
+  "libxdmcp6": {
+    "Version": "1:1.1.3-0ubuntu1",
+    "Architecture": "amd64"
+  },
+  "libxext6": {
+    "Version": "2:1.3.4-0ubuntu1",
+    "Architecture": "amd64"
+  },
+  "libxi6": {
+    "Version": "2:1.7.10-0ubuntu1",
+    "Architecture": "amd64"
+  },
+  "libxmuu1": {
+    "Version": "2:1.1.3-0ubuntu1",
+    "Architecture": "amd64"
+  },
+  "libxrender1": {
+    "Version": "1:0.9.10-1",
+    "Architecture": "amd64"
+  },
+  "libxtst6": {
+    "Version": "2:1.2.3-1",
+    "Architecture": "amd64"
+  },
+  "libzstd1": {
+    "Version": "1.4.4+dfsg-3ubuntu0.1",
+    "Architecture": "amd64"
+  },
+  "login": {
+    "Version": "1:4.8.1-1ubuntu5.20.04.5",
+    "Architecture": "amd64"
+  },
+  "logsave": {
+    "Version": "1.45.5-2ubuntu1.2",
+    "Architecture": "amd64"
+  },
+  "lsb-base": {
+    "Version": "11.1.0ubuntu2",
+    "Architecture": "all"
+  },
+  "mawk": {
+    "Version": "1.3.4.20200120-2",
+    "Architecture": "amd64"
+  },
+  "mount": {
+    "Version": "2.34-0.1ubuntu9.6",
+    "Architecture": "amd64"
+  },
+  "ncurses-base": {
+    "Version": "6.2-0ubuntu2.1",
+    "Architecture": "all"
+  },
+  "ncurses-bin": {
+    "Version": "6.2-0ubuntu2.1",
+    "Architecture": "amd64"
+  },
+  "netbase": {
+    "Version": "6.1",
+    "Architecture": "all"
+  },
+  "openssh-client": {
+    "Version": "1:8.2p1-4ubuntu0.12",
+    "Architecture": "amd64"
+  },
+  "openssl": {
+    "Version": "1.1.1f-1ubuntu2.24",
+    "Architecture": "amd64"
+  },
+  "passwd": {
+    "Version": "1:4.8.1-1ubuntu5.20.04.5",
+    "Architecture": "amd64"
+  },
+  "patch": {
+    "Version": "2.7.6-6",
+    "Architecture": "amd64"
+  },
+  "perl": {
+    "Version": "5.30.0-9ubuntu0.5",
+    "Architecture": "amd64"
+  },
+  "perl-base": {
+    "Version": "5.30.0-9ubuntu0.5",
+    "Architecture": "amd64"
+  },
+  "perl-modules-5.30": {
+    "Version": "5.30.0-9ubuntu0.5",
+    "Architecture": "all"
+  },
+  "pinentry-curses": {
+    "Version": "1.1.0-3build1",
+    "Architecture": "amd64"
+  },
+  "procps": {
+    "Version": "2:3.3.16-1ubuntu2.4",
+    "Architecture": "amd64"
+  },
+  "publicsuffix": {
+    "Version": "20200303.0012-1",
+    "Architecture": "all"
+  },
+  "readline-common": {
+    "Version": "8.0-4",
+    "Architecture": "all"
+  },
+  "sed": {
+    "Version": "4.7-1",
+    "Architecture": "amd64"
+  },
+  "sensible-utils": {
+    "Version": "0.0.12+nmu1",
+    "Architecture": "all"
+  },
+  "sysvinit-utils": {
+    "Version": "2.96-2.1ubuntu1",
+    "Architecture": "amd64"
+  },
+  "tar": {
+    "Version": "1.30+dfsg-7ubuntu0.20.04.4",
+    "Architecture": "amd64"
+  },
+  "ubuntu-keyring": {
+    "Version": "2020.02.11.4",
+    "Architecture": "all"
+  },
+  "ucf": {
+    "Version": "3.0038+nmu1",
+    "Architecture": "all"
+  },
+  "util-linux": {
+    "Version": "2.34-0.1ubuntu9.6",
+    "Architecture": "amd64"
+  },
+  "x11-common": {
+    "Version": "1:7.7+19ubuntu14",
+    "Architecture": "all"
+  },
+  "xauth": {
+    "Version": "1:1.1-0ubuntu1",
+    "Architecture": "amd64"
+  },
+  "zlib1g": {
+    "Version": "1:1.2.11.dfsg-2ubuntu1.5",
+    "Architecture": "amd64"
+  },
+  "zulu8-ca-doc": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  },
+  "zulu8-ca-jdk": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  },
+  "zulu8-ca-jdk-headless": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  },
+  "zulu8-ca-jre": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  },
+  "zulu8-ca-jre-headless": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  },
+  "zulu8-doc": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  },
+  "zulu8-jdk": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  },
+  "zulu8-jdk-headless": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  },
+  "zulu8-jre": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  },
+  "zulu8-jre-headless": {
+    "Version": "8.0.442-1",
+    "Architecture": "amd64"
+  }
+}

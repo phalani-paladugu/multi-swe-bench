@@ -1,0 +1,10 @@
+{
+  "image": "msweb.eval.arm64.grpc__grpc-go-3119:upstream-v1",
+  "image_id": "sha256:674fc4852ac4fc60720948705f10d2fe41ce8747a8c0096e9bdf820eda46935d",
+  "command": "go test -v -count=1 ./balancer/grpclb",
+  "scope": "Additional diagnostic of the changed package; the full upstream scripts run separately. Vet remains enabled.",
+  "started_at": "2026-11-17T14:32:16.029103+00:00",
+  "baseline_exit": 1,
+  "gold_exit": 0,
+  "finished_at": "2026-11-17T14:32:50.446421+00:00"
+}

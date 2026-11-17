@@ -1,0 +1,9 @@
+{
+  "task": "sharkdp__bat-3108",
+  "image": "mswebench/sharkdp_m_bat@sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7",
+  "image_id": "sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7",
+  "source_commit": "2be3a14a7e2c74360765a5fa213750f727f2c5bb",
+  "java_packages": {},
+  "package_count": 413,
+  "collected_at": "2026-11-16T23:12:14.243324+00:00"
+}

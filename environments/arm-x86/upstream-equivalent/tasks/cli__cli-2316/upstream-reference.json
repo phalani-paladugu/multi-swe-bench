@@ -1,0 +1,16 @@
+{
+  "instance_id": "cli__cli-2316",
+  "language": "go",
+  "repository_name": "cli",
+  "source_commit": "5e89036d49993087b9b45060cc1292a18e1d853a",
+  "upstream_image": "mswebench/cli_m_cli@sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be",
+  "upstream_tag": "mswebench/cli_m_cli:pr-2316",
+  "base_image": "golang:1.24.1-bookworm@sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d",
+  "base_amd64_matches_upstream_layers": true,
+  "base_layer_count": 7,
+  "arm_base_manifest": "sha256:f32028b6b5937c12b2491f2855060ce352ee3aea835bee0d6c0c4b2c67b72f38",
+  "image": "msweb.eval.arm64.cli__cli-2316:upstream-v1",
+  "command": [
+    "bash"
+  ]
+}

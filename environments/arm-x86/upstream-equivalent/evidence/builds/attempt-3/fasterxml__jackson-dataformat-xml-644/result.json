@@ -1,0 +1,22 @@
+{
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:upstream-v1",
+  "upstream_image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c",
+  "started_at": "2026-11-17T14:41:06.716942+00:00",
+  "status": "built_smoke_checked",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "c190e762487094739300cfd6003323edb9ab1bd75def43c3b24dca016d621969",
+  "input_sha256": {
+    "arm/Dockerfile": "c190e762487094739300cfd6003323edb9ab1bd75def43c3b24dca016d621969",
+    "packages.txt": "4345a0e612119a8111794098377849281f496c8cf08b9f3885e6e5946ab2fc8e",
+    "install-java.sh": "57af7acade5113e29a62a224c8ee0146da53b1f220d7af2335b7c8d34aa1010d",
+    "upstream-reference.json": "a68c9a18c20e2a7901d667e4c9b616489fddecedd01a094676550bcd99f9fc55"
+  },
+  "build_exit": 0,
+  "image_id": "sha256:989f66ccb3bd78e2498c4c72866356ba1a800f7b397dac44430f39f6f6c30584",
+  "image_architecture": "arm64",
+  "smoke_exit": 0,
+  "packages_exit": 0,
+  "finished_at": "2026-11-17T14:41:11.510190+00:00"
+}

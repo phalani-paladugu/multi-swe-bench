@@ -1,0 +1,53 @@
+{
+  "Id": "sha256:5cb0c77ea6bed7a600ef39389b75e7f0e415e8b1c16476a24a15402c2ea4e6db",
+  "RepoDigests": [
+    "msweb.eval.arm64.alibaba__fastjson2-2775@sha256:5cb0c77ea6bed7a600ef39389b75e7f0e415e8b1c16476a24a15402c2ea4e6db"
+  ],
+  "Architecture": "arm64",
+  "Os": "linux",
+  "Created": "2026-11-16T23:29:18.383778598Z",
+  "Config": {
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy=",
+      "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+      "DEBIAN_FRONTEND=noninteractive",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8"
+    ],
+    "Cmd": [
+      "/bin/bash"
+    ],
+    "WorkingDir": "/home/",
+    "Labels": {
+      "org.opencontainers.image.ref.name": "ubuntu",
+      "org.opencontainers.image.version": "20.04"
+    },
+    "ArgsEscaped": true
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:171652ecd561458ec6fcca88016f1d5552155ecaff2445a38a97f49d6b672904",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:122236f47fd08d890332416891343578264892c06ed212b0b06117be61733ec7",
+      "sha256:7a650f14880f6296d0f391af57f6d04739a7310967aa7a52159d08f9609f3421",
+      "sha256:75d58c37f9715128129b22b9536f19bd3f0628549a7c33c1bb3547cebc6e753a",
+      "sha256:210c25a84d03b1112c9a00ca963a9e8d4b5ce6d6002036c6028bbe14381e91d7",
+      "sha256:926d275e6b69fa0e9b1ceb6be05c411d074934661c0189bc93b872d1a09ca721",
+      "sha256:b1e4b93d63f2bd19522668bec8406703f1ecff0cc1dd29fff97d29364aac18b4",
+      "sha256:27dd0727f13b74b44aa641785fc9a6f7c952feb70d1136a2f43f59ad7aa7f58a",
+      "sha256:5f4fca62f00ea29ccd3911490fdb7be5ba67f6a0cb98ca40be5c27150c7e5e5b",
+      "sha256:09a42de0c801a70b8766dab0a5854cc1b8c131e7e940c3bf98de1c8322a2a17c",
+      "sha256:68d8e4f8c8b6d471ba8f3347d8e1a317c9417f513ec36b65216bf91948e08017",
+      "sha256:dbb9c01b896ca4499e64b2a32d31452838624fd20517e770ad6efb00bd756563",
+      "sha256:4c7fc40e688a4b421f99e1c30278d22aef78055e2b4ef86a36da874ceb910e90",
+      "sha256:0402aa4d9ebe7badb7bfab4fe799c957a363b66de264fa5f2de2d3b712f2dad6",
+      "sha256:4690cc9b70d9fdbf266ff00397a0ecb0cedac45886741619f028d34370481785",
+      "sha256:7b4db578bb5793ecb6c587506b7843bd5229eb769c74c5480e2f9d9f9ec39095"
+    ]
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "base_amd64_is_exact_upstream_layer_prefix": true,
+  "base_image_provenance": {
+    "amd64_base_diff_ids": [
+      "sha256:270a1170e7e398434ff1b31e17e233f7d7b71aa99a40473615860068e86720af"
+    ],
+    "amd64_matches_actual_upstream_prefix": true,
+    "arm64_base_diff_ids": [
+      "sha256:59b223680ef978509f20faf6bf069866dfc02c422159347face0a7565d698526"
+    ],
+    "arm64_manifest_digest": "sha256:23fdb0648173966ac0b863e5b3d63032e99f44533c5b396e62f29770ca2c5210",
+    "arm64_manifest_matches_recipe": true,
+    "arm64_matches_built_image_prefix": true,
+    "base_index_digest": "sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2",
+    "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+  },
+  "build": {
+    "architecture": "arm64",
+    "build_exit": 0,
+    "dockerfile_sha256": "69b7c3bcaa468e79c663f6e57e3a37a80ea4c09a230f032c3c6aa3031c0bf1e9",
+    "finished_at": "2026-11-17T14:41:11.163928+00:00",
+    "image": "msweb.eval.arm64.apache__dubbo-11781:upstream-v1",
+    "image_architecture": "arm64",
+    "image_id": "sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27",
+    "input_sha256": {
+      "arm/Dockerfile": "69b7c3bcaa468e79c663f6e57e3a37a80ea4c09a230f032c3c6aa3031c0bf1e9",
+      "install-java.sh": "8c246fa3de464856a84e6af29a8dc2b24933e08e413be2ca02e8bbfcbbc8c59f",
+      "packages.txt": "5106d166fa76966eeb96ce2a3753ec34367eb0bb64ab7ef371aeca3e5e01a508",
+      "upstream-reference.json": "fd5d652f9da8bde92c9a7f3fd341134a8465c5519fc2a7fb3c6174a32b37520a"
+    },
+    "instance_id": "apache__dubbo-11781",
+    "logs": "evidence/builds/attempt-3/apache__dubbo-11781",
+    "matches_current_dockerfile": true,
+    "native_host_architecture": "aarch64",
+    "packages_exit": 0,
+    "smoke_exit": 0,
+    "started_at": "2026-11-17T14:41:06.716689+00:00",
+    "status": "built_smoke_checked",
+    "upstream_image": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca"
+  },
+  "documented_architecture_exclusions": {
+    "libdrm-intel1": "Intel graphics userspace driver; absent from the ARM64 package archive. The task does not use an Intel GPU."
+  },
+  "file_hashes": {
+    "/home/check_git_changes.sh": {
+      "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+      "matches": true,
+      "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+    },
+    "/home/dubbo/pom.xml": {
+      "arm_sha256": "c9c5a7b6b2b227635e2d8958c25ad5c486c5bc9261979ad57f08279515e08821",
+      "matches": true,
+      "upstream_sha256": "c9c5a7b6b2b227635e2d8958c25ad5c486c5bc9261979ad57f08279515e08821"
+    },
+    "/home/fix-run.sh": {
+      "arm_sha256": "164087438d7ccef646e8c3b8470d994ae8044da37d5b45b9428df9dea1dce67d",
+      "matches": true,
+      "upstream_sha256": "164087438d7ccef646e8c3b8470d994ae8044da37d5b45b9428df9dea1dce67d"
+    },
+    "/home/fix.patch": {
+      "arm_sha256": "985d83828778bb36aaee668bacd294d1fc120a88367fa177ecc8845f7961ae00",
+      "matches": true,
+      "upstream_sha256": "985d83828778bb36aaee668bacd294d1fc120a88367fa177ecc8845f7961ae00"
+    },
+    "/home/prepare.sh": {
+      "arm_sha256": "a170b16a899c27d120e1a2b40113f92a4a9ac8532c4046f02bf977678fd1bc12",
+      "matches": true,
+      "upstream_sha256": "a170b16a899c27d120e1a2b40113f92a4a9ac8532c4046f02bf977678fd1bc12"
+    },
+    "/home/run.sh": {
+      "arm_sha256": "d17c0aee47771604a5f26810b88b0b7fb44475668ae1c202cfa7d03f5c329b12",
+      "matches": true,
+      "upstream_sha256": "d17c0aee47771604a5f26810b88b0b7fb44475668ae1c202cfa7d03f5c329b12"
+    },
+    "/home/test-run.sh": {
+      "arm_sha256": "a255d6408eb6cf68268d9a2f5062dc868bafb09c222bdb8d902c7b5d37c9c5bf",
+      "matches": true,
+      "upstream_sha256": "a255d6408eb6cf68268d9a2f5062dc868bafb09c222bdb8d902c7b5d37c9c5bf"
+    },
+    "/home/test.patch": {
+      "arm_sha256": "a37e903c2a50ca31eb51d100c84d93d2d77d05c51478b5b4eb09312e92e2c9a4",
+      "matches": true,
+      "upstream_sha256": "a37e903c2a50ca31eb51d100c84d93d2d77d05c51478b5b4eb09312e92e2c9a4"
+    }
+  },
+  "image_ids": {
+    "arm": "sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27",
+    "upstream_x86": "sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca"
+  },
+  "instance_id": "apache__dubbo-11781",
+  "packages": {
+    "arm_count": 348,
+    "only_arm": {},
+    "only_upstream": {
+      "libdrm-intel1": {
+        "Architecture": "amd64",
+        "Version": "2.4.113-2~ubuntu0.22.04.1"
+      }
+    },
+    "upstream_count": 349,
+    "version_differences": {}
+  },
+  "runtime_configuration": {
+    "Cmd": {
+      "arm": [
+        "/bin/bash"
+      ],
+      "matches": true,
+      "upstream": [
+        "/bin/bash"
+      ]
+    },
+    "Entrypoint": {
+      "arm": null,
+      "matches": true,
+      "upstream": null
+    },
+    "Env": {
+      "arm": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy=",
+        "DEBIAN_FRONTEND=noninteractive",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8"
+      ],
+      "matches": true,
+      "upstream": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy=",
+        "DEBIAN_FRONTEND=noninteractive",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8"
+      ]
+    },
+    "WorkingDir": {
+      "arm": "/home/",
+      "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+      "matches": true,
+      "raw_matches": false,
+      "upstream": "/home"
+    }
+  },
+  "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+  "source_commit": {
+    "expected": "d0a1bd014331483c19208b831c4f6b488654a508",
+    "matches": true,
+    "observed": [
+      "d0a1bd014331483c19208b831c4f6b488654a508"
+    ]
+  },
+  "test_evidence": {
+    "changed_config_fields": [
+      "Cmd"
+    ],
+    "final_image_id": "sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27",
+    "image_id": "sha256:4e1e608ded60fabcebbda42bf994e8ddd6518a4f3ecf12a13cb4e81133cab237",
+    "logs": "evidence/builds/attempt-2/apache__dubbo-11781",
+    "reason": "Final image differs only in default command metadata. Recorded tests used explicit bash /home/test-run.sh and bash /home/fix-run.sh commands, which override that default. Tests were not rerun on the final image ID.",
+    "reused_after_metadata_change": true,
+    "rootfs_layers_identical": true
+  },
+  "tests": {
+    "all_expected_gold_tests_passed": true,
+    "all_f2p_reproduced": true,
+    "baseline_exit": 1,
+    "expected_gold_tests": 675,
+    "f2p": {
+      "org.apache.dubbo.common.URLTest": {
+        "baseline": "FAIL",
+        "gold": "PASS"
+      }
+    },
+    "gold_exit": 0,
+    "missing_gold_tests": [],
+    "nonpassing_gold_tests": {},
+    "observed_gold_tests": 676
+  },
+  "upstream_image": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca"
+}

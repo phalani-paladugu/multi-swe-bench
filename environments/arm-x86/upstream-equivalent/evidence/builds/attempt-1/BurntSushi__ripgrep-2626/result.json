@@ -1,0 +1,20 @@
+{
+  "instance_id": "BurntSushi__ripgrep-2626",
+  "image": "msweb.eval.arm64.burntsushi__ripgrep-2626:upstream-v1",
+  "upstream_image": "mswebench/burntsushi_m_ripgrep@sha256:83375231f11af4e8762767d0cd0fbb429e8c44fee92f8ddc4eff5c86700e064e",
+  "started_at": "2026-11-16T23:13:34.355739+00:00",
+  "status": "built_tests_recorded",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "ac2948dc6cab828c109a9eac846e9ea182434adf3b6b34de02bce7e9d348d09f",
+  "build_exit": 0,
+  "image_id": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+  "image_architecture": "arm64",
+  "smoke_exit": 0,
+  "packages_exit": 0,
+  "baseline_exit": 101,
+  "gold_exit": 0,
+  "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+  "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+  "finished_at": "2026-11-16T23:15:13.150783+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "instance_id": "apache__dubbo-11781",
+  "image": "msweb.eval.arm64.apache__dubbo-11781:upstream-v1",
+  "upstream_image": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca",
+  "started_at": "2026-11-16T23:14:51.576348+00:00",
+  "status": "build_failed",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "2460637ba77cf25acbe518b02e3e28ebb1833f641f26128b7fad8af03f71e547",
+  "build_exit": 1
+}

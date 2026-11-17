@@ -1,0 +1,100 @@
+{
+  "availability": "Built on agentic_benchmark; not pushed to a container registry.",
+  "architecture": "linux/arm64",
+  "validated_dates_utc": [
+    "2026-11-16",
+    "2026-11-17"
+  ],
+  "images": [
+    {
+      "instance_id": "BurntSushi__ripgrep-2626",
+      "tag": "msweb.eval.arm64.burntsushi__ripgrep-2626:upstream-v1",
+      "image_id": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+      "upstream_x86": "mswebench/burntsushi_m_ripgrep@sha256:83375231f11af4e8762767d0cd0fbb429e8c44fee92f8ddc4eff5c86700e064e",
+      "build_result": "evidence/builds/attempt-1/BurntSushi__ripgrep-2626/result.json",
+      "comparison": "tasks/BurntSushi__ripgrep-2626/evidence/comparison.json",
+      "test_evidence_image_id": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+      "full_gold_exit": 0
+    },
+    {
+      "instance_id": "alibaba__fastjson2-2775",
+      "tag": "msweb.eval.arm64.alibaba__fastjson2-2775:upstream-v1",
+      "image_id": "sha256:5cb0c77ea6bed7a600ef39389b75e7f0e415e8b1c16476a24a15402c2ea4e6db",
+      "upstream_x86": "mswebench/alibaba_m_fastjson2@sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15",
+      "build_result": "evidence/builds/attempt-3/alibaba__fastjson2-2775/result.json",
+      "comparison": "tasks/alibaba__fastjson2-2775/evidence/comparison.json",
+      "test_evidence_image_id": "sha256:100bfdc5074ba4cd74b212c515b52d91614389f5ffd7159281a28dbf3afb681b",
+      "full_gold_exit": 0
+    },
+    {
+      "instance_id": "apache__dubbo-11781",
+      "tag": "msweb.eval.arm64.apache__dubbo-11781:upstream-v1",
+      "image_id": "sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27",
+      "upstream_x86": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca",
+      "build_result": "evidence/builds/attempt-3/apache__dubbo-11781/result.json",
+      "comparison": "tasks/apache__dubbo-11781/evidence/comparison.json",
+      "test_evidence_image_id": "sha256:4e1e608ded60fabcebbda42bf994e8ddd6518a4f3ecf12a13cb4e81133cab237",
+      "full_gold_exit": 0
+    },
+    {
+      "instance_id": "cli__cli-2316",
+      "tag": "msweb.eval.arm64.cli__cli-2316:upstream-v1",
+      "image_id": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+      "upstream_x86": "mswebench/cli_m_cli@sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be",
+      "build_result": "evidence/builds/attempt-1/cli__cli-2316/result.json",
+      "comparison": "tasks/cli__cli-2316/evidence/comparison.json",
+      "test_evidence_image_id": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+      "full_gold_exit": 1
+    },
+    {
+      "instance_id": "fasterxml__jackson-dataformat-xml-644",
+      "tag": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:upstream-v1",
+      "image_id": "sha256:989f66ccb3bd78e2498c4c72866356ba1a800f7b397dac44430f39f6f6c30584",
+      "upstream_x86": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c",
+      "build_result": "evidence/builds/attempt-3/fasterxml__jackson-dataformat-xml-644/result.json",
+      "comparison": "tasks/fasterxml__jackson-dataformat-xml-644/evidence/comparison.json",
+      "test_evidence_image_id": "sha256:70152090abd1d391001900a131ec154973328fa21df9358ac294b53411adc159",
+      "full_gold_exit": 0
+    },
+    {
+      "instance_id": "grpc__grpc-go-3119",
+      "tag": "msweb.eval.arm64.grpc__grpc-go-3119:upstream-v1",
+      "image_id": "sha256:674fc4852ac4fc60720948705f10d2fe41ce8747a8c0096e9bdf820eda46935d",
+      "upstream_x86": "mswebench/grpc_m_grpc-go@sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804",
+      "build_result": "evidence/builds/attempt-1/grpc__grpc-go-3119/result.json",
+      "comparison": "tasks/grpc__grpc-go-3119/evidence/comparison.json",
+      "test_evidence_image_id": "sha256:674fc4852ac4fc60720948705f10d2fe41ce8747a8c0096e9bdf820eda46935d",
+      "full_gold_exit": 1
+    },
+    {
+      "instance_id": "nushell__nushell-10381",
+      "tag": "msweb.eval.arm64.nushell__nushell-10381:upstream-v1",
+      "image_id": "sha256:e3edbd05d9d58646af3efa2d8b05543234f0c5c74b201b6545568fd2c6c11ad0",
+      "upstream_x86": "mswebench/nushell_m_nushell@sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42",
+      "build_result": "evidence/builds/attempt-1/nushell__nushell-10381/result.json",
+      "comparison": "tasks/nushell__nushell-10381/evidence/comparison.json",
+      "test_evidence_image_id": "sha256:e3edbd05d9d58646af3efa2d8b05543234f0c5c74b201b6545568fd2c6c11ad0",
+      "full_gold_exit": 0
+    },
+    {
+      "instance_id": "sharkdp__bat-3108",
+      "tag": "msweb.eval.arm64.sharkdp__bat-3108:upstream-v1",
+      "image_id": "sha256:cbf3c428dcd54aa7540651eb397ecde3a522007f9a852d456319cdd0761d4cf6",
+      "upstream_x86": "mswebench/sharkdp_m_bat@sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7",
+      "build_result": "evidence/builds/attempt-1/sharkdp__bat-3108/result.json",
+      "comparison": "tasks/sharkdp__bat-3108/evidence/comparison.json",
+      "test_evidence_image_id": "sha256:cbf3c428dcd54aa7540651eb397ecde3a522007f9a852d456319cdd0761d4cf6",
+      "full_gold_exit": 0
+    },
+    {
+      "instance_id": "zeromicro__go-zero-964",
+      "tag": "msweb.eval.arm64.zeromicro__go-zero-964:upstream-v1",
+      "image_id": "sha256:1d1d2bb799577fd972ed294f96346e12101e5e467b21db7d8b65d1ce14fca8e1",
+      "upstream_x86": "mswebench/zeromicro_m_go-zero@sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6",
+      "build_result": "evidence/builds/attempt-1/zeromicro__go-zero-964/result.json",
+      "comparison": "tasks/zeromicro__go-zero-964/evidence/comparison.json",
+      "test_evidence_image_id": "sha256:1d1d2bb799577fd972ed294f96346e12101e5e467b21db7d8b65d1ce14fca8e1",
+      "full_gold_exit": 1
+    }
+  ]
+}

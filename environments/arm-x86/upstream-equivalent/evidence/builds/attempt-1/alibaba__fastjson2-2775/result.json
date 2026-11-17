@@ -1,0 +1,20 @@
+{
+  "instance_id": "alibaba__fastjson2-2775",
+  "image": "msweb.eval.arm64.alibaba__fastjson2-2775:upstream-v1",
+  "upstream_image": "mswebench/alibaba_m_fastjson2@sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15",
+  "started_at": "2026-11-16T23:14:51.576271+00:00",
+  "status": "built_tests_recorded",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "f8992a0f41da6a3a7175d61ba15fb392358b2e457bde8ab48caa59b059ef5e0a",
+  "build_exit": 0,
+  "image_id": "sha256:100bfdc5074ba4cd74b212c515b52d91614389f5ffd7159281a28dbf3afb681b",
+  "image_architecture": "arm64",
+  "smoke_exit": 0,
+  "packages_exit": 0,
+  "baseline_exit": 1,
+  "gold_exit": 0,
+  "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+  "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+  "finished_at": "2026-11-16T23:33:55.330456+00:00"
+}

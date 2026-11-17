@@ -1,0 +1,47 @@
+{
+  "Id": "sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42",
+  "RepoDigests": [
+    "mswebench/nushell_m_nushell@sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42"
+  ],
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Created": "2025-03-18T11:16:58.239951869Z",
+  "Config": {
+    "Env": [
+      "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "RUSTUP_HOME=/usr/local/rustup",
+      "CARGO_HOME=/usr/local/cargo",
+      "RUST_VERSION=1.85.0",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy="
+    ],
+    "Cmd": [
+      "bash"
+    ],
+    "WorkingDir": "/home",
+    "Labels": {
+      "org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust"
+    }
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+      "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+      "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+      "sha256:4c13ea2c0b021f7e71473290da414fe79371abf7b4de411c0a70fd2fc88916d5",
+      "sha256:e26ffd62d8b12fe7b7a296b756d66606f59f4231452623550b3cd1166430e9c4",
+      "sha256:719b9108a5a0405539f60d145d989d14fd78aae4df31b121a0756fe62ffe02ef",
+      "sha256:846123d0e5f4267ca745611409385e70e3cd904817ffb1e02c23bb1dce9fe4a5",
+      "sha256:f1323f26662af102eb27f14e8cadc0d79f13fe341e9ae68188ae969398ed9ab3",
+      "sha256:f15b3f77bc7b8e512c87d66c237fd5e75202dac08ddd9659c1d31025ad98b151",
+      "sha256:7ace6e76d5bb301a7b046b8d708537df3e1929a26cbfa0b105345f02c405d657",
+      "sha256:be73fe3b330693cb6b81150cd9e3e8ed323be94c0f178bcf5104bd5d056f52e4",
+      "sha256:c5e965b6873862fb1b79031908d9d649050ab265f492cf7d195e8dd7bcfc2e02",
+      "sha256:2e782122dc37c8bbe8bc9a81c3b0d0c5ff0f7dbc9512a0eca854e1abbb479595",
+      "sha256:8c80dd9f9be3b292a1b5f587807510203eb8dc83b68fb61673aa7effffd93f69"
+    ]
+  }
+}

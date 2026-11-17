@@ -1,0 +1,174 @@
+[
+  {
+    "instance_id": "BurntSushi__ripgrep-2626",
+    "language": "rust",
+    "repository_name": "ripgrep",
+    "source_commit": "7099e174acbcbd940f57e4ab4913fee4040c826e",
+    "upstream_image": "mswebench/burntsushi_m_ripgrep@sha256:83375231f11af4e8762767d0cd0fbb429e8c44fee92f8ddc4eff5c86700e064e",
+    "upstream_tag": "mswebench/burntsushi_m_ripgrep:pr-2626",
+    "base_image": "rust:1.85.0-bookworm@sha256:0ff31c9ffa641a62e48d543fb00b4960955ea375f40776f40f585b89e654cc5e",
+    "base_amd64_matches_upstream_layers": true,
+    "base_layer_count": 5,
+    "arm_base_manifest": "sha256:f04df1b615e9ffac55f3a304ef3aaccb9bc716c88a9d6ee6b00de45f288a4e3a",
+    "image": "msweb.eval.arm64.burntsushi__ripgrep-2626:upstream-v1",
+    "command": [
+      "bash"
+    ]
+  },
+  {
+    "instance_id": "alibaba__fastjson2-2775",
+    "language": "java",
+    "repository_name": "fastjson2",
+    "source_commit": "12b40c7ba3e7c30e35977195770c80beb34715c5",
+    "upstream_image": "mswebench/alibaba_m_fastjson2@sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15",
+    "upstream_tag": "mswebench/alibaba_m_fastjson2:pr-2775",
+    "base_image": "ubuntu:focal-20241011@sha256:8e5c4f0285ecbb4ead070431d29b576a530d3166df73ec44affc1cd27555141b",
+    "base_amd64_matches_upstream_layers": true,
+    "base_layer_count": 1,
+    "arm_base_manifest": "sha256:4489868cec4ea83f1e2c8e9f493ac957ec1451a63428dbec12af2894e6da4429",
+    "extra_environment": [
+      "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+      "DEBIAN_FRONTEND=noninteractive",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8"
+    ],
+    "java_install": true,
+    "ubuntu_snapshot": "20250331T074000Z",
+    "image": "msweb.eval.arm64.alibaba__fastjson2-2775:upstream-v1",
+    "command": [
+      "/bin/bash"
+    ]
+  },
+  {
+    "instance_id": "apache__dubbo-11781",
+    "language": "java",
+    "repository_name": "dubbo",
+    "source_commit": "d0a1bd014331483c19208b831c4f6b488654a508",
+    "upstream_image": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca",
+    "upstream_tag": "mswebench/apache_m_dubbo:pr-11781",
+    "base_image": "ubuntu:jammy-20250126@sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2",
+    "base_amd64_matches_upstream_layers": true,
+    "base_layer_count": 1,
+    "arm_base_manifest": "sha256:23fdb0648173966ac0b863e5b3d63032e99f44533c5b396e62f29770ca2c5210",
+    "extra_environment": [
+      "DEBIAN_FRONTEND=noninteractive",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8"
+    ],
+    "java_install": true,
+    "ubuntu_snapshot": "20250311T135000Z",
+    "image": "msweb.eval.arm64.apache__dubbo-11781:upstream-v1",
+    "architecture_exclusions": {
+      "libdrm-intel1": "Intel graphics userspace driver; absent from the ARM64 package archive. The task does not use an Intel GPU."
+    },
+    "command": [
+      "/bin/bash"
+    ]
+  },
+  {
+    "instance_id": "cli__cli-2316",
+    "language": "go",
+    "repository_name": "cli",
+    "source_commit": "5e89036d49993087b9b45060cc1292a18e1d853a",
+    "upstream_image": "mswebench/cli_m_cli@sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be",
+    "upstream_tag": "mswebench/cli_m_cli:pr-2316",
+    "base_image": "golang:1.24.1-bookworm@sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d",
+    "base_amd64_matches_upstream_layers": true,
+    "base_layer_count": 7,
+    "arm_base_manifest": "sha256:f32028b6b5937c12b2491f2855060ce352ee3aea835bee0d6c0c4b2c67b72f38",
+    "image": "msweb.eval.arm64.cli__cli-2316:upstream-v1",
+    "command": [
+      "bash"
+    ]
+  },
+  {
+    "instance_id": "fasterxml__jackson-dataformat-xml-644",
+    "language": "java",
+    "repository_name": "jackson-dataformat-xml",
+    "source_commit": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+    "upstream_image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c",
+    "upstream_tag": "mswebench/fasterxml_m_jackson-dataformat-xml:pr-644",
+    "base_image": "ubuntu:jammy-20250126@sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2",
+    "base_amd64_matches_upstream_layers": true,
+    "base_layer_count": 1,
+    "arm_base_manifest": "sha256:23fdb0648173966ac0b863e5b3d63032e99f44533c5b396e62f29770ca2c5210",
+    "extra_environment": [
+      "DEBIAN_FRONTEND=noninteractive",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8"
+    ],
+    "java_install": true,
+    "ubuntu_snapshot": "20250412T132500Z",
+    "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:upstream-v1",
+    "architecture_exclusions": {
+      "libdrm-intel1": "Intel graphics userspace driver; absent from the ARM64 package archive. The task does not use an Intel GPU."
+    },
+    "command": [
+      "/bin/bash"
+    ]
+  },
+  {
+    "instance_id": "grpc__grpc-go-3119",
+    "language": "go",
+    "repository_name": "grpc-go",
+    "source_commit": "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb",
+    "upstream_image": "mswebench/grpc_m_grpc-go@sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804",
+    "upstream_tag": "mswebench/grpc_m_grpc-go:pr-3119",
+    "base_image": "golang:1.24.1-bookworm@sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d",
+    "base_amd64_matches_upstream_layers": true,
+    "base_layer_count": 7,
+    "arm_base_manifest": "sha256:f32028b6b5937c12b2491f2855060ce352ee3aea835bee0d6c0c4b2c67b72f38",
+    "image": "msweb.eval.arm64.grpc__grpc-go-3119:upstream-v1",
+    "command": [
+      "bash"
+    ]
+  },
+  {
+    "instance_id": "nushell__nushell-10381",
+    "language": "rust",
+    "repository_name": "nushell",
+    "source_commit": "a9a82de5c48b23958ead9d011765396d29217630",
+    "upstream_image": "mswebench/nushell_m_nushell@sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42",
+    "upstream_tag": "mswebench/nushell_m_nushell:pr-10381",
+    "base_image": "rust:1.85.0-bookworm@sha256:0ff31c9ffa641a62e48d543fb00b4960955ea375f40776f40f585b89e654cc5e",
+    "base_amd64_matches_upstream_layers": true,
+    "base_layer_count": 5,
+    "arm_base_manifest": "sha256:f04df1b615e9ffac55f3a304ef3aaccb9bc716c88a9d6ee6b00de45f288a4e3a",
+    "image": "msweb.eval.arm64.nushell__nushell-10381:upstream-v1",
+    "command": [
+      "bash"
+    ]
+  },
+  {
+    "instance_id": "sharkdp__bat-3108",
+    "language": "rust",
+    "repository_name": "bat",
+    "source_commit": "2be3a14a7e2c74360765a5fa213750f727f2c5bb",
+    "upstream_image": "mswebench/sharkdp_m_bat@sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7",
+    "upstream_tag": "mswebench/sharkdp_m_bat:pr-3108",
+    "base_image": "rust:1.85.0-bookworm@sha256:0ff31c9ffa641a62e48d543fb00b4960955ea375f40776f40f585b89e654cc5e",
+    "base_amd64_matches_upstream_layers": true,
+    "base_layer_count": 5,
+    "arm_base_manifest": "sha256:f04df1b615e9ffac55f3a304ef3aaccb9bc716c88a9d6ee6b00de45f288a4e3a",
+    "image": "msweb.eval.arm64.sharkdp__bat-3108:upstream-v1",
+    "command": [
+      "bash"
+    ]
+  },
+  {
+    "instance_id": "zeromicro__go-zero-964",
+    "language": "go",
+    "repository_name": "go-zero",
+    "source_commit": "68acfb1891837ec2e401588173cdd16ca1b9a9c4",
+    "upstream_image": "mswebench/zeromicro_m_go-zero@sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6",
+    "upstream_tag": "mswebench/zeromicro_m_go-zero:pr-964",
+    "base_image": "golang:1.24.1-bookworm@sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d",
+    "base_amd64_matches_upstream_layers": true,
+    "base_layer_count": 7,
+    "arm_base_manifest": "sha256:f32028b6b5937c12b2491f2855060ce352ee3aea835bee0d6c0c4b2c67b72f38",
+    "image": "msweb.eval.arm64.zeromicro__go-zero-964:upstream-v1",
+    "command": [
+      "bash"
+    ]
+  }
+]

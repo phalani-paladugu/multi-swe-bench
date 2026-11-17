@@ -1,0 +1,20 @@
+{
+  "instance_id": "cli__cli-2316",
+  "image": "msweb.eval.arm64.cli__cli-2316:upstream-v1",
+  "upstream_image": "mswebench/cli_m_cli@sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be",
+  "started_at": "2026-11-16T23:13:34.355895+00:00",
+  "status": "built_tests_recorded",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "c2f1e20a17bb17364a67b8f28aee937e15c3a4746e0ec2f106ce95122960e485",
+  "build_exit": 0,
+  "image_id": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+  "image_architecture": "arm64",
+  "smoke_exit": 0,
+  "packages_exit": 0,
+  "baseline_exit": 1,
+  "gold_exit": 1,
+  "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+  "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+  "finished_at": "2026-11-16T23:14:54.229597+00:00"
+}

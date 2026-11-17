@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1
+# Build context: this task directory. No x86 commands are executed.
+FROM --platform=linux/amd64 mswebench/nushell_m_nushell@sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42 AS upstream
+FROM --platform=linux/arm64 rust:1.85.0-bookworm@sha256:0ff31c9ffa641a62e48d543fb00b4960955ea375f40776f40f585b89e654cc5e
+ENV HTTP_PROXY="" http_proxy="" HTTPS_PROXY="" https_proxy=""
+WORKDIR /home/
+# Retain the original Git history/refs without copying x86 build products.
+RUN --mount=type=bind,from=upstream,source=/home/nushell/.git,target=/upstream-git,ro mkdir -p /home/nushell && cp -a /upstream-git /home/nushell/.git && git -C /home/nushell reset --hard HEAD
+# Reuse source downloads; compiled x86 targets and tool binaries are excluded.
+RUN --mount=type=bind,from=upstream,source=/usr/local/cargo,target=/upstream-cargo,ro for directory in registry git; do if [ -d "/upstream-cargo/$directory" ]; then cp -a "/upstream-cargo/$directory" /usr/local/cargo/; fi; done
+COPY --from=upstream /home/fix.patch /home/fix.patch
+COPY --from=upstream /home/test.patch /home/test.patch
+COPY --from=upstream /home/check_git_changes.sh /home/check_git_changes.sh
+COPY --from=upstream /home/prepare.sh /home/prepare.sh
+COPY --from=upstream /home/run.sh /home/run.sh
+COPY --from=upstream /home/test-run.sh /home/test-run.sh
+COPY --from=upstream /home/fix-run.sh /home/fix-run.sh
+RUN CARGO_BUILD_JOBS=4 bash /home/prepare.sh
+CMD ["bash"]

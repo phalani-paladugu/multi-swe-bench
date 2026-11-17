@@ -1,0 +1,46 @@
+{
+  "Id": "sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be",
+  "RepoDigests": [
+    "mswebench/cli_m_cli@sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be"
+  ],
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Created": "2025-03-18T09:46:07.292489874Z",
+  "Config": {
+    "Env": [
+      "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOLANG_VERSION=1.24.1",
+      "GOTOOLCHAIN=local",
+      "GOPATH=/go",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy="
+    ],
+    "Cmd": [
+      "bash"
+    ],
+    "WorkingDir": "/home"
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+      "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+      "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+      "sha256:3ff6fa92a9a637cab1329e915dfb0531f52baa26cda282a3d30c6c2100c17e05",
+      "sha256:e0f4cf0bdc482691782fcd0642612f0aa8ffc90ef2506f0619ab2507d726bafc",
+      "sha256:2a3d44cb92fde1543830ddde12c7267179ccbfc2dfb8c528323183f963956094",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:4deee6b7263134a8508c45d676234806f00b9439e6196038f09925ae8d017908",
+      "sha256:0dd85545ea6a63dc681fc38de6b49a4fe86310b62efc3fadf19708416e233604",
+      "sha256:ac43b12771680fddf6aaf986cae03e108dbc4c2ace12b5db26ba8b9c5aa553b4",
+      "sha256:cb95ea670e14e7f321d14920133ee682c3dcb8142641f5e751c2cc4fe4945650",
+      "sha256:a04cdb1d1afb2d6bf77376bb20d890e582adebf6a56c37055be500bea5ff983b",
+      "sha256:a543f39dd452a9164c566f14389ba44b2b260e95b2d35443f4bfc1d144396506",
+      "sha256:6d957b37d68eacca788cbd41e7b74e2f0164f4cdf8d685a0662652c8eafdf834",
+      "sha256:201f6f339965c994cc390dc491bea179912d5aee03040b10686cf154e81db3f7",
+      "sha256:873745cc5fcd8543362561ca9962891bfed16f7f7873c10a8acee39a176df657"
+    ]
+  }
+}

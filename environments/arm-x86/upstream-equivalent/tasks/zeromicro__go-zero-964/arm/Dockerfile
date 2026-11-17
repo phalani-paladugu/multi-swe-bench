@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1
+# Build context: this task directory. No x86 commands are executed.
+FROM --platform=linux/amd64 mswebench/zeromicro_m_go-zero@sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6 AS upstream
+FROM --platform=linux/arm64 golang:1.24.1-bookworm@sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d
+ENV HTTP_PROXY="" http_proxy="" HTTPS_PROXY="" https_proxy=""
+WORKDIR /home/
+# Retain the original Git history/refs without copying x86 build products.
+RUN --mount=type=bind,from=upstream,source=/home/go-zero/.git,target=/upstream-git,ro mkdir -p /home/go-zero && cp -a /upstream-git /home/go-zero/.git && git -C /home/go-zero reset --hard HEAD
+# Go module sources are portable; the x86 compilation cache is excluded.
+RUN --mount=type=bind,from=upstream,source=/go,target=/upstream-go,ro if [ -d /upstream-go/pkg/mod ]; then mkdir -p /go/pkg && cp -a /upstream-go/pkg/mod /go/pkg/; fi
+COPY --from=upstream /home/fix.patch /home/fix.patch
+COPY --from=upstream /home/test.patch /home/test.patch
+COPY --from=upstream /home/check_git_changes.sh /home/check_git_changes.sh
+COPY --from=upstream /home/prepare.sh /home/prepare.sh
+COPY --from=upstream /home/run.sh /home/run.sh
+COPY --from=upstream /home/test-run.sh /home/test-run.sh
+COPY --from=upstream /home/fix-run.sh /home/fix-run.sh
+RUN GOMAXPROCS=4 bash /home/prepare.sh
+CMD ["bash"]

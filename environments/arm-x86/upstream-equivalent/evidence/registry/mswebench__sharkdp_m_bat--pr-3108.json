@@ -1,0 +1,426 @@
+{
+  "repository": "mswebench/sharkdp_m_bat",
+  "reference": "pr-3108",
+  "resolved_digest": "sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7",
+  "checked_at": "2026-11-16T23:07:13.759281+00:00",
+  "manifest": {
+    "schemaVersion": 2,
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "config": {
+      "mediaType": "application/vnd.docker.container.image.v1+json",
+      "size": 9864,
+      "digest": "sha256:edacb7ab5834967f4cea3e643f7991a7d60df6b97fbca84ec24ef8bc34310a2d"
+    },
+    "layers": [
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 48467838,
+        "digest": "sha256:7cd785773db44407e20a679ce5439222e505475eed5b99f1910eb2cda51729ab"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 24011136,
+        "digest": "sha256:091eb8249475f42de217265c501e0186f0a3ea7490ef7f51458c30db91fb3cac"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 64396484,
+        "digest": "sha256:255774e0027b72d2327719e78dbad5ad8c9cf446d055e45be7fc149418470bae"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 211352566,
+        "digest": "sha256:353e14e5cc47664fba714a7da288001d90427c705494847ac773f5cc08199451"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 193696924,
+        "digest": "sha256:fe44f25b68dcc0fad03eddb07de055524bb7c31f088f3c1d411485751fba2b05"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 37289369,
+        "digest": "sha256:1523f10a22aa2937afa15bab281726292368688564c2cd7a8759a1456a93ab73"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 1245,
+        "digest": "sha256:55d5eb0d67c59c9f51a16503cdda3c8f154de9860b8b198faa1442976a04af31"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 502,
+        "digest": "sha256:d31fe3fb9f38e1d001886358ba71ee9532221d3d13fac5e67b448e5f48180540"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 311,
+        "digest": "sha256:006b4938cd18bdebb854bde98e8717731dfb73e159c3cb259035927b2af037e2"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 250,
+        "digest": "sha256:5af22efa062917bf9a32f619d1bb2e1200250daa854ebce1820be55b454d9563"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 172,
+        "digest": "sha256:aa5bb2ce722df8545b19578ded15b9d61f6da3155f0915004149bc3b0bd12efb"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 196,
+        "digest": "sha256:495286518a6d2b9c272b1d623e0a6ad7329620334c86a854836f488fe66103b5"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 202,
+        "digest": "sha256:13554f4e0570e7db3836c8229b4a63dbbc30cd474f2b31611d354bead381f87b"
+      },
+      {
+        "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+        "size": 494214553,
+        "digest": "sha256:62d29e8168f99c5c89c6ffff41dd3fbdda9b85db1900bed994b26167132d965c"
+      }
+    ]
+  },
+  "platforms": {
+    "amd64": {
+      "manifest_digest": "sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7",
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 9864,
+          "digest": "sha256:edacb7ab5834967f4cea3e643f7991a7d60df6b97fbca84ec24ef8bc34310a2d"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 48467838,
+            "digest": "sha256:7cd785773db44407e20a679ce5439222e505475eed5b99f1910eb2cda51729ab"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 24011136,
+            "digest": "sha256:091eb8249475f42de217265c501e0186f0a3ea7490ef7f51458c30db91fb3cac"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 64396484,
+            "digest": "sha256:255774e0027b72d2327719e78dbad5ad8c9cf446d055e45be7fc149418470bae"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 211352566,
+            "digest": "sha256:353e14e5cc47664fba714a7da288001d90427c705494847ac773f5cc08199451"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 193696924,
+            "digest": "sha256:fe44f25b68dcc0fad03eddb07de055524bb7c31f088f3c1d411485751fba2b05"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 37289369,
+            "digest": "sha256:1523f10a22aa2937afa15bab281726292368688564c2cd7a8759a1456a93ab73"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 1245,
+            "digest": "sha256:55d5eb0d67c59c9f51a16503cdda3c8f154de9860b8b198faa1442976a04af31"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 502,
+            "digest": "sha256:d31fe3fb9f38e1d001886358ba71ee9532221d3d13fac5e67b448e5f48180540"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 311,
+            "digest": "sha256:006b4938cd18bdebb854bde98e8717731dfb73e159c3cb259035927b2af037e2"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 250,
+            "digest": "sha256:5af22efa062917bf9a32f619d1bb2e1200250daa854ebce1820be55b454d9563"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 172,
+            "digest": "sha256:aa5bb2ce722df8545b19578ded15b9d61f6da3155f0915004149bc3b0bd12efb"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 196,
+            "digest": "sha256:495286518a6d2b9c272b1d623e0a6ad7329620334c86a854836f488fe66103b5"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 202,
+            "digest": "sha256:13554f4e0570e7db3836c8229b4a63dbbc30cd474f2b31611d354bead381f87b"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 494214553,
+            "digest": "sha256:62d29e8168f99c5c89c6ffff41dd3fbdda9b85db1900bed994b26167132d965c"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "amd64",
+        "config": {
+          "Hostname": "",
+          "Domainname": "",
+          "User": "",
+          "AttachStdin": false,
+          "AttachStdout": false,
+          "AttachStderr": false,
+          "Tty": false,
+          "OpenStdin": false,
+          "StdinOnce": false,
+          "Env": [
+            "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "RUSTUP_HOME=/usr/local/rustup",
+            "CARGO_HOME=/usr/local/cargo",
+            "RUST_VERSION=1.85.0",
+            "HTTP_PROXY=",
+            "http_proxy=",
+            "HTTPS_PROXY=",
+            "https_proxy="
+          ],
+          "Cmd": [
+            "bash"
+          ],
+          "Image": "sha256:8747a40b4702efb0e026270167c86f38d0d58882dbaa8e0b081395fd4cbdd9f4",
+          "Volumes": null,
+          "WorkingDir": "/home",
+          "Entrypoint": null,
+          "OnBuild": null,
+          "Labels": {
+            "org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust"
+          }
+        },
+        "container": "f8514b4c611d67e539a82c4d51dfc76e274335d9bde82620a2a11e1bc2f97916",
+        "container_config": {
+          "Hostname": "dc02-pff-500-4ca6-6fb3-f531-973b",
+          "Domainname": "",
+          "User": "",
+          "AttachStdin": false,
+          "AttachStdout": false,
+          "AttachStderr": false,
+          "Tty": false,
+          "OpenStdin": false,
+          "StdinOnce": false,
+          "Env": [
+            "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "RUSTUP_HOME=/usr/local/rustup",
+            "CARGO_HOME=/usr/local/cargo",
+            "RUST_VERSION=1.85.0",
+            "HTTP_PROXY=",
+            "http_proxy=",
+            "HTTPS_PROXY=",
+            "https_proxy="
+          ],
+          "Cmd": [
+            "/bin/sh",
+            "-c",
+            "#(nop) ",
+            "ENV https_proxy="
+          ],
+          "Image": "sha256:8747a40b4702efb0e026270167c86f38d0d58882dbaa8e0b081395fd4cbdd9f4",
+          "Volumes": null,
+          "WorkingDir": "/home",
+          "Entrypoint": null,
+          "OnBuild": null,
+          "Labels": {
+            "org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust"
+          }
+        },
+        "created": "2025-03-18T11:04:29.291418223Z",
+        "docker_version": "26.1.4",
+        "history": [
+          {
+            "created": "2023-05-10T23:29:59Z",
+            "created_by": "# debian.sh --arch 'amd64' out/ 'bookworm' '@1742169600'",
+            "comment": "debuerreotype 0.15"
+          },
+          {
+            "created": "2023-05-10T23:29:59Z",
+            "created_by": "RUN /bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tgnupg \t\tnetbase \t\tsq \t\twget \t; \trm -rf /var/lib/apt/lists/* # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2024-01-09T01:14:25Z",
+            "created_by": "RUN /bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t; \trm -rf /var/lib/apt/lists/* # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2024-01-09T01:14:25Z",
+            "created_by": "RUN /bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdefault-libmysqlclient-dev \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t; \trm -rf /var/lib/apt/lists/* # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2025-03-05T18:46:45Z",
+            "created_by": "LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-05T18:46:45Z",
+            "created_by": "ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.85.0",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-05T18:46:45Z",
+            "created_by": "RUN /bin/sh -c set -eux;     dpkgArch=\"$(dpkg --print-architecture)\";     case \"${dpkgArch##*-}\" in         amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='a3339fb004c3d0bb9862ba0bce001861fe5cbde9c10d16591eb3f39ee6cd3e7f' ;;         armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='62cfed758140f94a75074fb350e287dd26d1b6c9a4d6a18616757fb344720bcb' ;;         arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='c64b33db2c6b9385817ec0e49a84bcfe018ed6e328fe755c3c809580cc70ce7a' ;;         i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='fec8226fede82b4b886855e4f1b69cdd17a6f60afdddb17f9a814b743c2d5c47' ;;         ppc64el) rustArch='powerpc64le-unknown-linux-gnu'; rustupSha256='b1ef09a734ece551456635b25c91a97770392b74c7f793fbc58575ddf0442645' ;;         s390x) rustArch='s390x-unknown-linux-gnu'; rustupSha256='8e4e8d5ffd3e6996303faf45670009388f73a4796264230f04f5c29809620c20' ;;         *) echo >&2 \"unsupported architecture: ${dpkgArch}\"; exit 1 ;;     esac;     url=\"https://static.rust-lang.org/rustup/archive/1.28.1/${rustArch}/rustup-init\";     wget \"$url\";     echo \"${rustupSha256} *rustup-init\" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version; # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2025-03-18T09:46:42.648244144Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTP_PROXY=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T09:46:42.841701575Z",
+            "created_by": "/bin/sh -c #(nop)  ENV http_proxy=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T09:46:43.004211691Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTPS_PROXY=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T09:46:43.284100339Z",
+            "created_by": "/bin/sh -c #(nop)  ENV https_proxy=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T09:46:43.446228162Z",
+            "created_by": "/bin/sh -c #(nop) WORKDIR /home",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T09:46:50.896563504Z",
+            "created_by": "/bin/sh -c git clone https://github.com/sharkdp/bat.git /home/bat"
+          },
+          {
+            "created": "2025-03-18T09:46:51.003524943Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTP_PROXY=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T09:46:51.161908803Z",
+            "created_by": "/bin/sh -c #(nop)  ENV http_proxy=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T09:46:51.239644885Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTPS_PROXY=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T09:46:51.325570667Z",
+            "created_by": "/bin/sh -c #(nop)  ENV https_proxy=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T10:02:56.711710461Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTP_PROXY=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T10:03:01.692390047Z",
+            "created_by": "/bin/sh -c #(nop)  ENV http_proxy=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T10:03:10.296117683Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTPS_PROXY=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T10:03:16.828308965Z",
+            "created_by": "/bin/sh -c #(nop)  ENV https_proxy=http://sys-proxy-rd-relay.byted.org:8118",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T10:58:37.189924865Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:e4c04581e906383bdb0f9c1f5f4584d7f28ae02015101bdaada31a487d96feab in /home/ "
+          },
+          {
+            "created": "2025-03-18T10:58:38.031822977Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:eed065b195c9d20e460d2ad9e1d0e6c492d459eadac4195235aa0cf795a76363 in /home/ "
+          },
+          {
+            "created": "2025-03-18T10:58:39.042018779Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:f4fcd33ea2a80a0e0dfd623cbf8feeb32e1cdaaa25dc077b1295c5fc14784cba in /home/ "
+          },
+          {
+            "created": "2025-03-18T10:58:39.94745981Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:69562d2f7e1fdb39f04e2e193a5ec89e918e8226f41ced403572fe74089ca8f2 in /home/ "
+          },
+          {
+            "created": "2025-03-18T10:58:40.886416323Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:437143dedf62d0343a90c5fb32299b1ea00651e3480d3a815fb490acdeaa29bb in /home/ "
+          },
+          {
+            "created": "2025-03-18T10:58:42.050880798Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:171f015c3834b6bbe1b33a447294b7309ef80d89307f19526a4a4ee719b44f11 in /home/ "
+          },
+          {
+            "created": "2025-03-18T10:58:42.751648564Z",
+            "created_by": "/bin/sh -c #(nop) COPY file:f6609880a50454bc9bfd9f3922a5465a36b6e8c676ecc3dfb388965dc0b97dac in /home/ "
+          },
+          {
+            "created": "2025-03-18T11:04:10.270929315Z",
+            "created_by": "/bin/sh -c bash /home/prepare.sh"
+          },
+          {
+            "created": "2025-03-18T11:04:17.56991058Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTP_PROXY=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T11:04:21.644486259Z",
+            "created_by": "/bin/sh -c #(nop)  ENV http_proxy=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T11:04:27.039852937Z",
+            "created_by": "/bin/sh -c #(nop)  ENV HTTPS_PROXY=",
+            "empty_layer": true
+          },
+          {
+            "created": "2025-03-18T11:04:29.291418223Z",
+            "created_by": "/bin/sh -c #(nop)  ENV https_proxy=",
+            "empty_layer": true
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+            "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+            "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+            "sha256:4c13ea2c0b021f7e71473290da414fe79371abf7b4de411c0a70fd2fc88916d5",
+            "sha256:e26ffd62d8b12fe7b7a296b756d66606f59f4231452623550b3cd1166430e9c4",
+            "sha256:f98034535261fbef15c69ec583ce91c7bd318f0bf6de806bce4446f713cc5407",
+            "sha256:6cf1212473ce30f3f7d74ca737585eb70ccb076cf7bea3c57b9c1fa1da7614bf",
+            "sha256:57a5c50f52292760eabb15ca1b77c3476844cfaac0a1d013a21d21b39b8d64cd",
+            "sha256:c16318e9600e3e7643280fe9493cf653299e01d46d4b6599c2def18d1441202e",
+            "sha256:7e673bd5e68434de11193d63e544e7aa94af27fcee94ddecd975cf584e4ff91e",
+            "sha256:ef7fd8d20241da9fb90294c36769f9977cab7e855ab9c0746f7017f4f7e61091",
+            "sha256:cc2be980d7e3182294a06197f48f36646fcd7cad649c52284beb3b022d9d06bc",
+            "sha256:bed57bf06c15cb98a01109d334b66e61b6c36aef229bfda94acdf9fae9a43a6f",
+            "sha256:880bc313426c4d0a744e70527355a611aa938f3ba2a8bdcea71601aad420b91a"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,9 @@
 # ARM and x86 task environments
 
+For ARM builds aligned with the **actual published upstream x86 images**, use the [nine upstream-equivalent Java/Rust/Go environments](upstream-equivalent/README.md). They preserve upstream toolchains and scripts and use separate `upstream-v1` image tags; the existing CARP adaptations below remain available.
+
+The upstream-aligned collection adds variants of the same nine Multi-SWE-bench task IDs; the total remains **37 unique tasks**.
+
 This fork publishes 37 task environments with `arm/Dockerfile` and `x86/Dockerfile`, build instructions, architecture diffs, hashes, and validation evidence.
 
 | Source collection | C++ | Java | Rust | Go | Total |
@@ -16,7 +20,7 @@ The 28 historical tasks retain their SWE-bench Multilingual metadata and evaluat
 - [Native ARM build and test results](BUILD_RESULTS.md)
 - [Source and publication provenance](provenance/publication.json)
 
-All nine new ARM images built successfully. Seven configured gold test commands passed; Java module scopes are narrower than the complete dataset selectors. gRPC passes the focused affected-package check, while its full suite has recorded vet/timeout issues. Go-zero has recorded ARM dependency and benchmark-fixture blockers. Native x86 execution has not been validated. The historical 28 environments retain their dated ARM validation records.
+For the CARP adaptations in `multi-swe-tasks/`, all nine ARM images built successfully. Seven configured gold test commands passed; Java module scopes are narrower than the complete dataset selectors. gRPC passes the focused affected-package check, while its full suite has recorded vet/timeout issues. Go-zero has recorded ARM dependency and benchmark-fixture blockers. Native x86 execution has not been validated. The historical 28 environments retain their dated ARM validation records.
 
 Run the bundled scripts from this directory. These task build contexts use their own build/evaluation runner; copying them here does not automatically register their images with the upstream harness. Upstream code remains available at the repository root.
 

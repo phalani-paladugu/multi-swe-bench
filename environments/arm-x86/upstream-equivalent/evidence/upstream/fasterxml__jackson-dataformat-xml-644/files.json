@@ -1,0 +1,106 @@
+{
+  "/etc/apt/sources.list": {
+    "bytes": 2403,
+    "present": true,
+    "sha256": "15a39563d491def84446c8a5304e873a6b6509d56e2b54edce8eea154e1290a0"
+  },
+  "/etc/os-release": {
+    "bytes": 386,
+    "present": true,
+    "sha256": "594d5ddd35aedb47f00d9c34d140017907a5b9f93c975aba125fc924daac5c07"
+  },
+  "/home/check_git_changes.sh": {
+    "bytes": 315,
+    "present": true,
+    "sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+  },
+  "/home/fix-run.sh": {
+    "bytes": 177,
+    "present": true,
+    "sha256": "5a63d0f8d076a50e8654b834bbdb64a8d4e9629b0abaf0e0af41bcb8af5aaf05"
+  },
+  "/home/fix.patch": {
+    "bytes": 4055,
+    "present": true,
+    "sha256": "4df918b4fc2e932748cd1b00bd92066326cc87fd04817cd8f31063a506107caa"
+  },
+  "/home/jackson-dataformat-xml/.git/HEAD": {
+    "bytes": 41,
+    "evidence_path": "files/home/jackson-dataformat-xml/git-metadata/HEAD",
+    "present": true,
+    "sha256": "2e5332c9a763fabe0a71ee9e9cb672ec4b75f37d05a2975be01024a08cecc4a3"
+  },
+  "/home/jackson-dataformat-xml/.mvn/wrapper/maven-wrapper.properties": {
+    "bytes": 1020,
+    "present": true,
+    "sha256": "64eabeaffa7046ff08a022cd33bbe6a35c5ebaa438740965ef479dfd788a961a"
+  },
+  "/home/jackson-dataformat-xml/Cargo.lock": {
+    "present": false
+  },
+  "/home/jackson-dataformat-xml/Cargo.toml": {
+    "present": false
+  },
+  "/home/jackson-dataformat-xml/go.mod": {
+    "present": false
+  },
+  "/home/jackson-dataformat-xml/go.sum": {
+    "present": false
+  },
+  "/home/jackson-dataformat-xml/pom.xml": {
+    "bytes": 7389,
+    "present": true,
+    "sha256": "464c91ed6ff70ee982d1c3eaa5d6636a6c7031d45b33a97bf3a07d5c4784fc73"
+  },
+  "/home/prepare.sh": {
+    "bytes": 409,
+    "present": true,
+    "sha256": "d7619a50157ee047509b5d7abc2fea04101deef87346dc75ae32107bb933332d"
+  },
+  "/home/run.sh": {
+    "bytes": 113,
+    "present": true,
+    "sha256": "63eb46a9d4373dd6a1973a9ebf09877997d706a4ab2df5a1c2f24bad6f1bd29f"
+  },
+  "/home/test-run.sh": {
+    "bytes": 161,
+    "present": true,
+    "sha256": "37aca2b9fa71f4095f2c8fe047dc903aa2f5e60dae39177914fe67f84f28576d"
+  },
+  "/home/test.patch": {
+    "bytes": 6890,
+    "present": true,
+    "sha256": "7adc9640c2a0c44c1170d3a504621d6142065784a0e90a06584424d6f1a34bf7"
+  },
+  "/usr/local/go/VERSION": {
+    "present": false
+  },
+  "/usr/local/rustup/settings.toml": {
+    "present": false
+  },
+  "/var/lib/dpkg/info/openjdk-8-jdk-headless:amd64.list": {
+    "bytes": 6219,
+    "present": true,
+    "sha256": "1e26df24f5bab1168ad283f2a3691a5f8139b57c675fa9934dcabda0d44187a7"
+  },
+  "/var/lib/dpkg/info/openjdk-8-jdk:amd64.list": {
+    "bytes": 1625,
+    "present": true,
+    "sha256": "eb3d7abf5ce71b529092761b932502369fee4aa58aaa66ea11af2a29389889b0"
+  },
+  "/var/lib/dpkg/info/openjdk-8-jre-headless:amd64.list": {
+    "bytes": 13776,
+    "present": true,
+    "sha256": "5931cc94e62b0a70e0999378da802aa6153e66cb7b8b1ca1274300a5feea54ee"
+  },
+  "/var/lib/dpkg/info/openjdk-8-jre:amd64.list": {
+    "bytes": 2443,
+    "present": true,
+    "sha256": "f04105aadd3c162df3268c64b23cd48849f523ecc778d6cba3f12f71837dab12"
+  },
+  "/var/lib/dpkg/status": {
+    "bytes": 351462,
+    "present": true,
+    "sha256": "71718e969388e3bb8fb03199a2a13eac03cdbefe98fec4eb52e1c6b2b2a3b7e5"
+  }
+}

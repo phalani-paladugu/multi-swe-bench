@@ -1,0 +1,1819 @@
+[
+  {
+    "base_amd64_is_exact_upstream_layer_prefix": true,
+    "base_image_provenance": {
+      "amd64_base_diff_ids": [
+        "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+        "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+        "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+        "sha256:4c13ea2c0b021f7e71473290da414fe79371abf7b4de411c0a70fd2fc88916d5",
+        "sha256:e26ffd62d8b12fe7b7a296b756d66606f59f4231452623550b3cd1166430e9c4"
+      ],
+      "amd64_matches_actual_upstream_prefix": true,
+      "arm64_base_diff_ids": [
+        "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+        "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+        "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+        "sha256:77122155c2dc59977416cf2f760eb52aed66fd82acb25b7b006e0ad7f989ff55",
+        "sha256:e61bd151779656dee304566db7b4a662b784f522b4588f164305dc89e081541f"
+      ],
+      "arm64_manifest_digest": "sha256:f04df1b615e9ffac55f3a304ef3aaccb9bc716c88a9d6ee6b00de45f288a4e3a",
+      "arm64_manifest_matches_recipe": true,
+      "arm64_matches_built_image_prefix": true,
+      "base_index_digest": "sha256:0ff31c9ffa641a62e48d543fb00b4960955ea375f40776f40f585b89e654cc5e",
+      "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+    },
+    "build": {
+      "architecture": "arm64",
+      "baseline_exit": 101,
+      "build_exit": 0,
+      "dockerfile_sha256": "ac2948dc6cab828c109a9eac846e9ea182434adf3b6b34de02bce7e9d348d09f",
+      "finished_at": "2026-11-16T23:15:13.150783+00:00",
+      "gold_exit": 0,
+      "image": "msweb.eval.arm64.burntsushi__ripgrep-2626:upstream-v1",
+      "image_architecture": "arm64",
+      "image_id": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+      "instance_id": "BurntSushi__ripgrep-2626",
+      "logs": "evidence/builds/attempt-1/BurntSushi__ripgrep-2626",
+      "matches_current_dockerfile": true,
+      "native_host_architecture": "aarch64",
+      "packages_exit": 0,
+      "smoke_exit": 0,
+      "started_at": "2026-11-16T23:13:34.355739+00:00",
+      "status": "built_tests_recorded",
+      "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+      "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+      "upstream_image": "mswebench/burntsushi_m_ripgrep@sha256:83375231f11af4e8762767d0cd0fbb429e8c44fee92f8ddc4eff5c86700e064e"
+    },
+    "documented_architecture_exclusions": {},
+    "file_hashes": {
+      "/home/check_git_changes.sh": {
+        "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+        "matches": true,
+        "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+      },
+      "/home/fix-run.sh": {
+        "arm_sha256": "ac01fffd456768996d04af64e2f11265b118e61a0aa95ed1e1b174258716f827",
+        "matches": true,
+        "upstream_sha256": "ac01fffd456768996d04af64e2f11265b118e61a0aa95ed1e1b174258716f827"
+      },
+      "/home/fix.patch": {
+        "arm_sha256": "43d165b24f42cafd4fa3b9857b04d3a9ee9ed5c36794ad43c89684d6c8e9a0d1",
+        "matches": true,
+        "upstream_sha256": "43d165b24f42cafd4fa3b9857b04d3a9ee9ed5c36794ad43c89684d6c8e9a0d1"
+      },
+      "/home/prepare.sh": {
+        "arm_sha256": "8bf47f7e65d7996a3a0183162f4715ae8900bbbecb9aee15965b1683bf1e1139",
+        "matches": true,
+        "upstream_sha256": "8bf47f7e65d7996a3a0183162f4715ae8900bbbecb9aee15965b1683bf1e1139"
+      },
+      "/home/ripgrep/Cargo.lock": {
+        "arm_sha256": "adde53e16745e62780e7074f26f38e61f8cb7632dd95555600091bfd6ec9a66b",
+        "matches": true,
+        "upstream_sha256": "adde53e16745e62780e7074f26f38e61f8cb7632dd95555600091bfd6ec9a66b"
+      },
+      "/home/ripgrep/Cargo.toml": {
+        "arm_sha256": "a29c6a128ce40d138438acb8dce49db1aefdf3fd4994029ceec50b94f95e002c",
+        "matches": true,
+        "upstream_sha256": "a29c6a128ce40d138438acb8dce49db1aefdf3fd4994029ceec50b94f95e002c"
+      },
+      "/home/run.sh": {
+        "arm_sha256": "6d1594f5a0228393b78e542981d7a8e0332ffc05403cba300f42348f761609ea",
+        "matches": true,
+        "upstream_sha256": "6d1594f5a0228393b78e542981d7a8e0332ffc05403cba300f42348f761609ea"
+      },
+      "/home/test-run.sh": {
+        "arm_sha256": "13de2bb3fcc52dbeaa5f24187793d94e34947e140367e7b816ef80ccfa2ad52d",
+        "matches": true,
+        "upstream_sha256": "13de2bb3fcc52dbeaa5f24187793d94e34947e140367e7b816ef80ccfa2ad52d"
+      },
+      "/home/test.patch": {
+        "arm_sha256": "9155c94b0b617770d1d3b8da650cb92a7a977d2e697e9c0515a25c3b77f67a00",
+        "matches": true,
+        "upstream_sha256": "9155c94b0b617770d1d3b8da650cb92a7a977d2e697e9c0515a25c3b77f67a00"
+      }
+    },
+    "image_ids": {
+      "arm": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+      "upstream_x86": "sha256:83375231f11af4e8762767d0cd0fbb429e8c44fee92f8ddc4eff5c86700e064e"
+    },
+    "instance_id": "BurntSushi__ripgrep-2626",
+    "packages": {
+      "arm_count": 413,
+      "only_arm": {
+        "binutils-aarch64-linux-gnu": {
+          "Architecture": "arm64",
+          "Version": "2.40-2"
+        },
+        "libhwasan0": {
+          "Architecture": "arm64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "only_upstream": {
+        "binutils-x86-64-linux-gnu": {
+          "Architecture": "amd64",
+          "Version": "2.40-2"
+        },
+        "libquadmath0": {
+          "Architecture": "amd64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "upstream_count": 413,
+      "version_differences": {}
+    },
+    "runtime_configuration": {
+      "Cmd": {
+        "arm": [
+          "bash"
+        ],
+        "matches": true,
+        "upstream": [
+          "bash"
+        ]
+      },
+      "Entrypoint": {
+        "arm": null,
+        "matches": true,
+        "upstream": null
+      },
+      "Env": {
+        "arm": [
+          "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "RUSTUP_HOME=/usr/local/rustup",
+          "CARGO_HOME=/usr/local/cargo",
+          "RUST_VERSION=1.85.0",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ],
+        "matches": true,
+        "upstream": [
+          "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "RUSTUP_HOME=/usr/local/rustup",
+          "CARGO_HOME=/usr/local/cargo",
+          "RUST_VERSION=1.85.0",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ]
+      },
+      "WorkingDir": {
+        "arm": "/home/",
+        "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+        "matches": true,
+        "raw_matches": false,
+        "upstream": "/home"
+      }
+    },
+    "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+    "source_commit": {
+      "expected": "7099e174acbcbd940f57e4ab4913fee4040c826e",
+      "matches": true,
+      "observed": [
+        "7099e174acbcbd940f57e4ab4913fee4040c826e"
+      ]
+    },
+    "test_evidence": {
+      "image_id": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+      "logs": "evidence/builds/attempt-1/BurntSushi__ripgrep-2626",
+      "reused_after_metadata_change": false
+    },
+    "tests": {
+      "all_expected_gold_tests_passed": true,
+      "all_f2p_reproduced": true,
+      "baseline_exit": 101,
+      "expected_gold_tests": 404,
+      "f2p": {
+        "regression::r428_unrecognized_style": {
+          "baseline": "FAIL",
+          "gold": "PASS"
+        }
+      },
+      "gold_exit": 0,
+      "missing_gold_tests": [],
+      "nonpassing_gold_tests": {},
+      "observed_gold_tests": 404
+    },
+    "upstream_image": "mswebench/burntsushi_m_ripgrep@sha256:83375231f11af4e8762767d0cd0fbb429e8c44fee92f8ddc4eff5c86700e064e"
+  },
+  {
+    "base_amd64_is_exact_upstream_layer_prefix": true,
+    "base_image_provenance": {
+      "amd64_base_diff_ids": [
+        "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92"
+      ],
+      "amd64_matches_actual_upstream_prefix": true,
+      "arm64_base_diff_ids": [
+        "sha256:171652ecd561458ec6fcca88016f1d5552155ecaff2445a38a97f49d6b672904"
+      ],
+      "arm64_manifest_digest": "sha256:4489868cec4ea83f1e2c8e9f493ac957ec1451a63428dbec12af2894e6da4429",
+      "arm64_manifest_matches_recipe": true,
+      "arm64_matches_built_image_prefix": true,
+      "base_index_digest": "sha256:8e5c4f0285ecbb4ead070431d29b576a530d3166df73ec44affc1cd27555141b",
+      "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+    },
+    "build": {
+      "architecture": "arm64",
+      "build_exit": 0,
+      "dockerfile_sha256": "872dc27b5cc30a1624eba0a4c5bed6e0ca61c26efb79fc8bcb7b0e5b51a5274d",
+      "finished_at": "2026-11-17T14:41:11.514482+00:00",
+      "image": "msweb.eval.arm64.alibaba__fastjson2-2775:upstream-v1",
+      "image_architecture": "arm64",
+      "image_id": "sha256:5cb0c77ea6bed7a600ef39389b75e7f0e415e8b1c16476a24a15402c2ea4e6db",
+      "input_sha256": {
+        "arm/Dockerfile": "872dc27b5cc30a1624eba0a4c5bed6e0ca61c26efb79fc8bcb7b0e5b51a5274d",
+        "install-java.sh": "6b0648d1e32d9906916815d251e5e82cef8d938f01db776b2ad430a1a27b0920",
+        "packages.txt": "60d12b723062028befc675bb3096b8b65abb9a39b11b28620c0d7c8c0c5bb2cb",
+        "upstream-reference.json": "796bbdb142b616b842ea90094d4ca35ecf5c516fdaba64972cc6c90c8266b8be"
+      },
+      "instance_id": "alibaba__fastjson2-2775",
+      "logs": "evidence/builds/attempt-3/alibaba__fastjson2-2775",
+      "matches_current_dockerfile": true,
+      "native_host_architecture": "aarch64",
+      "packages_exit": 0,
+      "smoke_exit": 0,
+      "started_at": "2026-11-17T14:41:06.716458+00:00",
+      "status": "built_smoke_checked",
+      "upstream_image": "mswebench/alibaba_m_fastjson2@sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15"
+    },
+    "documented_architecture_exclusions": {},
+    "file_hashes": {
+      "/home/check_git_changes.sh": {
+        "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+        "matches": true,
+        "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+      },
+      "/home/fastjson2/pom.xml": {
+        "arm_sha256": "48cd8ba5616e40db35a1fd7f83aeeafced799d005737573b2c8fe0001277dd3e",
+        "matches": true,
+        "upstream_sha256": "48cd8ba5616e40db35a1fd7f83aeeafced799d005737573b2c8fe0001277dd3e"
+      },
+      "/home/fix-run.sh": {
+        "arm_sha256": "05d4453015b6e762e997b90551ff7b3ece0c8128f8c73d37a8e4975497187407",
+        "matches": true,
+        "upstream_sha256": "05d4453015b6e762e997b90551ff7b3ece0c8128f8c73d37a8e4975497187407"
+      },
+      "/home/fix.patch": {
+        "arm_sha256": "b81a64f0b87cb92ed84c18ba34210dba62bfd3592b08874257aab851cdec626b",
+        "matches": true,
+        "upstream_sha256": "b81a64f0b87cb92ed84c18ba34210dba62bfd3592b08874257aab851cdec626b"
+      },
+      "/home/prepare.sh": {
+        "arm_sha256": "351da62b2db6496eac4ba207bd25ac910e94fa23e64a1b4c71d6db46a17124c4",
+        "matches": true,
+        "upstream_sha256": "351da62b2db6496eac4ba207bd25ac910e94fa23e64a1b4c71d6db46a17124c4"
+      },
+      "/home/run.sh": {
+        "arm_sha256": "dc022e4f4b2d5591155a8686e911f3c508c4cdc09c96ccef0298b0bfe862f000",
+        "matches": true,
+        "upstream_sha256": "dc022e4f4b2d5591155a8686e911f3c508c4cdc09c96ccef0298b0bfe862f000"
+      },
+      "/home/test-run.sh": {
+        "arm_sha256": "949fb3f1f6297163449441624d60e19b12da9c2bee200afc26e512b90fa70ba8",
+        "matches": true,
+        "upstream_sha256": "949fb3f1f6297163449441624d60e19b12da9c2bee200afc26e512b90fa70ba8"
+      },
+      "/home/test.patch": {
+        "arm_sha256": "1ae3de5e8026117e0fc90467996d07eb14d355ba520860d6bc9315eebb275bcc",
+        "matches": true,
+        "upstream_sha256": "1ae3de5e8026117e0fc90467996d07eb14d355ba520860d6bc9315eebb275bcc"
+      }
+    },
+    "image_ids": {
+      "arm": "sha256:5cb0c77ea6bed7a600ef39389b75e7f0e415e8b1c16476a24a15402c2ea4e6db",
+      "upstream_x86": "sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15"
+    },
+    "instance_id": "alibaba__fastjson2-2775",
+    "packages": {
+      "arm_count": 191,
+      "only_arm": {},
+      "only_upstream": {},
+      "upstream_count": 191,
+      "version_differences": {}
+    },
+    "runtime_configuration": {
+      "Cmd": {
+        "arm": [
+          "/bin/bash"
+        ],
+        "matches": true,
+        "upstream": [
+          "/bin/bash"
+        ]
+      },
+      "Entrypoint": {
+        "arm": null,
+        "matches": true,
+        "upstream": null
+      },
+      "Env": {
+        "arm": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy=",
+          "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+          "DEBIAN_FRONTEND=noninteractive",
+          "LANG=C.UTF-8",
+          "LC_ALL=C.UTF-8"
+        ],
+        "matches": true,
+        "upstream": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy=",
+          "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+          "DEBIAN_FRONTEND=noninteractive",
+          "LANG=C.UTF-8",
+          "LC_ALL=C.UTF-8"
+        ]
+      },
+      "WorkingDir": {
+        "arm": "/home/",
+        "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+        "matches": true,
+        "raw_matches": false,
+        "upstream": "/home"
+      }
+    },
+    "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+    "source_commit": {
+      "expected": "12b40c7ba3e7c30e35977195770c80beb34715c5",
+      "matches": true,
+      "observed": [
+        "12b40c7ba3e7c30e35977195770c80beb34715c5"
+      ]
+    },
+    "test_evidence": {
+      "changed_config_fields": [
+        "Cmd"
+      ],
+      "final_image_id": "sha256:5cb0c77ea6bed7a600ef39389b75e7f0e415e8b1c16476a24a15402c2ea4e6db",
+      "image_id": "sha256:100bfdc5074ba4cd74b212c515b52d91614389f5ffd7159281a28dbf3afb681b",
+      "logs": "evidence/builds/attempt-1/alibaba__fastjson2-2775",
+      "reason": "Final image differs only in default command metadata. Recorded tests used explicit bash /home/test-run.sh and bash /home/fix-run.sh commands, which override that default. Tests were not rerun on the final image ID.",
+      "reused_after_metadata_change": true,
+      "rootfs_layers_identical": true
+    },
+    "tests": {
+      "all_expected_gold_tests_passed": true,
+      "all_f2p_reproduced": null,
+      "baseline_exit": 1,
+      "expected_gold_tests": 2724,
+      "f2p": {},
+      "gold_exit": 0,
+      "missing_gold_tests": [],
+      "nonpassing_gold_tests": {},
+      "observed_gold_tests": 2725
+    },
+    "upstream_image": "mswebench/alibaba_m_fastjson2@sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15"
+  },
+  {
+    "base_amd64_is_exact_upstream_layer_prefix": true,
+    "base_image_provenance": {
+      "amd64_base_diff_ids": [
+        "sha256:270a1170e7e398434ff1b31e17e233f7d7b71aa99a40473615860068e86720af"
+      ],
+      "amd64_matches_actual_upstream_prefix": true,
+      "arm64_base_diff_ids": [
+        "sha256:59b223680ef978509f20faf6bf069866dfc02c422159347face0a7565d698526"
+      ],
+      "arm64_manifest_digest": "sha256:23fdb0648173966ac0b863e5b3d63032e99f44533c5b396e62f29770ca2c5210",
+      "arm64_manifest_matches_recipe": true,
+      "arm64_matches_built_image_prefix": true,
+      "base_index_digest": "sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2",
+      "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+    },
+    "build": {
+      "architecture": "arm64",
+      "build_exit": 0,
+      "dockerfile_sha256": "69b7c3bcaa468e79c663f6e57e3a37a80ea4c09a230f032c3c6aa3031c0bf1e9",
+      "finished_at": "2026-11-17T14:41:11.163928+00:00",
+      "image": "msweb.eval.arm64.apache__dubbo-11781:upstream-v1",
+      "image_architecture": "arm64",
+      "image_id": "sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27",
+      "input_sha256": {
+        "arm/Dockerfile": "69b7c3bcaa468e79c663f6e57e3a37a80ea4c09a230f032c3c6aa3031c0bf1e9",
+        "install-java.sh": "8c246fa3de464856a84e6af29a8dc2b24933e08e413be2ca02e8bbfcbbc8c59f",
+        "packages.txt": "5106d166fa76966eeb96ce2a3753ec34367eb0bb64ab7ef371aeca3e5e01a508",
+        "upstream-reference.json": "fd5d652f9da8bde92c9a7f3fd341134a8465c5519fc2a7fb3c6174a32b37520a"
+      },
+      "instance_id": "apache__dubbo-11781",
+      "logs": "evidence/builds/attempt-3/apache__dubbo-11781",
+      "matches_current_dockerfile": true,
+      "native_host_architecture": "aarch64",
+      "packages_exit": 0,
+      "smoke_exit": 0,
+      "started_at": "2026-11-17T14:41:06.716689+00:00",
+      "status": "built_smoke_checked",
+      "upstream_image": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca"
+    },
+    "documented_architecture_exclusions": {
+      "libdrm-intel1": "Intel graphics userspace driver; absent from the ARM64 package archive. The task does not use an Intel GPU."
+    },
+    "file_hashes": {
+      "/home/check_git_changes.sh": {
+        "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+        "matches": true,
+        "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+      },
+      "/home/dubbo/pom.xml": {
+        "arm_sha256": "c9c5a7b6b2b227635e2d8958c25ad5c486c5bc9261979ad57f08279515e08821",
+        "matches": true,
+        "upstream_sha256": "c9c5a7b6b2b227635e2d8958c25ad5c486c5bc9261979ad57f08279515e08821"
+      },
+      "/home/fix-run.sh": {
+        "arm_sha256": "164087438d7ccef646e8c3b8470d994ae8044da37d5b45b9428df9dea1dce67d",
+        "matches": true,
+        "upstream_sha256": "164087438d7ccef646e8c3b8470d994ae8044da37d5b45b9428df9dea1dce67d"
+      },
+      "/home/fix.patch": {
+        "arm_sha256": "985d83828778bb36aaee668bacd294d1fc120a88367fa177ecc8845f7961ae00",
+        "matches": true,
+        "upstream_sha256": "985d83828778bb36aaee668bacd294d1fc120a88367fa177ecc8845f7961ae00"
+      },
+      "/home/prepare.sh": {
+        "arm_sha256": "a170b16a899c27d120e1a2b40113f92a4a9ac8532c4046f02bf977678fd1bc12",
+        "matches": true,
+        "upstream_sha256": "a170b16a899c27d120e1a2b40113f92a4a9ac8532c4046f02bf977678fd1bc12"
+      },
+      "/home/run.sh": {
+        "arm_sha256": "d17c0aee47771604a5f26810b88b0b7fb44475668ae1c202cfa7d03f5c329b12",
+        "matches": true,
+        "upstream_sha256": "d17c0aee47771604a5f26810b88b0b7fb44475668ae1c202cfa7d03f5c329b12"
+      },
+      "/home/test-run.sh": {
+        "arm_sha256": "a255d6408eb6cf68268d9a2f5062dc868bafb09c222bdb8d902c7b5d37c9c5bf",
+        "matches": true,
+        "upstream_sha256": "a255d6408eb6cf68268d9a2f5062dc868bafb09c222bdb8d902c7b5d37c9c5bf"
+      },
+      "/home/test.patch": {
+        "arm_sha256": "a37e903c2a50ca31eb51d100c84d93d2d77d05c51478b5b4eb09312e92e2c9a4",
+        "matches": true,
+        "upstream_sha256": "a37e903c2a50ca31eb51d100c84d93d2d77d05c51478b5b4eb09312e92e2c9a4"
+      }
+    },
+    "image_ids": {
+      "arm": "sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27",
+      "upstream_x86": "sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca"
+    },
+    "instance_id": "apache__dubbo-11781",
+    "packages": {
+      "arm_count": 348,
+      "only_arm": {},
+      "only_upstream": {
+        "libdrm-intel1": {
+          "Architecture": "amd64",
+          "Version": "2.4.113-2~ubuntu0.22.04.1"
+        }
+      },
+      "upstream_count": 349,
+      "version_differences": {}
+    },
+    "runtime_configuration": {
+      "Cmd": {
+        "arm": [
+          "/bin/bash"
+        ],
+        "matches": true,
+        "upstream": [
+          "/bin/bash"
+        ]
+      },
+      "Entrypoint": {
+        "arm": null,
+        "matches": true,
+        "upstream": null
+      },
+      "Env": {
+        "arm": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy=",
+          "DEBIAN_FRONTEND=noninteractive",
+          "LANG=C.UTF-8",
+          "LC_ALL=C.UTF-8"
+        ],
+        "matches": true,
+        "upstream": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy=",
+          "DEBIAN_FRONTEND=noninteractive",
+          "LANG=C.UTF-8",
+          "LC_ALL=C.UTF-8"
+        ]
+      },
+      "WorkingDir": {
+        "arm": "/home/",
+        "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+        "matches": true,
+        "raw_matches": false,
+        "upstream": "/home"
+      }
+    },
+    "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+    "source_commit": {
+      "expected": "d0a1bd014331483c19208b831c4f6b488654a508",
+      "matches": true,
+      "observed": [
+        "d0a1bd014331483c19208b831c4f6b488654a508"
+      ]
+    },
+    "test_evidence": {
+      "changed_config_fields": [
+        "Cmd"
+      ],
+      "final_image_id": "sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27",
+      "image_id": "sha256:4e1e608ded60fabcebbda42bf994e8ddd6518a4f3ecf12a13cb4e81133cab237",
+      "logs": "evidence/builds/attempt-2/apache__dubbo-11781",
+      "reason": "Final image differs only in default command metadata. Recorded tests used explicit bash /home/test-run.sh and bash /home/fix-run.sh commands, which override that default. Tests were not rerun on the final image ID.",
+      "reused_after_metadata_change": true,
+      "rootfs_layers_identical": true
+    },
+    "tests": {
+      "all_expected_gold_tests_passed": true,
+      "all_f2p_reproduced": true,
+      "baseline_exit": 1,
+      "expected_gold_tests": 675,
+      "f2p": {
+        "org.apache.dubbo.common.URLTest": {
+          "baseline": "FAIL",
+          "gold": "PASS"
+        }
+      },
+      "gold_exit": 0,
+      "missing_gold_tests": [],
+      "nonpassing_gold_tests": {},
+      "observed_gold_tests": 676
+    },
+    "upstream_image": "mswebench/apache_m_dubbo@sha256:9a628fe0e60fd6d5a45aa4ce3239ac75ccc41b3f82c9a4fa28133e2c9170aeca"
+  },
+  {
+    "base_amd64_is_exact_upstream_layer_prefix": true,
+    "base_image_provenance": {
+      "amd64_base_diff_ids": [
+        "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+        "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+        "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+        "sha256:3ff6fa92a9a637cab1329e915dfb0531f52baa26cda282a3d30c6c2100c17e05",
+        "sha256:e0f4cf0bdc482691782fcd0642612f0aa8ffc90ef2506f0619ab2507d726bafc",
+        "sha256:2a3d44cb92fde1543830ddde12c7267179ccbfc2dfb8c528323183f963956094",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      ],
+      "amd64_matches_actual_upstream_prefix": true,
+      "arm64_base_diff_ids": [
+        "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+        "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+        "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+        "sha256:eb665c8a149e58b22bd3064f905b14a6f80b460730a9373fe3aed9126f59e721",
+        "sha256:2ec0d4bb5a63729fb3d04a2fcc9890a11589b14f611f1995c8f3c61869702ea0",
+        "sha256:26d7c7a5975a3255c90d26491a01fdab583693f3a7ba68c46c5ba7bc6f13c717",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      ],
+      "arm64_manifest_digest": "sha256:f32028b6b5937c12b2491f2855060ce352ee3aea835bee0d6c0c4b2c67b72f38",
+      "arm64_manifest_matches_recipe": true,
+      "arm64_matches_built_image_prefix": true,
+      "base_index_digest": "sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d",
+      "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+    },
+    "build": {
+      "architecture": "arm64",
+      "baseline_exit": 1,
+      "build_exit": 0,
+      "dockerfile_sha256": "c2f1e20a17bb17364a67b8f28aee937e15c3a4746e0ec2f106ce95122960e485",
+      "finished_at": "2026-11-16T23:14:54.229597+00:00",
+      "gold_exit": 1,
+      "image": "msweb.eval.arm64.cli__cli-2316:upstream-v1",
+      "image_architecture": "arm64",
+      "image_id": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+      "instance_id": "cli__cli-2316",
+      "logs": "evidence/builds/attempt-1/cli__cli-2316",
+      "matches_current_dockerfile": true,
+      "native_host_architecture": "aarch64",
+      "packages_exit": 0,
+      "smoke_exit": 0,
+      "started_at": "2026-11-16T23:13:34.355895+00:00",
+      "status": "built_tests_recorded",
+      "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+      "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+      "upstream_image": "mswebench/cli_m_cli@sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be"
+    },
+    "documented_architecture_exclusions": {},
+    "file_hashes": {
+      "/home/check_git_changes.sh": {
+        "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+        "matches": true,
+        "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+      },
+      "/home/cli/go.mod": {
+        "arm_sha256": "068297b44477d274d25c87b278821971a83e0b2d39fbffba97d75d6027d84b6b",
+        "matches": true,
+        "upstream_sha256": "068297b44477d274d25c87b278821971a83e0b2d39fbffba97d75d6027d84b6b"
+      },
+      "/home/cli/go.sum": {
+        "arm_sha256": "278b30478d6a927f8313e44882805f3f61aa6e028def4be8fcf402f63b047e4a",
+        "matches": true,
+        "upstream_sha256": "278b30478d6a927f8313e44882805f3f61aa6e028def4be8fcf402f63b047e4a"
+      },
+      "/home/fix-run.sh": {
+        "arm_sha256": "6429230c930ac426a38e1c636056de020ade1e717f529f48b095e83e875e3124",
+        "matches": true,
+        "upstream_sha256": "6429230c930ac426a38e1c636056de020ade1e717f529f48b095e83e875e3124"
+      },
+      "/home/fix.patch": {
+        "arm_sha256": "dc82dbb6c40d9963813fb2badf0db084283e5714b6e29ac17c30af296392cac1",
+        "matches": true,
+        "upstream_sha256": "dc82dbb6c40d9963813fb2badf0db084283e5714b6e29ac17c30af296392cac1"
+      },
+      "/home/prepare.sh": {
+        "arm_sha256": "1c9b52273a2a0c5cbb2166f9da0d25297add849da053606a36a303252c2554f1",
+        "matches": true,
+        "upstream_sha256": "1c9b52273a2a0c5cbb2166f9da0d25297add849da053606a36a303252c2554f1"
+      },
+      "/home/run.sh": {
+        "arm_sha256": "b6258956e865045de40dc3116d4b17863a33b2ad8d1bc85adce68d4a32ba3817",
+        "matches": true,
+        "upstream_sha256": "b6258956e865045de40dc3116d4b17863a33b2ad8d1bc85adce68d4a32ba3817"
+      },
+      "/home/test-run.sh": {
+        "arm_sha256": "17cef028475fb3ff64b1e8f95787a73adf71ff2dcc7a2315f47f70a5b3fee2a8",
+        "matches": true,
+        "upstream_sha256": "17cef028475fb3ff64b1e8f95787a73adf71ff2dcc7a2315f47f70a5b3fee2a8"
+      },
+      "/home/test.patch": {
+        "arm_sha256": "e629129d31458c8990bb6cb8705c86ab5ceaec95f19e22913989c6511217164c",
+        "matches": true,
+        "upstream_sha256": "e629129d31458c8990bb6cb8705c86ab5ceaec95f19e22913989c6511217164c"
+      }
+    },
+    "image_ids": {
+      "arm": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+      "upstream_x86": "sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be"
+    },
+    "instance_id": "cli__cli-2316",
+    "packages": {
+      "arm_count": 205,
+      "only_arm": {
+        "binutils-aarch64-linux-gnu": {
+          "Architecture": "arm64",
+          "Version": "2.40-2"
+        },
+        "libhwasan0": {
+          "Architecture": "arm64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "only_upstream": {
+        "binutils-x86-64-linux-gnu": {
+          "Architecture": "amd64",
+          "Version": "2.40-2"
+        },
+        "libquadmath0": {
+          "Architecture": "amd64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "upstream_count": 205,
+      "version_differences": {}
+    },
+    "runtime_configuration": {
+      "Cmd": {
+        "arm": [
+          "bash"
+        ],
+        "matches": true,
+        "upstream": [
+          "bash"
+        ]
+      },
+      "Entrypoint": {
+        "arm": null,
+        "matches": true,
+        "upstream": null
+      },
+      "Env": {
+        "arm": [
+          "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GOLANG_VERSION=1.24.1",
+          "GOTOOLCHAIN=local",
+          "GOPATH=/go",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ],
+        "matches": true,
+        "upstream": [
+          "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GOLANG_VERSION=1.24.1",
+          "GOTOOLCHAIN=local",
+          "GOPATH=/go",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ]
+      },
+      "WorkingDir": {
+        "arm": "/home/",
+        "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+        "matches": true,
+        "raw_matches": false,
+        "upstream": "/home"
+      }
+    },
+    "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+    "source_commit": {
+      "expected": "5e89036d49993087b9b45060cc1292a18e1d853a",
+      "matches": true,
+      "observed": [
+        "5e89036d49993087b9b45060cc1292a18e1d853a"
+      ]
+    },
+    "test_evidence": {
+      "image_id": "sha256:39cbbbffbd5094a50b795dd96a70c03ef7a4160207c9eecaa14b36fcc2b7132c",
+      "logs": "evidence/builds/attempt-1/cli__cli-2316",
+      "reused_after_metadata_change": false
+    },
+    "tests": {
+      "all_expected_gold_tests_passed": true,
+      "all_f2p_reproduced": null,
+      "baseline_exit": 1,
+      "expected_gold_tests": 801,
+      "f2p": {},
+      "gold_exit": 1,
+      "missing_gold_tests": [],
+      "nonpassing_gold_tests": {},
+      "observed_gold_tests": 801
+    },
+    "upstream_image": "mswebench/cli_m_cli@sha256:f7e3174769a5a168cade12f130f75dfc684ab1251ed199c9c8657d900476e7be"
+  },
+  {
+    "base_amd64_is_exact_upstream_layer_prefix": true,
+    "base_image_provenance": {
+      "amd64_base_diff_ids": [
+        "sha256:270a1170e7e398434ff1b31e17e233f7d7b71aa99a40473615860068e86720af"
+      ],
+      "amd64_matches_actual_upstream_prefix": true,
+      "arm64_base_diff_ids": [
+        "sha256:59b223680ef978509f20faf6bf069866dfc02c422159347face0a7565d698526"
+      ],
+      "arm64_manifest_digest": "sha256:23fdb0648173966ac0b863e5b3d63032e99f44533c5b396e62f29770ca2c5210",
+      "arm64_manifest_matches_recipe": true,
+      "arm64_matches_built_image_prefix": true,
+      "base_index_digest": "sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2",
+      "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+    },
+    "build": {
+      "architecture": "arm64",
+      "build_exit": 0,
+      "dockerfile_sha256": "c190e762487094739300cfd6003323edb9ab1bd75def43c3b24dca016d621969",
+      "finished_at": "2026-11-17T14:41:11.510190+00:00",
+      "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:upstream-v1",
+      "image_architecture": "arm64",
+      "image_id": "sha256:989f66ccb3bd78e2498c4c72866356ba1a800f7b397dac44430f39f6f6c30584",
+      "input_sha256": {
+        "arm/Dockerfile": "c190e762487094739300cfd6003323edb9ab1bd75def43c3b24dca016d621969",
+        "install-java.sh": "57af7acade5113e29a62a224c8ee0146da53b1f220d7af2335b7c8d34aa1010d",
+        "packages.txt": "4345a0e612119a8111794098377849281f496c8cf08b9f3885e6e5946ab2fc8e",
+        "upstream-reference.json": "a68c9a18c20e2a7901d667e4c9b616489fddecedd01a094676550bcd99f9fc55"
+      },
+      "instance_id": "fasterxml__jackson-dataformat-xml-644",
+      "logs": "evidence/builds/attempt-3/fasterxml__jackson-dataformat-xml-644",
+      "matches_current_dockerfile": true,
+      "native_host_architecture": "aarch64",
+      "packages_exit": 0,
+      "smoke_exit": 0,
+      "started_at": "2026-11-17T14:41:06.716942+00:00",
+      "status": "built_smoke_checked",
+      "upstream_image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c"
+    },
+    "documented_architecture_exclusions": {
+      "libdrm-intel1": "Intel graphics userspace driver; absent from the ARM64 package archive. The task does not use an Intel GPU."
+    },
+    "file_hashes": {
+      "/home/check_git_changes.sh": {
+        "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+        "matches": true,
+        "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+      },
+      "/home/fix-run.sh": {
+        "arm_sha256": "5a63d0f8d076a50e8654b834bbdb64a8d4e9629b0abaf0e0af41bcb8af5aaf05",
+        "matches": true,
+        "upstream_sha256": "5a63d0f8d076a50e8654b834bbdb64a8d4e9629b0abaf0e0af41bcb8af5aaf05"
+      },
+      "/home/fix.patch": {
+        "arm_sha256": "4df918b4fc2e932748cd1b00bd92066326cc87fd04817cd8f31063a506107caa",
+        "matches": true,
+        "upstream_sha256": "4df918b4fc2e932748cd1b00bd92066326cc87fd04817cd8f31063a506107caa"
+      },
+      "/home/jackson-dataformat-xml/pom.xml": {
+        "arm_sha256": "464c91ed6ff70ee982d1c3eaa5d6636a6c7031d45b33a97bf3a07d5c4784fc73",
+        "matches": true,
+        "upstream_sha256": "464c91ed6ff70ee982d1c3eaa5d6636a6c7031d45b33a97bf3a07d5c4784fc73"
+      },
+      "/home/prepare.sh": {
+        "arm_sha256": "d7619a50157ee047509b5d7abc2fea04101deef87346dc75ae32107bb933332d",
+        "matches": true,
+        "upstream_sha256": "d7619a50157ee047509b5d7abc2fea04101deef87346dc75ae32107bb933332d"
+      },
+      "/home/run.sh": {
+        "arm_sha256": "63eb46a9d4373dd6a1973a9ebf09877997d706a4ab2df5a1c2f24bad6f1bd29f",
+        "matches": true,
+        "upstream_sha256": "63eb46a9d4373dd6a1973a9ebf09877997d706a4ab2df5a1c2f24bad6f1bd29f"
+      },
+      "/home/test-run.sh": {
+        "arm_sha256": "37aca2b9fa71f4095f2c8fe047dc903aa2f5e60dae39177914fe67f84f28576d",
+        "matches": true,
+        "upstream_sha256": "37aca2b9fa71f4095f2c8fe047dc903aa2f5e60dae39177914fe67f84f28576d"
+      },
+      "/home/test.patch": {
+        "arm_sha256": "7adc9640c2a0c44c1170d3a504621d6142065784a0e90a06584424d6f1a34bf7",
+        "matches": true,
+        "upstream_sha256": "7adc9640c2a0c44c1170d3a504621d6142065784a0e90a06584424d6f1a34bf7"
+      }
+    },
+    "image_ids": {
+      "arm": "sha256:989f66ccb3bd78e2498c4c72866356ba1a800f7b397dac44430f39f6f6c30584",
+      "upstream_x86": "sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c"
+    },
+    "instance_id": "fasterxml__jackson-dataformat-xml-644",
+    "packages": {
+      "arm_count": 357,
+      "only_arm": {},
+      "only_upstream": {
+        "libdrm-intel1": {
+          "Architecture": "amd64",
+          "Version": "2.4.113-2~ubuntu0.22.04.1"
+        }
+      },
+      "upstream_count": 358,
+      "version_differences": {}
+    },
+    "runtime_configuration": {
+      "Cmd": {
+        "arm": [
+          "/bin/bash"
+        ],
+        "matches": true,
+        "upstream": [
+          "/bin/bash"
+        ]
+      },
+      "Entrypoint": {
+        "arm": null,
+        "matches": true,
+        "upstream": null
+      },
+      "Env": {
+        "arm": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy=",
+          "DEBIAN_FRONTEND=noninteractive",
+          "LANG=C.UTF-8",
+          "LC_ALL=C.UTF-8"
+        ],
+        "matches": true,
+        "upstream": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy=",
+          "DEBIAN_FRONTEND=noninteractive",
+          "LANG=C.UTF-8",
+          "LC_ALL=C.UTF-8"
+        ]
+      },
+      "WorkingDir": {
+        "arm": "/home/",
+        "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+        "matches": true,
+        "raw_matches": false,
+        "upstream": "/home"
+      }
+    },
+    "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+    "source_commit": {
+      "expected": "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0",
+      "matches": true,
+      "observed": [
+        "b782f4b9559ece1b6178cbeafa8acffb0ab9d0f0"
+      ]
+    },
+    "test_evidence": {
+      "changed_config_fields": [
+        "Cmd"
+      ],
+      "final_image_id": "sha256:989f66ccb3bd78e2498c4c72866356ba1a800f7b397dac44430f39f6f6c30584",
+      "image_id": "sha256:70152090abd1d391001900a131ec154973328fa21df9358ac294b53411adc159",
+      "logs": "evidence/builds/attempt-2/fasterxml__jackson-dataformat-xml-644",
+      "reason": "Final image differs only in default command metadata. Recorded tests used explicit bash /home/test-run.sh and bash /home/fix-run.sh commands, which override that default. Tests were not rerun on the final image ID.",
+      "reused_after_metadata_change": true,
+      "rootfs_layers_identical": true
+    },
+    "tests": {
+      "all_expected_gold_tests_passed": true,
+      "all_f2p_reproduced": null,
+      "baseline_exit": 1,
+      "expected_gold_tests": 127,
+      "f2p": {},
+      "gold_exit": 0,
+      "missing_gold_tests": [],
+      "nonpassing_gold_tests": {},
+      "observed_gold_tests": 127
+    },
+    "upstream_image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c"
+  },
+  {
+    "base_amd64_is_exact_upstream_layer_prefix": true,
+    "base_image_provenance": {
+      "amd64_base_diff_ids": [
+        "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+        "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+        "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+        "sha256:3ff6fa92a9a637cab1329e915dfb0531f52baa26cda282a3d30c6c2100c17e05",
+        "sha256:e0f4cf0bdc482691782fcd0642612f0aa8ffc90ef2506f0619ab2507d726bafc",
+        "sha256:2a3d44cb92fde1543830ddde12c7267179ccbfc2dfb8c528323183f963956094",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      ],
+      "amd64_matches_actual_upstream_prefix": true,
+      "arm64_base_diff_ids": [
+        "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+        "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+        "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+        "sha256:eb665c8a149e58b22bd3064f905b14a6f80b460730a9373fe3aed9126f59e721",
+        "sha256:2ec0d4bb5a63729fb3d04a2fcc9890a11589b14f611f1995c8f3c61869702ea0",
+        "sha256:26d7c7a5975a3255c90d26491a01fdab583693f3a7ba68c46c5ba7bc6f13c717",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      ],
+      "arm64_manifest_digest": "sha256:f32028b6b5937c12b2491f2855060ce352ee3aea835bee0d6c0c4b2c67b72f38",
+      "arm64_manifest_matches_recipe": true,
+      "arm64_matches_built_image_prefix": true,
+      "base_index_digest": "sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d",
+      "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+    },
+    "build": {
+      "architecture": "arm64",
+      "baseline_exit": 1,
+      "build_exit": 0,
+      "dockerfile_sha256": "68fa76a670f8b58f6cbf460b15493594af7673b1ecf68e0128c0230d8ab101ed",
+      "finished_at": "2026-11-16T23:44:57.414902+00:00",
+      "gold_exit": 1,
+      "image": "msweb.eval.arm64.grpc__grpc-go-3119:upstream-v1",
+      "image_architecture": "arm64",
+      "image_id": "sha256:674fc4852ac4fc60720948705f10d2fe41ce8747a8c0096e9bdf820eda46935d",
+      "instance_id": "grpc__grpc-go-3119",
+      "logs": "evidence/builds/attempt-1/grpc__grpc-go-3119",
+      "matches_current_dockerfile": true,
+      "native_host_architecture": "aarch64",
+      "packages_exit": 0,
+      "smoke_exit": 0,
+      "started_at": "2026-11-16T23:13:34.356328+00:00",
+      "status": "built_tests_recorded",
+      "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+      "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+      "upstream_image": "mswebench/grpc_m_grpc-go@sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804"
+    },
+    "documented_architecture_exclusions": {},
+    "file_hashes": {
+      "/home/check_git_changes.sh": {
+        "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+        "matches": true,
+        "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+      },
+      "/home/fix-run.sh": {
+        "arm_sha256": "d83aac310c6302186d0f14dadffba58e8fdcd1ce51b92c815376a4e3862e913a",
+        "matches": true,
+        "upstream_sha256": "d83aac310c6302186d0f14dadffba58e8fdcd1ce51b92c815376a4e3862e913a"
+      },
+      "/home/fix.patch": {
+        "arm_sha256": "b0779cb9a9364a6ce7f0634dbd180a88c3fb0c1b49f2f267c50c059f8473ec17",
+        "matches": true,
+        "upstream_sha256": "b0779cb9a9364a6ce7f0634dbd180a88c3fb0c1b49f2f267c50c059f8473ec17"
+      },
+      "/home/grpc-go/go.mod": {
+        "arm_sha256": "3c4690179945744ec5b01279df99be86153fd386d6fa6b8ef9888ace428cb182",
+        "matches": true,
+        "upstream_sha256": "3c4690179945744ec5b01279df99be86153fd386d6fa6b8ef9888ace428cb182"
+      },
+      "/home/grpc-go/go.sum": {
+        "arm_sha256": "ef455fd99a82b622d153c86f3e06a2fc07609d9c638918b55b1658d1cccd13e4",
+        "matches": true,
+        "upstream_sha256": "ef455fd99a82b622d153c86f3e06a2fc07609d9c638918b55b1658d1cccd13e4"
+      },
+      "/home/prepare.sh": {
+        "arm_sha256": "6ffd238688fb2d014d5c6b9e29cd42c8ccf03dac531ebc9a533e4137642e4494",
+        "matches": true,
+        "upstream_sha256": "6ffd238688fb2d014d5c6b9e29cd42c8ccf03dac531ebc9a533e4137642e4494"
+      },
+      "/home/run.sh": {
+        "arm_sha256": "77cde628a2eb3b64b73561d853d40d1f1fdedce689e9946b81cd30c8e501bcb2",
+        "matches": true,
+        "upstream_sha256": "77cde628a2eb3b64b73561d853d40d1f1fdedce689e9946b81cd30c8e501bcb2"
+      },
+      "/home/test-run.sh": {
+        "arm_sha256": "185853f71067862294947c54eebdabaadfc95dc053626f5c39233c4b125c79ee",
+        "matches": true,
+        "upstream_sha256": "185853f71067862294947c54eebdabaadfc95dc053626f5c39233c4b125c79ee"
+      },
+      "/home/test.patch": {
+        "arm_sha256": "c37e6f06c95495bbcb29f27ba870ff6f1cfbff7d959d7059d3326d0f5a1ad4d7",
+        "matches": true,
+        "upstream_sha256": "c37e6f06c95495bbcb29f27ba870ff6f1cfbff7d959d7059d3326d0f5a1ad4d7"
+      }
+    },
+    "focused_validation": {
+      "baseline_exit": 1,
+      "command": "go test -v -count=1 ./balancer/grpclb",
+      "f2p": {
+        "TestFallBackWithNoServerAddress": {
+          "baseline": "FAIL",
+          "gold": "PASS"
+        }
+      },
+      "finished_at": "2026-11-17T14:32:50.446421+00:00",
+      "gold_exit": 0,
+      "image": "msweb.eval.arm64.grpc__grpc-go-3119:upstream-v1",
+      "image_id": "sha256:674fc4852ac4fc60720948705f10d2fe41ce8747a8c0096e9bdf820eda46935d",
+      "logs": "evidence/focused/grpc__grpc-go-3119",
+      "matches_final_image_id": true,
+      "scope": "Additional diagnostic of the changed package; the full upstream scripts run separately. Vet remains enabled.",
+      "started_at": "2026-11-17T14:32:16.029103+00:00"
+    },
+    "image_ids": {
+      "arm": "sha256:674fc4852ac4fc60720948705f10d2fe41ce8747a8c0096e9bdf820eda46935d",
+      "upstream_x86": "sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804"
+    },
+    "instance_id": "grpc__grpc-go-3119",
+    "packages": {
+      "arm_count": 205,
+      "only_arm": {
+        "binutils-aarch64-linux-gnu": {
+          "Architecture": "arm64",
+          "Version": "2.40-2"
+        },
+        "libhwasan0": {
+          "Architecture": "arm64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "only_upstream": {
+        "binutils-x86-64-linux-gnu": {
+          "Architecture": "amd64",
+          "Version": "2.40-2"
+        },
+        "libquadmath0": {
+          "Architecture": "amd64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "upstream_count": 205,
+      "version_differences": {}
+    },
+    "runtime_configuration": {
+      "Cmd": {
+        "arm": [
+          "bash"
+        ],
+        "matches": true,
+        "upstream": [
+          "bash"
+        ]
+      },
+      "Entrypoint": {
+        "arm": null,
+        "matches": true,
+        "upstream": null
+      },
+      "Env": {
+        "arm": [
+          "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GOLANG_VERSION=1.24.1",
+          "GOTOOLCHAIN=local",
+          "GOPATH=/go",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ],
+        "matches": true,
+        "upstream": [
+          "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GOLANG_VERSION=1.24.1",
+          "GOTOOLCHAIN=local",
+          "GOPATH=/go",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ]
+      },
+      "WorkingDir": {
+        "arm": "/home/",
+        "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+        "matches": true,
+        "raw_matches": false,
+        "upstream": "/home"
+      }
+    },
+    "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+    "source_commit": {
+      "expected": "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb",
+      "matches": true,
+      "observed": [
+        "ff5f0e93f53629c7f9b27f8bfe99e60fcfbeefcb"
+      ]
+    },
+    "test_evidence": {
+      "image_id": "sha256:674fc4852ac4fc60720948705f10d2fe41ce8747a8c0096e9bdf820eda46935d",
+      "logs": "evidence/builds/attempt-1/grpc__grpc-go-3119",
+      "reused_after_metadata_change": false
+    },
+    "tests": {
+      "all_expected_gold_tests_passed": false,
+      "all_f2p_reproduced": true,
+      "baseline_exit": 1,
+      "expected_gold_tests": 250,
+      "f2p": {
+        "TestFallBackWithNoServerAddress": {
+          "baseline": "FAIL",
+          "gold": "PASS"
+        }
+      },
+      "gold_exit": 1,
+      "missing_gold_tests": [
+        "TestGetSocketOptions"
+      ],
+      "nonpassing_gold_tests": {},
+      "observed_gold_tests": 429
+    },
+    "upstream_image": "mswebench/grpc_m_grpc-go@sha256:91c8094ba6192ac7bbf4b4b26afcd8c0a78389a5e530b54f5fa712c28f8fe804"
+  },
+  {
+    "base_amd64_is_exact_upstream_layer_prefix": true,
+    "base_image_provenance": {
+      "amd64_base_diff_ids": [
+        "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+        "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+        "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+        "sha256:4c13ea2c0b021f7e71473290da414fe79371abf7b4de411c0a70fd2fc88916d5",
+        "sha256:e26ffd62d8b12fe7b7a296b756d66606f59f4231452623550b3cd1166430e9c4"
+      ],
+      "amd64_matches_actual_upstream_prefix": true,
+      "arm64_base_diff_ids": [
+        "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+        "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+        "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+        "sha256:77122155c2dc59977416cf2f760eb52aed66fd82acb25b7b006e0ad7f989ff55",
+        "sha256:e61bd151779656dee304566db7b4a662b784f522b4588f164305dc89e081541f"
+      ],
+      "arm64_manifest_digest": "sha256:f04df1b615e9ffac55f3a304ef3aaccb9bc716c88a9d6ee6b00de45f288a4e3a",
+      "arm64_manifest_matches_recipe": true,
+      "arm64_matches_built_image_prefix": true,
+      "base_index_digest": "sha256:0ff31c9ffa641a62e48d543fb00b4960955ea375f40776f40f585b89e654cc5e",
+      "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+    },
+    "build": {
+      "architecture": "arm64",
+      "baseline_exit": 101,
+      "build_exit": 0,
+      "dockerfile_sha256": "88521c9626aba4c36c74638c0e6812b3da42f096bd0132060a147c729ba42030",
+      "finished_at": "2026-11-16T23:24:38.144095+00:00",
+      "gold_exit": 0,
+      "image": "msweb.eval.arm64.nushell__nushell-10381:upstream-v1",
+      "image_architecture": "arm64",
+      "image_id": "sha256:e3edbd05d9d58646af3efa2d8b05543234f0c5c74b201b6545568fd2c6c11ad0",
+      "instance_id": "nushell__nushell-10381",
+      "logs": "evidence/builds/attempt-1/nushell__nushell-10381",
+      "matches_current_dockerfile": true,
+      "native_host_architecture": "aarch64",
+      "packages_exit": 0,
+      "smoke_exit": 0,
+      "started_at": "2026-11-16T23:14:54.230603+00:00",
+      "status": "built_tests_recorded",
+      "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+      "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+      "upstream_image": "mswebench/nushell_m_nushell@sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42"
+    },
+    "documented_architecture_exclusions": {},
+    "file_hashes": {
+      "/home/check_git_changes.sh": {
+        "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+        "matches": true,
+        "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+      },
+      "/home/fix-run.sh": {
+        "arm_sha256": "e585d9abe5fc8e0004d5146eef7bac61f90c950125458c79817ad12f7f323383",
+        "matches": true,
+        "upstream_sha256": "e585d9abe5fc8e0004d5146eef7bac61f90c950125458c79817ad12f7f323383"
+      },
+      "/home/fix.patch": {
+        "arm_sha256": "1e675293a90aece3414aec444f04f5b19cdf1e1c8c5d0546af11372eceb1ef23",
+        "matches": true,
+        "upstream_sha256": "1e675293a90aece3414aec444f04f5b19cdf1e1c8c5d0546af11372eceb1ef23"
+      },
+      "/home/nushell/Cargo.lock": {
+        "arm_sha256": "d85b0d47fd75ccd404f8dacfb7ee0f57f762b964ccebdefbf92c9b9c7b6f9b56",
+        "matches": true,
+        "upstream_sha256": "d85b0d47fd75ccd404f8dacfb7ee0f57f762b964ccebdefbf92c9b9c7b6f9b56"
+      },
+      "/home/nushell/Cargo.toml": {
+        "arm_sha256": "f37dd0b3abb87c4edb4c6416ac55763856abcac9c5dcb869026b8bde8eb036a5",
+        "matches": true,
+        "upstream_sha256": "f37dd0b3abb87c4edb4c6416ac55763856abcac9c5dcb869026b8bde8eb036a5"
+      },
+      "/home/prepare.sh": {
+        "arm_sha256": "5df62687fe03a56c7797c5f559daf431b3958f4dd218295f69aec1faad85b154",
+        "matches": true,
+        "upstream_sha256": "5df62687fe03a56c7797c5f559daf431b3958f4dd218295f69aec1faad85b154"
+      },
+      "/home/run.sh": {
+        "arm_sha256": "767cd5f465e66560fb2725e76179cae284fd1f6214d7c856f0820b5c84f83d53",
+        "matches": true,
+        "upstream_sha256": "767cd5f465e66560fb2725e76179cae284fd1f6214d7c856f0820b5c84f83d53"
+      },
+      "/home/test-run.sh": {
+        "arm_sha256": "fb86da98e674900bf3101a35cf9897514bfc8f99514f24dda060eeeb6789dc1f",
+        "matches": true,
+        "upstream_sha256": "fb86da98e674900bf3101a35cf9897514bfc8f99514f24dda060eeeb6789dc1f"
+      },
+      "/home/test.patch": {
+        "arm_sha256": "a662c89f5c85e25f19fb65432ec1c67f99507f35ccc53ce78ac2cfc8806d5b82",
+        "matches": true,
+        "upstream_sha256": "a662c89f5c85e25f19fb65432ec1c67f99507f35ccc53ce78ac2cfc8806d5b82"
+      }
+    },
+    "image_ids": {
+      "arm": "sha256:e3edbd05d9d58646af3efa2d8b05543234f0c5c74b201b6545568fd2c6c11ad0",
+      "upstream_x86": "sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42"
+    },
+    "instance_id": "nushell__nushell-10381",
+    "packages": {
+      "arm_count": 413,
+      "only_arm": {
+        "binutils-aarch64-linux-gnu": {
+          "Architecture": "arm64",
+          "Version": "2.40-2"
+        },
+        "libhwasan0": {
+          "Architecture": "arm64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "only_upstream": {
+        "binutils-x86-64-linux-gnu": {
+          "Architecture": "amd64",
+          "Version": "2.40-2"
+        },
+        "libquadmath0": {
+          "Architecture": "amd64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "upstream_count": 413,
+      "version_differences": {}
+    },
+    "runtime_configuration": {
+      "Cmd": {
+        "arm": [
+          "bash"
+        ],
+        "matches": true,
+        "upstream": [
+          "bash"
+        ]
+      },
+      "Entrypoint": {
+        "arm": null,
+        "matches": true,
+        "upstream": null
+      },
+      "Env": {
+        "arm": [
+          "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "RUSTUP_HOME=/usr/local/rustup",
+          "CARGO_HOME=/usr/local/cargo",
+          "RUST_VERSION=1.85.0",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ],
+        "matches": true,
+        "upstream": [
+          "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "RUSTUP_HOME=/usr/local/rustup",
+          "CARGO_HOME=/usr/local/cargo",
+          "RUST_VERSION=1.85.0",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ]
+      },
+      "WorkingDir": {
+        "arm": "/home/",
+        "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+        "matches": true,
+        "raw_matches": false,
+        "upstream": "/home"
+      }
+    },
+    "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+    "source_commit": {
+      "expected": "a9a82de5c48b23958ead9d011765396d29217630",
+      "matches": true,
+      "observed": [
+        "a9a82de5c48b23958ead9d011765396d29217630"
+      ]
+    },
+    "test_evidence": {
+      "image_id": "sha256:e3edbd05d9d58646af3efa2d8b05543234f0c5c74b201b6545568fd2c6c11ad0",
+      "logs": "evidence/builds/attempt-1/nushell__nushell-10381",
+      "reused_after_metadata_change": false
+    },
+    "tests": {
+      "all_expected_gold_tests_passed": true,
+      "all_f2p_reproduced": true,
+      "baseline_exit": 101,
+      "expected_gold_tests": 990,
+      "f2p": {
+        "tests::test_parser::too_few_arguments": {
+          "baseline": "FAIL",
+          "gold": "PASS"
+        }
+      },
+      "gold_exit": 0,
+      "missing_gold_tests": [],
+      "nonpassing_gold_tests": {},
+      "observed_gold_tests": 1015
+    },
+    "upstream_image": "mswebench/nushell_m_nushell@sha256:9c689a7a488963a5c52031e07ba7c31d304a6e2a2123663127eeaf76b9308f42"
+  },
+  {
+    "base_amd64_is_exact_upstream_layer_prefix": true,
+    "base_image_provenance": {
+      "amd64_base_diff_ids": [
+        "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+        "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+        "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+        "sha256:4c13ea2c0b021f7e71473290da414fe79371abf7b4de411c0a70fd2fc88916d5",
+        "sha256:e26ffd62d8b12fe7b7a296b756d66606f59f4231452623550b3cd1166430e9c4"
+      ],
+      "amd64_matches_actual_upstream_prefix": true,
+      "arm64_base_diff_ids": [
+        "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+        "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+        "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+        "sha256:77122155c2dc59977416cf2f760eb52aed66fd82acb25b7b006e0ad7f989ff55",
+        "sha256:e61bd151779656dee304566db7b4a662b784f522b4588f164305dc89e081541f"
+      ],
+      "arm64_manifest_digest": "sha256:f04df1b615e9ffac55f3a304ef3aaccb9bc716c88a9d6ee6b00de45f288a4e3a",
+      "arm64_manifest_matches_recipe": true,
+      "arm64_matches_built_image_prefix": true,
+      "base_index_digest": "sha256:0ff31c9ffa641a62e48d543fb00b4960955ea375f40776f40f585b89e654cc5e",
+      "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+    },
+    "build": {
+      "architecture": "arm64",
+      "baseline_exit": 101,
+      "build_exit": 0,
+      "dockerfile_sha256": "d083348ad8924c733dc537ee7c253edfe67dfce2ce4a58946172fb9cade040e3",
+      "finished_at": "2026-11-16T23:17:29.696927+00:00",
+      "gold_exit": 0,
+      "image": "msweb.eval.arm64.sharkdp__bat-3108:upstream-v1",
+      "image_architecture": "arm64",
+      "image_id": "sha256:cbf3c428dcd54aa7540651eb397ecde3a522007f9a852d456319cdd0761d4cf6",
+      "instance_id": "sharkdp__bat-3108",
+      "logs": "evidence/builds/attempt-1/sharkdp__bat-3108",
+      "matches_current_dockerfile": true,
+      "native_host_architecture": "aarch64",
+      "packages_exit": 0,
+      "smoke_exit": 0,
+      "started_at": "2026-11-16T23:15:13.151439+00:00",
+      "status": "built_tests_recorded",
+      "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+      "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+      "upstream_image": "mswebench/sharkdp_m_bat@sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7"
+    },
+    "documented_architecture_exclusions": {},
+    "file_hashes": {
+      "/home/bat/Cargo.lock": {
+        "arm_sha256": "567306620efb1bf721392c2605e2177e2c8f43ee6cd43e2d0f399d98bef84630",
+        "matches": true,
+        "upstream_sha256": "567306620efb1bf721392c2605e2177e2c8f43ee6cd43e2d0f399d98bef84630"
+      },
+      "/home/bat/Cargo.toml": {
+        "arm_sha256": "0eddbdff99af0482b388ddb73c6f61ad36d54837f2c6e04c768b577e2e4bec67",
+        "matches": true,
+        "upstream_sha256": "0eddbdff99af0482b388ddb73c6f61ad36d54837f2c6e04c768b577e2e4bec67"
+      },
+      "/home/check_git_changes.sh": {
+        "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+        "matches": true,
+        "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+      },
+      "/home/fix-run.sh": {
+        "arm_sha256": "7090af0f4f2fb5bae48c5149050ce76db207961df48cb8cb2d61b3e981a5e26f",
+        "matches": true,
+        "upstream_sha256": "7090af0f4f2fb5bae48c5149050ce76db207961df48cb8cb2d61b3e981a5e26f"
+      },
+      "/home/fix.patch": {
+        "arm_sha256": "1daece1f5665eb4f26cf8fe42ee6af8ccf3fec746183bcbc9a514a44c7ebfda4",
+        "matches": true,
+        "upstream_sha256": "1daece1f5665eb4f26cf8fe42ee6af8ccf3fec746183bcbc9a514a44c7ebfda4"
+      },
+      "/home/prepare.sh": {
+        "arm_sha256": "b4b3dd9cccb6822fed92b07823fb0421924db77733cd5075154d6dc60bcbc294",
+        "matches": true,
+        "upstream_sha256": "b4b3dd9cccb6822fed92b07823fb0421924db77733cd5075154d6dc60bcbc294"
+      },
+      "/home/run.sh": {
+        "arm_sha256": "104f996e0b739fe4103af184d2929b9d529f51079213675ef57acff86a943335",
+        "matches": true,
+        "upstream_sha256": "104f996e0b739fe4103af184d2929b9d529f51079213675ef57acff86a943335"
+      },
+      "/home/test-run.sh": {
+        "arm_sha256": "d7e963338d143d3ad625ac96c32b70f799ee8cc68511f16ee98e214656e84b30",
+        "matches": true,
+        "upstream_sha256": "d7e963338d143d3ad625ac96c32b70f799ee8cc68511f16ee98e214656e84b30"
+      },
+      "/home/test.patch": {
+        "arm_sha256": "f541064c05ba301b8242f186ec42e5de59cb9c3ba46fdede5cb4db3e35e74a65",
+        "matches": true,
+        "upstream_sha256": "f541064c05ba301b8242f186ec42e5de59cb9c3ba46fdede5cb4db3e35e74a65"
+      }
+    },
+    "image_ids": {
+      "arm": "sha256:cbf3c428dcd54aa7540651eb397ecde3a522007f9a852d456319cdd0761d4cf6",
+      "upstream_x86": "sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7"
+    },
+    "instance_id": "sharkdp__bat-3108",
+    "packages": {
+      "arm_count": 413,
+      "only_arm": {
+        "binutils-aarch64-linux-gnu": {
+          "Architecture": "arm64",
+          "Version": "2.40-2"
+        },
+        "libhwasan0": {
+          "Architecture": "arm64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "only_upstream": {
+        "binutils-x86-64-linux-gnu": {
+          "Architecture": "amd64",
+          "Version": "2.40-2"
+        },
+        "libquadmath0": {
+          "Architecture": "amd64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "upstream_count": 413,
+      "version_differences": {}
+    },
+    "runtime_configuration": {
+      "Cmd": {
+        "arm": [
+          "bash"
+        ],
+        "matches": true,
+        "upstream": [
+          "bash"
+        ]
+      },
+      "Entrypoint": {
+        "arm": null,
+        "matches": true,
+        "upstream": null
+      },
+      "Env": {
+        "arm": [
+          "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "RUSTUP_HOME=/usr/local/rustup",
+          "CARGO_HOME=/usr/local/cargo",
+          "RUST_VERSION=1.85.0",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ],
+        "matches": true,
+        "upstream": [
+          "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "RUSTUP_HOME=/usr/local/rustup",
+          "CARGO_HOME=/usr/local/cargo",
+          "RUST_VERSION=1.85.0",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ]
+      },
+      "WorkingDir": {
+        "arm": "/home/",
+        "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+        "matches": true,
+        "raw_matches": false,
+        "upstream": "/home"
+      }
+    },
+    "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+    "source_commit": {
+      "expected": "2be3a14a7e2c74360765a5fa213750f727f2c5bb",
+      "matches": true,
+      "observed": [
+        "2be3a14a7e2c74360765a5fa213750f727f2c5bb"
+      ]
+    },
+    "test_evidence": {
+      "image_id": "sha256:cbf3c428dcd54aa7540651eb397ecde3a522007f9a852d456319cdd0761d4cf6",
+      "logs": "evidence/builds/attempt-1/sharkdp__bat-3108",
+      "reused_after_metadata_change": false
+    },
+    "tests": {
+      "all_expected_gold_tests_passed": true,
+      "all_f2p_reproduced": true,
+      "baseline_exit": 101,
+      "expected_gold_tests": 265,
+      "f2p": {
+        "paging_does_not_override_simple_plain": {
+          "baseline": "FAIL",
+          "gold": "PASS"
+        },
+        "simple_plain_does_not_override_paging": {
+          "baseline": "FAIL",
+          "gold": "PASS"
+        }
+      },
+      "gold_exit": 0,
+      "missing_gold_tests": [],
+      "nonpassing_gold_tests": {},
+      "observed_gold_tests": 271
+    },
+    "upstream_image": "mswebench/sharkdp_m_bat@sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7"
+  },
+  {
+    "base_amd64_is_exact_upstream_layer_prefix": true,
+    "base_image_provenance": {
+      "amd64_base_diff_ids": [
+        "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+        "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+        "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+        "sha256:3ff6fa92a9a637cab1329e915dfb0531f52baa26cda282a3d30c6c2100c17e05",
+        "sha256:e0f4cf0bdc482691782fcd0642612f0aa8ffc90ef2506f0619ab2507d726bafc",
+        "sha256:2a3d44cb92fde1543830ddde12c7267179ccbfc2dfb8c528323183f963956094",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      ],
+      "amd64_matches_actual_upstream_prefix": true,
+      "arm64_base_diff_ids": [
+        "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+        "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+        "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+        "sha256:eb665c8a149e58b22bd3064f905b14a6f80b460730a9373fe3aed9126f59e721",
+        "sha256:2ec0d4bb5a63729fb3d04a2fcc9890a11589b14f611f1995c8f3c61869702ea0",
+        "sha256:26d7c7a5975a3255c90d26491a01fdab583693f3a7ba68c46c5ba7bc6f13c717",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      ],
+      "arm64_manifest_digest": "sha256:f32028b6b5937c12b2491f2855060ce352ee3aea835bee0d6c0c4b2c67b72f38",
+      "arm64_manifest_matches_recipe": true,
+      "arm64_matches_built_image_prefix": true,
+      "base_index_digest": "sha256:fa1a01d362a7b9df68b021d59a124d28cae6d99ebd1a876e3557c4dd092f1b1d",
+      "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+    },
+    "build": {
+      "architecture": "arm64",
+      "baseline_exit": 1,
+      "build_exit": 0,
+      "dockerfile_sha256": "389a0274079ece8eece7ca8fe2e07fefdf2ae3c15531db7a457b73eb63836294",
+      "finished_at": "2026-11-16T23:20:04.012556+00:00",
+      "gold_exit": 1,
+      "image": "msweb.eval.arm64.zeromicro__go-zero-964:upstream-v1",
+      "image_architecture": "arm64",
+      "image_id": "sha256:1d1d2bb799577fd972ed294f96346e12101e5e467b21db7d8b65d1ce14fca8e1",
+      "instance_id": "zeromicro__go-zero-964",
+      "logs": "evidence/builds/attempt-1/zeromicro__go-zero-964",
+      "matches_current_dockerfile": true,
+      "native_host_architecture": "aarch64",
+      "packages_exit": 0,
+      "smoke_exit": 0,
+      "started_at": "2026-11-16T23:17:29.697591+00:00",
+      "status": "built_tests_recorded",
+      "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+      "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+      "upstream_image": "mswebench/zeromicro_m_go-zero@sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6"
+    },
+    "documented_architecture_exclusions": {},
+    "file_hashes": {
+      "/home/check_git_changes.sh": {
+        "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+        "matches": true,
+        "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+      },
+      "/home/fix-run.sh": {
+        "arm_sha256": "14e0752d38f5f49a00af58fa68ca83a99acc65f57fd3bab3e443f4996eb03e47",
+        "matches": true,
+        "upstream_sha256": "14e0752d38f5f49a00af58fa68ca83a99acc65f57fd3bab3e443f4996eb03e47"
+      },
+      "/home/fix.patch": {
+        "arm_sha256": "0445d581eb4a9f6bb863ec5489cd910961ffb5124776ca27838fd75ac08aa383",
+        "matches": true,
+        "upstream_sha256": "0445d581eb4a9f6bb863ec5489cd910961ffb5124776ca27838fd75ac08aa383"
+      },
+      "/home/go-zero/go.mod": {
+        "arm_sha256": "41772ff8dd6ed8937b73a650f0609787c314b0c124aa4dedbae133f6fac961ca",
+        "matches": true,
+        "upstream_sha256": "41772ff8dd6ed8937b73a650f0609787c314b0c124aa4dedbae133f6fac961ca"
+      },
+      "/home/go-zero/go.sum": {
+        "arm_sha256": "c699500093c9acc18f29f3a2cb80abf2f91c342afe97f14b05c32fe4e61188c1",
+        "matches": true,
+        "upstream_sha256": "c699500093c9acc18f29f3a2cb80abf2f91c342afe97f14b05c32fe4e61188c1"
+      },
+      "/home/prepare.sh": {
+        "arm_sha256": "c2200d8715c409b30a8834a7140680ae0b26df167bd8b41f42bf5ba77ac1a9f6",
+        "matches": true,
+        "upstream_sha256": "c2200d8715c409b30a8834a7140680ae0b26df167bd8b41f42bf5ba77ac1a9f6"
+      },
+      "/home/run.sh": {
+        "arm_sha256": "17d70e0b68a31d22840bb776df1acff5f0bc533945f09ba324af6339e2e67110",
+        "matches": true,
+        "upstream_sha256": "17d70e0b68a31d22840bb776df1acff5f0bc533945f09ba324af6339e2e67110"
+      },
+      "/home/test-run.sh": {
+        "arm_sha256": "d43aeb2cd40c2b0ba8eee8164097b4b02ed647dc39559586888161e1eff33413",
+        "matches": true,
+        "upstream_sha256": "d43aeb2cd40c2b0ba8eee8164097b4b02ed647dc39559586888161e1eff33413"
+      },
+      "/home/test.patch": {
+        "arm_sha256": "dce1f0e0a007aef02fb5ea0a4223591f45dc61cb6931615bb99816f66d2ef505",
+        "matches": true,
+        "upstream_sha256": "dce1f0e0a007aef02fb5ea0a4223591f45dc61cb6931615bb99816f66d2ef505"
+      }
+    },
+    "image_ids": {
+      "arm": "sha256:1d1d2bb799577fd972ed294f96346e12101e5e467b21db7d8b65d1ce14fca8e1",
+      "upstream_x86": "sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6"
+    },
+    "instance_id": "zeromicro__go-zero-964",
+    "packages": {
+      "arm_count": 205,
+      "only_arm": {
+        "binutils-aarch64-linux-gnu": {
+          "Architecture": "arm64",
+          "Version": "2.40-2"
+        },
+        "libhwasan0": {
+          "Architecture": "arm64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "only_upstream": {
+        "binutils-x86-64-linux-gnu": {
+          "Architecture": "amd64",
+          "Version": "2.40-2"
+        },
+        "libquadmath0": {
+          "Architecture": "amd64",
+          "Version": "12.2.0-14"
+        }
+      },
+      "upstream_count": 205,
+      "version_differences": {}
+    },
+    "runtime_configuration": {
+      "Cmd": {
+        "arm": [
+          "bash"
+        ],
+        "matches": true,
+        "upstream": [
+          "bash"
+        ]
+      },
+      "Entrypoint": {
+        "arm": null,
+        "matches": true,
+        "upstream": null
+      },
+      "Env": {
+        "arm": [
+          "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GOLANG_VERSION=1.24.1",
+          "GOTOOLCHAIN=local",
+          "GOPATH=/go",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ],
+        "matches": true,
+        "upstream": [
+          "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "GOLANG_VERSION=1.24.1",
+          "GOTOOLCHAIN=local",
+          "GOPATH=/go",
+          "HTTP_PROXY=",
+          "http_proxy=",
+          "HTTPS_PROXY=",
+          "https_proxy="
+        ]
+      },
+      "WorkingDir": {
+        "arm": "/home/",
+        "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+        "matches": true,
+        "raw_matches": false,
+        "upstream": "/home"
+      }
+    },
+    "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+    "source_commit": {
+      "expected": "68acfb1891837ec2e401588173cdd16ca1b9a9c4",
+      "matches": true,
+      "observed": [
+        "68acfb1891837ec2e401588173cdd16ca1b9a9c4"
+      ]
+    },
+    "test_evidence": {
+      "image_id": "sha256:1d1d2bb799577fd972ed294f96346e12101e5e467b21db7d8b65d1ce14fca8e1",
+      "logs": "evidence/builds/attempt-1/zeromicro__go-zero-964",
+      "reused_after_metadata_change": false
+    },
+    "tests": {
+      "all_expected_gold_tests_passed": false,
+      "all_f2p_reproduced": null,
+      "baseline_exit": 1,
+      "expected_gold_tests": 1241,
+      "f2p": {},
+      "gold_exit": 1,
+      "missing_gold_tests": [
+        "TestBaseRpcServer_AddOptions",
+        "TestBaseRpcServer_AddStreamInterceptors",
+        "TestBaseRpcServer_AddUnaryInterceptors",
+        "TestBuildDialOptions",
+        "TestBuildDirectTarget",
+        "TestBuildDiscovTarget",
+        "TestCachedConn_QueryRowIndex_HasWrongCache/index",
+        "TestCachedConn_QueryRowIndex_HasWrongCache/primary/1234",
+        "TestContentSecurityHandler/http://localhost/a",
+        "TestContentSecurityHandler/http://remotehost",
+        "TestFigureOutListenOn",
+        "TestGoogleBreakerHalfOpen/accept_single_failed",
+        "TestGoogleBreakerHistory/accepts_=_1/2_*_total,_fail_=_1",
+        "TestLoggerError",
+        "TestLoggerErrorf",
+        "TestLoggerErrorln",
+        "TestLoggerFatal",
+        "TestLoggerFatalf",
+        "TestLoggerFatalln",
+        "TestLoggerWarning",
+        "TestLoggerWarningf",
+        "TestLoggerWarningln",
+        "TestNewRpcPubServerWithEtcdAuth",
+        "TestNotEmpty/a/b",
+        "TestPatRouter/GET:/a",
+        "TestPatRouter/GET:/b",
+        "TestRemove/a/b/a",
+        "TestRemove/b",
+        "TestRemove/b/a",
+        "TestRpcServer",
+        "TestRpcServer_WithBadAddress",
+        "TestSearch/",
+        "TestSearch//a",
+        "TestWithDialOption",
+        "TestWithStreamClientInterceptors",
+        "TestWithStreamServerInterceptors",
+        "TestWithUnaryClientInterceptor",
+        "TestWithUnaryClientInterceptors",
+        "TestWithUnaryServerInterceptors"
+      ],
+      "nonpassing_gold_tests": {
+        "TestAdaptiveShedderMaxFlight": "FAIL",
+        "TestAdaptiveShedderMinRt": "FAIL",
+        "TestAdaptiveShedderShouldDrop": "FAIL",
+        "TestRollingWindowReduce": "FAIL"
+      },
+      "observed_gold_tests": 1729
+    },
+    "upstream_image": "mswebench/zeromicro_m_go-zero@sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6"
+  }
+]

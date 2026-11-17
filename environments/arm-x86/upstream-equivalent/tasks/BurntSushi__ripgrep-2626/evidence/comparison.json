@@ -1,0 +1,201 @@
+{
+  "base_amd64_is_exact_upstream_layer_prefix": true,
+  "base_image_provenance": {
+    "amd64_base_diff_ids": [
+      "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+      "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+      "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+      "sha256:4c13ea2c0b021f7e71473290da414fe79371abf7b4de411c0a70fd2fc88916d5",
+      "sha256:e26ffd62d8b12fe7b7a296b756d66606f59f4231452623550b3cd1166430e9c4"
+    ],
+    "amd64_matches_actual_upstream_prefix": true,
+    "arm64_base_diff_ids": [
+      "sha256:948048d45864d1f64cd70b0341fd6c927cd3fa13f1d56b0054064b3ba2b2b467",
+      "sha256:f8e34ba5db3916c38ce4918304394347cc2403a5c92006a1e550a72977e0ac2a",
+      "sha256:b8974bf4470658c9b2f2bcc4d91db2ab6abc4a3c63ac1944b38519dbebfb53a0",
+      "sha256:77122155c2dc59977416cf2f760eb52aed66fd82acb25b7b006e0ad7f989ff55",
+      "sha256:e61bd151779656dee304566db7b4a662b784f522b4588f164305dc89e081541f"
+    ],
+    "arm64_manifest_digest": "sha256:f04df1b615e9ffac55f3a304ef3aaccb9bc716c88a9d6ee6b00de45f288a4e3a",
+    "arm64_manifest_matches_recipe": true,
+    "arm64_matches_built_image_prefix": true,
+    "base_index_digest": "sha256:0ff31c9ffa641a62e48d543fb00b4960955ea375f40776f40f585b89e654cc5e",
+    "explanation": "Both architectures select the same immutable multiarchitecture index. The x86 base layers exactly match the original upstream task image's starting layers; the ARM image starts with that index's native ARM layers."
+  },
+  "build": {
+    "architecture": "arm64",
+    "baseline_exit": 101,
+    "build_exit": 0,
+    "dockerfile_sha256": "ac2948dc6cab828c109a9eac846e9ea182434adf3b6b34de02bce7e9d348d09f",
+    "finished_at": "2026-11-16T23:15:13.150783+00:00",
+    "gold_exit": 0,
+    "image": "msweb.eval.arm64.burntsushi__ripgrep-2626:upstream-v1",
+    "image_architecture": "arm64",
+    "image_id": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+    "instance_id": "BurntSushi__ripgrep-2626",
+    "logs": "evidence/builds/attempt-1/BurntSushi__ripgrep-2626",
+    "matches_current_dockerfile": true,
+    "native_host_architecture": "aarch64",
+    "packages_exit": 0,
+    "smoke_exit": 0,
+    "started_at": "2026-11-16T23:13:34.355739+00:00",
+    "status": "built_tests_recorded",
+    "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+    "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+    "upstream_image": "mswebench/burntsushi_m_ripgrep@sha256:83375231f11af4e8762767d0cd0fbb429e8c44fee92f8ddc4eff5c86700e064e"
+  },
+  "documented_architecture_exclusions": {},
+  "file_hashes": {
+    "/home/check_git_changes.sh": {
+      "arm_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933",
+      "matches": true,
+      "upstream_sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+    },
+    "/home/fix-run.sh": {
+      "arm_sha256": "ac01fffd456768996d04af64e2f11265b118e61a0aa95ed1e1b174258716f827",
+      "matches": true,
+      "upstream_sha256": "ac01fffd456768996d04af64e2f11265b118e61a0aa95ed1e1b174258716f827"
+    },
+    "/home/fix.patch": {
+      "arm_sha256": "43d165b24f42cafd4fa3b9857b04d3a9ee9ed5c36794ad43c89684d6c8e9a0d1",
+      "matches": true,
+      "upstream_sha256": "43d165b24f42cafd4fa3b9857b04d3a9ee9ed5c36794ad43c89684d6c8e9a0d1"
+    },
+    "/home/prepare.sh": {
+      "arm_sha256": "8bf47f7e65d7996a3a0183162f4715ae8900bbbecb9aee15965b1683bf1e1139",
+      "matches": true,
+      "upstream_sha256": "8bf47f7e65d7996a3a0183162f4715ae8900bbbecb9aee15965b1683bf1e1139"
+    },
+    "/home/ripgrep/Cargo.lock": {
+      "arm_sha256": "adde53e16745e62780e7074f26f38e61f8cb7632dd95555600091bfd6ec9a66b",
+      "matches": true,
+      "upstream_sha256": "adde53e16745e62780e7074f26f38e61f8cb7632dd95555600091bfd6ec9a66b"
+    },
+    "/home/ripgrep/Cargo.toml": {
+      "arm_sha256": "a29c6a128ce40d138438acb8dce49db1aefdf3fd4994029ceec50b94f95e002c",
+      "matches": true,
+      "upstream_sha256": "a29c6a128ce40d138438acb8dce49db1aefdf3fd4994029ceec50b94f95e002c"
+    },
+    "/home/run.sh": {
+      "arm_sha256": "6d1594f5a0228393b78e542981d7a8e0332ffc05403cba300f42348f761609ea",
+      "matches": true,
+      "upstream_sha256": "6d1594f5a0228393b78e542981d7a8e0332ffc05403cba300f42348f761609ea"
+    },
+    "/home/test-run.sh": {
+      "arm_sha256": "13de2bb3fcc52dbeaa5f24187793d94e34947e140367e7b816ef80ccfa2ad52d",
+      "matches": true,
+      "upstream_sha256": "13de2bb3fcc52dbeaa5f24187793d94e34947e140367e7b816ef80ccfa2ad52d"
+    },
+    "/home/test.patch": {
+      "arm_sha256": "9155c94b0b617770d1d3b8da650cb92a7a977d2e697e9c0515a25c3b77f67a00",
+      "matches": true,
+      "upstream_sha256": "9155c94b0b617770d1d3b8da650cb92a7a977d2e697e9c0515a25c3b77f67a00"
+    }
+  },
+  "image_ids": {
+    "arm": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+    "upstream_x86": "sha256:83375231f11af4e8762767d0cd0fbb429e8c44fee92f8ddc4eff5c86700e064e"
+  },
+  "instance_id": "BurntSushi__ripgrep-2626",
+  "packages": {
+    "arm_count": 413,
+    "only_arm": {
+      "binutils-aarch64-linux-gnu": {
+        "Architecture": "arm64",
+        "Version": "2.40-2"
+      },
+      "libhwasan0": {
+        "Architecture": "arm64",
+        "Version": "12.2.0-14"
+      }
+    },
+    "only_upstream": {
+      "binutils-x86-64-linux-gnu": {
+        "Architecture": "amd64",
+        "Version": "2.40-2"
+      },
+      "libquadmath0": {
+        "Architecture": "amd64",
+        "Version": "12.2.0-14"
+      }
+    },
+    "upstream_count": 413,
+    "version_differences": {}
+  },
+  "runtime_configuration": {
+    "Cmd": {
+      "arm": [
+        "bash"
+      ],
+      "matches": true,
+      "upstream": [
+        "bash"
+      ]
+    },
+    "Entrypoint": {
+      "arm": null,
+      "matches": true,
+      "upstream": null
+    },
+    "Env": {
+      "arm": [
+        "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "RUSTUP_HOME=/usr/local/rustup",
+        "CARGO_HOME=/usr/local/cargo",
+        "RUST_VERSION=1.85.0",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy="
+      ],
+      "matches": true,
+      "upstream": [
+        "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "RUSTUP_HOME=/usr/local/rustup",
+        "CARGO_HOME=/usr/local/cargo",
+        "RUST_VERSION=1.85.0",
+        "HTTP_PROXY=",
+        "http_proxy=",
+        "HTTPS_PROXY=",
+        "https_proxy="
+      ]
+    },
+    "WorkingDir": {
+      "arm": "/home/",
+      "comparison": "Normalize trailing slash; both paths resolve to the same directory.",
+      "matches": true,
+      "raw_matches": false,
+      "upstream": "/home"
+    }
+  },
+  "runtime_equivalence_to_x86": "not established; native x86 tests were not run",
+  "source_commit": {
+    "expected": "7099e174acbcbd940f57e4ab4913fee4040c826e",
+    "matches": true,
+    "observed": [
+      "7099e174acbcbd940f57e4ab4913fee4040c826e"
+    ]
+  },
+  "test_evidence": {
+    "image_id": "sha256:ff3840392b2d19b1398c89e16b69a34b6d7fec5335b1ffada580fa3e46eab319",
+    "logs": "evidence/builds/attempt-1/BurntSushi__ripgrep-2626",
+    "reused_after_metadata_change": false
+  },
+  "tests": {
+    "all_expected_gold_tests_passed": true,
+    "all_f2p_reproduced": true,
+    "baseline_exit": 101,
+    "expected_gold_tests": 404,
+    "f2p": {
+      "regression::r428_unrecognized_style": {
+        "baseline": "FAIL",
+        "gold": "PASS"
+      }
+    },
+    "gold_exit": 0,
+    "missing_gold_tests": [],
+    "nonpassing_gold_tests": {},
+    "observed_gold_tests": 404
+  },
+  "upstream_image": "mswebench/burntsushi_m_ripgrep@sha256:83375231f11af4e8762767d0cd0fbb429e8c44fee92f8ddc4eff5c86700e064e"
+}

@@ -1,0 +1,20 @@
+{
+  "instance_id": "zeromicro__go-zero-964",
+  "image": "msweb.eval.arm64.zeromicro__go-zero-964:upstream-v1",
+  "upstream_image": "mswebench/zeromicro_m_go-zero@sha256:98166447bc3a7b5e9aed3caa683a42ecf688ebe685772095f40ea0c2b7ab32d6",
+  "started_at": "2026-11-16T23:17:29.697591+00:00",
+  "status": "built_tests_recorded",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "389a0274079ece8eece7ca8fe2e07fefdf2ae3c15531db7a457b73eb63836294",
+  "build_exit": 0,
+  "image_id": "sha256:1d1d2bb799577fd972ed294f96346e12101e5e467b21db7d8b65d1ce14fca8e1",
+  "image_architecture": "arm64",
+  "smoke_exit": 0,
+  "packages_exit": 0,
+  "baseline_exit": 1,
+  "gold_exit": 1,
+  "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+  "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+  "finished_at": "2026-11-16T23:20:04.012556+00:00"
+}

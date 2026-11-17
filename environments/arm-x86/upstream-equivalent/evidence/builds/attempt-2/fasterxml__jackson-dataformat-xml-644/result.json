@@ -1,0 +1,20 @@
+{
+  "instance_id": "fasterxml__jackson-dataformat-xml-644",
+  "image": "msweb.eval.arm64.fasterxml__jackson-dataformat-xml-644:upstream-v1",
+  "upstream_image": "mswebench/fasterxml_m_jackson-dataformat-xml@sha256:deab5905c2b9641164436d43a5a97ecf011b0bd29b4c24caa394bf1f5f9f0c7c",
+  "started_at": "2026-11-16T23:18:46.642336+00:00",
+  "status": "built_tests_recorded",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "091e616488a419443eefb2e113fd6cef2723e984599fc4afdde4799a322a6b13",
+  "build_exit": 0,
+  "image_id": "sha256:70152090abd1d391001900a131ec154973328fa21df9358ac294b53411adc159",
+  "image_architecture": "arm64",
+  "smoke_exit": 0,
+  "packages_exit": 0,
+  "baseline_exit": 1,
+  "gold_exit": 0,
+  "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+  "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+  "finished_at": "2026-11-16T23:51:46.416141+00:00"
+}

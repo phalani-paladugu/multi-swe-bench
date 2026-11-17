@@ -1,0 +1,47 @@
+{
+  "Id": "sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7",
+  "RepoDigests": [
+    "mswebench/sharkdp_m_bat@sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7"
+  ],
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Created": "2025-03-18T11:04:29.291418223Z",
+  "Config": {
+    "Env": [
+      "PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "RUSTUP_HOME=/usr/local/rustup",
+      "CARGO_HOME=/usr/local/cargo",
+      "RUST_VERSION=1.85.0",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy="
+    ],
+    "Cmd": [
+      "bash"
+    ],
+    "WorkingDir": "/home",
+    "Labels": {
+      "org.opencontainers.image.source": "https://github.com/rust-lang/docker-rust"
+    }
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:53babe930602419c46727120034c3748ae023bef28f10edb018fbcfbcedbc0e8",
+      "sha256:d2f7abddd607612ee919b0d3fffe9f156b3165b215b1dae105b4b2be4888a285",
+      "sha256:2ed6a19677f5e5d6bc7ca58dc86e0c9e54c894bdfff537014736c168d82a856d",
+      "sha256:4c13ea2c0b021f7e71473290da414fe79371abf7b4de411c0a70fd2fc88916d5",
+      "sha256:e26ffd62d8b12fe7b7a296b756d66606f59f4231452623550b3cd1166430e9c4",
+      "sha256:f98034535261fbef15c69ec583ce91c7bd318f0bf6de806bce4446f713cc5407",
+      "sha256:6cf1212473ce30f3f7d74ca737585eb70ccb076cf7bea3c57b9c1fa1da7614bf",
+      "sha256:57a5c50f52292760eabb15ca1b77c3476844cfaac0a1d013a21d21b39b8d64cd",
+      "sha256:c16318e9600e3e7643280fe9493cf653299e01d46d4b6599c2def18d1441202e",
+      "sha256:7e673bd5e68434de11193d63e544e7aa94af27fcee94ddecd975cf584e4ff91e",
+      "sha256:ef7fd8d20241da9fb90294c36769f9977cab7e855ab9c0746f7017f4f7e61091",
+      "sha256:cc2be980d7e3182294a06197f48f36646fcd7cad649c52284beb3b022d9d06bc",
+      "sha256:bed57bf06c15cb98a01109d334b66e61b6c36aef229bfda94acdf9fae9a43a6f",
+      "sha256:880bc313426c4d0a744e70527355a611aa938f3ba2a8bdcea71601aad420b91a"
+    ]
+  }
+}

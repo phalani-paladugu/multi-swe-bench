@@ -1,0 +1,51 @@
+{
+  "Id": "sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27",
+  "RepoDigests": [
+    "msweb.eval.arm64.apache__dubbo-11781@sha256:324d9a80e6e0126c9c47c494b295f90595d6accbb2574245ba9a19b6750fad27"
+  ],
+  "Architecture": "arm64",
+  "Os": "linux",
+  "Created": "2026-11-16T23:45:07.643315629Z",
+  "Config": {
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy=",
+      "DEBIAN_FRONTEND=noninteractive",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8"
+    ],
+    "Cmd": [
+      "/bin/bash"
+    ],
+    "WorkingDir": "/home/",
+    "Labels": {
+      "org.opencontainers.image.ref.name": "ubuntu",
+      "org.opencontainers.image.version": "22.04"
+    },
+    "ArgsEscaped": true
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:59b223680ef978509f20faf6bf069866dfc02c422159347face0a7565d698526",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:ba2ce197fc2ef053bcebc1297857bba8dbeb7fcfca86e91ef6c9cb9c536ff706",
+      "sha256:6717e14afaeea7dd005037a8993838143f19a3a9c35a63cf141a6caf3172a27a",
+      "sha256:bd6779c2ae84e767231e883cf374aa8eadd5a4afcfe7854e34b385723c2cb685",
+      "sha256:0fa41582ec8b0f57abc89f938054459987b6149f24f0b55c0f96f46379700660",
+      "sha256:575709293733b8c5c3d0efdd3f2f948f590bd338794973862762c2b54341f78e",
+      "sha256:60d1399fbe28d4aced2a01388523877bfbdd8fef28ba4cc96a3077308a00acce",
+      "sha256:309ee45f42359ad75be9146ca21e7a2b771523df490ec33603ac36893fbbefb4",
+      "sha256:e4ce07606cacbb7b797fe0414023730f1da2094f039e648b9685814fcb447cc2",
+      "sha256:f0785fb758d383822d70602d11caca1541293a43e18b50378b1034d1aba6c8c8",
+      "sha256:d2b78db81e4452630cfd3d4c90175c8c0a261ccb1b809fb30ceb645bdfaf93c2",
+      "sha256:ce5437c1e3e976262f823d522d6d024e25910a849c73e913ff9dcd9669858072",
+      "sha256:cb2570b275c613a97d1fb5208cdf7d5abfc29ebfcc5898a2211c1f9f8e6780ee",
+      "sha256:b48d619c608c8f0a0db72de13656749c4e5b6a7fe5cab68b8e9c0b3a276bbce4",
+      "sha256:2331a9e1be417cf52de73c989f791dd916015628d4b2ba6848d6fe05bb7d42d1"
+    ]
+  }
+}

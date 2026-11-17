@@ -1,0 +1,111 @@
+{
+  "/etc/apt/sources.list": {
+    "bytes": 2403,
+    "present": true,
+    "sha256": "15a39563d491def84446c8a5304e873a6b6509d56e2b54edce8eea154e1290a0"
+  },
+  "/etc/os-release": {
+    "bytes": 386,
+    "present": true,
+    "sha256": "594d5ddd35aedb47f00d9c34d140017907a5b9f93c975aba125fc924daac5c07"
+  },
+  "/home/check_git_changes.sh": {
+    "bytes": 315,
+    "present": true,
+    "sha256": "548576bc5c793fa04823286a74b4a44f27fd43c334208b8d265ee66f0d1c1933"
+  },
+  "/home/dubbo/.git/HEAD": {
+    "bytes": 41,
+    "evidence_path": "files/home/dubbo/git-metadata/HEAD",
+    "present": true,
+    "sha256": "2f1f00ae4fd054f62911428eae26e97a7488ed6b8492e72684a9b56b1112ffb1"
+  },
+  "/home/dubbo/.mvn/wrapper/maven-wrapper.properties": {
+    "bytes": 110,
+    "present": true,
+    "sha256": "86c15343711cb9c295d1682de8880dcb0bf166661d132c5ff491fd3cc9fd6160"
+  },
+  "/home/dubbo/Cargo.lock": {
+    "present": false
+  },
+  "/home/dubbo/Cargo.toml": {
+    "present": false
+  },
+  "/home/dubbo/go.mod": {
+    "present": false
+  },
+  "/home/dubbo/go.sum": {
+    "present": false
+  },
+  "/home/dubbo/pom.xml": {
+    "bytes": 34092,
+    "present": true,
+    "sha256": "c9c5a7b6b2b227635e2d8958c25ad5c486c5bc9261979ad57f08279515e08821"
+  },
+  "/home/fix-run.sh": {
+    "bytes": 185,
+    "present": true,
+    "sha256": "164087438d7ccef646e8c3b8470d994ae8044da37d5b45b9428df9dea1dce67d"
+  },
+  "/home/fix.patch": {
+    "bytes": 1185,
+    "present": true,
+    "sha256": "985d83828778bb36aaee668bacd294d1fc120a88367fa177ecc8845f7961ae00"
+  },
+  "/home/prepare.sh": {
+    "bytes": 265,
+    "present": true,
+    "sha256": "a170b16a899c27d120e1a2b40113f92a4a9ac8532c4046f02bf977678fd1bc12"
+  },
+  "/home/run.sh": {
+    "bytes": 121,
+    "present": true,
+    "sha256": "d17c0aee47771604a5f26810b88b0b7fb44475668ae1c202cfa7d03f5c329b12"
+  },
+  "/home/test-run.sh": {
+    "bytes": 169,
+    "present": true,
+    "sha256": "a255d6408eb6cf68268d9a2f5062dc868bafb09c222bdb8d902c7b5d37c9c5bf"
+  },
+  "/home/test.patch": {
+    "bytes": 2688,
+    "present": true,
+    "sha256": "a37e903c2a50ca31eb51d100c84d93d2d77d05c51478b5b4eb09312e92e2c9a4"
+  },
+  "/usr/lib/jvm/java-17-openjdk-amd64/release": {
+    "bytes": 1229,
+    "present": true,
+    "sha256": "85a2013a21f54a6109d4f5d8c4c7fefd9dda20b84db8e426988d74d44e3fcafd"
+  },
+  "/usr/local/go/VERSION": {
+    "present": false
+  },
+  "/usr/local/rustup/settings.toml": {
+    "present": false
+  },
+  "/var/lib/dpkg/info/openjdk-17-jdk-headless:amd64.list": {
+    "bytes": 7438,
+    "present": true,
+    "sha256": "8c9a3a93046aac2816112e985b1ceb1c80ae340b41d4d3ab92a9a90b8fed9c3b"
+  },
+  "/var/lib/dpkg/info/openjdk-17-jdk:amd64.list": {
+    "bytes": 1312,
+    "present": true,
+    "sha256": "b5b356a5445f64112cbdc9ac5036a9e68656174bf4b0e2fe929e13ca6b0adb91"
+  },
+  "/var/lib/dpkg/info/openjdk-17-jre-headless:amd64.list": {
+    "bytes": 18963,
+    "present": true,
+    "sha256": "6555998776b2d1ca955154fafa76b91589b7f9fea49df98e47e720e0e7c18536"
+  },
+  "/var/lib/dpkg/info/openjdk-17-jre:amd64.list": {
+    "bytes": 1317,
+    "present": true,
+    "sha256": "8e1bdf6c6a9388fa0c4d30834e86a5e9a207aa2e7adf311472af109975a99b07"
+  },
+  "/var/lib/dpkg/status": {
+    "bytes": 343675,
+    "present": true,
+    "sha256": "97ea54d4b5002922f4409e5efdb27ab740e17e6ee4098be7efd0bf1c52672a31"
+  }
+}

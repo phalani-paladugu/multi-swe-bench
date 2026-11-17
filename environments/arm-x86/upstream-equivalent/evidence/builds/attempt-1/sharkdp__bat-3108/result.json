@@ -1,0 +1,20 @@
+{
+  "instance_id": "sharkdp__bat-3108",
+  "image": "msweb.eval.arm64.sharkdp__bat-3108:upstream-v1",
+  "upstream_image": "mswebench/sharkdp_m_bat@sha256:2627572f78268c467fb65c2e22fef600786d4e2469575b4a8f869fc16745c6a7",
+  "started_at": "2026-11-16T23:15:13.151439+00:00",
+  "status": "built_tests_recorded",
+  "architecture": "arm64",
+  "native_host_architecture": "aarch64",
+  "dockerfile_sha256": "d083348ad8924c733dc537ee7c253edfe67dfce2ce4a58946172fb9cade040e3",
+  "build_exit": 0,
+  "image_id": "sha256:cbf3c428dcd54aa7540651eb397ecde3a522007f9a852d456319cdd0761d4cf6",
+  "image_architecture": "arm64",
+  "smoke_exit": 0,
+  "packages_exit": 0,
+  "baseline_exit": 101,
+  "gold_exit": 0,
+  "test_commands": "Unmodified /home/test-run.sh and /home/fix-run.sh from the pinned official image.",
+  "test_network": "default Docker bridge; external downloads permitted, as in upstream scripts",
+  "finished_at": "2026-11-16T23:17:29.696927+00:00"
+}

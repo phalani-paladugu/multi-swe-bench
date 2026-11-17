@@ -1,0 +1,48 @@
+{
+  "Id": "sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15",
+  "RepoDigests": [
+    "mswebench/alibaba_m_fastjson2@sha256:03561c4a35cab50a78c18ae6f8b29d30141e119c9e0df8444a3fbc82e23eda15"
+  ],
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Created": "2025-03-31T08:52:49.959788817Z",
+  "Config": {
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "HTTP_PROXY=",
+      "http_proxy=",
+      "HTTPS_PROXY=",
+      "https_proxy=",
+      "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai",
+      "DEBIAN_FRONTEND=noninteractive",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8"
+    ],
+    "Cmd": [
+      "/bin/bash"
+    ],
+    "WorkingDir": "/home",
+    "Labels": {
+      "org.opencontainers.image.ref.name": "ubuntu",
+      "org.opencontainers.image.version": "20.04"
+    }
+  },
+  "RootFS": {
+    "Type": "layers",
+    "Layers": [
+      "sha256:fffe76c64ef2dee2d80a8bb3ad13d65d596d04a45510b1956a976a69215dae92",
+      "sha256:3940be221c817613f8a4a0ecf05cb8326850ee128ba640088453695be43bc4fd",
+      "sha256:5de80c4f008dc5c00e4cd67f9ddd3b04f5dfa5b321f694141cb0db5b1c8215e0",
+      "sha256:1535919d13cac4cfe79c5b3a6b2b871044b6de9e7573d013c7518a80d2b76ebb",
+      "sha256:e77b8e6bd343bb305bb8ffe0275fbf7dcfdbe73ab920710f1ae7e7a0992fd96f",
+      "sha256:1922ddd4897b92cb9e1793c6a54ca14bc2a42f7c5e27e242b8e363d43371cde2",
+      "sha256:bc6ecded32dc0f9e1d753289e3b2b4387c3c6194a7e56a1362acec0264d5369c",
+      "sha256:767733efccd82475320df8b6e22fea09f2e19f8a001702f75a37625101654c92",
+      "sha256:88e437855217a84522d2b8a20ab349fd8d43bccff43d84ea2397905c8cf62bde",
+      "sha256:a7e999405865960ee6d393579ce31d657d71891c179f55d8b452d7ba073bd5dc",
+      "sha256:715d82be844deb920f7672b7df08eea2dcd2830e6bd433161ba9df1104e3dd45",
+      "sha256:6c3b9d65ec339cd5d7918b1b9e55a11f310db40d07e44fa618c635cd61f83768",
+      "sha256:2b6be37e6411a8c82f50cda47a42e930bae3d6743a1c609fc940061520334e3c"
+    ]
+  }
+}
